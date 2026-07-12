@@ -1,10 +1,9 @@
-/output_data
-/raw_data
-/bkpt
-/.idea
-.gitignore
-tmp.md
-todo.md
-get_alpaca.py
-utils.py
-generate_instruction.py
+# Original
+__pycache__/
+*.pyc
+.DS_Store
+
+# From Working_version branch
+*.log
+.env
+venv/
