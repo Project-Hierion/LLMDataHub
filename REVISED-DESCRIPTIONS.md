@@ -518,3 +518,18 @@
 **WuDao (悟道) Corpora**
 *Original description:* A large scale Chinese corpus, possible component originally open-sourced but not available now.
 *Revised description:* *(pending)*
+
+---
+
+## Contact 📬
+
+To contact the original authors or contribute to the original project:
+
+  [Junhao Zhao](zhaol9555@gmail.com) 📧 <br/>
+  Advised by [Prof. Wanyun Cui](https://cuiwanyun.github.io/) [![](https://img.shields.io/badge/GitHub.io-@cuiwanyun-green.svg)](https://cuiwanyun.github.io/)
+
+To inquire about this maintained fork, or Project Hierion: [project-hierion@proton.me](mailto:project-hierion@proton.me)
+
+---
+
+*With gratitude and much respect to the community, for providing such useful resources, [Project-Hierion](https://github.com/Project-Hierion) will attempt to maintain and keep this forked branch of the original [LLMDataHub](https://github.com/Zjh-819/LLMDataHub) by Junhao Zhao, up to date and current. 🙏*
