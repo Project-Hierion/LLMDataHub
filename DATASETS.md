@@ -16,12 +16,12 @@
 
 ## Table of Contents
 - [General Open Access Datasets for Alignment](#general_aligment)
-  - [Datasets Released Before June 2023](#datasets-released-before-june-2023)
-  - [Datasets Released in June 2023](#datasets-released-in-june-2023)
-  - [Datasets Released in July 2023](#datasets-released-in-july-2023)
-  - [Datasets Released in August 2023](#datasets-released-in-august-2023)
-  - [Datasets Released in September 2023](#datasets-released-in-september-2023)
   - [Datasets Released in November 2023](#datasets-released-in-november-2023)
+  - [Datasets Released in September 2023](#datasets-released-in-september-2023)
+  - [Datasets Released in August 2023](#datasets-released-in-august-2023)
+  - [Datasets Released in July 2023](#datasets-released-in-july-2023)
+  - [Datasets Released in June 2023](#datasets-released-in-june-2023)
+  - [Datasets Released Before June 2023](#datasets-released-before-june-2023)
   - [Potential Overlaps](#potential-overlaps-%EF%B8%8F)
 - [Open Datasets for Pretraining](#pretrain)
 - [Domain-specific Datasets](#domain-specific)
@@ -38,6 +38,64 @@
 - PT: pretrain
 - CoT: Chain-of-Thought Finetune
 - RLHF: train reward model in Reinforcement Learning with Human Feedback 
+
+### Datasets Released in November 2023
+
+| Dataset name | Used by | Type | Language | Size | Description |
+|---|---|---|---|---|---|
+| [helpSteer](https://huggingface.co/datasets/nvidia/HelpSteer) | / | RLHF | English | 37k instances | An RLHF dataset that is annotated by human with helpfulness, correctness, coherence, complexity and verbosity measures |
+| [no_robots](https://huggingface.co/datasets/HuggingFaceH4/no_robots) | / | SFT | English | 10k instance | High-quality human-created STF data, single turn. |
+
+### Datasets Released in September 2023
+
+| Dataset name | Used by | Type | Language | Size | Description |
+|---|---|---|---|---|---|
+| [Anthropic_<br/>HH_Golden](https://huggingface.co/datasets/Unified-Language-Model-Alignment/Anthropic_HH_Golden) | ULMA | SFT / RLHF | English | train 42.5k + test 2.3k | Improved on the harmless dataset of Anthropic's Helpful and Harmless (HH) datasets. Using GPT4 to rewrite the original "chosen" answer. Compared with the original Harmless dataset, empirically this dataset improves the performance of RLHF, DPO or ULMA methods significantly on harmless metrics. |
+
+### Datasets Released in August 2023
+
+| Dataset name | Used by | Type | Language | Size | Description |
+|---|---|---|---|---|---|
+| [AmericanStories](https://huggingface.co/datasets/dell-research-harvard/AmericanStories) | / | PT | English | / | Vast sized corpus scanned from US Library of Congress. |
+| [dolma](https://huggingface.co/datasets/allenai/dolma) | OLMo | PT | / | 3T tokens | A large diverse open-source corpus for LM pretraining. |
+| [function_<br/>calling_<br/>extended](https://huggingface.co/datasets/Trelis/function_calling_extended) | / | Pairs | English<br/>code | / | High quality human created dataset from enhance LM's API using ability. |
+| [LongBench](https://huggingface.co/datasets/THUDM/LongBench) | / | Evaluation<br/>Only | English<br/>Chinese | 17 tasks | A benchmark for evaluate LLM's long context understanding capability. |
+| [Platypus](https://huggingface.co/datasets/garage-bAInd/Open-Platypus) | Platypus2 | Pairs | English | 25K | A very high quality dataset for improving LM's STEM reasoning ability. |
+| [Puffin](https://huggingface.co/datasets/LDJnr/Puffin) | Redmond-Puffin<br/>Series | Dialog | English | ~3k entries | A dataset consists of conversations between real human and GPT-4，which features long context (over 1k tokens per conversation) and multi-turn dialogs. |
+| [tiny series](https://huggingface.co/datasets/nampdn-ai/tiny-codes) | / | Pairs | English | / | A series of short and concise codes or texts aim at improving LM's reasoning ability. |
+
+### Datasets Released in July 2023
+
+| Dataset name | Used by | Type | Language | Size | Description |
+|---|---|---|---|---|---|
+| [chatbot_arena<br/>_conversations](https://huggingface.co/datasets/lmsys/chatbot_arena_conversations) | / | RLHF<br/>Dialog | Multilingual | 33k conversations | Cleaned conversations with pairwise human preferences collected on Chatbot Arena. |
+| [DialogStudio](https://github.com/salesforce/DialogStudio) | / | Dialog | Multilingual | / | A collection of diverse datasets aim at building conversational Chatbot. |
+| [dolphin](https://huggingface.co/datasets/ehartford/dolphin) | / | Pairs | English | 4.5M entries | An attempt to replicate Microsoft's Orca. Based on FLANv2. |
+| [FineGrainedRLHF](https://github.com/allenai/FineGrainedRLHF) | / | RLHF | English | ~5K examples | A repo aims at develop a new framework to collect human feedbacks. Data collected is with the purpose to improve LLMs factual correctness, topic relevance and other abilities. |
+| [Linly-<br/>pretraining-<br/>dataset](https://huggingface.co/datasets/Linly-AI/Chinese-pretraining-dataset) | Linly series | PT | Chinese | 3.4GB | Chinese pretraining dataset used by Linly series model, comprises ClueCorpusSmall, CSL news-crawl and etc. |
+| [openchat_<br/>sharegpt4_<br/>dataset](https://huggingface.co/datasets/openchat/openchat_sharegpt4_dataset) | OpenChat | Dialog | English | 6k dialogs | A high quality dataset generated by using GPT-4 to complete refined ShareGPT prompts. |
+| [orca-chat](https://huggingface.co/datasets/shahules786/orca-chat) | / | Dialog | English | 198,463 entries | An Orca-style dialog dataset aims at improving LM's long context conversational ability. |
+| [phi-1](https://huggingface.co/datasets/teleprint-me/phi-1) | phi-1 | Dialog | English | / | A dataset generated by using the method in [Textbooks Are All You Need](https://arxiv.org/abs/2306.11644). It focuses on math and CS problems. |
+| [WebGLM-qa](https://huggingface.co/datasets/THUDM/webglm-qa) | WebGLm | Pairs | English | 43.6k entries | Dataset used by WebGLM, which is a QA system based on LLM and Internet. Each of the entry in this dataset comprise a question, a response and a reference. The response is grounded in the reference. |
+
+### Datasets Released in June 2023
+
+| Dataset name | Used by | Type | Language | Size | Description |
+|---|---|---|---|---|---|
+| [alpaca_chinese<br/>dataset](https://github.com/hikariming/alpaca_chinese_dataset) | / | Pairs | Chinese | / | GPT-4 translated alpaca data includes some complement data (like Chinese poetry, application, etc.). Inspected by human. |
+| [arxiv instruct datasets<br/> [math](https://huggingface.co/datasets/ArtifactAI/arxiv-math-instruct-50k) <br/> [CS](https://huggingface.co/datasets/ArtifactAI/arxiv-beir-cs-ml-generated-queries) <br/> [Physics](https://huggingface.co/datasets/ArtifactAI/arxiv-physics-instruct-tune-30k) | / | Pairs | English | 50K/<br/>50K/<br/>30K entries | dataset consists of question-answer pairs derived from ArXiv abstracts. Questions are generated using the t5-base model, while the answers are generated using the GPT-3.5-turbo model. |
+| [COIG-PC](https://huggingface.co/datasets/BAAI/COIG-PC) <br/> [COIG-Lite](https://huggingface.co/datasets/BAAI/COIG-PC-Lite) | / | Pairs | Chinese | / | Enhanced version of COIG. |
+| [Dynosaur](https://github.com/WadeYin9712/Dynosaur) | / | Pairs | English | 800K entries | The dataset generated by applying method in [this paper](https://dynosaur-it.github.io/). Highlight is generating high-quality data at low cost. |
+| [ign_clean<br/>_instruct<br/>_dataset_500k](https://huggingface.co/ignmilton) | / | Pairs | / | 509K entries | A large scale SFT dataset which is synthetically created from a subset of Ultrachat prompts. ⚠ lack of detailed datacard |
+| [im-feeling-<br/>curious](https://huggingface.co/datasets/xiyuez/im-feeling-curious) | / | Pairs | English | 2595 entries | Random questions and correspond facts generated by Google **I'm feeling curious** features. |
+| [LIMA dataset](https://huggingface.co/datasets/GAIR/lima) | LIMA | Pairs | English | 1k entries | High quality SFT dataset used by [LIMA: Less Is More for Alignment](https://arxiv.org/pdf/2305.11206.pdf) |
+| [OpenOrca](https://huggingface.co/datasets/Open-Orca/OpenOrca) | / | Pairs | English | 4.5M completions | A collection of augmented FLAN data. Generated by using method is Orca paper. |
+| [SlimPajama](https://huggingface.co/datasets/cerebras/SlimPajama-627B) | / | PT | Primarily<br/>English | / | A cleaned and deduplicated version of RedPajama |
+| [StackOverflow<br/>post](https://huggingface.co/datasets/mikex86/stackoverflow-posts) | / | PT | / | 35GB | Raw StackOverflow data in markdown format, for pretraining. |
+| [TigerBot Series](https://github.com/TigerResearch/TigerBot#%E5%BC%80%E6%BA%90%E6%95%B0%E6%8D%AE%E9%9B%86) | TigerBot | PT<br/>Pairs | Chinese<br/>English | / | Datasets used to train the TigerBot, including pretraining data, STF data and some domain specific datasets like financial research reports. |
+| [TSI-v0](https://huggingface.co/datasets/tasksource/tasksource-instruct-v0) | / | Pairs | English | 30k examples<br/>per task | A Multi-task instruction-tuning data recasted from 475 of the tasksource datasets. Similar to Flan dataset and Natural instruction. |
+| [WizardLM_Orca](https://huggingface.co/datasets/psmathur/WizardLM_Orca) | orca_mini series | Pairs | English | 55K entries | Enhanced WizardLM data. Generated by using orca's method. |
+| [WizardLM<br/>evolve_instruct V2](https://huggingface.co/datasets/WizardLM/WizardLM_evol_instruct_V2_196k) | WizardLM | Dialog | English | 196k entries | The latest version of Evolve Instruct dataset. |
 
 ### Datasets Released Before June 2023
 
@@ -88,64 +146,6 @@
 | [WizardLM<br/>evol_instruct_70k](https://huggingface.co/datasets/victor123/evol_instruct_70k) | WizardLM | IFT | English | | An instruction finetune dataset derived from Alpaca-52K, using the **evolution** method in [this paper](https://arxiv.org/pdf/2304.12244.pdf) |
 | [xP3 (and some variant)](https://huggingface.co/datasets/bigscience/xP3) | BLOOMZ, mT0 | IFT | Multilingual,<br/> code | 79M entries<br/>88GB | An instruction dataset for improving language models' generalization ability, similar to *Natural Instruct*. |
 | [Zhihu-KOL](https://huggingface.co/datasets/wangrui6/Zhihu-KOL) | Open Assistant | Pairs | Chinese | 1.5GB | QA data on well-know Chinese Zhihu QA platform. |
-
-### Datasets Released in June 2023
-
-| Dataset name | Used by | Type | Language | Size | Description |
-|---|---|---|---|---|---|
-| [alpaca_chinese<br/>dataset](https://github.com/hikariming/alpaca_chinese_dataset) | / | Pairs | Chinese | / | GPT-4 translated alpaca data includes some complement data (like Chinese poetry, application, etc.). Inspected by human. |
-| [arxiv instruct datasets<br/> [math](https://huggingface.co/datasets/ArtifactAI/arxiv-math-instruct-50k) <br/> [CS](https://huggingface.co/datasets/ArtifactAI/arxiv-beir-cs-ml-generated-queries) <br/> [Physics](https://huggingface.co/datasets/ArtifactAI/arxiv-physics-instruct-tune-30k) | / | Pairs | English | 50K/<br/>50K/<br/>30K entries | dataset consists of question-answer pairs derived from ArXiv abstracts. Questions are generated using the t5-base model, while the answers are generated using the GPT-3.5-turbo model. |
-| [COIG-PC](https://huggingface.co/datasets/BAAI/COIG-PC) <br/> [COIG-Lite](https://huggingface.co/datasets/BAAI/COIG-PC-Lite) | / | Pairs | Chinese | / | Enhanced version of COIG. |
-| [Dynosaur](https://github.com/WadeYin9712/Dynosaur) | / | Pairs | English | 800K entries | The dataset generated by applying method in [this paper](https://dynosaur-it.github.io/). Highlight is generating high-quality data at low cost. |
-| [ign_clean<br/>_instruct<br/>_dataset_500k](https://huggingface.co/ignmilton) | / | Pairs | / | 509K entries | A large scale SFT dataset which is synthetically created from a subset of Ultrachat prompts. ⚠ lack of detailed datacard |
-| [im-feeling-<br/>curious](https://huggingface.co/datasets/xiyuez/im-feeling-curious) | / | Pairs | English | 2595 entries | Random questions and correspond facts generated by Google **I'm feeling curious** features. |
-| [LIMA dataset](https://huggingface.co/datasets/GAIR/lima) | LIMA | Pairs | English | 1k entries | High quality SFT dataset used by [LIMA: Less Is More for Alignment](https://arxiv.org/pdf/2305.11206.pdf) |
-| [OpenOrca](https://huggingface.co/datasets/Open-Orca/OpenOrca) | / | Pairs | English | 4.5M completions | A collection of augmented FLAN data. Generated by using method is Orca paper. |
-| [SlimPajama](https://huggingface.co/datasets/cerebras/SlimPajama-627B) | / | PT | Primarily<br/>English | / | A cleaned and deduplicated version of RedPajama |
-| [StackOverflow<br/>post](https://huggingface.co/datasets/mikex86/stackoverflow-posts) | / | PT | / | 35GB | Raw StackOverflow data in markdown format, for pretraining. |
-| [TigerBot Series](https://github.com/TigerResearch/TigerBot#%E5%BC%80%E6%BA%90%E6%95%B0%E6%8D%AE%E9%9B%86) | TigerBot | PT<br/>Pairs | Chinese<br/>English | / | Datasets used to train the TigerBot, including pretraining data, STF data and some domain specific datasets like financial research reports. |
-| [TSI-v0](https://huggingface.co/datasets/tasksource/tasksource-instruct-v0) | / | Pairs | English | 30k examples<br/>per task | A Multi-task instruction-tuning data recasted from 475 of the tasksource datasets. Similar to Flan dataset and Natural instruction. |
-| [WizardLM_Orca](https://huggingface.co/datasets/psmathur/WizardLM_Orca) | orca_mini series | Pairs | English | 55K entries | Enhanced WizardLM data. Generated by using orca's method. |
-| [WizardLM<br/>evolve_instruct V2](https://huggingface.co/datasets/WizardLM/WizardLM_evol_instruct_V2_196k) | WizardLM | Dialog | English | 196k entries | The latest version of Evolve Instruct dataset. |
-
-### Datasets Released in July 2023
-
-| Dataset name | Used by | Type | Language | Size | Description |
-|---|---|---|---|---|---|
-| [chatbot_arena<br/>_conversations](https://huggingface.co/datasets/lmsys/chatbot_arena_conversations) | / | RLHF<br/>Dialog | Multilingual | 33k conversations | Cleaned conversations with pairwise human preferences collected on Chatbot Arena. |
-| [DialogStudio](https://github.com/salesforce/DialogStudio) | / | Dialog | Multilingual | / | A collection of diverse datasets aim at building conversational Chatbot. |
-| [dolphin](https://huggingface.co/datasets/ehartford/dolphin) | / | Pairs | English | 4.5M entries | An attempt to replicate Microsoft's Orca. Based on FLANv2. |
-| [FineGrainedRLHF](https://github.com/allenai/FineGrainedRLHF) | / | RLHF | English | ~5K examples | A repo aims at develop a new framework to collect human feedbacks. Data collected is with the purpose to improve LLMs factual correctness, topic relevance and other abilities. |
-| [Linly-<br/>pretraining-<br/>dataset](https://huggingface.co/datasets/Linly-AI/Chinese-pretraining-dataset) | Linly series | PT | Chinese | 3.4GB | Chinese pretraining dataset used by Linly series model, comprises ClueCorpusSmall, CSL news-crawl and etc. |
-| [openchat_<br/>sharegpt4_<br/>dataset](https://huggingface.co/datasets/openchat/openchat_sharegpt4_dataset) | OpenChat | Dialog | English | 6k dialogs | A high quality dataset generated by using GPT-4 to complete refined ShareGPT prompts. |
-| [orca-chat](https://huggingface.co/datasets/shahules786/orca-chat) | / | Dialog | English | 198,463 entries | An Orca-style dialog dataset aims at improving LM's long context conversational ability. |
-| [phi-1](https://huggingface.co/datasets/teleprint-me/phi-1) | phi-1 | Dialog | English | / | A dataset generated by using the method in [Textbooks Are All You Need](https://arxiv.org/abs/2306.11644). It focuses on math and CS problems. |
-| [WebGLM-qa](https://huggingface.co/datasets/THUDM/webglm-qa) | WebGLm | Pairs | English | 43.6k entries | Dataset used by WebGLM, which is a QA system based on LLM and Internet. Each of the entry in this dataset comprise a question, a response and a reference. The response is grounded in the reference. |
-
-### Datasets Released in August 2023
-
-| Dataset name | Used by | Type | Language | Size | Description |
-|---|---|---|---|---|---|
-| [AmericanStories](https://huggingface.co/datasets/dell-research-harvard/AmericanStories) | / | PT | English | / | Vast sized corpus scanned from US Library of Congress. |
-| [dolma](https://huggingface.co/datasets/allenai/dolma) | OLMo | PT | / | 3T tokens | A large diverse open-source corpus for LM pretraining. |
-| [function_<br/>calling_<br/>extended](https://huggingface.co/datasets/Trelis/function_calling_extended) | / | Pairs | English<br/>code | / | High quality human created dataset from enhance LM's API using ability. |
-| [LongBench](https://huggingface.co/datasets/THUDM/LongBench) | / | Evaluation<br/>Only | English<br/>Chinese | 17 tasks | A benchmark for evaluate LLM's long context understanding capability. |
-| [Platypus](https://huggingface.co/datasets/garage-bAInd/Open-Platypus) | Platypus2 | Pairs | English | 25K | A very high quality dataset for improving LM's STEM reasoning ability. |
-| [Puffin](https://huggingface.co/datasets/LDJnr/Puffin) | Redmond-Puffin<br/>Series | Dialog | English | ~3k entries | A dataset consists of conversations between real human and GPT-4，which features long context (over 1k tokens per conversation) and multi-turn dialogs. |
-| [tiny series](https://huggingface.co/datasets/nampdn-ai/tiny-codes) | / | Pairs | English | / | A series of short and concise codes or texts aim at improving LM's reasoning ability. |
-
-### Datasets Released in September 2023
-
-| Dataset name | Used by | Type | Language | Size | Description |
-|---|---|---|---|---|---|
-| [Anthropic_<br/>HH_Golden](https://huggingface.co/datasets/Unified-Language-Model-Alignment/Anthropic_HH_Golden) | ULMA | SFT / RLHF | English | train 42.5k + test 2.3k | Improved on the harmless dataset of Anthropic's Helpful and Harmless (HH) datasets. Using GPT4 to rewrite the original "chosen" answer. Compared with the original Harmless dataset, empirically this dataset improves the performance of RLHF, DPO or ULMA methods significantly on harmless metrics. |
-
-### Datasets Released in November 2023
-
-| Dataset name | Used by | Type | Language | Size | Description |
-|---|---|---|---|---|---|
-| [helpSteer](https://huggingface.co/datasets/nvidia/HelpSteer) | / | RLHF | English | 37k instances | An RLHF dataset that is annotated by human with helpfulness, correctness, coherence, complexity and verbosity measures |
-| [no_robots](https://huggingface.co/datasets/HuggingFaceH4/no_robots) | / | SFT | English | 10k instance | High-quality human-created STF data, single turn. |
 
 ### Potential Overlaps ⚠️
 
@@ -220,3 +220,18 @@ We consider row items as subject.
 | [MassiveText](https://arxiv.org/abs/2112.11446) | Gopher, Chinchilla | PT | 99% English, 1% other (including code) | | A massive curated dataset used for training Gopher and Chinchilla models. |
 | [WebText (Reddit links)](https://openai.com/blog/better-language-models/) | GPT-2 | PT | English | / | Data crawled from Reddit and filtered for GPT-2 pretraining. |
 | [WuDao (悟道) Corpora](https://wudaoai.cn/) | GLM | PT | Chinese | 200GB | A large scale Chinese corpus, possible component originally open-sourced but not available now. |
+
+---
+
+## Contact 📬
+
+To contact the original authors or contribute to the original project:
+
+  [Junhao Zhao](zhaol9555@gmail.com) 📧 <br/>
+  Advised by [Prof. Wanyun Cui](https://cuiwanyun.github.io/) [![](https://img.shields.io/badge/GitHub.io-@cuiwanyun-green.svg)](https://cuiwanyun.github.io/)
+
+To inquire about this maintained fork, or Project Hierion: [project-hierion@proton.me](mailto:project-hierion@proton.me)
+
+---
+
+*With gratitude and much respect to the community, for providing such useful resources, [Project-Hierion](https://github.com/Project-Hierion) will attempt to maintain and keep this forked branch of the original [LLMDataHub](https://github.com/Zjh-819/LLMDataHub) by Junhao Zhao, up to date and current. 🙏*
