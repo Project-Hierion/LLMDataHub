@@ -1,4 +1,18 @@
-# LLMDataHub: Dataset Collections
+<p align="center" width="60%">
+<img src="LOGO.png"  width="40%" height="40%">
+</p>
+  
+# <div align="center">LLMDataHub: Awesome Datasets for LLM Training </div>
+----------------------------------
+<p align="center">
+  🔥 <a href="DATASETS.md#general_aligment">Alignment Datasets</a> • 💡 <a href="DATASETS.md#domain-specific">Domain-specific Datasets</a> • :atom: <a href="DATASETS.md#pretrain">Pretraining Datasets</a> • 🖼️ <a href="DATASETS.md#multimodal">Multimodal Datasets</a> <br> 
+</p>
+
+<p align="center">
+<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Project-Hierion/LLMDataHub"> <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/Project-Hierion/LLMDataHub">
+</p>
+
+# Dataset Collections By Most Recent And In Alphabetical Order
 
 ## Table of Contents
 - [General Open Access Datasets for Alignment](#general_aligment)
