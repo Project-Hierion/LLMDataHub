@@ -28,6 +28,8 @@ Sections include:
 - **Domain-specific Datasets** — Code, math, finance, legal, medical, and other specialized domains
 - **Multimodal Datasets** — Vision-language and image-text datasets for VLMs
 
+---
+
 ## Contact 📬
 
 To contact the original authors or contribute to the original project:
