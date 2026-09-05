@@ -37,6 +37,11 @@ To contact the original authors or contribute to the original project:
   [Junhao Zhao](zhaol9555@gmail.com) 📧 <br/>
   Advised by [Prof. Wanyun Cui](https://cuiwanyun.github.io/) [![](https://img.shields.io/badge/GitHub.io-@cuiwanyun-green.svg)](https://cuiwanyun.github.io/)
 
+---
+
+**Project Hierion ORCID:** [![ORCID](https://img.shields.io/badge/ORCID-0009--0000--8877--2731-A6CE39?style=flat&logo=orcid&logoColor=white)](https://orcid.org/0009-0000-8877-2731)  
+*Our work is open, traceable, and part of the scientific record.*
+
 To inquire about this maintained fork, or Project Hierion: [project-hierion@proton.me](mailto:project-hierion@proton.me)
 
 ---
