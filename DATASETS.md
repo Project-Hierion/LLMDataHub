@@ -56,6 +56,12 @@
 | Dataset name | Used by | Type | Language | Size | Description |
 |---|---|---|---|---|---|
 | [MetaMathQA](https://github.com/microsoft/LLaVA-MetaMath) | — | SFT | English | 395K | Math QA dataset for instruction tuning. Improves math reasoning in LLMs. |
+| Nemotron-Cascade-2-SFT-Data (LINK NEEDED) | — | SFT | English | — | SFT data from Nemotron, includes agentic subset. [SOURCE: jianzhnie/awesome-instruction-datasets] |
+| Nemotron-Cascade-2-RL-Data (LINK NEEDED) | — | RLHF | English | — | RL data from Nemotron. [SOURCE: jianzhnie/awesome-instruction-datasets] |
+| DAPO-Math-17k (LINK NEEDED) | — | DPO | English | 17K | Math DPO dataset. [SOURCE: jianzhnie/awesome-instruction-datasets] |
+| DeepCtrl-SFT (LINK NEEDED) | — | SFT | Chinese | — | Chinese SFT data. [SOURCE: jianzhnie/awesome-instruction-datasets] |
+| Chinese-DeepSeek-R1-Distill-110k-SFT (LINK NEEDED) | — | SFT | Chinese | 110K | Distilled DeepSeek SFT in Chinese. [SOURCE: jianzhnie/awesome-instruction-datasets] |
+| Yi-Sang (KOREAson) (LINK NEEDED) | — | SFT/CoT | Korean | 5.79M prompts + 3.7M traces | Largest native Korean reasoning dataset. [SOURCE: jianzhnie/awesome-instruction-datasets] |
 
 ### Datasets Released in 2025
 
@@ -63,12 +69,33 @@
 |---|---|---|---|---|---|
 | [MixtureVitae](https://github.com/ontocord/mixturevitae) | — | PT | English | 50B–300B tokens | Permissive-first pretraining corpus. Outperforms FineWeb-Edu on math and code. CC-BY/Apache/government works. |
 | [ROOTS](https://github.com/bigscience-workshop/roots-data) | BLOOM | PT | Multilingual, code | 1.6TB | Diverse open-source pretraining dataset consisting of sub-datasets like Wikipedia and StackExchange. |
+| Infinity Instruct (LINK NEEDED) | — | SFT | English | — | Large-scale instruction dataset. [SOURCE: jianzhnie/awesome-instruction-datasets] |
+| Deita (LINK NEEDED) | — | SFT | English | — | Instruction tuning dataset. [SOURCE: jianzhnie/awesome-instruction-datasets] |
+| Capybara (LINK NEEDED) | — | SFT | English | — | High-quality SFT data. [SOURCE: jianzhnie/awesome-instruction-datasets] |
+| Smol-Smoltalk (LINK NEEDED) | — | SFT | English | — | Small-scale conversational SFT. [SOURCE: jianzhnie/awesome-instruction-datasets] |
+| Dolci-Instruct-SFT (LINK NEEDED) | — | SFT | English | — | Instruction dataset. [SOURCE: jianzhnie/awesome-instruction-datasets] |
+| SYNTHETIC-2-SFT-verified (LINK NEEDED) | — | SFT | English | — | Verified synthetic SFT data. [SOURCE: jianzhnie/awesome-instruction-datasets] |
+| SYNTHETIC-2-RL (LINK NEEDED) | — | RLHF | English | — | Synthetic RL data. [SOURCE: jianzhnie/awesome-instruction-datasets] |
+| TaskTrove (LINK NEEDED) | — | RLHF | English | — | RLHF preference data. [SOURCE: jianzhnie/awesome-instruction-datasets] |
+| RLSTACK (LINK NEEDED) | — | RLHF/DPO | English | — | RLHF/DPO data. [SOURCE: jianzhnie/awesome-instruction-datasets] |
+| Ling-Coder-DPO (LINK NEEDED) | — | DPO | English/code | — | DPO for coding. [SOURCE: jianzhnie/awesome-instruction-datasets] |
+| Orca-DPO-Pairs (LINK NEEDED) | — | DPO | English | — | DPO pairs from Orca. [SOURCE: jianzhnie/awesome-instruction-datasets] |
+| Llama3-UltraFeedback-ArmoRM (LINK NEEDED) | — | DPO | English | — | DPO data. [SOURCE: jianzhnie/awesome-instruction-datasets] |
+| Magpie-Qwen2-Pro-200K-Chinese (LINK NEEDED) | — | SFT | Chinese | 200K | Chinese instruction data. [SOURCE: jianzhnie/awesome-instruction-datasets] |
+| smoltalk-chinese (LINK NEEDED) | — | SFT | Chinese | — | Chinese conversational SFT. [SOURCE: jianzhnie/awesome-instruction-datasets] |
+| Seq-Monkey (LINK NEEDED) | — | SFT | Chinese | — | Chinese dataset. [SOURCE: jianzhnie/awesome-instruction-datasets] |
 
 ### Datasets Released in 2024
 
 | Dataset name | Used by | Type | Language | Size | Description |
 |---|---|---|---|---|---|
 | [the-stack](https://github.com/bigcode-project/the-stack) | — | PT | Multilingual (code) | 6TB | Large-scale source code dataset for pretraining. 358 programming languages, 6TB of GitHub code. |
+| OpenCodeInstruct (LINK NEEDED) | — | SFT | English/code | — | Code instruction dataset. [SOURCE: jianzhnie/awesome-instruction-datasets] |
+| CodeX-7M-Non-Thinking (LINK NEEDED) | — | SFT | English/code | 7M | Large code dataset. [SOURCE: jianzhnie/awesome-instruction-datasets] |
+| AgentTrove (LINK NEEDED) | — | SFT | English | — | Agent/tool-use instruction data. [SOURCE: jianzhnie/awesome-instruction-datasets] |
+| ToolMind (LINK NEEDED) | — | SFT | English | — | Tool-use dataset. [SOURCE: jianzhnie/awesome-instruction-datasets] |
+| MSAgent (LINK NEEDED) | — | SFT | Chinese | — | Chinese agent dataset. [SOURCE: jianzhnie/awesome-instruction-datasets] |
+| COIG-CQIA (LINK NEEDED) | — | SFT | Chinese | — | Chinese instruction dataset. [SOURCE: jianzhnie/awesome-instruction-datasets] |
 
 ### Datasets Released in November 2023
 
@@ -197,12 +224,6 @@ We consider row items as subject.
 | Dataset name | Used by | Type | Language | Size | Description |
 |---|---|---|---|---|---|
 | OpenThoughts3-1.2M | — | SFT/CoT | English | 1.2M | Open reasoning dataset for chain-of-thought and instruction following. [SOURCE: jianzhnie/awesome-instruction-datasets] |
-| Nemotron-Cascade-2-SFT-Data | — | SFT | English | — | SFT data from Nemotron, includes agentic subset. [SOURCE: jianzhnie/awesome-instruction-datasets] |
-| Nemotron-Cascade-2-RL-Data | — | RLHF | English | — | RL data from Nemotron. [SOURCE: jianzhnie/awesome-instruction-datasets] |
-| DAPO-Math-17k | — | DPO | English | 17K | Math DPO dataset. [SOURCE: jianzhnie/awesome-instruction-datasets] |
-| DeepCtrl-SFT | — | SFT | Chinese | — | Chinese SFT data. [SOURCE: jianzhnie/awesome-instruction-datasets] |
-| Chinese-DeepSeek-R1-Distill-110k-SFT | — | SFT | Chinese | 110K | Distilled DeepSeek SFT in Chinese. [SOURCE: jianzhnie/awesome-instruction-datasets] |
-| Yi-Sang (KOREAson) | — | SFT/CoT | Korean | 5.79M prompts + 3.7M traces | Largest native Korean reasoning dataset. [SOURCE: jianzhnie/awesome-instruction-datasets] |
 
 #### 2025
 
@@ -215,26 +236,11 @@ We consider row items as subject.
 | OpenMathInstruct-1 | — | SFT | English | — | Math instruction dataset. [SOURCE: jianzhnie/awesome-instruction-datasets] |
 | Bespoke-Stratos-17k | — | SFT | English | 17K | Math/STEM reasoning dataset. [SOURCE: jianzhnie/awesome-instruction-datasets] |
 | SmolTalk | — | SFT | English | — | Small-scale conversational SFT dataset. |
-| Infinity Instruct | — | SFT | English | — | Large-scale instruction dataset. [SOURCE: jianzhnie/awesome-instruction-datasets] |
-| Deita | — | SFT | English | — | Instruction tuning dataset. [SOURCE: jianzhnie/awesome-instruction-datasets] |
-| Capybara | — | SFT | English | — | High-quality SFT data. [SOURCE: jianzhnie/awesome-instruction-datasets] |
-| Smol-Smoltalk | — | SFT | English | — | Small-scale conversational SFT. [SOURCE: jianzhnie/awesome-instruction-datasets] |
-| Dolci-Instruct-SFT | — | SFT | English | — | Instruction dataset. [SOURCE: jianzhnie/awesome-instruction-datasets] |
-| SYNTHETIC-2-SFT-verified | — | SFT | English | — | Verified synthetic SFT data. [SOURCE: jianzhnie/awesome-instruction-datasets] |
-| SYNTHETIC-2-RL | — | RLHF | English | — | Synthetic RL data. [SOURCE: jianzhnie/awesome-instruction-datasets] |
 | HelpSteer2 | — | RLHF | English | — | RLHF preference dataset from NVIDIA. [SOURCE: jianzhnie/awesome-instruction-datasets] |
 | HelpSteer3-Preference | — | RLHF | English | — | RLHF preference dataset from NVIDIA. [SOURCE: jianzhnie/awesome-instruction-datasets] |
-| TaskTrove | — | RLHF | English | — | RLHF preference data. [SOURCE: jianzhnie/awesome-instruction-datasets] |
 | UltraInteract_preference | — | DPO | English | — | Preference dataset. [SOURCE: jianzhnie/awesome-instruction-datasets] |
-| RLSTACK | — | RLHF/DPO | English | — | RLHF/DPO data. [SOURCE: jianzhnie/awesome-instruction-datasets] |
-| Ling-Coder-DPO | — | DPO | English/code | — | DPO for coding. [SOURCE: jianzhnie/awesome-instruction-datasets] |
-| Orca-DPO-Pairs | — | DPO | English | — | DPO pairs from Orca. [SOURCE: jianzhnie/awesome-instruction-datasets] |
-| Llama3-UltraFeedback-ArmoRM | — | DPO | English | — | DPO data. [SOURCE: jianzhnie/awesome-instruction-datasets] |
 | Tulu 3 Preference | — | DPO | English | — | Preference data for Tulu 3. [SOURCE: jianzhnie/awesome-instruction-datasets] |
 | Tulu 3 SFT Mix | — | SFT | English | — | SFT mix used for Tulu 3 models. [SOURCE: jianzhnie/awesome-instruction-datasets] |
-| Magpie-Qwen2-Pro-200K-Chinese | — | SFT | Chinese | 200K | Chinese instruction data. [SOURCE: jianzhnie/awesome-instruction-datasets] |
-| smoltalk-chinese | — | SFT | Chinese | — | Chinese conversational SFT. [SOURCE: jianzhnie/awesome-instruction-datasets] |
-| Seq-Monkey | — | SFT | Chinese | — | Chinese dataset. [SOURCE: jianzhnie/awesome-instruction-datasets] |
 
 #### 2024
 
@@ -244,12 +250,6 @@ We consider row items as subject.
 | NuminaMath-TIR | — | SFT | English | 860K | Math reasoning with Tool-Integrated Reasoning. CC BY-NC 4.0. [SOURCE: jianzhnie/awesome-instruction-datasets] |
 | KAIST Multilingual CoT Collection | — | SFT/CoT | Multilingual | 1.84M | CoT data across 1,060 tasks. [SOURCE: jianzhnie/awesome-instruction-datasets] |
 | Code-Feedback | — | SFT | English/code | — | Code SFT data with feedback. [SOURCE: jianzhnie/awesome-instruction-datasets] |
-| OpenCodeInstruct | — | SFT | English/code | — | Code instruction dataset. [SOURCE: jianzhnie/awesome-instruction-datasets] |
-| CodeX-7M-Non-Thinking | — | SFT | English/code | 7M | Large code dataset. [SOURCE: jianzhnie/awesome-instruction-datasets] |
-| AgentTrove | — | SFT | English | — | Agent/tool-use instruction data. [SOURCE: jianzhnie/awesome-instruction-datasets] |
-| ToolMind | — | SFT | English | — | Tool-use dataset. [SOURCE: jianzhnie/awesome-instruction-datasets] |
-| MSAgent | — | SFT | Chinese | — | Chinese agent dataset. [SOURCE: jianzhnie/awesome-instruction-datasets] |
-| COIG-CQIA | — | SFT | Chinese | — | Chinese instruction dataset. [SOURCE: jianzhnie/awesome-instruction-datasets] |
 
 #### November 2023
 
