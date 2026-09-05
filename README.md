@@ -5,11 +5,7 @@
 # <div align="center">LLMDataHub: Awesome Datasets for LLM Training </div>
 ----------------------------------
 <p align="center">
-  🔥 <a href="DATASETS.md#general_aligment">Alignment Datasets</a> • 💡 <a href="DATASETS.md#domain-specific">Domain-specific Datasets</a> • :atom: <a href="DATASETS.md#pretrain">Pretraining Datasets</a> • 🖼️ <a href="DATASETS.md#multimodal">Multimodal Datasets</a> <br> 
-</p>
-
-<p align="center">
-<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Project-Hierion/LLMDataHub"> <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/Project-Hierion/LLMDataHub">
+<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Project-Hierion/LLMDataHub"> <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/Project-Hierion/LLMDataHub"> <img alt="Repo Automation Status" src="https://github.com/Project-Hierion/LLMDataHub/actions/workflows/vault-check.yml/badge.svg">
 </p>
 
 ## Introduction 📄
