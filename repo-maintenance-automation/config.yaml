@@ -1,0 +1,64 @@
+# ============================================================================
+# LLMDataHub Validation — Configuration
+# ============================================================================
+# Defines rules for DATASETS.md, REVISED-DESCRIPTIONS.md, and validation.
+# ============================================================================
+
+vault_root: "./"
+
+doc_types:
+  datasets:
+    filename: "DATASETS.md"
+    required_sections:
+      - '<div id="general_aligment">General Open Access Datasets for Alignment 🟢</div>'
+      - '<div id="pretrain">Open Datasets for Pretraining 🟢 :atom:</div>'
+      - '<div id="domain-specific">Domain-specific Datasets 🟢 💡</div>'
+      - '<div id="multimodal">Multimodal Datasets for VLM 🖼️</div>'
+      - '<div id="time-series">Time Series Datasets 📈</div>'
+      - 'Private Datasets 🔴'
+      - '<div id="huggingface-hosted-datasets">HuggingFace-Hosted Datasets</div>'
+    check_links: true
+    check_hf_markers: true
+    check_placeholders: true
+
+  revised_descriptions:
+    filename: "REVISED-DESCRIPTIONS.md"
+    required_sections:
+      - "General Open Access Datasets for Alignment"
+      - "Open Datasets for Pretraining"
+      - "Domain-specific Datasets"
+      - "Multimodal Datasets for VLM"
+      - "Time Series Datasets"
+      - "Private Datasets"
+
+validation:
+  allowed_patterns:
+    - "https://github.com/"
+    - "https://modelscope.cn/"
+    - "https://arxiv.org/"
+    - "https://commoncrawl.org/"
+    - "https://pile.eleuther.ai/"
+    - "https://www.gutenberg.org/"
+    - "https://files.pushshift.io/"
+    - "https://wudaoai.cn/"
+    - "https://openai.com/"
+    - "https://mlcommons.org/"
+    - "https://gitlab.llm-jp.nii.ac.jp/"
+
+  forbidden_patterns:
+    - "huggingface.co"
+    - "hf.co"
+
+  graveyard_marker: "🤑"
+  placeholder_marker: "LINK NEEDED"
+  placeholder_marker_alt: "[LINK NEEDED]"
+
+  skip_placeholder_patterns:
+    - "No open-source hosted datasets currently listed"
+    - "\\*No open-source"
+
+reporting:
+  output_dir: "logs/"
+  save_report: true
+  report_filename: "vault_health_report.txt"
+  show_passing: false
