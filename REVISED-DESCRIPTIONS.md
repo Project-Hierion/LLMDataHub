@@ -2,7 +2,7 @@
 <img src="LOGO.png"  width="40%" height="40%">
 </p>
   
-# <div align="center">LLMDataHub: Awesome Datasets for LLM Training </div>
+# <div align="center">LLMDataHub: Revised Dataset Descriptions </div>
 ----------------------------------
 <p align="center">
   🔥 <a href="DATASETS.md#general_aligment">Alignment Datasets</a> • 💡 <a href="DATASETS.md#domain-specific">Domain-specific Datasets</a> • :atom: <a href="DATASETS.md#pretrain">Pretraining Datasets</a> • 🖼️ <a href="DATASETS.md#multimodal">Multimodal Datasets</a> <br> 
@@ -12,104 +12,155 @@
 <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Project-Hierion/LLMDataHub"> <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/Project-Hierion/LLMDataHub">
 </p>
 
-## Table of Contents
-- [General Open Access Datasets for Alignment](#general_aligment)
-  - [Datasets Released in November 2023](#datasets-released-in-november-2023)
-  - [Datasets Released in September 2023](#datasets-released-in-september-2023)
-  - [Datasets Released in August 2023](#datasets-released-in-august-2023)
-  - [Datasets Released in July 2023](#datasets-released-in-july-2023)
-  - [Datasets Released in June 2023](#datasets-released-in-june-2023)
-  - [Datasets Released Before June 2023](#datasets-released-before-june-2023)
-- [Open Datasets for Pretraining](#pretrain)
-- [Domain-specific Datasets](#domain-specific)
-- [Multimodal Datasets for VLM](#multimodal)
-- [Private Datasets](#private-datasets)
+# Revised Dataset Descriptions
 
-## <div id="general_aligment">General Open Access Datasets for Alignment 🟢</div>
+This page contains revised descriptions for datasets in the LLMDataHub archive. Each entry preserves the original description and includes a revision slot for future updates.
+
+**[📝 click here for the revised (dataset name) description]**
+
+---
+
+## General Open Access Datasets for Alignment
+
+### Datasets Released in 2026
+
+**MetaMathQA**
+*Original description:* Math QA dataset for instruction tuning. Improves math reasoning in LLMs.
+*Revised description:* *(pending)*
+
+**LLM-Ko-Datasets**
+*Original description:* Korean language model training data collection. MIT License.
+*Revised description:* *(pending)*
+
+**Haenara**
+*Original description:* Korean natural language data processing. Apache-2.0.
+*Revised description:* *(pending)*
+
+**Korean-AI-Datasets**
+*Original description:* Korean AI datasets collection.
+*Revised description:* *(pending)*
+
+**KorCaps**
+*Original description:* Korean image captioning dataset.
+*Revised description:* *(pending)*
+
+**KoHRM-Text**
+*Original description:* Korean pretraining dataset with legal, Wikipedia, terminal conversations, and reasoning data.
+*Revised description:* *(pending)*
+
+### Datasets Released in 2025
+
+**MixtureVitae**
+*Original description:* Permissive-first pretraining corpus. Outperforms FineWeb-Edu on math and code. CC-BY/Apache/government works.
+*Revised description:* *(pending)*
+
+**ROOTS**
+*Original description:* Diverse open-source pretraining dataset consisting of sub-datasets like Wikipedia and StackExchange.
+*Revised description:* *(pending)*
+
+**KorQuAD**
+*Original description:* Korean question answering dataset.
+*Revised description:* *(pending)*
+
+**KorNLI**
+*Original description:* Korean natural language inference dataset.
+*Revised description:* *(pending)*
+
+**KorSTS**
+*Original description:* Korean semantic textual similarity dataset.
+*Revised description:* *(pending)*
+
+**Modu**
+*Original description:* Korean language model dataset.
+*Revised description:* *(pending)*
+
+**Korean-Pretrained**
+*Original description:* Korean pretraining dataset.
+*Revised description:* *(pending)*
+
+**KLSI**
+*Original description:* Korean legal standard dataset.
+*Revised description:* *(pending)*
+
+**Korean-LLM-Datasets**
+*Original description:* Korean LLM datasets collection.
+*Revised description:* *(pending)*
+
+**Korean-STT**
+*Original description:* Korean speech-to-text dataset.
+*Revised description:* *(pending)*
+
+**K-EER**
+*Original description:* Korean emotion evaluation dataset.
+*Revised description:* *(pending)*
+
+**Smart-Machine**
+*Original description:* Korean smart machine dataset.
+*Revised description:* *(pending)*
+
+**Ko-LLM**
+*Original description:* Korean LLM training data.
+*Revised description:* *(pending)*
+
+**KorEDA**
+*Original description:* Korean data augmentation dataset.
+*Revised description:* *(pending)*
+
+**Korean-Data-Collection**
+*Original description:* Korean data collection.
+*Revised description:* *(pending)*
+
+**CS1**
+*Original description:* Persian natural language dataset.
+*Revised description:* *(pending)*
+
+**FineWeb**
+*Original description:* High-quality English web dataset from CommonCrawl. ODC-BY.
+*Revised description:* *(pending)*
+
+**FineWeb-Edu**
+*Original description:* Educational subset of FineWeb. ODC-BY.
+*Revised description:* *(pending)*
+
+**Open X-Embodiment / RT-X**
+*Original description:* Robot trajectories for vision-language-action pretraining.
+*Revised description:* *(pending)*
+
+### Datasets Released in 2024
+
+**the-stack**
+*Original description:* Large-scale source code dataset for pretraining. 358 programming languages, 6TB of GitHub code.
+*Revised description:* *(pending)*
+
+**MSAgent**
+*Original description:* Chinese agent dataset. Apache-2.0. ModelScope-hosted.
+*Revised description:* *(pending)*
+
+**seq-monkey**
+*Original description:* Chinese dataset from Mobvoi. Apache-2.0. ModelScope-hosted.
+*Revised description:* *(pending)*
 
 ### Datasets Released in November 2023
 
-**helpSteer**
-*Original description:* An RLHF dataset that is annotated by human with helpfulness, correctness, coherence, complexity and verbosity measures.
-*Revised description:* *(pending)*
-
-**no_robots**
-*Original description:* High-quality human-created STF data, single turn.
-*Revised description:* *(pending)*
-
-### Datasets Released in September 2023
-
-**Anthropic_HH_Golden**
-*Original description:* Improved on the harmless dataset of Anthropic's Helpful and Harmless (HH) datasets. Using GPT4 to rewrite the original "chosen" answer. Compared with the original Harmless dataset, empirically this dataset improves the performance of RLHF, DPO or ULMA methods significantly on harmless metrics.
-*Revised description:* *(pending)*
-
-### Datasets Released in August 2023
-
-**AmericanStories**
-*Original description:* Vast sized corpus scanned from US Library of Congress.
-*Revised description:* *(pending)*
-
-**dolma**
-*Original description:* A large diverse open-source corpus for LM pretraining.
-*Revised description:* *(pending)*
-
-**function_calling_extended**
-*Original description:* High quality human created dataset from enhance LM's API using ability.
-*Revised description:* *(pending)*
-
-**LongBench**
-*Original description:* A benchmark for evaluate LLM's long context understanding capability.
-*Revised description:* *(pending)*
-
-**Platypus**
-*Original description:* A very high quality dataset for improving LM's STEM reasoning ability.
-*Revised description:* *(pending)*
-
-**Puffin**
-*Original description:* A dataset consists of conversations between real human and GPT-4, which features long context (over 1k tokens per conversation) and multi-turn dialogs.
-*Revised description:* *(pending)*
-
-**tiny series**
-*Original description:* A series of short and concise codes or texts aim at improving LM's reasoning ability.
-*Revised description:* *(pending)*
-
-### Datasets Released in July 2023
-
-**chatbot_arena_conversations**
-*Original description:* Cleaned conversations with pairwise human preferences collected on Chatbot Arena.
-*Revised description:* *(pending)*
-
 **DialogStudio**
 *Original description:* A collection of diverse datasets aim at building conversational Chatbot.
-*Revised description:* *(pending)*
-
-**dolphin**
-*Original description:* An attempt to replicate Microsoft's Orca. Based on FLANv2.
 *Revised description:* *(pending)*
 
 **FineGrainedRLHF**
 *Original description:* A repo aims at develop a new framework to collect human feedbacks. Data collected is with the purpose to improve LLMs factual correctness, topic relevance and other abilities.
 *Revised description:* *(pending)*
 
-**Linly-pretraining-dataset**
-*Original description:* Chinese pretraining dataset used by Linly series model, comprises ClueCorpusSmall, CSL news-crawl and etc.
-*Revised description:* *(pending)*
+### Datasets Released in September 2023
 
-**openchat_sharegpt4_dataset**
-*Original description:* A high quality dataset generated by using GPT-4 to complete refined ShareGPT prompts.
-*Revised description:* *(pending)*
+*No open-source hosted datasets currently listed.*
 
-**orca-chat**
-*Original description:* An Orca-style dialog dataset aims at improving LM's long context conversational ability.
-*Revised description:* *(pending)*
+### Datasets Released in August 2023
 
-**phi-1**
-*Original description:* A dataset generated by using the method in Textbooks Are All You Need. It focuses on math and CS problems.
-*Revised description:* *(pending)*
+*No open-source hosted datasets currently listed.*
 
-**WebGLM-qa**
-*Original description:* Dataset used by WebGLM, which is a QA system based on LLM and Internet. Each of the entry in this dataset comprise a question, a response and a reference. The response is grounded in the reference.
-*Revised description:* *(pending)*
+### Datasets Released in July 2023
+
+*No open-source hosted datasets currently listed.*
 
 ### Datasets Released in June 2023
 
@@ -117,78 +168,22 @@
 *Original description:* GPT-4 translated alpaca data includes some complement data (like Chinese poetry, application, etc.). Inspected by human.
 *Revised description:* *(pending)*
 
-**arxiv instruct datasets**
-*Original description:* Dataset consists of question-answer pairs derived from ArXiv abstracts. Questions are generated using the t5-base model, while the answers are generated using the GPT-3.5-turbo model.
-*Revised description:* *(pending)*
-
-**COIG-PC**
-*Original description:* Enhanced version of COIG.
-*Revised description:* *(pending)*
-
 **Dynosaur**
 *Original description:* The dataset generated by applying method in the Dynosaur paper. Highlight is generating high-quality data at low cost.
-*Revised description:* *(pending)*
-
-**ign_clean_instruct_dataset_500k**
-*Original description:* A large scale SFT dataset which is synthetically created from a subset of Ultrachat prompts. ⚠ lack of detailed datacard
-*Revised description:* *(pending)*
-
-**im-feeling-curious**
-*Original description:* Random questions and correspond facts generated by Google I'm feeling curious features.
-*Revised description:* *(pending)*
-
-**LIMA dataset**
-*Original description:* High quality SFT dataset used by LIMA: Less Is More for Alignment.
-*Revised description:* *(pending)*
-
-**OpenOrca**
-*Original description:* A collection of augmented FLAN data. Generated by using method is Orca paper.
-*Revised description:* *(pending)*
-
-**SlimPajama**
-*Original description:* A cleaned and deduplicated version of RedPajama.
-*Revised description:* *(pending)*
-
-**StackOverflow post**
-*Original description:* Raw StackOverflow data in markdown format, for pretraining.
 *Revised description:* *(pending)*
 
 **TigerBot Series**
 *Original description:* Datasets used to train the TigerBot, including pretraining data, STF data and some domain specific datasets like financial research reports.
 *Revised description:* *(pending)*
 
-**TSI-v0**
-*Original description:* A Multi-task instruction-tuning data recasted from 475 of the tasksource datasets. Similar to Flan dataset and Natural instruction.
-*Revised description:* *(pending)*
-
-**WizardLM_Orca**
-*Original description:* Enhanced WizardLM data. Generated by using orca's method.
-*Revised description:* *(pending)*
-
-**WizardLM evolve_instruct V2**
-*Original description:* The latest version of Evolve Instruct dataset.
-*Revised description:* *(pending)*
-
 ### Datasets Released Before June 2023
-
-**Alpaca-COT**
-*Original description:* A mixture a many dataset like classic Alpaca dataset, OIG, Guanaco and some CoT(Chain-of-Thought) datasets like FLAN-CoT. May be handy to use.
-*Revised description:* *(pending)*
 
 **Alpaca data**
 *Original description:* A dataset generated by text-davinci-003 to improve language models' ability to follow human instruction.
 *Revised description:* *(pending)*
 
-**Alpaca-GPT-4_zh-cn**
-*Original description:* A Chinese Alpaca-style dataset, generated by GPT-4 originally in Chinese, not translated.
-*Revised description:* *(pending)*
-
 **AlpacaDataCleaned**
 *Original description:* Cleaned version of Alpaca, GPT_LLM and GPTeacher.
-*Revised description:* *(pending)*
-
-**Bactrian-X**
-*Original description:* A multilingual version of Alpaca and Dolly-15K.
 *Revised description:* *(pending)*
 
 **Baize Dataset**
@@ -207,10 +202,6 @@
 *Original description:* A dataset aims to help researchers develop models for instruction-following in multi-turn conversations.
 *Revised description:* *(pending)*
 
-**COIG**
-*Original description:* A Chinese-based dataset. It contains domains like general purpose QA, Chinese exams, code. Its quality is checked by human annotators.
-*Revised description:* *(pending)*
-
 **Common Crawl**
 *Original description:* The most well-known raw dataset, rarely be used directly. One possible preprocess pipeline is CCNet.
 *Revised description:* *(pending)*
@@ -223,18 +214,6 @@
 *Original description:* A dataset of human-written prompts and responses, featuring tasks such as open-domain question-answering, brainstorming, summarization, and more.
 *Revised description:* *(pending)*
 
-**ELI5**
-*Original description:* Questions and Answers collected from Reddit, including score. Might be used for RLHF reward model training.
-*Revised description:* *(pending)*
-
-**evol_instruct_70k**
-*Original description:* An instruction finetune dataset derived from Alpaca-52K, using the evolution method.
-*Revised description:* *(pending)*
-
-**Firefly**
-*Original description:* A Chinese instruction-tuning dataset with 1.1 million human-written examples across 23 tasks, but no conversation.
-*Revised description:* *(pending)*
-
 **Flan V2**
 *Original description:* A dataset compiles datasets from Flan 2021, P3, Super-Natural Instructions, along with dozens more datasets into one and formats them into a mix of zero-shot, few-shot and chain-of-thought templates.
 *Revised description:* *(pending)*
@@ -243,20 +222,8 @@
 *Original description:* NOT the dataset used by GPT-4! It is generated by GPT-4 and some other LLM for better IFT and RLHF. It includes instruction data as well as comparison data in RLHF style.
 *Revised description:* *(pending)*
 
-**GPT-4all Dataset**
-*Original description:* A combination of some subsets of OIG, P3 and Stackoverflow. Covers topics like general QA, customized creative questions.
-*Revised description:* *(pending)*
-
 **GPTeacher**
 *Original description:* A dataset contains targets generated by GPT-4 and includes many of the same seed tasks as the Alpaca dataset, with the addition of some new tasks such as roleplay.
-*Revised description:* *(pending)*
-
-**GuanacoDataset**
-*Original description:* A multilingual instruction dataset for enhancing language models' capabilities in various linguistic tasks, such as natural language understanding and explicit content recognition.
-*Revised description:* *(pending)*
-
-**h2ogpt-fortune2000-personalized**
-*Original description:* A instruction finetune developed by h2oai, covered various topics.
 *Revised description:* *(pending)*
 
 **HC3**
@@ -271,14 +238,6 @@
 *Original description:* A Alpaca-style dataset, but with seed tasks comes from chatgpt screenshot.
 *Revised description:* *(pending)*
 
-**LaMini-Instruction**
-*Original description:* A dataset distilled from flan collection, p3 and self-instruction.
-*Revised description:* *(pending)*
-
-**Luotuo-QA-A CoQA-Chinese**
-*Original description:* A dataset built upon translated CoQA. Augmented by using OpenAI API.
-*Revised description:* *(pending)*
-
 **MOSS SFT data**
 *Original description:* A conversational dataset collected and developed by MOSS team. It has usefulness, loyalty and harmlessness labels for every data entries.
 *Revised description:* *(pending)*
@@ -291,32 +250,8 @@
 *Original description:* A Chinese pretrain corpus. Includes Wikipedia, Baidu Baike, Baidu QA, some forums QA and news corpus.
 *Revised description:* *(pending)*
 
-**OASST1**
-*Original description:* A large, human-written, human-annotated high quality conversation dataset. It aims at making LLM generates more natural response.
-*Revised description:* *(pending)*
-
-**OIG**
-*Original description:* A large conversational instruction dataset with medium and high quality subsets (OIG-small-chip2) for multi-task learning.
-*Revised description:* *(pending)*
-
-**OpenAI Summarization Comparison**
-*Original description:* A dataset of human feedback which helps training a reward model. The reward model was then used to train a summarization model to align with human preferences.
-*Revised description:* *(pending)*
-
-**OpenAI WebGPT**
-*Original description:* Data set used in WebGPT paper. Used for training reward model in RLHF.
-*Revised description:* *(pending)*
-
-**Panther-dataset_v1**
-*Original description:* A dataset comes from the hh-rlhf. It rewrite hh-rlhf into the form of input-output pairs.
-*Revised description:* *(pending)*
-
 **pku-saferlhf-dataset**
 *Original description:* The first dataset of its kind and contains 10k instances with safety preferences.
-*Revised description:* *(pending)*
-
-**RedPajama-Data-1T**
-*Original description:* A fully open pretraining dataset follows the LLaMA's method.
 *Revised description:* *(pending)*
 
 **RefGPT-Dataset**
@@ -327,35 +262,13 @@
 *Original description:* The dataset generated by using the well-known self-instruction method.
 *Revised description:* *(pending)*
 
-**ShareGPT52K**
-*Original description:* This dataset comprises conversations collected from ShareGPT, with a specific focus on customized creative conversation.
-*Revised description:* *(pending)*
-
-**SHP**
-*Original description:* An RLHF dataset different from previously mentioned ones, it use scores+timestamps to infer the users' preferences. Covers 18 domains, collected by Stanford.
-*Revised description:* *(pending)*
-
 **unnatural-instructions**
 *Original description:* An early attempt to use powerful model (text-davinci-002) to generate data.
 *Revised description:* *(pending)*
 
-**WizardLM evol_instruct_70k**
-*Original description:* An instruction finetune dataset derived from Alpaca-52K, using the evolution method.
-*Revised description:* *(pending)*
+---
 
-**xP3**
-*Original description:* An instruction dataset for improving language models' generalization ability, similar to Natural Instruct.
-*Revised description:* *(pending)*
-
-**Zhihu-KOL**
-*Original description:* QA data on well-know Chinese Zhihu QA platform.
-*Revised description:* *(pending)*
-
-## <div id="pretrain">Open Datasets for Pretraining 🟢</div>
-
-**C4**
-*Original description:* A colossal, cleaned version of Common Crawl's web crawl corpus. Frequently be used.
-*Revised description:* *(pending)*
+## Open Datasets for Pretraining
 
 **CBook-150K**
 *Original description:* A raw Chinese books dataset. Need some preprocess pipeline.
@@ -367,10 +280,6 @@
 
 **Common Crawl**
 *Original description:* The most well-known raw dataset, rarely be used directly. One possible preprocess pipeline is CCNet.
-*Revised description:* *(pending)*
-
-**falcon-refinedweb**
-*Original description:* A refined subset of CommonCrawl.
 *Revised description:* *(pending)*
 
 **Gutenberg project**
@@ -385,62 +294,24 @@
 *Original description:* A large scale, continuously updating Chinese pretraining dataset.
 *Revised description:* *(pending)*
 
-**peS2o**
-*Original description:* A high quality academic paper dataset for pretraining.
-*Revised description:* *(pending)*
-
-**proof-pile**
-*Original description:* A pretraining dataset which is similar to the pile but have LaTeX corpus to enhance LM's ability in proof.
-*Revised description:* *(pending)*
-
 **Pushshift reddit**
 *Original description:* Raw reddit data.
-*Revised description:* *(pending)*
-
-**ROOTS**
-*Original description:* A diverse open-source dataset consisting of sub-datasets like Wikipedia and StackExchange for language modeling.
-*Revised description:* *(pending)*
-
-**SlimPajama**
-*Original description:* A cleaned and deduplicated version of RedPajama.
-*Revised description:* *(pending)*
-
-**StackOverflow post**
-*Original description:* Raw StackOverflow data in markdown format, for pretraining.
 *Revised description:* *(pending)*
 
 **The Pile (V1)**
 *Original description:* A diverse open-source language modeling dataset consisting of 22 smaller, high-quality datasets that includes many domains and tasks.
 *Revised description:* *(pending)*
 
-## <div id="domain-specific">Domain-specific Datasets 🟢</div>
+---
+
+## Domain-specific Datasets
 
 **awesome chinese legal resources**
 *Original description:* A collection of Chinese legal data for LLM training.
 *Revised description:* *(pending)*
 
-**ChatGPT-Jailbreak-Prompts**
-*Original description:* Prompts for bypassing the safety regulation of ChatGPT. Can be use for probing the harmlessness of LLMs.
-*Revised description:* *(pending)*
-
-**code_instructions_120k_alpaca**
-*Original description:* Code instruction dataset in instruction finetune format.
-*Revised description:* *(pending)*
-
-**finance-alpaca**
-*Original description:* An Alpaca-style dataset but focus on financial topics.
-*Revised description:* *(pending)*
-
 **FinNLP**
 *Original description:* Open-source raw financial text data. Includes news, social media and etc.
-*Revised description:* *(pending)*
-
-**function-invocations-25k**
-*Original description:* A dataset aims at teaching AI models how to correctly invoke APIsGuru functions based on natural language prompts.
-*Revised description:* *(pending)*
-
-**instructional_codesearchnet_python**
-*Original description:* This dataset is a template generated instructional Python dataset generated from an annotated version of the code-search-net dataset for the Open-Assistant project.
 *Revised description:* *(pending)*
 
 **Long Form**
@@ -451,10 +322,6 @@
 *Original description:* A Chinese SFT dataset for training a mental healthcare chatbot.
 *Revised description:* *(pending)*
 
-**phi-1**
-*Original description:* A dataset generated by using the method in Textbooks Are All You Need. It focuses on math and CS problems.
-*Revised description:* *(pending)*
-
 **PRM800K**
 *Original description:* A process supervision dataset for mathematical problems.
 *Revised description:* *(pending)*
@@ -463,49 +330,169 @@
 *Original description:* Chinese safety prompts for evaluating and improving the safety of LLMs.
 *Revised description:* *(pending)*
 
-**starcoderdata**
-*Original description:* A large pretraining dataset for improving LM's coding ability.
+**Financial Phrasebank**
+*Original description:* Financial sentiment dataset.
 *Revised description:* *(pending)*
 
-**symbolic-instruction-tuning**
-*Original description:* A dataset focuses on the 'symbolic' tasks: like SQL coding, mathematical computation, etc.
+**SEC EDGAR**
+*Original description:* SEC EDGAR financial dataset.
 *Revised description:* *(pending)*
 
-**Tapir-Cleaned**
-*Original description:* This is a revised version of the DAISLab dataset of PairsTT rules, which has been thoroughly cleaned, scored, and adjusted for the purpose of instruction-tuning.
+**Yahoo Finance**
+*Original description:* Yahoo Finance dataset.
 *Revised description:* *(pending)*
 
-**TheoremQA**
-*Original description:* A high quality STEM theorm QA dataset.
+**Walmart Store Sales**
+*Original description:* Walmart store sales forecasting dataset.
 *Revised description:* *(pending)*
 
-## <div id="multimodal">Multimodal Datasets for VLM 🖼️</div>
-
-**JourneyDB**
-*Original description:* A large scale dataset comprises QA, caption, and text prompting tasks, which is based on Midjourney images.
+**Historical Stock Data**
+*Original description:* Historical stock data for analysis.
 *Revised description:* *(pending)*
 
-**LLaVA Instruction**
-*Original description:* A multimodal dataset generated upon COCO dataset by prompting GPT-4 to get instructions.
+**KorBio**
+*Original description:* Korean biology dataset.
 *Revised description:* *(pending)*
 
-**M3IT**
-*Original description:* A dataset comprises 40 tasks with 400 human written instruction.
+**KorMedical**
+*Original description:* Korean medical dataset.
 *Revised description:* *(pending)*
+
+**KorPatent**
+*Original description:* Korean patent dataset.
+*Revised description:* *(pending)*
+
+**KorSports**
+*Original description:* Korean sports dataset.
+*Revised description:* *(pending)*
+
+**KorLaw**
+*Original description:* Korean legal dataset.
+*Revised description:* *(pending)*
+
+**KorCulture**
+*Original description:* Korean cultural dataset.
+*Revised description:* *(pending)*
+
+**KorHistory**
+*Original description:* Korean history dataset.
+*Revised description:* *(pending)*
+
+**KorPolitics**
+*Original description:* Korean political dataset.
+*Revised description:* *(pending)*
+
+**KorEconomy**
+*Original description:* Korean economic dataset.
+*Revised description:* *(pending)*
+
+**KorSociety**
+*Original description:* Korean societal dataset.
+*Revised description:* *(pending)*
+
+**KorEnvironment**
+*Original description:* Korean environmental dataset.
+*Revised description:* *(pending)*
+
+**KorTech**
+*Original description:* Korean technology dataset.
+*Revised description:* *(pending)*
+
+**KorEducation**
+*Original description:* Korean education dataset.
+*Revised description:* *(pending)*
+
+**KorArt**
+*Original description:* Korean art dataset.
+*Revised description:* *(pending)*
+
+---
+
+## Multimodal Datasets for VLM
 
 **MIMIC-IT**
 *Original description:* High quality multi-modal instructions-response pairs based on images and videos.
 *Revised description:* *(pending)*
 
-**OBELICS**
-*Original description:* An open, massive, and curated collection of interleaved image-text web documents.
+**Cifar10 Full**
+*Original description:* Full CIFAR-10 dataset.
 *Revised description:* *(pending)*
 
-**ShareGPT4V**
-*Original description:* A set of GPT4-Vision-powered multi-modal captions data.
+**VoxCeleb2**
+*Original description:* Audio-visual speaker recognition dataset.
 *Revised description:* *(pending)*
 
-## Private Datasets 🔴
+**LibriSpeech**
+*Original description:* Large speech recognition corpus.
+*Revised description:* *(pending)*
+
+**CelebA**
+*Original description:* CelebA face dataset.
+*Revised description:* *(pending)*
+
+**LSUN**
+*Original description:* Large-scale scene understanding dataset.
+*Revised description:* *(pending)*
+
+**FewShotVision**
+*Original description:* Few-shot learning vision datasets.
+*Revised description:* *(pending)*
+
+**ObjectNet3D**
+*Original description:* 3D object recognition dataset.
+*Revised description:* *(pending)*
+
+**VisualGenome**
+*Original description:* Visual scene graph dataset.
+*Revised description:* *(pending)*
+
+**Multi-Task Vision Datasets**
+*Original description:* Collection of multi-task vision datasets.
+*Revised description:* *(pending)*
+
+**Traffic Sign Recognition**
+*Original description:* Traffic sign recognition dataset.
+*Revised description:* *(pending)*
+
+**Medical Mnist**
+*Original description:* Medical MNIST dataset.
+*Revised description:* *(pending)*
+
+**Pancreas CT**
+*Original description:* Pancreas CT scan dataset.
+*Revised description:* *(pending)*
+
+**LVIS**
+*Original description:* Large-scale object detection dataset.
+*Revised description:* *(pending)*
+
+**WIDER Face**
+*Original description:* WIDER face detection dataset.
+*Revised description:* *(pending)*
+
+---
+
+## Time Series Datasets
+
+**M5 Forecasting**
+*Original description:* Time series forecasting dataset.
+*Revised description:* *(pending)*
+
+**SMD**
+*Original description:* Server machine dataset for time series.
+*Revised description:* *(pending)*
+
+**SMAP**
+*Original description:* Soil moisture active passive dataset.
+*Revised description:* *(pending)*
+
+**MSL**
+*Original description:* Mars Science Laboratory dataset.
+*Revised description:* *(pending)*
+
+---
+
+## Private Datasets
 
 **MassiveText**
 *Original description:* A massive curated dataset used for training Gopher and Chinchilla models.
