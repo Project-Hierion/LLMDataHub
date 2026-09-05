@@ -62,8 +62,8 @@
 
 | Dataset name | Used by | Type | Language | Size | Description |
 |---|---|---|---|---|---|
-| [OpenThoughts-114k](https://huggingface.co/datasets/open-thoughts/OpenThoughts-114k) (HF-hosted 🤑) | — | SFT/CoT | English | 114K | Open reasoning dataset for chain-of-thought and instruction following. Apache-2.0. [SOURCE: jianzhnie/awesome-instruction-datasets] |
-| [LIMO](https://huggingface.co/datasets/GAIR/LIMO) (HF-hosted 🤑) | — | SFT | English | 1K | High-quality reasoning data derived from LIMO. [SOURCE: jianzhnie/awesome-instruction-datasets] |
+| [OpenThoughts-114k] (HF-hosted 🤑) | — | SFT/CoT | English | 114K | Open reasoning dataset for chain-of-thought and instruction following. Apache-2.0. [SOURCE: jianzhnie/awesome-instruction-datasets] |
+| [LIMO] (HF-hosted 🤑) | — | SFT | English | 1K | High-quality reasoning data derived from LIMO. [SOURCE: jianzhnie/awesome-instruction-datasets] |
 | [OpenR1-Math-220k](LINK NEEDED) | — | SFT | English | 220K | Math reasoning SFT dataset. [SOURCE: jianzhnie/awesome-instruction-datasets] |
 | [DART-Math](LINK NEEDED) | — | SFT | English | — | Math reasoning dataset. [SOURCE: jianzhnie/awesome-instruction-datasets] |
 | [OpenMathInstruct-1](LINK NEEDED) | — | SFT | English | — | Math instruction dataset. [SOURCE: jianzhnie/awesome-instruction-datasets] |
