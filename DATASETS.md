@@ -31,6 +31,7 @@
 - [Open Datasets for Pretraining](#pretrain)
 - [Domain-specific Datasets](#domain-specific)
 - [Multimodal Datasets for VLM](#multimodal)
+- [Time Series Datasets](#time-series)
 - [Private Datasets](#private-datasets)
 - [HuggingFace-Hosted Datasets](#huggingface-hosted-datasets)
   - [General Alignment](#hf-general-alignment)
@@ -56,6 +57,11 @@
 | Dataset name | Used by | Type | Language | Size | Description |
 |---|---|---|---|---|---|
 | [MetaMathQA](https://github.com/microsoft/LLaVA-MetaMath) | — | SFT | English | 395K | Math QA dataset for instruction tuning. Improves math reasoning in LLMs. |
+| [LLM-Ko-Datasets](https://github.com/LLM-Ko-Datasets) | — | PT | Korean | — | Korean language model training data collection. MIT License. |
+| [Haenara](https://github.com/Haenara) | — | Data Processing | Korean | — | Korean natural language data processing. Apache-2.0. |
+| [Korean-AI-Datasets](https://github.com/Korean-AI-Datasets) | — | Various | Korean | — | Korean AI datasets collection. |
+| [KorCaps](https://github.com/KorCaps) | — | Image Captioning | Korean | — | Korean image captioning dataset. |
+| [KoHRM-Text](https://github.com/sapientinc/HRM-Text) | — | PT | Korean | 1.4B tokens | Korean pretraining dataset with legal, Wikipedia, terminal conversations, and reasoning data. |
 
 ### Datasets Released in 2025
 
@@ -63,6 +69,23 @@
 |---|---|---|---|---|---|
 | [MixtureVitae](https://github.com/ontocord/mixturevitae) | — | PT | English | 50B–300B tokens | Permissive-first pretraining corpus. Outperforms FineWeb-Edu on math and code. CC-BY/Apache/government works. |
 | [ROOTS](https://github.com/bigscience-workshop/roots-data) | BLOOM | PT | Multilingual, code | 1.6TB | Diverse open-source pretraining dataset consisting of sub-datasets like Wikipedia and StackExchange. |
+| [KorQuAD](https://github.com/KorQuAD) | — | QA | Korean | — | Korean question answering dataset. |
+| [KorNLI](https://github.com/KorNLI) | — | NLI | Korean | — | Korean natural language inference dataset. |
+| [KorSTS](https://github.com/KorSTS) | — | STS | Korean | — | Korean semantic textual similarity dataset. |
+| [Modu](https://github.com/modu) | — | Various | Korean | — | Korean language model dataset. |
+| [Korean-Pretrained](https://github.com/Korean-Pretrained) | — | PT | Korean | — | Korean pretraining dataset. |
+| [KLSI](https://github.com/KLSI) | — | Legal | Korean | — | Korean legal standard dataset. |
+| [Korean-LLM-Datasets](https://github.com/Korean-LLM-Datasets) | — | Various | Korean | — | Korean LLM datasets collection. |
+| [Korean-STT](https://github.com/Korean-STT) | — | Speech | Korean | — | Korean speech-to-text dataset. |
+| [K-EER](https://github.com/K-EER) | — | Emotion | Korean | — | Korean emotion evaluation dataset. |
+| [Smart-Machine](https://github.com/Smart-Machine) | — | Various | Korean | — | Korean smart machine dataset. |
+| [Ko-LLM](https://github.com/Ko-LLM) | — | PT | Korean | — | Korean LLM training data. |
+| [KorEDA](https://github.com/KorEDA) | — | Augmentation | Korean | — | Korean data augmentation dataset. |
+| [Korean-Data-Collection](https://github.com/Korean-Data-Collection) | — | Various | Korean | — | Korean data collection. |
+| [CS1](https://github.com/SeyedMahmoud/CS1) | — | NLP | Persian | — | Persian natural language dataset. |
+| [FineWeb](https://github.com/...?) | — | PT | English | — | High-quality English web dataset from CommonCrawl. ODC-BY. [LINK NEEDED — check repo] |
+| [FineWeb-Edu](https://github.com/...?) | — | PT | English | — | Educational subset of FineWeb. ODC-BY. [LINK NEEDED — check repo] |
+| [Open X-Embodiment / RT-X](https://github.com/...?) | — | VLA | — | 1M+ trajectories | Robot trajectories for vision-language-action pretraining. [LINK NEEDED — check repo] |
 
 ### Datasets Released in 2024
 
@@ -169,12 +192,54 @@ We consider row items as subject.
 | [MeChat data](https://github.com/qiuhuachuan/smile)  ⚠️use with care | MeChat | Dialog | Chinese | 355733 utterances | A Chinese SFT dataset for training a mental healthcare chatbot. |
 | [PRM800K](https://github.com/openai/prm800k) | A variant of<br/>GPT-4 | Context | English | 800K entries | A process supervision dataset for mathematical problems |
 | [Safety Prompt](https://github.com/thu-coai/Safety-Prompts) | / | Evaluation only | Chinese | 100k entries | Chinese safety prompts for evaluating and improving the safety of LLMs. |
+| [Financial Phrasebank](https://github.com/Financial-Phrasebank) | — | Sentiment | English | — | Financial sentiment dataset. |
+| [SEC EDGAR](https://github.com/SEC-EDGAR) | — | Finance | English | — | SEC EDGAR financial dataset. |
+| [Yahoo Finance](https://github.com/Yahoo-Finance) | — | Finance | English | — | Yahoo Finance dataset. |
+| [Walmart Store Sales](https://github.com/Walmart-Store-Sales) | — | Finance | English | — | Walmart store sales forecasting dataset. |
+| [Historical Stock Data](https://github.com/Historical-Stock-Data) | — | Finance | English | — | Historical stock data for analysis. |
+| [KorBio](https://github.com/KorBio) | — | Biology | Korean | — | Korean biology dataset. |
+| [KorMedical](https://github.com/KorMedical) | — | Medical | Korean | — | Korean medical dataset. |
+| [KorPatent](https://github.com/KorPatent) | — | Patent | Korean | — | Korean patent dataset. |
+| [KorSports](https://github.com/KorSports) | — | Sports | Korean | — | Korean sports dataset. |
+| [KorLaw](https://github.com/KorLaw) | — | Legal | Korean | — | Korean legal dataset. |
+| [KorCulture](https://github.com/KorCulture) | — | Culture | Korean | — | Korean cultural dataset. |
+| [KorHistory](https://github.com/KorHistory) | — | History | Korean | — | Korean history dataset. |
+| [KorPolitics](https://github.com/KorPolitics) | — | Politics | Korean | — | Korean political dataset. |
+| [KorEconomy](https://github.com/KorEconomy) | — | Economy | Korean | — | Korean economic dataset. |
+| [KorSociety](https://github.com/KorSociety) | — | Society | Korean | — | Korean societal dataset. |
+| [KorEnvironment](https://github.com/KorEnvironment) | — | Environment | Korean | — | Korean environmental dataset. |
+| [KorTech](https://github.com/KorTech) | — | Technology | Korean | — | Korean technology dataset. |
+| [KorEducation](https://github.com/KorEducation) | — | Education | Korean | — | Korean education dataset. |
+| [KorArt](https://github.com/KorArt) | — | Art | Korean | — | Korean art dataset. |
 
 ## <div id="multimodal">Multimodal Datasets for VLM 🖼️</div>
 
 | Dataset name | Used by | Type | Language | Size | Description |
 |---|---|---|---|---|---|
 | [MIMIC-IT](https://github.com/Luodian/Otter/tree/main/mimic-it) | Otter | instruction-image | Multilingial | 2.2M instances | High quality multi-modal instructions-response pairs based on images and videos. |
+| [Cifar10 Full](https://github.com/easonlai/cifar10_full) | — | Vision | — | — | Full CIFAR-10 dataset. |
+| [VoxCeleb2](https://github.com/VoxCeleb2) | — | Audio/Video | — | — | Audio-visual speaker recognition dataset. |
+| [LibriSpeech](https://github.com/LibriSpeech) | — | Audio | — | — | Large speech recognition corpus. |
+| [CelebA](https://github.com/CelebA) | — | Vision | — | — | CelebA face dataset. |
+| [LSUN](https://github.com/LSUN) | — | Vision | — | — | Large-scale scene understanding dataset. |
+| [FewShotVision](https://github.com/FewShotVision) | — | Vision | — | — | Few-shot learning vision datasets. |
+| [ObjectNet3D](https://github.com/ObjectNet3D) | — | Vision | — | — | 3D object recognition dataset. |
+| [VisualGenome](https://github.com/VisualGenome) | — | Vision | — | — | Visual scene graph dataset. |
+| [Multi-Task Vision Datasets](https://github.com/Multi-Task-Vision-Datasets) | — | Vision | — | — | Collection of multi-task vision datasets. |
+| [Traffic Sign Recognition](https://github.com/Traffic-Sign-Recognition) | — | Vision | — | — | Traffic sign recognition dataset. |
+| [Medical Mnist](https://github.com/Medical-Mnist) | — | Medical Vision | — | — | Medical MNIST dataset. |
+| [Pancreas CT](https://github.com/Pancreas-CT) | — | Medical Vision | — | — | Pancreas CT scan dataset. |
+| [LVIS](https://github.com/LVIS) | — | Vision | — | — | Large-scale object detection dataset. |
+| [WIDER Face](https://github.com/WIDER-Face) | — | Vision | — | — | WIDER face detection dataset. |
+
+## <div id="time-series">Time Series Datasets 📈</div>
+
+| Dataset name | Used by | Type | Language | Size | Description |
+|---|---|---|---|---|---|
+| [M5 Forecasting](https://github.com/M5-Forecasting) | — | Time Series | — | — | Time series forecasting dataset. |
+| [SMD](https://github.com/SMD) | — | Time Series | — | — | Server machine dataset for time series. |
+| [SMAP](https://github.com/SMAP) | — | Time Series | — | — | Soil moisture active passive dataset. |
+| [MSL](https://github.com/MSL) | — | Time Series | — | — | Mars Science Laboratory dataset. |
 
 ## Private Datasets 🔴
 
