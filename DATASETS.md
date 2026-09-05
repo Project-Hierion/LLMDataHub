@@ -46,6 +46,7 @@
 - DPO: Direct Preference Optimization
 
 ### Datasets Released in 2026
+| [MetaMathQA](https://github.com/microsoft/LLaVA-MetaMath) | — | SFT | English | 395K | Math QA dataset for instruction tuning. Improves math reasoning in LLMs. |
 
 | Dataset name | Used by | Type | Language | Size | Description |
 |---|---|---|---|---|---|
@@ -58,6 +59,8 @@
 | [Yi-Sang (KOREAson)](LINK NEEDED) | — | SFT/CoT | Korean | 5.79M prompts + 3.7M traces | Largest native Korean reasoning dataset. [SOURCE: jianzhnie/awesome-instruction-datasets] |
 
 ### Datasets Released in 2025
+| [MixtureVitae](https://github.com/ontocord/mixturevitae) | — | PT | English | 50B–300B tokens | Permissive-first pretraining corpus. Outperforms FineWeb-Edu on math and code. CC-BY/Apache/government works. |
+| [ROOTS](https://github.com/bigscience-workshop/roots-data) | BLOOM | PT | Multilingual, code | 1.6TB | Diverse open-source pretraining dataset consisting of sub-datasets like Wikipedia and StackExchange. |
 
 | Dataset name | Used by | Type | Language | Size | Description |
 |---|---|---|---|---|---|
@@ -91,6 +94,7 @@
 | [Seq-Monkey](LINK NEEDED) | — | SFT | Chinese | — | Chinese dataset. [SOURCE: jianzhnie/awesome-instruction-datasets] |
 
 ### Datasets Released in 2024
+| [the-stack](https://github.com/bigcode-project/the-stack) | — | PT | Multilingual (code) | 6TB | Large-scale source code dataset for pretraining. 358 programming languages, 6TB of GitHub code. |
 
 | Dataset name | Used by | Type | Language | Size | Description |
 |---|---|---|---|---|---|
