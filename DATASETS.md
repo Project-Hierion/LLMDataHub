@@ -46,7 +46,6 @@
 - DPO: Direct Preference Optimization
 
 ### Datasets Released in 2026
-| [MetaMathQA](https://github.com/microsoft/LLaVA-MetaMath) | — | SFT | English | 395K | Math QA dataset for instruction tuning. Improves math reasoning in LLMs. |
 
 | Dataset name | Used by | Type | Language | Size | Description |
 |---|---|---|---|---|---|
@@ -57,20 +56,18 @@
 | [DeepCtrl-SFT](LINK NEEDED) | — | SFT | Chinese | — | Chinese SFT data. [SOURCE: jianzhnie/awesome-instruction-datasets] |
 | [Chinese-DeepSeek-R1-Distill-110k-SFT](LINK NEEDED) | — | SFT | Chinese | 110K | Distilled DeepSeek SFT in Chinese. [SOURCE: jianzhnie/awesome-instruction-datasets] |
 | [Yi-Sang (KOREAson)](LINK NEEDED) | — | SFT/CoT | Korean | 5.79M prompts + 3.7M traces | Largest native Korean reasoning dataset. [SOURCE: jianzhnie/awesome-instruction-datasets] |
+| [MetaMathQA](https://github.com/microsoft/LLaVA-MetaMath) | — | SFT | English | 395K | Math QA dataset for instruction tuning. Improves math reasoning in LLMs. |
 
 ### Datasets Released in 2025
-| [MixtureVitae](https://github.com/ontocord/mixturevitae) | — | PT | English | 50B–300B tokens | Permissive-first pretraining corpus. Outperforms FineWeb-Edu on math and code. CC-BY/Apache/government works. |
-| [ROOTS](https://github.com/bigscience-workshop/roots-data) | BLOOM | PT | Multilingual, code | 1.6TB | Diverse open-source pretraining dataset consisting of sub-datasets like Wikipedia and StackExchange. |
 
 | Dataset name | Used by | Type | Language | Size | Description |
 |---|---|---|---|---|---|
-| [OpenThoughts-114k](LINK NEEDED) | — | SFT/CoT | English | 114K | Open reasoning dataset for chain-of-thought and instruction following. [SOURCE: jianzhnie/awesome-instruction-datasets] |
-| [LIMO](LINK NEEDED) | — | SFT | English | 1K | High-quality reasoning data derived from LIMO. [SOURCE: jianzhnie/awesome-instruction-datasets] |
+| [OpenThoughts-114k](https://huggingface.co/datasets/open-thoughts/OpenThoughts-114k) (HF-hosted 🤑) | — | SFT/CoT | English | 114K | Open reasoning dataset for chain-of-thought and instruction following. Apache-2.0. [SOURCE: jianzhnie/awesome-instruction-datasets] |
+| [LIMO](https://huggingface.co/datasets/GAIR/LIMO) (HF-hosted 🤑) | — | SFT | English | 1K | High-quality reasoning data derived from LIMO. [SOURCE: jianzhnie/awesome-instruction-datasets] |
 | [OpenR1-Math-220k](LINK NEEDED) | — | SFT | English | 220K | Math reasoning SFT dataset. [SOURCE: jianzhnie/awesome-instruction-datasets] |
 | [DART-Math](LINK NEEDED) | — | SFT | English | — | Math reasoning dataset. [SOURCE: jianzhnie/awesome-instruction-datasets] |
 | [OpenMathInstruct-1](LINK NEEDED) | — | SFT | English | — | Math instruction dataset. [SOURCE: jianzhnie/awesome-instruction-datasets] |
 | [Bespoke-Stratos-17k](LINK NEEDED) | — | SFT | English | 17K | Math/STEM reasoning dataset. [SOURCE: jianzhnie/awesome-instruction-datasets] |
-| [MetaMathQA](LINK NEEDED) | — | SFT | English | — | Math instruction dataset for improving reasoning. [SOURCE: jianzhnie/awesome-instruction-datasets] |
 | [SmolTalk](HF-hosted (no link) 🤑) | — | SFT | English | — | Small-scale conversational SFT dataset. |
 | [Infinity Instruct](LINK NEEDED) | — | SFT | English | — | Large-scale instruction dataset. [SOURCE: jianzhnie/awesome-instruction-datasets] |
 | [Deita](LINK NEEDED) | — | SFT | English | — | Instruction tuning dataset. [SOURCE: jianzhnie/awesome-instruction-datasets] |
@@ -92,12 +89,14 @@
 | [Magpie-Qwen2-Pro-200K-Chinese](LINK NEEDED) | — | SFT | Chinese | 200K | Chinese instruction data. [SOURCE: jianzhnie/awesome-instruction-datasets] |
 | [smoltalk-chinese](LINK NEEDED) | — | SFT | Chinese | — | Chinese conversational SFT. [SOURCE: jianzhnie/awesome-instruction-datasets] |
 | [Seq-Monkey](LINK NEEDED) | — | SFT | Chinese | — | Chinese dataset. [SOURCE: jianzhnie/awesome-instruction-datasets] |
+| [MixtureVitae](https://github.com/ontocord/mixturevitae) | — | PT | English | 50B–300B tokens | Permissive-first pretraining corpus. Outperforms FineWeb-Edu on math and code. CC-BY/Apache/government works. |
+| [ROOTS](https://github.com/bigscience-workshop/roots-data) | BLOOM | PT | Multilingual, code | 1.6TB | Diverse open-source pretraining dataset consisting of sub-datasets like Wikipedia and StackExchange. |
 
 ### Datasets Released in 2024
-| [the-stack](https://github.com/bigcode-project/the-stack) | — | PT | Multilingual (code) | 6TB | Large-scale source code dataset for pretraining. 358 programming languages, 6TB of GitHub code. |
 
 | Dataset name | Used by | Type | Language | Size | Description |
 |---|---|---|---|---|---|
+| [the-stack](https://github.com/bigcode-project/the-stack) | — | PT | Multilingual (code) | 6TB | Large-scale source code dataset for pretraining. 358 programming languages, 6TB of GitHub code. |
 | [NuminaMath-CoT](HF-hosted (no link) 🤑) | — | SFT/CoT | English | 860K | Math reasoning with Chain-of-Thought. CC BY-NC 4.0. [SOURCE: jianzhnie/awesome-instruction-datasets] |
 | [NuminaMath-TIR](HF-hosted (no link) 🤑) | — | SFT | English | 860K | Math reasoning with Tool-Integrated Reasoning. CC BY-NC 4.0. [SOURCE: jianzhnie/awesome-instruction-datasets] |
 | [KAIST Multilingual CoT Collection](HF-hosted (no link) 🤑) | — | SFT/CoT | Multilingual | 1.84M | CoT data across 1,060 tasks. [SOURCE: jianzhnie/awesome-instruction-datasets] |
@@ -309,4 +308,4 @@ To inquire about this maintained fork, or Project Hierion: [project-hierion@prot
 ---
 
 **📌 Note on HuggingFace links:**  
-Following Nvidia's acquisition of HuggingFace (September 2026), this archive no longer links directly to HF-hosted datasets. We believe in open infrastructure, not corporate consolidation. Datasets hosted exclusively on HF are marked `(HF-hosted (no link) 🤑)` — the emoji says it all. We encourage users to seek out mirrors, GitHub repos, or paper sources. If you find a non-HF link for a dataset, please contribute it.
+Following Nvidia's acquisition of HuggingFace (September 2026), this archive no longer links directly to HF-hosted datasets. We believe in open infrastructure, not corporate consolidation. Datasets hosted exclusively on HF are marked `(HF-hosted (no link) 🤑)` — the emoji says it all. We encourage users to seek out mirrors, GitHub repos, or paper sources. If you find a non-HF link for a dataset, please contribute it. Let's keep open-source, open. Together.
