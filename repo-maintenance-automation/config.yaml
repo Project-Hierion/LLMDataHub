@@ -62,3 +62,34 @@ reporting:
   save_report: true
   report_filename: "vault_health_report.txt"
   show_passing: false
+
+  models:
+    filename: "MODELS.md"
+    required_sections:
+      - "General Open-Weight Models"
+      - "Domain-specific Models"
+      - "Multimodal Models"
+      - "HuggingFace-Hosted Models"
+    check_links: true
+    check_hf_markers: true
+
+  papers:
+    filename: "PAPERS.md"
+    required_sections:
+      - "General Research Papers"
+      - "Domain-specific Papers"
+      - "Methodology Papers"
+      - "HuggingFace-Hosted Papers"
+    check_links: true
+    check_hf_markers: true
+
+  tools:
+    filename: "TOOLS.md"
+    required_sections:
+      - "General Tools & Frameworks"
+      - "Training & Fine-tuning Tools"
+      - "Evaluation & Benchmarking Tools"
+      - "Deployment & Serving Tools"
+      - "HuggingFace-Hosted Tools"
+    check_links: true
+    check_hf_markers: true
