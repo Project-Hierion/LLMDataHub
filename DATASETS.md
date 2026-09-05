@@ -14,6 +14,8 @@
 
 # Dataset Collections By Most Recent And In Alphabetical Order
 
+**🤑 = HuggingFace-hosted (link omitted).** Following Nvidia's acquisition of HF (Sept 2026), we no longer link to their platform. Seek mirrors or GitHub sources. See full note at the bottom of this page. Let's keep open-source, open. Together.
+
 ## Table of Contents
 - [General Open Access Datasets for Alignment](#general_aligment)
   - [Datasets Released in 2026](#datasets-released-in-2026)
