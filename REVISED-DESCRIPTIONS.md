@@ -62,6 +62,42 @@ This page contains revised descriptions for datasets in the LLMDataHub archive. 
 
 ### Datasets Released in 2025
 
+**SYNTHETIC-2-SFT-verified**
+*Original description:* Large-scale reasoning dataset with verified traces from DeepSeek-R1-0528, spanning math, coding, puzzles, and instruction following.
+*Revised description:* *(pending)*
+
+**Dolci-Instruct-SFT**
+*Original description:* Large-scale instruction following mixture combining public datasets with synthetic samples. Covers math, science, coding, safety, and 70+ languages.
+*Revised description:* *(pending)*
+
+**MathX-5M**
+*Original description:* High-quality, synthetically curated and meticulously filtered dataset for advanced mathematical reasoning.
+*Revised description:* *(pending)*
+
+**CodeX-7M-Non-Thinking**
+*Original description:* Large-scale curated coding dataset with direct solutions. Covers Python, Java, C++, JavaScript, and more across algorithms, data structures, ML, and competitive programming.
+*Revised description:* *(pending)*
+
+**Ling-Coder-SFT**
+*Original description:* Large-scale coding dataset in English and Chinese with 20 programming languages. Direct-answer responses without reasoning traces.
+*Revised description:* *(pending)*
+
+**MegaScience**
+*Original description:* High-quality scientific dataset with diverse domains and ablation studies.
+*Revised description:* *(pending)*
+
+**AgentTrove**
+*Original description:* Samples drawn from 219 source datasets spanning code repair, shell scripting, mathematical problem-solving, competitive programming, and general computer-use tasks.
+*Revised description:* *(pending)*
+
+**ToolMind**
+*Original description:* Large-scale reasoning-enhanced tool-use dataset with 20K+ tools, using a multi-agent framework simulating user-assistant-tool interactions with fine-grained quality filtering.
+*Revised description:* *(pending)*
+
+**venezuela-digital-observatory**
+*Original description:* Public dataset of Venezuelan government domains (.gob.ve) with registration date...
+*Revised description:* *(pending)*
+
 **MixtureVitae**
 *Original description:* Permissive-first pretraining corpus. Outperforms FineWeb-Edu on math and code. CC-BY/Apache/government works.
 *Revised description:* *(pending)*
