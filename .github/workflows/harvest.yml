@@ -1,0 +1,55 @@
+name: Weekly Harvest
+
+on:
+  schedule:
+    # 5:00 AM UTC every Thursday (approx midnight CT)
+    - cron: '0 5 * * 4'
+  workflow_dispatch:
+
+jobs:
+  harvest:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install pyyaml requests
+    
+    - name: Run harvest
+      run: |
+        python repo-maintenance-automation/harvest.py --pr
+    
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v5
+      with:
+        title: "🌱 Weekly Harvest: ${{ github.event.repository.name }}"
+        body: |
+          ## 🌱 Weekly Harvest
+          
+          Automated harvest of new open-source LLM resources.
+          
+          ### Review Instructions
+          1. Check the report in `logs/classification_report.txt`
+          2. Review the proposed additions
+          3. **Merge** to approve everything
+          4. **Close** to reject everything
+          5. **Edit** to cherry-pick specific entries
+          
+          ### Full Report
+          See `logs/classification_report.txt` in this PR for the detailed report.
+          
+          ---
+          *Let's keep open-source, open. Together.*
+        branch: auto/harvest-${{ github.run_number }}
+        delete-branch: true
+        labels: |
+          harvest
+          automated-pr
