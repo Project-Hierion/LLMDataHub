@@ -29,9 +29,14 @@
 
 ### <div id="models-2026">2026</div>
 
+<details>
+  <summary>📁 2026 Models</summary>
+
 | Model name | Used by | Type | Language | Size | Description | Link |
 |---|---|---|---|---|---|---|
 | *No open-source models currently listed.* | | | | | | |
+
+</details>
 
 ### <div id="models-2025">2025</div>
 | [TemporalStore](https://github.com/matrixarkai/TemporalStore) | — | LLM | Python | 161★ | Open-source Rust TemporalStore for LLM context management, temporal features, and risk control |
@@ -47,15 +52,32 @@
 | [eval-framework](https://github.com/Aleph-Alpha-Research/eval-framework) | — | LLM | Python | 41★ | Comprehensive LLM evaluation at scale: A production-ready framework for evaluating large language models across multi... |
 
 
+<details>
+  <summary>📁 2025 Models</summary>
+
 | Model name | Used by | Type | Language | Size | Description | Link |
 |---|---|---|---|---|---|---|
 | [manaca-1b-instruct](https://github.com/Instituto-IA-LNCC/manaca-1b-instruct) | — | LLM | Portuguese | 1B | An open, reproducible Brazilian-Portuguese language model. | [GitHub](https://github.com/Instituto-IA-LNCC/manaca-1b-instruct) |
+| [unsloth](https://github.com/unslothai/unsloth) | — | LLM | Python | 75680★ | Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4, MiniMax-H3, Gemma 4, FLUX and more. | [GitHub](https://github.com/unslothai/unsloth) |
+| [TemporalStore](https://github.com/matrixarkai/TemporalStore) | — | LLM | Rust | 161★ | Open-source Rust TemporalStore for LLM context management, temporal features, and risk control. | [GitHub](https://github.com/matrixarkai/TemporalStore) |
+| [ai-agent-book](https://github.com/bojieli/ai-agent-book) | — | LLM | Python | 44857★ | 《深入理解 AI Agent：设计原理与工程实践》（李博杰 著）开源主仓库：全书正文、编译版 PDF 与按章配套代码. | [GitHub](https://github.com/bojieli/ai-agent-book) |
+| [workbench](https://github.com/SuperCowPowers/workbench) | — | LLM | Python | 51★ | An easy to use Python API for creating and deploying AWS SageMaker Models. | [GitHub](https://github.com/SuperCowPowers/workbench) |
+| [aura](https://github.com/youngbryan97/aura) | — | LLM | Python | 76★ | A cognitive architecture that runs on your own machine. | [GitHub](https://github.com/youngbryan97/aura) |
+| [notorch](https://github.com/ariannamethod/notorch) | — | LLM | C | 24★ | Neural networks in pure C. | [GitHub](https://github.com/ariannamethod/notorch) |
+| [open-science](https://github.com/aipoch/open-science) | — | LLM | TypeScript | 3651★ | Open-source, local-first, model-agnostic AI research workbench. | [GitHub](https://github.com/aipoch/open-science) |
+
+</details>
 
 ### <div id="models-2024">2024</div>
+
+<details>
+  <summary>📁 2024 Models</summary>
 
 | Model name | Used by | Type | Language | Size | Description | Link |
 |---|---|---|---|---|---|---|
 | *No open-source models currently listed.* | | | | | | |
+
+</details>
 
 ## <div id="domain-models">Domain-specific Models 💡</div>
 
