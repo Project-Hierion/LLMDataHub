@@ -2,30 +2,24 @@
 """
 File: formatter.py
 Tool: LLMDataHub Harvester — Markdown Formatter
-Version: 1.0.1
+Version: 1.0.2
 System: Project Hierion / repo-maintenance-automation
 Status: ACTIVE
 License: AGPLv3 with Commons Clause
-
-Purpose: Formats classified repo candidates as markdown table rows
-         for DATASETS.md, MODELS.md, PAPERS.md, or TOOLS.md.
 """
 
 from typing import Dict, List
 
 def safe_string(value) -> str:
-    """Safely convert a value to a string, handling None."""
     if value is None:
         return ""
     return str(value).strip()
 
 def format_dataset_row(repo: Dict) -> str:
-    """Format a dataset repo as a markdown table row."""
     name = safe_string(repo.get("name", ""))
     url = safe_string(repo.get("url", ""))
     description = safe_string(repo.get("description", ""))
     stars = repo.get("stars", 0)
-    license_name = safe_string(repo.get("license", "unknown"))
     language = safe_string(repo.get("language", ""))
     
     if len(description) > 120:
@@ -34,12 +28,10 @@ def format_dataset_row(repo: Dict) -> str:
     return f"| [{name}]({url}) | — | Dataset | {language} | {stars}★ | {description} |"
 
 def format_model_row(repo: Dict) -> str:
-    """Format a model repo as a markdown table row."""
     name = safe_string(repo.get("name", ""))
     url = safe_string(repo.get("url", ""))
     description = safe_string(repo.get("description", ""))
     stars = repo.get("stars", 0)
-    license_name = safe_string(repo.get("license", "unknown"))
     language = safe_string(repo.get("language", ""))
     
     if len(description) > 120:
@@ -48,7 +40,6 @@ def format_model_row(repo: Dict) -> str:
     return f"| [{name}]({url}) | — | LLM | {language} | {stars}★ | {description} |"
 
 def format_paper_row(repo: Dict) -> str:
-    """Format a paper repo as a markdown table row."""
     name = safe_string(repo.get("name", ""))
     url = safe_string(repo.get("url", ""))
     description = safe_string(repo.get("description", ""))
@@ -60,7 +51,6 @@ def format_paper_row(repo: Dict) -> str:
     return f"| [{name}]({url}) | — | — | [Code]({url}) | — | {description} |"
 
 def format_tool_row(repo: Dict) -> str:
-    """Format a tool repo as a markdown table row."""
     name = safe_string(repo.get("name", ""))
     url = safe_string(repo.get("url", ""))
     description = safe_string(repo.get("description", ""))
@@ -73,13 +63,7 @@ def format_tool_row(repo: Dict) -> str:
     return f"| [{name}]({url}) | — | Tool | {language} | {description} |"
 
 def format_candidates(classified: Dict[str, List[Dict]]) -> Dict[str, List[str]]:
-    """Format each category's candidates into markdown rows."""
-    result = {
-        "dataset": [],
-        "model": [],
-        "paper": [],
-        "tool": [],
-    }
+    result = {"dataset": [], "model": [], "paper": [], "tool": []}
     
     for repo in classified.get("dataset", []):
         result["dataset"].append(format_dataset_row(repo))
@@ -96,7 +80,6 @@ def format_candidates(classified: Dict[str, List[Dict]]) -> Dict[str, List[str]]
     return result
 
 def generate_insertion_commands(formatted: Dict[str, List[str]]) -> Dict[str, str]:
-    """Generate sed commands to insert rows into the appropriate files."""
     commands = {}
     
     if formatted["dataset"]:
@@ -105,6 +88,7 @@ def generate_insertion_commands(formatted: Dict[str, List[str]]) -> Dict[str, st
     
     if formatted["model"]:
         rows = "\n".join(formatted["model"])
+        # Escape the pipe character in the section name
         commands["MODELS.md"] = f"sed -i '/### <div id=\"models-2025\">2025<\\/div>/ a\\\n{rows}' MODELS.md"
     
     if formatted["paper"]:
@@ -124,7 +108,7 @@ def main():
     
     print("  🔄 Running formatter...")
     
-    candidates = scrape_github(min_stars=1, max_results=100, recent_years=3, require_license=False)
+    candidates = scrape_github(min_stars=20, max_results=50, recent_years=3, require_license=False)
     classified = classify_candidates(candidates)
     
     formatted = format_candidates(classified)
