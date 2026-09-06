@@ -35,6 +35,16 @@
 | *No tools currently listed.* | | | | | |
 
 ### <div id="tools-2025">2025</div>
+| [open-science](https://github.com/aipoch/open-science) | — | Research Workbench | Python | Open-source, local-first, model-agnostic AI research workbench with scientific agents, Python/R notebooks, data connectors, and reproducible research. Apache-2.0. |
+| [TemporalStore](https://github.com/matrixarkai/TemporalStore) | — | Memory Engine | Rust | Open-source Rust-based temporal memory engine for LLM context management, temporal features, and risk control. Apache-2.0. |
+| [FastVideo](https://github.com/hao-ai-lab/FastVideo) | — | Video | Python | Unified inference and post-training framework for accelerated video generation. |
+| [node-scorecard](https://github.com/superpios/node-scorecard) | — | Network | — | Network intelligence and diagnostics for dVPN nodes. |
+| [camtrapReport](https://github.com/spatialecology/camtrapReport) | — | Ecology | R | Camera-trap data processing and reporting. |
+| [ai-research-arm](https://github.com/guzus/ai-research-arm) | — | Research | Python | Self-running AI-news intelligence pipeline. |
+| [RepoReviewer](https://github.com/peng1z/RepoReviewer) | — | Code Review | Python | Multi-agent GitHub code review tool with CLI, API, and UI. |
+| [frankensearch](https://github.com/Dicklesworthstone/frankensearch) | — | Search | Rust | Two-tier hybrid search for Rust: lexical + semantic. |
+| [coding_agent_session_search](https://github.com/Dicklesworthstone/coding_agent_session_search) | — | Search | Rust/Python | Unified TUI and CLI to index and search local coding agent session history across 11+ providers. |
+| [potato](https://github.com/davidjurgens/potato) | — | Annotation | Python | The portable annotation tool. |
 
 | Tool name | Used by | Type | Language | Description | Link |
 |---|---|---|---|---|---|

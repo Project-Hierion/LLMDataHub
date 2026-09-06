@@ -34,6 +34,7 @@
 | *No papers currently listed.* | | | | | |
 
 ### <div id="papers-2025">2025</div>
+| [my_arXiv_daily](https://github.com/BaiShuanghao/my_arXiv_daily) | BaiShuanghao | — | [Code](https://github.com/BaiShuanghao/my_arXiv_daily) | — | Daily automated arXiv paper tracker for AI/ML research papers. Apache-2.0. |
 | [cv-daily](https://github.com/ZhuYingJessica/cv-daily) | ZhuYingJessica | — | [Code](https://github.com/ZhuYingJessica/cv-daily) | — | Daily arXiv paper collection focused on computer vision. |
 | [daily-video-papers](https://github.com/greasebig/daily-video-papers) | greasebig | — | [Code](https://github.com/greasebig/daily-video-papers) | — | Daily automated updates for video-related research papers from arXiv. |
 | [RL Seminal Papers](https://github.com/rshirale/rl-seminal-papers) | rshirale | — | [Code](https://github.com/rshirale/rl-seminal-papers) | — | Source code for "Reinforcement Learning – The Seminal Papers". From foundations to RLHF and reasoning models. |
