@@ -11,10 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
         python-version: '3.11'
     
@@ -25,31 +25,11 @@ jobs:
     
     - name: Run harvest
       run: |
-        python repo-maintenance-automation/harvest.py --pr
+        python repo-maintenance-automation/harvest.py
     
-    - name: Create Pull Request
-      uses: peter-evans/create-pull-request@v5
+    - name: Upload report
+      if: always()
+      uses: actions/upload-artifact@v4
       with:
-        title: "🌱 Weekly Harvest: ${{ github.event.repository.name }}"
-        body: |
-          ## 🌱 Weekly Harvest
-          
-          Automated harvest of new open-source LLM resources.
-          
-          ### Review Instructions
-          1. Check the report in `logs/classification_report.txt`
-          2. Review the proposed additions
-          3. **Merge** to approve everything
-          4. **Close** to reject everything
-          5. **Edit** to cherry-pick specific entries
-          
-          ### Full Report
-          See `logs/classification_report.txt` in this PR for the detailed report.
-          
-          ---
-          *Let's keep open-source, open. Together.*
-        branch: auto/harvest-${{ github.run_number }}
-        delete-branch: true
-        labels: |
-          harvest
-          automated-pr
+        name: harvest-report
+        path: logs/
