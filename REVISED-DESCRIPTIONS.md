@@ -24,6 +24,18 @@ This page contains revised descriptions for datasets in the LLMDataHub archive. 
 
 ### Datasets Released in 2026
 
+**Nemotron-Cascade-2-SFT-Data**
+*Original description:* Large-scale SFT mixture used to train Nemotron-Cascade-2-30B-A3B, covering math, science, chat, instruction following, coding agents, and SWE.
+*Revised description:* *(pending)*
+
+**Nemotron-Cascade-2-RL-Data**
+*Original description:* RL data from Nemotron Post-Training v3 collection.
+*Revised description:* *(pending)*
+
+**OpenThoughts3-1.2M**
+*Original description:* Open reasoning dataset for chain-of-thought and instruction following.
+*Revised description:* *(pending)*
+
 **MetaMathQA**
 *Original description:* Math QA dataset for instruction tuning. Improves math reasoning in LLMs.
 *Revised description:* *(pending)*
