@@ -87,3 +87,21 @@ This project is part of the [Project Hierion](https://github.com/Project-Hierion
 ---
 
 *With gratitude and much respect to the community, for providing such useful resources, [Project-Hierion](https://github.com/Project-Hierion) will attempt to maintain and keep this forked branch of the original [LLMDataHub](https://github.com/Zjh-819/LLMDataHub) by Junhao Zhao, up to date and current. 🙏*
+
+## Contact 📬
+
+**Original Project Authors:**
+- [Junhao Zhao](zhaol9555@gmail.com) 📧  
+- Advised by [Prof. Wanyun Cui](https://cuiwanyun.github.io/) [![GitHub.io](https://img.shields.io/badge/GitHub.io-@cuiwanyun-green.svg)](https://cuiwanyun.github.io/)
+
+---
+
+**Branch Maintainers (Project Hierion):**
+- [project-hierion@proton.me](mailto:project-hierion@proton.me)
+- **ORCID:** [![ORCID](https://img.shields.io/badge/ORCID-0009--0000--8877--2731-A6CE39?style=flat&logo=orcid&logoColor=white)](https://orcid.org/0009-0000-8877-2731)
+
+*Our work is open, traceable, and part of the scientific record.*
+
+---
+
+*With gratitude and much respect to the community, for providing such useful resources, [Project-Hierion](https://github.com/Project-Hierion) will attempt to maintain and keep this forked branch of the original [LLMDataHub](https://github.com/Zjh-819/LLMDataHub) by Junhao Zhao, up to date and current. 🙏*
