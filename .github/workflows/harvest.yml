@@ -2,7 +2,6 @@ name: Weekly Harvest
 
 on:
   schedule:
-    # 5:00 AM UTC every Thursday (approx midnight CT)
     - cron: '0 5 * * 4'
   workflow_dispatch:
 
@@ -25,7 +24,21 @@ jobs:
     
     - name: Run harvest
       run: |
-        python repo-maintenance-automation/harvest.py
+        python repo-maintenance-automation/harvest.py --pr
+        echo "PR_BODY<<EOF" >> $GITHUB_ENV
+        cat logs/pr_body.md >> $GITHUB_ENV
+        echo "EOF" >> $GITHUB_ENV
+    
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v6
+      with:
+        title: "🌱 Weekly Harvest: Automated Resource Discovery"
+        body: ${{ env.PR_BODY }}
+        branch: auto/harvest-${{ github.run_number }}
+        delete-branch: true
+        labels: |
+          harvest
+          automated-pr
     
     - name: Upload report
       if: always()
