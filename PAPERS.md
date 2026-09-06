@@ -29,11 +29,19 @@
 
 ### <div id="papers-2026">2026</div>
 
+<details>
+  <summary>📁 2026 Papers</summary>
+
 | Paper title | Authors | Venue | Code Link | Dataset Link | Description |
 |---|---|---|---|---|---|
 | *No papers currently listed.* | | | | | |
 
+</details>
+
 ### <div id="papers-2025">2025</div>
+
+<details>
+  <summary>📁 2025 Papers</summary>
 
 | Paper title | Authors | Venue | Code Link | Dataset Link | Description |
 |---|---|---|---|---|---|
@@ -42,11 +50,18 @@
 | [daily-video-papers](https://github.com/greasebig/daily-video-papers) | greasebig | — | [Code](https://github.com/greasebig/daily-video-papers) | — | Daily automated updates for video-related research papers from arXiv. |
 | [RL Seminal Papers](https://github.com/rshirale/rl-seminal-papers) | rshirale | — | [Code](https://github.com/rshirale/rl-seminal-papers) | — | Source code for "Reinforcement Learning – The Seminal Papers". From foundations to RLHF and reasoning models. |
 
+</details>
+
 ### <div id="papers-2024">2024</div>
+
+<details>
+  <summary>📁 2024 Papers</summary>
 
 | Paper title | Authors | Venue | Code Link | Dataset Link | Description |
 |---|---|---|---|---|---|
 | [Marigold](https://github.com/prs-eth/Marigold) | prs-eth | CVPR 2024 | [Code](https://github.com/prs-eth/Marigold) | — | Repurposing Diffusion-Based Image Generators for Monocular Depth Estimation. Best Paper Award Candidate. |
+
+</details>
 
 ## <div id="domain-papers">Domain-specific Papers 💡</div>
 
