@@ -2,12 +2,14 @@
 """
 File: formatter.py
 Tool: LLMDataHub Harvester — Markdown Formatter
-Version: 1.0.2
+Version: 1.0.4
 System: Project Hierion / repo-maintenance-automation
 Status: ACTIVE
 License: AGPLv3 with Commons Clause
 """
 
+import re
+from pathlib import Path
 from typing import Dict, List
 
 def safe_string(value) -> str:
@@ -79,27 +81,70 @@ def format_candidates(classified: Dict[str, List[Dict]]) -> Dict[str, List[str]]
     
     return result
 
-def generate_insertion_commands(formatted: Dict[str, List[str]]) -> Dict[str, str]:
-    commands = {}
+def insert_rows_into_file(filename: str, section_pattern: str, rows: List[str]) -> bool:
+    """Insert rows into a file after a matching section header."""
+    filepath = Path(filename)
+    if not filepath.exists():
+        print(f"  ❌ File not found: {filename}")
+        return False
+    
+    with open(filepath, "r") as f:
+        content = f.read()
+    
+    # Find the section header
+    section_match = re.search(section_pattern, content, re.MULTILINE)
+    if not section_match:
+        print(f"  ❌ Section not found in {filename}: {section_pattern}")
+        return False
+    
+    # Insert rows after the section header
+    insert_pos = section_match.end()
+    rows_text = "\n" + "\n".join(rows) + "\n"
+    new_content = content[:insert_pos] + rows_text + content[insert_pos:]
+    
+    with open(filepath, "w") as f:
+        f.write(new_content)
+    
+    return True
+
+def generate_insertion_commands(formatted: Dict[str, List[str]]) -> Dict[str, List[str]]:
+    """Generate insertion data for each file."""
+    result = {}
     
     if formatted["dataset"]:
-        rows = "\n".join(formatted["dataset"])
-        commands["DATASETS.md"] = f"sed -i '/### Datasets Released in 2025/ a\\\n{rows}' DATASETS.md"
+        result["DATASETS.md"] = {
+            "pattern": r"### Datasets Released in 2025",
+            "rows": formatted["dataset"]
+        }
     
     if formatted["model"]:
-        rows = "\n".join(formatted["model"])
-        # Escape the pipe character in the section name
-        commands["MODELS.md"] = f"sed -i '/### <div id=\"models-2025\">2025<\\/div>/ a\\\n{rows}' MODELS.md"
+        result["MODELS.md"] = {
+            "pattern": r'### <div id="models-2025">2025</div>',
+            "rows": formatted["model"]
+        }
     
     if formatted["paper"]:
-        rows = "\n".join(formatted["paper"])
-        commands["PAPERS.md"] = f"sed -i '/### <div id=\"papers-2025\">2025<\\/div>/ a\\\n{rows}' PAPERS.md"
+        result["PAPERS.md"] = {
+            "pattern": r'### <div id="papers-2025">2025</div>',
+            "rows": formatted["paper"]
+        }
     
     if formatted["tool"]:
-        rows = "\n".join(formatted["tool"])
-        commands["TOOLS.md"] = f"sed -i '/### <div id=\"tools-2025\">2025<\\/div>/ a\\\n{rows}' TOOLS.md"
+        result["TOOLS.md"] = {
+            "pattern": r'### <div id="tools-2025">2025</div>',
+            "rows": formatted["tool"]
+        }
     
-    return commands
+    return result
+
+def apply_insertions(insertions: Dict[str, Dict]) -> bool:
+    """Apply all insertions to files."""
+    success = True
+    for filename, data in insertions.items():
+        print(f"  📝 Applying changes to {filename}...")
+        if not insert_rows_into_file(filename, data["pattern"], data["rows"]):
+            success = False
+    return success
 
 def main():
     from classifier import classify_candidates
@@ -122,20 +167,23 @@ def main():
             if len(rows) > 5:
                 print(f"    ... and {len(rows) - 5} more")
     
-    commands = generate_insertion_commands(formatted)
-    print(f"\n  📝 Insertion Commands:")
-    for filename, command in commands.items():
-        print(f"    {filename}: {command[:80]}...")
+    insertions = generate_insertion_commands(formatted)
+    print(f"\n  📝 Insertion Data:")
+    for filename, data in insertions.items():
+        print(f"    {filename}: {len(data['rows'])} rows")
     
-    commands_path = Path.cwd() / "logs" / "insertion_commands.txt"
+    # Save insertion data for later use
+    commands_path = Path.cwd() / "logs" / "insertion_data.txt"
     commands_path.parent.mkdir(exist_ok=True)
     with open(commands_path, "w") as f:
-        for filename, command in commands.items():
+        for filename, data in insertions.items():
             f.write(f"# {filename}\n")
-            f.write(command)
-            f.write("\n\n")
+            f.write(f"# Pattern: {data['pattern']}\n")
+            for row in data["rows"]:
+                f.write(row + "\n")
+            f.write("\n")
     
-    print(f"\n  📄 Commands saved to: {commands_path}")
+    print(f"\n  📄 Insertion data saved to: {commands_path}")
 
 if __name__ == "__main__":
     main()

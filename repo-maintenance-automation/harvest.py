@@ -17,7 +17,7 @@ from typing import List, Dict
 
 from github_scraper import scrape_github
 from classifier import classify_candidates, filter_candidates, load_existing_datasets
-from formatter import format_candidates, generate_insertion_commands
+from formatter import format_candidates, generate_insertion_commands, apply_insertions
 
 def print_banner(text: str, char: str = "=", width: int = 60):
     print(f"\n{char * width}")
@@ -115,9 +115,9 @@ def apply_changes(classified: Dict[str, List[Dict]]) -> bool:
     """Apply the changes to the files."""
     try:
         formatted = format_candidates(classified)
-        commands = generate_insertion_commands(formatted)
+        insertions = generate_insertion_commands(formatted)
         
-        for filename, command in commands.items():
+        for filename, data in insertions.items():
             print(f"  📝 Applying changes to {filename}...")
             # Execute the sed command
             import subprocess
@@ -202,12 +202,12 @@ def main():
     # Step 7: Interactive mode — generate insertion script
     print("  ✏️  Formatting and inserting entries...")
     formatted = format_candidates(classified)
-    commands = generate_insertion_commands(formatted)
+    insertions = generate_insertion_commands(formatted)
     
     script_path = Path.cwd() / "logs" / "insert.sh"
     with open(script_path, "w") as f:
         f.write("#!/bin/bash\n\n")
-        for filename, command in commands.items():
+        for filename, data in insertions.items():
             f.write(f"echo 'Inserting into {filename}...'\n")
             f.write(command + "\n")
         f.write("\necho '✅ Insertion complete.'\n")
