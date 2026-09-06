@@ -2,7 +2,7 @@
 """
 File: harvest.py
 Tool: LLMDataHub Harvester — Main Orchestrator
-Version: 1.0.1
+Version: 1.0.2
 System: Project Hierion / repo-maintenance-automation
 Status: ACTIVE
 License: AGPLv3 with Commons Clause
@@ -25,11 +25,9 @@ def print_banner(text: str, char: str = "=", width: int = 60):
     print(f"{char * width}\n")
 
 def is_pr_mode() -> bool:
-    """Check if running in PR mode (non-interactive)."""
     return "--pr" in sys.argv or os.environ.get("GITHUB_ACTIONS") == "true"
 
 def human_review(classified: Dict[str, List[Dict]]) -> bool:
-    """Present the report and ask for human approval."""
     total = sum(len(repos) for repos in classified.values())
     
     print_banner("🌱 HARVEST COMPLETE", "=")
@@ -78,7 +76,6 @@ def human_review(classified: Dict[str, List[Dict]]) -> bool:
             print("  Please enter y, N, or exit")
 
 def generate_pr_body(classified: Dict[str, List[Dict]]) -> str:
-    """Generate a PR body from the classified results."""
     lines = [
         "## 🌱 Weekly Harvest\n",
         "Automated harvest of new open-source LLM resources.\n",
@@ -113,6 +110,25 @@ def generate_pr_body(classified: Dict[str, List[Dict]]) -> str:
     lines.append("*Let's keep open-source, open. Together.*")
     
     return "\n".join(lines)
+
+def apply_changes(classified: Dict[str, List[Dict]]) -> bool:
+    """Apply the changes to the files."""
+    try:
+        formatted = format_candidates(classified)
+        commands = generate_insertion_commands(formatted)
+        
+        for filename, command in commands.items():
+            print(f"  📝 Applying changes to {filename}...")
+            # Execute the sed command
+            import subprocess
+            result = subprocess.run(command, shell=True, capture_output=True, text=True)
+            if result.returncode != 0:
+                print(f"  ❌ Failed to apply changes to {filename}: {result.stderr}")
+                return False
+        return True
+    except Exception as e:
+        print(f"  ❌ Failed to apply changes: {e}")
+        return False
 
 def main():
     print_banner("🌱 LLMDataHub Harvester", "=")
@@ -150,7 +166,7 @@ def main():
     
     print(f"  📄 Report saved to: {report_path}")
     
-    # Step 5: Human review (or PR mode)
+    # Step 5: Human review
     if not human_review(classified):
         print("  ❌ Rejected by user. Logging and exiting.")
         log_path = Path.cwd() / "logs" / "harvest_rejected.txt"
@@ -165,15 +181,22 @@ def main():
         print(f"  📄 Log saved to: {log_path}")
         sys.exit(0)
     
-    # Step 6: Generate PR body if in PR mode
+    # Step 6: Apply changes
     if is_pr_mode():
+        print("  🤖 PR mode — applying changes and generating PR body...")
         pr_body = generate_pr_body(classified)
         pr_path = Path.cwd() / "logs" / "pr_body.md"
         pr_path.parent.mkdir(exist_ok=True)
         with open(pr_path, "w") as f:
             f.write(pr_body)
         print(f"  📄 PR body saved to: {pr_path}")
-        print("  🤖 PR mode — exiting without making changes")
+        
+        # Apply the changes
+        if apply_changes(classified):
+            print("  ✅ Changes applied successfully.")
+        else:
+            print("  ❌ Failed to apply changes.")
+            sys.exit(1)
         sys.exit(0)
     
     # Step 7: Interactive mode — generate insertion script
