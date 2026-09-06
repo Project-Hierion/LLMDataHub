@@ -5,6 +5,10 @@ on:
     - cron: '0 5 * * 4'
   workflow_dispatch:
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   harvest:
     runs-on: ubuntu-latest
@@ -25,20 +29,16 @@ jobs:
     - name: Run harvest
       run: |
         python repo-maintenance-automation/harvest.py --pr
-        echo "PR_BODY<<EOF" >> $GITHUB_ENV
-        cat logs/pr_body.md >> $GITHUB_ENV
-        echo "EOF" >> $GITHUB_ENV
     
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v6
       with:
+        token: ${{ secrets.GITHUB_TOKEN }}
         title: "🌱 Weekly Harvest: Automated Resource Discovery"
-        body: ${{ env.PR_BODY }}
+        body-path: logs/pr_body.md
         branch: auto/harvest-${{ github.run_number }}
         delete-branch: true
-        labels: |
-          harvest
-          automated-pr
+        labels: harvest, automated-pr
     
     - name: Upload report
       if: always()
