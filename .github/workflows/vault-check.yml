@@ -26,7 +26,7 @@ jobs:
     
     - name: Run validator
       run: |
-        python repo-maintenance-automation/validate_vault.py
+        python repo-maintenance-automation/validate-autonomy.py
     
     - name: Upload report
       if: always()

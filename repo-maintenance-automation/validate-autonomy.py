@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-File: validate_vault.py
+File: validate-autonomy.py
 Tool: LLMDataHub Vault Validator
 Version: 1.0.2
 System: Project Hierion / repo-maintenance-automation
@@ -12,9 +12,9 @@ Purpose: Scans LLMDataHub repo and validates DATASETS.md and
          and HF-free compliance.
 
 Usage:
-    python repo-maintenance-automation/validate_vault.py
-    python repo-maintenance-automation/validate_vault.py --fix
-    python repo-maintenance-automation/validate_vault.py --fix --yes
+    python repo-maintenance-automation/validate-autonomy.py
+    python repo-maintenance-automation/validate-autonomy.py --fix
+    python repo-maintenance-automation/validate-autonomy.py --fix --yes
 """
 
 import os
