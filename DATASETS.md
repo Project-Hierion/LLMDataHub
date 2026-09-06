@@ -56,6 +56,9 @@
 
 | Dataset name | Used by | Type | Language | Size | Description |
 |---|---|---|---|---|---|
+| [Nemotron-Cascade-2-SFT-Data](HF-hosted (no link) 🤑) | — | SFT | English | 15.87M | Large-scale SFT mixture used to train Nemotron-Cascade-2-30B-A3B, covering math, science, chat, instruction following, coding agents, and SWE. |
+| [Nemotron-Cascade-2-RL-Data](HF-hosted (no link) 🤑) | — | RLHF | English | — | RL data from Nemotron Post-Training v3 collection. |
+| [OpenThoughts3-1.2M](HF-hosted (no link) 🤑) | — | SFT | English | 1.2M | Open reasoning dataset for chain-of-thought and instruction following. |
 | [MetaMathQA](https://github.com/microsoft/LLaVA-MetaMath) | — | SFT | English | 395K | Math QA dataset for instruction tuning. Improves math reasoning in LLMs. |
 | [LLM-Ko-Datasets](https://github.com/LLM-Ko-Datasets) | — | PT | Korean | — | Korean language model training data collection. MIT License. |
 | [Haenara](https://github.com/Haenara) | — | Data Processing | Korean | — | Korean natural language data processing. Apache-2.0. |
@@ -64,6 +67,8 @@
 | [KoHRM-Text](https://github.com/sapientinc/HRM-Text) | — | PT | Korean | 1.4B tokens | Korean pretraining dataset with legal, Wikipedia, terminal conversations, and reasoning data. |
 
 ### Datasets Released in 2025
+| Dataset name | Used by | Type | Language | Size | Description |
+|---|---|---|---|---|---|
 | [SYNTHETIC-2-SFT-verified](HF-hosted (no link) 🤑) | — | SFT | English | 4M | Large-scale reasoning dataset with verified traces from DeepSeek-R1-0528, spanning math, coding, puzzles, and instruction following. |
 | [Dolci-Instruct-SFT](HF-hosted (no link) 🤑) | — | SFT | Multilingual | 2.15M | Large-scale instruction following mixture combining public datasets with synthetic samples. Covers math, science, coding, safety, and 70+ languages. |
 | [MathX-5M](HF-hosted (no link) 🤑) | — | SFT | English | 5.05M | High-quality, synthetically curated and meticulously filtered dataset for advanced mathematical reasoning. |
@@ -74,11 +79,7 @@
 | [AgentTrove](HF-hosted (no link) 🤑) | — | SFT | English | 1.7M | Samples drawn from 219 source datasets spanning code repair, shell scripting, mathematical problem-solving, competitive programming, and general computer-use tasks. |
 | [ToolMind](HF-hosted (no link) 🤑) | — | SFT | English | 369K | Large-scale reasoning-enhanced tool-use dataset with 20K+ tools, using a multi-agent framework simulating user-assistant-tool interactions with fine-grained quality filtering. |
 | [venezuela-digital-observatory](https://github.com/ggangix/venezuela-digital-observatory) | — | Dataset | TypeScript | 54★ | Public dataset of Venezuelan government domains (.gob.ve) with registration dates, expiration, and infrastructure dat... |
-
 | [RIF-Layoff-Dataset](https://github.com/davidfue/RIF-Layoff-Dataset) | — | Dataset | — | 3★ | Schema and records for RIF Tracking. |
-
-| Dataset name | Used by | Type | Language | Size | Description |
-|---|---|---|---|---|---|
 | [MixtureVitae](https://github.com/ontocord/mixturevitae) | — | PT | English | 50B–300B tokens | Permissive-first pretraining corpus. Outperforms FineWeb-Edu on math and code. CC-BY/Apache/government works. |
 | [ROOTS](https://github.com/bigscience-workshop/roots-data) | BLOOM | PT | Multilingual, code | 1.6TB | Diverse open-source pretraining dataset consisting of sub-datasets like Wikipedia and StackExchange. |
 | [KorQuAD](https://github.com/KorQuAD) | — | QA | Korean | — | Korean question answering dataset. |
