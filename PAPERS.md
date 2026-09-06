@@ -34,6 +34,13 @@
 | *No papers currently listed.* | | | | | |
 
 ### <div id="papers-2025">2025</div>
+| [gdpval-realworks](https://github.com/hyeonsangjeon/gdpval-realworks) | — | — | [Code](https://github.com/hyeonsangjeon/gdpval-realworks) | — | Open-source benchmark for evaluating LLMs on 220 real professional tasks across 9 sectors and 44 occupations. Reprodu... |
+| [AlphaAD](https://github.com/alaliqing/AlphaAD) | — | — | [Code](https://github.com/alaliqing/AlphaAD) | — | 🚗 Automatically curated collection of the latest autonomous driving research papers from arXiv. Updated daily with   ... |
+| [local-deep-research](https://github.com/LearningCircuit/local-deep-research) | — | — | [Code](https://github.com/LearningCircuit/local-deep-research) | — | ~95% on SimpleQA (e.g. Qwen3.6-27B on a 3090). Supports all local and cloud LLMs (llama.cpp, Ollama, Google, ...). 10... |
+| [flow_matching_arxiv_daily](https://github.com/iszhanjiawei/flow_matching_arxiv_daily) | — | — | [Code](https://github.com/iszhanjiawei/flow_matching_arxiv_daily) | — |  |
+| [AwesomePaper-for-AI](https://github.com/Zhaojp-Frank/AwesomePaper-for-AI) | — | — | [Code](https://github.com/Zhaojp-Frank/AwesomePaper-for-AI) | — | Awesome system papers for AI |
+| [geolens](https://github.com/geolens-io/geolens) | — | — | [Code](https://github.com/geolens-io/geolens) | — | Self-hosted geospatial data catalog with semantic search (pgvector), OGC/STAC APIs, and map builder. Built on FastAPI... |
+
 
 | Paper title | Authors | Venue | Code Link | Dataset Link | Description |
 |---|---|---|---|---|---|

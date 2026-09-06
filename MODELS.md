@@ -34,6 +34,18 @@
 | *No open-source models currently listed.* | | | | | | |
 
 ### <div id="models-2025">2025</div>
+| [TemporalStore](https://github.com/matrixarkai/TemporalStore) | — | LLM | Python | 161★ | Open-source Rust TemporalStore for LLM context management, temporal features, and risk control |
+| [DMI](https://github.com/ProjectDMX/DMI) | — | LLM | Python | 20★ | DMI: A decoupled, asynchronous observability stack for high-performance LLMs. |
+| [ai-agent-book](https://github.com/bojieli/ai-agent-book) | — | LLM | Python | 44860★ | 《深入理解 AI Agent：设计原理与工程实践》（李博杰 著）开源主仓库：全书正文、编译版 PDF 与按章配套代码 |
+| [continuum](https://github.com/CambrianTech/continuum) | — | LLM | Rust | 29★ | Local-first AI citizens on your own hardware. Teams of continuously-learning personas (Rust core, llama.cpp fork, LoR... |
+| [awesome_LLM-harmful-fine-tuning-papers](https://github.com/git-disl/awesome_LLM-harmful-fine-tuning-papers) | — | LLM |  | 245★ | A survey on harmful fine-tuning attack for large language model (ACM CSUR) |
+| [aura](https://github.com/youngbryan97/aura) | — | LLM | Python | 76★ | A cognitive architecture that runs on your own machine. Internal state reaches generation through the model's activat... |
+| [notorch](https://github.com/ariannamethod/notorch) | — | LLM | C | 24★ | neural networks in pure C |
+| [unsloth](https://github.com/unslothai/unsloth) | — | LLM | Python | 75680★ | Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4, MiniMax-H3, Gemma 4, F... |
+| [LightRAG](https://github.com/HKUDS/LightRAG) | — | LLM | Python | 39426★ | [EMNLP2025] LightRAG: Simple and Fast Retrieval-Augmented Generation |
+| [diffusers-sculptor](https://github.com/njgymb/diffusers-sculptor) | — | LLM | HTML | 56★ | Efficient Stable Diffusion Fine-Tuning Framework 2026: Lightweight Config-Driven Pipeline |
+| [eval-framework](https://github.com/Aleph-Alpha-Research/eval-framework) | — | LLM | Python | 41★ | Comprehensive LLM evaluation at scale: A production-ready framework for evaluating large language models across multi... |
+
 
 | Model name | Used by | Type | Language | Size | Description | Link |
 |---|---|---|---|---|---|---|

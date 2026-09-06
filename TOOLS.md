@@ -35,6 +35,19 @@
 | *No tools currently listed.* | | | | | |
 
 ### <div id="tools-2025">2025</div>
+| [HostlistsRegistry](https://github.com/AdguardTeam/HostlistsRegistry) | — | Tool | JavaScript | Known hosts blocklists that are made available to the users of AdGuard products |
+| [vibe-ic](https://github.com/vibeic/vibe-ic) | — | Tool | Python | AI-native IC design plugin with MCP-EDA — from natural-language intent to verified silicon. |
+| [bernstein](https://github.com/sipyourdrink-ltd/bernstein) | — | Tool | Python | The open‑source AI Agents Governance & Orchestration framework: write the rules declaratively, Bernstein enforces the... |
+| [awesome-loop-engineering](https://github.com/ChaoYue0307/awesome-loop-engineering) | — | Tool | Python | 🔁 Build reliable recurring AI-agent systems: 1001 resources, 22 operational patterns, 22 loop contracts, 8 runtime st... |
+| [Polyphase-Engine](https://github.com/Polyphase-Labs/Polyphase-Engine) | — | Tool | C++ | Polyphase Engine - Build Homebrew games for Wii, Gamecube , 3DS and other retro 3D consoles |
+| [machine-learning-for-trading](https://github.com/stefan-jansen/machine-learning-for-trading) | — | Tool | Jupyter Notebook | Code for Machine Learning for Trading, 3rd edition — from data sourcing to live execution. |
+| [OpenTranscribe](https://github.com/attevon-llc/OpenTranscribe) | — | Tool | Python | Self-hosted AI-powered transcription platform with speaker diarization, search, and collaboration features. Built wit... |
+| [Quillan-Ronin](https://github.com/leeex1/Quillan-Ronin) | — | Tool | HTML | Quillan-Ronin - a sovereign mini Software 3.0 runtime on Universal BitNet 1.58-bit logic and a 9B EGGROLL Swarm. v5.3... |
+| [RWKV_APP](https://github.com/RWKV-APP/RWKV_APP) | — | Tool | Dart | Cross-platform, local-first RWKV chat built with Flutter for Android, iOS, Windows, macOS, and Linux. |
+| [espectre](https://github.com/francescopace/espectre) | — | Tool | Python | Wi-Fi CSI motion sensing for ESP32. C++ SDK, ESPHome, Native, and Matter frontends, browser tools, and a CLI for the ... |
+| [stac-extensions.github.io](https://github.com/stac-extensions/stac-extensions.github.io) | — | Tool | Python | Overview of STAC Extensions, with advice on creating new extensions |
+| [vscode-omni-viewer](https://github.com/battlecook/vscode-omni-viewer) | — | Tool | TypeScript | A comprehensive audio, image, video, CSV, and JSONL viewer extension for VSCode and Cursor. |
+
 | [open-science](https://github.com/aipoch/open-science) | — | Research Workbench | Python | Open-source, local-first, model-agnostic AI research workbench with scientific agents, Python/R notebooks, data connectors, and reproducible research. Apache-2.0. |
 | [TemporalStore](https://github.com/matrixarkai/TemporalStore) | — | Memory Engine | Rust | Open-source Rust-based temporal memory engine for LLM context management, temporal features, and risk control. Apache-2.0. |
 | [FastVideo](https://github.com/hao-ai-lab/FastVideo) | — | Video | Python | Unified inference and post-training framework for accelerated video generation. |
