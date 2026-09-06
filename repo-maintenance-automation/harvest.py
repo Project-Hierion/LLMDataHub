@@ -2,7 +2,7 @@
 """
 File: harvest.py
 Tool: LLMDataHub Harvester — Main Orchestrator
-Version: 1.0.2
+Version: 1.0.4
 System: Project Hierion / repo-maintenance-automation
 Status: ACTIVE
 License: AGPLv3 with Commons Clause
@@ -111,25 +111,6 @@ def generate_pr_body(classified: Dict[str, List[Dict]]) -> str:
     
     return "\n".join(lines)
 
-def apply_changes(classified: Dict[str, List[Dict]]) -> bool:
-    """Apply the changes to the files."""
-    try:
-        formatted = format_candidates(classified)
-        insertions = generate_insertion_commands(formatted)
-        
-        for filename, data in insertions.items():
-            print(f"  📝 Applying changes to {filename}...")
-            # Execute the sed command
-            import subprocess
-            result = subprocess.run(command, shell=True, capture_output=True, text=True)
-            if result.returncode != 0:
-                print(f"  ❌ Failed to apply changes to {filename}: {result.stderr}")
-                return False
-        return True
-    except Exception as e:
-        print(f"  ❌ Failed to apply changes: {e}")
-        return False
-
 def main():
     print_banner("🌱 LLMDataHub Harvester", "=")
     
@@ -181,7 +162,11 @@ def main():
         print(f"  📄 Log saved to: {log_path}")
         sys.exit(0)
     
-    # Step 6: Apply changes
+    # Step 6: Format and apply changes
+    print("  ✏️  Formatting entries...")
+    formatted = format_candidates(classified)
+    insertions = generate_insertion_commands(formatted)
+    
     if is_pr_mode():
         print("  🤖 PR mode — applying changes and generating PR body...")
         pr_body = generate_pr_body(classified)
@@ -192,7 +177,7 @@ def main():
         print(f"  📄 PR body saved to: {pr_path}")
         
         # Apply the changes
-        if apply_changes(classified):
+        if apply_insertions(insertions):
             print("  ✅ Changes applied successfully.")
         else:
             print("  ❌ Failed to apply changes.")
@@ -200,16 +185,14 @@ def main():
         sys.exit(0)
     
     # Step 7: Interactive mode — generate insertion script
-    print("  ✏️  Formatting and inserting entries...")
-    formatted = format_candidates(classified)
-    insertions = generate_insertion_commands(formatted)
-    
     script_path = Path.cwd() / "logs" / "insert.sh"
     with open(script_path, "w") as f:
         f.write("#!/bin/bash\n\n")
         for filename, data in insertions.items():
             f.write(f"echo 'Inserting into {filename}...'\n")
-            f.write(command + "\n")
+            # Generate sed command for each row
+            for row in data["rows"]:
+                f.write(f"sed -i '/{data['pattern']}/ a\\\n{row}' {filename}\n")
         f.write("\necho '✅ Insertion complete.'\n")
     script_path.chmod(0o755)
     
