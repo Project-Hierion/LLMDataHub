@@ -1,0 +1,28 @@
+=== DATASET CANDIDATES ===
+
+Total candidates: 4
+
+- Tempest-Solutions-Company/threat-feeds (6★)
+  License: 
+  Score: 0.40
+  URL: https://github.com/Tempest-Solutions-Company/threat-feeds
+  Description: A transparent, community-first repository of curated threat feeds in .txt and .json formats. Built from real-world firewall logs and IDS/IPS alerts from our network, these datasets help sysadmins defe
+
+- davidfue/RIF-Layoff-Dataset (3★)
+  License: mit
+  Score: 0.45
+  URL: https://github.com/davidfue/RIF-Layoff-Dataset
+  Description: Schema and records for RIF Tracking
+
+- clay-good/alleleforge (1★)
+  License: mit
+  Score: 0.45
+  URL: https://github.com/clay-good/alleleforge
+  Description: A variant-first, multi-modality CRISPR design framework that unifies SpCas9 nuclease, base-editor, and prime-editor chemistries under a single typed interface to deliver ranked candidate edits complet
+
+- leon1706-lol/Aether-Vault (2★)
+  License: other
+  Score: 0.40
+  URL: https://github.com/leon1706-lol/Aether-Vault
+  Description: Git-like version control for ML — atomic commits for code, weights & datasets with C++ parallel hashing
+

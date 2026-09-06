@@ -64,6 +64,7 @@
 | [KoHRM-Text](https://github.com/sapientinc/HRM-Text) | — | PT | Korean | 1.4B tokens | Korean pretraining dataset with legal, Wikipedia, terminal conversations, and reasoning data. |
 
 ### Datasets Released in 2025
+| [RIF-Layoff-Dataset](https://github.com/davidfue/RIF-Layoff-Dataset) | — | Dataset | — | 3★ | Schema and records for RIF Tracking. |
 
 | Dataset name | Used by | Type | Language | Size | Description |
 |---|---|---|---|---|---|

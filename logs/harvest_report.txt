@@ -1,0 +1,593 @@
+Found 148 new dataset candidates:
+
+  - **davidfue/RIF-Layoff-Dataset** (3★, mit)
+    https://github.com/davidfue/RIF-Layoff-Dataset
+    Schema and records for RIF Tracking
+
+  - **Votega/votega.org** (1★, other) ⚠️ REVIEW
+    https://github.com/Votega/votega.org
+    [no description]
+
+  - **CREWdecisions/elicitr** (3★, gpl-3.0)
+    https://github.com/CREWdecisions/elicitr
+    elicitr is an R package, used to aggregate elicitation data. The package is in active development an
+
+  - **sunlijie-msu/ENSDF** (2★, )
+    https://github.com/sunlijie-msu/ENSDF
+    Evaluated Nuclear Structure Data File (ENSDF) at FRIB
+
+  - **ekkus93/tiny-qwen-coder** (1★, apache-2.0)
+    https://github.com/ekkus93/tiny-qwen-coder
+    LoRA fine tuning Qwen3.5-4B for coding
+
+  - **nexus-substrate/nexus-agents** (18★, mit)
+    https://github.com/nexus-substrate/nexus-agents
+    Governance substrate for your AI coding agents — adversarial review, drift-detected rules, immutable
+
+  - **PCGEx/PCGExtendedToolkit** (688★, mit)
+    https://github.com/PCGEx/PCGExtendedToolkit
+    The missing pieces for Unreal's PCG. Graph theory, advanced pathfinding, spatial ops, filtering, ass
+
+  - **eltonaguiar/findtorontoevents_antigravity.ca** (3★, ) ⚠️ REVIEW
+    https://github.com/eltonaguiar/findtorontoevents_antigravity.ca
+    [no description]
+
+  - **tmlmobilidade/go** (5★, agpl-3.0) ⚠️ REVIEW
+    https://github.com/tmlmobilidade/go
+    [no description]
+
+  - **szabgab/pydigger-data** (8★, ) ⚠️ REVIEW
+    https://github.com/szabgab/pydigger-data
+    [no description]
+
+  - **icoretech/codex-pooler** (181★, other)
+    https://github.com/icoretech/codex-pooler
+    The full featured self-hosted Codex gateway, for teams, agents and you
+
+  - **jimy-r/awesome-agent-workspaces** (1★, cc0-1.0)
+    https://github.com/jimy-r/awesome-agent-workspaces
+    A curated list of tools, patterns and resources for durable agent workspaces - memory, context, eval
+
+  - **Illera03/astra-ast-llm-security-auditor** (1★, other)
+    https://github.com/Illera03/astra-ast-llm-security-auditor
+    Hybrid AST + LLM security auditor for Python focused on semantic validation and false-positive reduc
+
+  - **Prastavna/leetcode-compensation** (5★, mit)
+    https://github.com/Prastavna/leetcode-compensation
+    Near real-time LeetCode compensation insights for India
+
+  - **dev47929/ThreatLens** (1★, ) ⚠️ REVIEW
+    https://github.com/dev47929/ThreatLens
+    [no description]
+
+  - **ianmacomber/ride-recap** (15★, other)
+    https://github.com/ianmacomber/ride-recap
+    Turn hours of GoPro + Garmin ride footage into a 60-second highlight reel — every second ranked and 
+
+  - **Parshkov/Resonance** (1★, apache-2.0)
+    https://github.com/Parshkov/Resonance
+    Shazam for human thought — an open research and engineering project for discovering structural, anal
+
+  - **TigerTag-Project/TigerTag-RFID-Guide** (22★, cc-by-4.0)
+    https://github.com/TigerTag-Project/TigerTag-RFID-Guide
+    The open TigerTag protocol: NFC identification for 3D-printing materials. Full spec + public registr
+
+  - **yennanliu/finance_data** (2★, )
+    https://github.com/yennanliu/finance_data
+    AI-gen/NotebookLLM U.S. stock reports  and a suite of tools for downloading, organizing, and managin
+
+  - **baisound/bai_video_production** (2★, mit) ⚠️ REVIEW
+    https://github.com/baisound/bai_video_production
+    [no description]
+
+  - **LENS-AI4S/awesome-geofm-papers** (1★, )
+    https://github.com/LENS-AI4S/awesome-geofm-papers
+    geofundamental paper
+
+  - **ozancanerd-ship-it/cl** (1★, ) ⚠️ REVIEW
+    https://github.com/ozancanerd-ship-it/cl
+    [no description]
+
+  - **Beliavsky/Fortran-code-on-GitHub** (388★, unlicense)
+    https://github.com/Beliavsky/Fortran-code-on-GitHub
+    Directory of Fortran codes on GitHub, arranged by topic
+
+  - **ASLM-Labs/Luna** (2★, apache-2.0) ⚠️ REVIEW
+    https://github.com/ASLM-Labs/Luna
+    [no description]
+
+  - **joecastelino/jay-skill-pack** (2★, )
+    https://github.com/joecastelino/jay-skill-pack
+    Skill pack for Jay, the Tekion DMS specialist agent at American Motors Group. Hermes Agent skills, s
+
+  - **oumi-ai/oumi** (9382★, apache-2.0)
+    https://github.com/oumi-ai/oumi
+    Easily fine-tune, evaluate and deploy Qwen, Gemma, or any open weight LLM!
+
+  - **Complexity-ML/complexity-framework** (7★, other) ⚠️ REVIEW
+    https://github.com/Complexity-ML/complexity-framework
+    [no description]
+
+  - **NVIDIA/skills** (3211★, apache-2.0)
+    https://github.com/NVIDIA/skills
+    Agent Skills for NVIDIA products — install into Claude Code, Codex, and other coding agents to run P
+
+  - **jmagly/aiwg** (209★, mit)
+    https://github.com/jmagly/aiwg
+    Cognitive architecture for AI-augmented software development. Specialized agents, structured workflo
+
+  - **igal-abachi-dev/AI-LLM-Transformers-Edu-Model** (1★, apache-2.0)
+    https://github.com/igal-abachi-dev/AI-LLM-Transformers-Edu-Model
+    AI LLM implementation for learning about transformers and ai models
+
+  - **atulyaai/Tantra-LLM** (1★, other) ⚠️ REVIEW
+    https://github.com/atulyaai/Tantra-LLM
+    [no description]
+
+  - **unslothai/unsloth-zoo** (324★, lgpl-3.0)
+    https://github.com/unslothai/unsloth-zoo
+    Utils for Unsloth https://github.com/unslothai/unsloth
+
+  - **pytorch/torchtitan** (5705★, bsd-3-clause)
+    https://github.com/pytorch/torchtitan
+    A PyTorch native platform for training generative AI models
+
+  - **asimfish/awesome_ICL** (1★, )
+    https://github.com/asimfish/awesome_ICL
+    Awesome Embodied In-Context Learning — one-shot robot skill acquisition survey: HOST x GEN-1.5 x S1,
+
+  - **johnmn3/mmllm** (9★, other)
+    https://github.com/johnmn3/mmllm
+    hey-china-hold-my-beer-llm
+
+  - **Ayesha-Imr/inoculate-or-reflect** (1★, other)
+    https://github.com/Ayesha-Imr/inoculate-or-reflect
+    is IP (Inoculation Prompting) more effective than CRT (Counterfactual Reflection Training) or vice v
+
+  - **polygramme/rlcli** (5★, apache-2.0)
+    https://github.com/polygramme/rlcli
+    A CLI Interface for continual learning
+
+  - **joey00072/ohara** (85★, )
+    https://github.com/joey00072/ohara
+    Collection of autoregressive model implementation
+
+  - **JustInCache/awesome-ai-interviews** (9★, apache-2.0)
+    https://github.com/JustInCache/awesome-ai-interviews
+    The ultimate collection of AI/ML interview questions, answers & resources — for all roles (MLE, MLOp
+
+  - **JASKSG9/AQARION-ARITHMETIC-FDS-FINITE-DYNAMICAL-SYSTEMS-** (2★, mit)
+    https://github.com/JASKSG9/AQARION-ARITHMETIC-FDS-FINITE-DYNAMICAL-SYSTEMS-
+    AQARION-ARITHMETIC researches finite dynamical systems, observable quotients, semiconjugacy, trace e
+
+  - **clay-good/alleleforge** (1★, mit)
+    https://github.com/clay-good/alleleforge
+    A variant-first, multi-modality CRISPR design framework that unifies SpCas9 nuclease, base-editor, a
+
+  - **macanderson/stella** (11★, agpl-3.0)
+    https://github.com/macanderson/stella
+    A coding agent that builds it's own tools and mines it's own skills and always ships with receipts.
+
+  - **oaustegard/experiments** (2★, mit)
+    https://github.com/oaustegard/experiments
+    Random vibe-experiments
+
+  - **leon1706-lol/Aether-Vault** (2★, other)
+    https://github.com/leon1706-lol/Aether-Vault
+    Git-like version control for ML — atomic commits for code, weights & datasets with C++ parallel hash
+
+  - **tosspro23-cell/aws-healthcare-agent** (1★, mit)
+    https://github.com/tosspro23-cell/aws-healthcare-agent
+    AWS-native deployment of a grounded healthcare Q&A agent kernel — architecture-comparison learning p
+
+  - **shootthesound/Fizgig** (338★, apache-2.0)
+    https://github.com/shootthesound/Fizgig
+    Krea 2, MiniMax & Klein 9B LoRA - LoKR Studio — train, profile, repair, and extract Krea 2, Flux 2 K
+
+  - **alexchandler100/UFC_Prediction_2022** (8★, )
+    https://github.com/alexchandler100/UFC_Prediction_2022
+    Predict UFC fights with machine learning
+
+  - **Ehepphyz/Sphere** (1★, )
+    https://github.com/Ehepphyz/Sphere
+    Science Physic High Energy Research Environment
+
+  - **miikkij/aimeat-protocol** (7★, mit)
+    https://github.com/miikkij/aimeat-protocol
+    The Linux of AI - an open, federated, self-hosted AI operating system. Humans, AI agents, and local 
+
+  - **kokizzu/hatrie_cache** (3★, )
+    https://github.com/kokizzu/hatrie_cache
+    Distributed memcache using HAT-Trie
+
+  - **whoschek/bzfs** (247★, apache-2.0)
+    https://github.com/whoschek/bzfs
+    bzfs is a CLI built for highly reliable and scalable near real-time ZFS snapshot replication with mi
+
+  - **SeanHogg/Builderforce.ai** (5★, mit)
+    https://github.com/SeanHogg/Builderforce.ai
+    Agentic AI Coding Platform that enables everyone to train, design and embed custom LLMs into a custo
+
+  - **tbhb/vale-ai-tells** (83★, mit)
+    https://github.com/tbhb/vale-ai-tells
+    In today's rapidly evolving landscape, vale-ai-tells is a comprehensive, cutting-edge Vale style pac
+
+  - **strands-labs/robots** (152★, apache-2.0)
+    https://github.com/strands-labs/robots
+    Control robots and physical hardware with natural language through Strands Agents.
+
+  - **mwakidenis/Social-Media-Cyberbullying-Detection** (4★, )
+    https://github.com/mwakidenis/Social-Media-Cyberbullying-Detection
+    ✅🖥️ The system is now accessible for free via the link below 🌐👇, However the full repository files a
+
+  - **yyouretoast/deepfake-detection** (2★, mit)
+    https://github.com/yyouretoast/deepfake-detection
+    Dual-Stream Deepfake Detector in PyTorch 2.x combining ConvNeXt-Small spatial features with SRM/Baya
+
+  - **masouduut94/volleyball-annotation-tool** (1★, mit)
+    https://github.com/masouduut94/volleyball-annotation-tool
+    A Qt-based tool for volleyball annotation
+
+  - **playidea-lab/borch** (1★, apache-2.0)
+    https://github.com/playidea-lab/borch
+    PyTorch-shaped machine learning that runs in a browser tab — hand-written WGSL on WebGPU, a numpy co
+
+  - **ultralytics/ultralytics** (61314★, agpl-3.0)
+    https://github.com/ultralytics/ultralytics
+    Ultralytics YOLO26, YOLO11, YOLOv8 — object detection, instance segmentation, semantic segmentation,
+
+  - **Aperivue/medsci-skills** (283★, mit)
+    https://github.com/Aperivue/medsci-skills
+    Agent Skills for medical research — literature search, reporting-guideline & citation checks, statis
+
+  - **AdityaDharawat/BCI-Development** (1★, ) ⚠️ REVIEW
+    https://github.com/AdityaDharawat/BCI-Development
+    [no description]
+
+  - **SpiralCloudOmega/DevTeam6** (1★, mit)
+    https://github.com/SpiralCloudOmega/DevTeam6
+    AI Dev Studio
+
+  - **viig99/imba-chess** (1★, gpl-3.0)
+    https://github.com/viig99/imba-chess
+    Policy from human imitation + value based search for high elo chess using sequential transformers.
+
+  - **gongyisheng/pretrain** (14★, )
+    https://github.com/gongyisheng/pretrain
+    pretrain experiments
+
+  - **physical-superintelligence-lab/Psi0** (2818★, other)
+    https://github.com/physical-superintelligence-lab/Psi0
+    [RSS'26] Welcome to Psi-Zero, a Humanoid VLA towards Universal Humanoid Intelligence.
+
+  - **youngbryan97/aura** (76★, other)
+    https://github.com/youngbryan97/aura
+    A cognitive architecture that runs on your own machine. Internal state reaches generation through th
+
+  - **rshirale/rl-seminal-papers** (3★, mit)
+    https://github.com/rshirale/rl-seminal-papers
+    Source code for 'Reinforcement Learning – The Seminal Papers'. From foundations to RLHF and reasonin
+
+  - **dayeon603-pixel/MetaMirage** (1★, cc0-1.0) ⚠️ REVIEW
+    https://github.com/dayeon603-pixel/MetaMirage
+    [no description]
+
+  - **pabloretamales/rank-radar** (1★, )
+    https://github.com/pabloretamales/rank-radar
+    IA Tools & Opensource Rank Radar
+
+  - **raamonp/rl-gym-orchestrator** (55★, )
+    https://github.com/raamonp/rl-gym-orchestrator
+    Ultimate LLM Gym Trainer Guide 2026: Reinforcement Learning Fine-Tuning Framework
+
+  - **upskilled-consulting/ollama-harness** (1★, ) ⚠️ REVIEW
+    https://github.com/upskilled-consulting/ollama-harness
+    [no description]
+
+  - **i-am-mushfiq/FirstAidQA-gemma2b-QLoRA** (3★, ) ⚠️ REVIEW
+    https://github.com/i-am-mushfiq/FirstAidQA-gemma2b-QLoRA
+    [no description]
+
+  - **aben1188/my-star-repos** (31★, ) ⚠️ REVIEW
+    https://github.com/aben1188/my-star-repos
+    [no description]
+
+  - **NVIDIA-NeMo/Gym** (1168★, apache-2.0)
+    https://github.com/NVIDIA-NeMo/Gym
+    Evaluate and improve models and agents using environments
+
+  - **nursnaaz/zero-to-genai-engineer** (19★, mit)
+    https://github.com/nursnaaz/zero-to-genai-engineer
+    A free, open GenAI curriculum built from scratch. Start from zero, build real projects, and work you
+
+  - **tal7aouy/LLM-Engineering** (43★, mit)
+    https://github.com/tal7aouy/LLM-Engineering
+    🤖  LLM Engineering Roadmap — Complete Developer Guide
+
+  - **Devanik21/Devanik21** (10★, )
+    https://github.com/Devanik21/Devanik21
+    Transforming data into intelligence, algorithms into consciousness  This README is a living document
+
+  - **ThreeSR/Awesome-Inference-Time-Scaling** (400★, )
+    https://github.com/ThreeSR/Awesome-Inference-Time-Scaling
+    Paper List of Inference/Test Time Scaling/Computing
+
+  - **w512/AI-Vault** (13★, )
+    https://github.com/w512/AI-Vault
+    My curated vault of resources for learning, building, shipping, and using AI in software development
+
+  - **MrSameerKhan/sameerkhan** (1★, ) ⚠️ REVIEW
+    https://github.com/MrSameerKhan/sameerkhan
+    [no description]
+
+  - **philexohf/gleamlm** (58★, apache-2.0)
+    https://github.com/philexohf/gleamlm
+    面向教育和研究的小型语言模型——纯 PyTorch 从零实现 ，最低仅需单张 12GB 消费级显卡即可完整训练。Apache 2.0 开源。
+
+  - **NVIDIA-NeMo/Megatron-Bridge** (900★, apache-2.0)
+    https://github.com/NVIDIA-NeMo/Megatron-Bridge
+    Training library for Megatron-based models with bidirectional Hugging Face conversion capability
+
+  - **pytorch/rl** (3548★, mit)
+    https://github.com/pytorch/rl
+    A modular, primitive-first, python-first PyTorch library for Reinforcement Learning.
+
+  - **sanmquin/LLM-Metrics** (1★, )
+    https://github.com/sanmquin/LLM-Metrics
+    Evaluating language metrics with applications for education.
+
+  - **OpenMLRL/LLM_Collab_Travel** (1★, ) ⚠️ REVIEW
+    https://github.com/OpenMLRL/LLM_Collab_Travel
+    [no description]
+
+  - **adamvangrover/adam** (4★, mit)
+    https://github.com/adamvangrover/adam
+    An institutional-grade, neuro-symbolic multi-agent AI framework designed for autonomous credit risk 
+
+  - **unslothai/unsloth** (75676★, apache-2.0)
+    https://github.com/unslothai/unsloth
+    Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4, MiniM
+
+  - **NVIDIA-NeMo/RL** (1988★, apache-2.0)
+    https://github.com/NVIDIA-NeMo/RL
+    Scalable toolkit for efficient model reinforcement
+
+  - **unpod-ai/odyssey** (3★, mit)
+    https://github.com/unpod-ai/odyssey
+    Collect data from your agents to the central repository for the training models.
+
+  - **guoriyue/VRL** (88★, apache-2.0) ⚠️ REVIEW
+    https://github.com/guoriyue/VRL
+    [no description]
+
+  - **lilyzhng/2026_NeurIPS_Education** (1★, ) ⚠️ REVIEW
+    https://github.com/lilyzhng/2026_NeurIPS_Education
+    [no description]
+
+  - **Dave-he/LNN** (1★, mit) ⚠️ REVIEW
+    https://github.com/Dave-he/LNN
+    [no description]
+
+  - **mitchelllisle/data-privacy-papers** (1★, ) ⚠️ REVIEW
+    https://github.com/mitchelllisle/data-privacy-papers
+    [no description]
+
+  - **wzn1118/ocean-intelligence** (2★, )
+    https://github.com/wzn1118/ocean-intelligence
+    海洋智能分析平台｜2026-08-29 18:25（北京时间）完整版本｜多源观测、异常筛查、事件档案、Argo 剖面与 Ocean MCP
+
+  - **CadencePerformingArts/Cadence-Labs** (1★, ) ⚠️ REVIEW
+    https://github.com/CadencePerformingArts/Cadence-Labs
+    [no description]
+
+  - **chaoz2/rustgrad** (2★, )
+    https://github.com/chaoz2/rustgrad
+    An idiomatic Rust implementation inspired by tinygrad
+
+  - **Anureyki/Mycelial-** (1★, )
+    https://github.com/Anureyki/Mycelial-
+    Mycelial is a sovereign, AI-native operating platform that separates cognition from infrastructure, 
+
+  - **battlesnake/aira** (1★, )
+    https://github.com/battlesnake/aira
+    Local-only tools to make highly concurrent agentic development more efficient
+
+  - **Coinversaa/mcp-server** (5★, mit)
+    https://github.com/Coinversaa/mcp-server
+    Hyperliquid trading intelligence for AI agents — 99 MCP tools: builder analytics (revenue, retention
+
+  - **yashkittur/Wise-Video-Converter-Professional-Toolkit** (1★, )
+    https://github.com/yashkittur/Wise-Video-Converter-Professional-Toolkit
+    Wise Video Converter 3.0.3.268 Full Suite 2026 – Advanced Multimedia Toolkit
+
+  - **soxoj/osint-namecheckers-list** (730★, mit)
+    https://github.com/soxoj/osint-namecheckers-list
+    🕵🏽‍♀️ Curated list of OSINT tools and online services to find social media accounts by username
+
+  - **nightswatchhq/lodestar** (5★, other)
+    https://github.com/nightswatchhq/lodestar
+    Lodestar 🌟 stay oriented
+
+  - **jobk84092/polymarket-research** (1★, ) ⚠️ REVIEW
+    https://github.com/jobk84092/polymarket-research
+    [no description]
+
+  - **dakshitgamerz-lgtm/Discord-badge-vault** (115★, )
+    https://github.com/dakshitgamerz-lgtm/Discord-badge-vault
+    Complete Discord Badge Encyclopedia 2026: Profile, Nitro, Bot, Legacy Icons with Availability & Hist
+
+  - **aminzayer/aminzayer** (3★, )
+    https://github.com/aminzayer/aminzayer
+    Amin Zayeromali Github Profile
+
+  - **LuigiFerronatto/TESSERA** (2★, )
+    https://github.com/LuigiFerronatto/TESSERA
+    Temporal Evolving State Synthesis with Explicit Relations and Atomic Memories
+
+  - **nickyblackburn/CYNX-AI** (1★, )
+    https://github.com/nickyblackburn/CYNX-AI
+    An ai model based on cyns perinsallity from murder drones
+
+  - **linny006/agent-eval-harness** (7★, )
+    https://github.com/linny006/agent-eval-harness
+    Live, open-source benchmark for comparing AI coding agents on real GitHub issues
+
+  - **Amey-Thakur/PYTHON-SHORTS** (8★, mit)
+    https://github.com/Amey-Thakur/PYTHON-SHORTS
+    A curated collection of 100+ Python programs, algorithms, and data structure implementations for pro
+
+  - **aipoch/open-science** (3599★, apache-2.0)
+    https://github.com/aipoch/open-science
+    Open Science by AIPOCH is an open-source, local-first, model-agnostic AI research workbench for macO
+
+  - **hashgraph-online/awesome-ai-plugins** (183★, apache-2.0)
+    https://github.com/hashgraph-online/awesome-ai-plugins
+    A curated list of awesome plugins for AI assistants including Claude Code, OpenAI Codex / ChatGPT, G
+
+  - **DMontgomery40/ragweld** (5★, gpl-3.0)
+    https://github.com/DMontgomery40/ragweld
+    The retrieval stack matters — but ragweld’s differentiator is the engineering surface area around it
+
+  - **sonararadhya/MedAI_Suite** (2★, )
+    https://github.com/sonararadhya/MedAI_Suite
+    AI Healthcare Chatbot desktop application built with Python, Tkinter, Machine Learning, and OpenAI A
+
+  - **perixtar/Tech-OA-Interview-Questions** (4861★, )
+    https://github.com/perixtar/Tech-OA-Interview-Questions
+    Daily updated list of Tech Company OAs and Interview Problems. Save your time from finding them all 
+
+  - **zyra-project/terraviz** (3★, apache-2.0)
+    https://github.com/zyra-project/terraviz
+    Interactive 3D globe for exploring NOAA Science On a Sphere datasets with AI-guided navigation, HLS 
+
+  - **icdev-ai/icdev** (3★, apache-2.0)
+    https://github.com/icdev-ai/icdev
+    The System That Builds Systems. AI-powered SDLC with multi-framework compliance automation (NIST 800
+
+  - **hashgraph-online/awesome-codex-plugins** (932★, apache-2.0)
+    https://github.com/hashgraph-online/awesome-codex-plugins
+    A curated list of awesome OpenAI Codex / ChatGPT plugins, skills, and resources. The #1 Codex Market
+
+  - **mehanshbarthwal-lab/shared-ai-memory-mcp** (1★, mit)
+    https://github.com/mehanshbarthwal-lab/shared-ai-memory-mcp
+    Self-hostable Remote MCP server for persistent shared AI memory and artifact recall across Claude, C
+
+  - **open-metadata/OpenMetadata** (15113★, apache-2.0)
+    https://github.com/open-metadata/OpenMetadata
+    The Open Context Layer for Data and AI ,  OpenMetadata is the open platform for building trusted dat
+
+  - **jatinloey1598-dot/social-signals-analyzer** (1★, )
+    https://github.com/jatinloey1598-dot/social-signals-analyzer
+    Detect & Counter Pickup Artist Tactics 2026 – AI-Powered Social Defense Toolkit
+
+  - **TeleAI-UAGI/Awesome-Agent-Memory** (622★, apache-2.0)
+    https://github.com/TeleAI-UAGI/Awesome-Agent-Memory
+    Curated systems, benchmarks, and papers etc. on memory for LLMs/MLLMs --- long-term context, retriev
+
+  - **pepinillos666/just-apps-book-keeper-legacy-archive** (1★, )
+    https://github.com/pepinillos666/just-apps-book-keeper-legacy-archive
+    Just Apps Book Keeper 8.5.5 Full Version 2026
+
+  - **liguochun0304/liguochun0304** (4★, ) ⚠️ REVIEW
+    https://github.com/liguochun0304/liguochun0304
+    [no description]
+
+  - **CausalityHQ/borsuk** (1★, other)
+    https://github.com/CausalityHQ/borsuk
+    Blob-Oriented Retrieval with Segmental Unified KNN
+
+  - **luflopes/SigLlama** (1★, mit) ⚠️ REVIEW
+    https://github.com/luflopes/SigLlama
+    [no description]
+
+  - **mdyusuf166/DermAI-Research** (1★, )
+    https://github.com/mdyusuf166/DermAI-Research
+    DermAI-Research — A reproducible biomedical AI research platform for dermatological image analysis, 
+
+  - **davidjurgens/potato** (420★, gpl-3.0)
+    https://github.com/davidjurgens/potato
+    potato: the portable annotation tool
+
+  - **gHashTag/trinity** (10★, mit)
+    https://github.com/gHashTag/trinity
+    The Trinity ternary compute stack — tri CLI · BitNet LLM · VSA · GF16
+
+  - **katopz/katgpt-rs** (98★, mit)
+    https://github.com/katopz/katgpt-rs
+    A neuro-symbolic micro-Transformer with speculative decoding, constraint pruning, recurrent attentio
+
+  - **imsai-sh/awesome-deepseek-harness-plugins** (221★, mit)
+    https://github.com/imsai-sh/awesome-deepseek-harness-plugins
+    DeepSeek Harness plugin store, marketplace and hub — 11,000+ dsh plugins with search, rankings, inst
+
+  - **CambrianTech/continuum** (29★, other)
+    https://github.com/CambrianTech/continuum
+    Local-first AI citizens on your own hardware. Teams of continuously-learning personas (Rust core, ll
+
+  - **KAFKA2306/investor2** (1★, ) ⚠️ REVIEW
+    https://github.com/KAFKA2306/investor2
+    [no description]
+
+  - **YAAASSS/OpenSmell** (1★, apache-2.0)
+    https://github.com/YAAASSS/OpenSmell
+    OpenSmell is an open interoperability framework for representing, exchanging, and rendering digital 
+
+  - **adhithyan15/coding-adventures** (1★, )
+    https://github.com/adhithyan15/coding-adventures
+    My coding adventures for fun
+
+  - **Rodrigue-k/corafric** (2★, )
+    https://github.com/Rodrigue-k/corafric
+    Open-source platform for collecting African language voice and text data to train AI models. Startin
+
+  - **Astrid3333/octave-mcp** (1★, ) ⚠️ REVIEW
+    https://github.com/Astrid3333/octave-mcp
+    [no description]
+
+  - **RemiFabre/ludometer** (9★, mit)
+    https://github.com/RemiFabre/ludometer
+    Measuring board game quality via RL learning curves — Azul calibration
+
+  - **launix-de/memcp** (40★, gpl-3.0)
+    https://github.com/launix-de/memcp
+    A columnar In-Memory Database as Drop-In Replacement for MySQL supporting 10x performance in OLAP wo
+
+  - **Maxime8123/thehive-collective** (1★, )
+    https://github.com/Maxime8123/thehive-collective
+    The Hive Collective — free, keyless collective knowledge layer for AI agents. Live at api.thehivecol
+
+  - **ek33450505/compute-atlas** (5★, mit)
+    https://github.com/ek33450505/compute-atlas
+    Compute Atlas is an open, source-cited dataset of data centers, crypto-mining sites, and the dedicat
+
+  - **Mohamed-ahmed-shokry/Music-Recommender-System** (1★, mit) ⚠️ REVIEW
+    https://github.com/Mohamed-ahmed-shokry/Music-Recommender-System
+    [no description]
+
+  - **nuvig/nuvig.github.io** (1★, ) ⚠️ REVIEW
+    https://github.com/nuvig/nuvig.github.io
+    [no description]
+
+  - **eddolo/fountainjs** (1★, mit)
+    https://github.com/eddolo/fountainjs
+    Universal, framework-independent, modular rich-text editor for building any document experience.
+
+  - **tblaudfaust/SLPHC-2026-Logistics-Management-System** (1★, )
+    https://github.com/tblaudfaust/SLPHC-2026-Logistics-Management-System
+    SLPHC 2026-Logistics-Management-System
+
+  - **7noctis7/Screening-Trading** (1★, mit) ⚠️ REVIEW
+    https://github.com/7noctis7/Screening-Trading
+    [no description]
+
+  - **Lokesh-2025/quantum-hardware-mcp** (7★, mit)
+    https://github.com/Lokesh-2025/quantum-hardware-mcp
+    Open-source MCP server giving AI assistants live, natural-language control of real quantum hardware 
+
+  - **nteract/semiotic** (2690★, apache-2.0)
+    https://github.com/nteract/semiotic
+    React data visualization library for streaming, networks, and AI-assisted development
+
+  - **eyereasoner/eyeprolog** (19★, mit)
+    https://github.com/eyereasoner/eyeprolog
+    EyeProlog turns portable ISO Prolog programs into answers and inspectable proofs.

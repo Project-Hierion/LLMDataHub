@@ -1,0 +1,90 @@
+# DATASETS.md
+sed -i '/### Datasets Released in 2025/ a\
+| [RIF-Layoff-Dataset](https://github.com/davidfue/RIF-Layoff-Dataset) | — | Dataset |  | 3★ | Schema and records for RIF Tracking |
+| [Aether-Vault](https://github.com/leon1706-lol/Aether-Vault) | — | Dataset | Python | 2★ | Git-like version control for ML — atomic commits for code, weights & datasets with C++ parallel hashing |
+| [awesome-ai-interviews](https://github.com/JustInCache/awesome-ai-interviews) | — | Dataset |  | 9★ | The ultimate collection of AI/ML interview questions, answers & resources — for all roles (MLE, MLOps, Data Scientist... |' DATASETS.md
+
+# MODELS.md
+sed -i '/### <div id="models-2025">2025<\/div>/ a\
+| [XE-Local-AI-Engine.Source](https://github.com/w0rldx/XE-Local-AI-Engine.Source) | — | LLM | C# | 4★ | Privacy-first desktop AI engine that runs LLMs, image generation, RAG, and agentic tools locally on your own GPU — po... |
+| [AI-LLM-Transformers-Edu-Model](https://github.com/igal-abachi-dev/AI-LLM-Transformers-Edu-Model) | — | LLM | Python | 1★ | AI LLM implementation for learning about transformers and ai models |
+| [clawfit](https://github.com/hongsw/clawfit) | — | LLM | Python | 5★ | Agent + LLM + Hardware recommendation engine and evidence hub |
+| [manaca-1b-instruct](https://github.com/Instituto-IA-LNCC/manaca-1b-instruct) | — | LLM | Python | 2★ | LLM aberto e reprodutível para o Português do Brasil An Open, Reproducible Brazilian-Portuguese Language Model |
+| [Tantra-LLM](https://github.com/atulyaai/Tantra-LLM) | — | LLM | Python | 1★ |  |
+| [notorch](https://github.com/ariannamethod/notorch) | — | LLM | C | 24★ | neural networks in pure C |
+| [oumi](https://github.com/oumi-ai/oumi) | — | LLM | Python | 9382★ | Easily fine-tune, evaluate and deploy Qwen, Gemma, or any open weight LLM! |
+| [aimeat-protocol](https://github.com/miikkij/aimeat-protocol) | — | LLM | TypeScript | 7★ | The Linux of AI - an open, federated, self-hosted AI operating system. Humans, AI agents, and local LLMs share apps, ... |
+| [DeepSWM](https://github.com/keio-smilab25/DeepSWM) | — | LLM | Python | 6★ | [ICCV25] Deep Space Weather Model: Long-Range Solar Flare Prediction from Multi-Wavelength Images |
+| [unsloth](https://github.com/unslothai/unsloth) | — | LLM | Python | 75676★ | Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4, MiniMax-H3, Gemma 4, F... |
+| [aura](https://github.com/youngbryan97/aura) | — | LLM | Python | 76★ | A cognitive architecture that runs on your own machine. Internal state reaches generation through the model's activat... |
+| [FirstAidQA-gemma2b-QLoRA](https://github.com/i-am-mushfiq/FirstAidQA-gemma2b-QLoRA) | — | LLM | Python | 3★ |  |
+| [zero-to-genai-engineer](https://github.com/nursnaaz/zero-to-genai-engineer) | — | LLM | Jupyter Notebook | 19★ | A free, open GenAI curriculum built from scratch. Start from zero, build real projects, and work your way up to produ... |
+| [AI-Vault](https://github.com/w512/AI-Vault) | — | LLM |  | 13★ | My curated vault of resources for learning, building, shipping, and using AI in software development. The focus is pr... |
+| [LLM-Metrics](https://github.com/sanmquin/LLM-Metrics) | — | LLM | TypeScript | 1★ | Evaluating language metrics with applications for education. |
+| [LLM_Collab_Travel](https://github.com/OpenMLRL/LLM_Collab_Travel) | — | LLM | Python | 1★ |  |
+| [odyssey](https://github.com/unpod-ai/odyssey) | — | LLM | Python | 3★ | Collect data from your agents to the central repository for the training models. |
+| [open-science](https://github.com/aipoch/open-science) | — | LLM | TypeScript | 3599★ | Open Science by AIPOCH is an open-source, local-first, model-agnostic AI research workbench for macOS, Windows, and L... |
+| [TheBrain](https://github.com/AncientMystic/TheBrain) | — | LLM | Python | 1★ | Local-first document intelligence and knowledge extraction engine with hyperbolic embeddings, verification-first reas... |
+| [CYNX-AI](https://github.com/nickyblackburn/CYNX-AI) | — | LLM | Python | 1★ | An ai model based on cyns perinsallity from murder drones |
+| [kiseki](https://github.com/Nananananana/kiseki) | — | LLM | Python | 1★ | A local-first personal context engine: it turns your photo history into evidence-backed insights about your journeys,... |
+| [mlx-omarchy](https://github.com/joshuaswarren/mlx-omarchy) | — | LLM | C++ | 19★ | MLX-compatible Vulkan and ANE backends for Apple Silicon running Linux. |' MODELS.md
+
+# PAPERS.md
+sed -i '/### <div id="papers-2025">2025<\/div>/ a\
+| [PowerBI-Sales-Insights-Interactive-Dashboard](https://github.com/FerreyraConectarIPP/PowerBI-Sales-Insights-Interactive-Dashboard) | — | — | [Code](https://github.com/FerreyraConectarIPP/PowerBI-Sales-Insights-Interactive-Dashboard) | — | Top Power BI Sales Performance Dashboard Ideas 2026 for Business Insights |
+| [docker-android-emulator-cluster](https://github.com/hoangnd24/docker-android-emulator-cluster) | — | — | [Code](https://github.com/hoangnd24/docker-android-emulator-cluster) | — | Android Container with noVNC & Video Recording 2026 |
+| [2026_NeurIPS_Education](https://github.com/lilyzhng/2026_NeurIPS_Education) | — | — | [Code](https://github.com/lilyzhng/2026_NeurIPS_Education) | — |  |
+| [Marigold](https://github.com/prs-eth/Marigold) | — | — | [Code](https://github.com/prs-eth/Marigold) | — | [CVPR 2024 - Oral, Best Paper Award Candidate] Marigold: Repurposing Diffusion-Based Image Generators for Monocular D... |
+| [mlehaptics](https://github.com/lemonforest/mlehaptics) | — | — | [Code](https://github.com/lemonforest/mlehaptics) | — | Open-source bilateral stimulation technology for mental wellness and therapeutic applications. Professional-grade dua... |
+| [rl-seminal-papers](https://github.com/rshirale/rl-seminal-papers) | — | — | [Code](https://github.com/rshirale/rl-seminal-papers) | — | Source code for 'Reinforcement Learning – The Seminal Papers'. From foundations to RLHF and reasoning models, bridgin... |
+| [ArcGIS-Pro-Resource-Kit](https://github.com/42Web-kenya/ArcGIS-Pro-Resource-Kit) | — | — | [Code](https://github.com/42Web-kenya/ArcGIS-Pro-Resource-Kit) | — | Best ArcGIS Pro Alternative 2026 Open Source GIS for Mapping and Spatial Analysis |
+| [agent-eval-harness](https://github.com/linny006/agent-eval-harness) | — | — | [Code](https://github.com/linny006/agent-eval-harness) | — | Live, open-source benchmark for comparing AI coding agents on real GitHub issues |
+| [nexus-agents](https://github.com/nexus-substrate/nexus-agents) | — | — | [Code](https://github.com/nexus-substrate/nexus-agents) | — | Governance substrate for your AI coding agents — adversarial review, drift-detected rules, immutable audit, closed-lo... |
+| [scop](https://github.com/mengxu98/scop) | — | — | [Code](https://github.com/mengxu98/scop) | — | An R package for single-cell and spatial omics analysis, integration, interpretation, and visualization. |
+| [Semantiq](https://github.com/Logorythmus-org/Semantiq) | — | — | [Code](https://github.com/Logorythmus-org/Semantiq) | — | Open, local-first behavioral evidence and evaluation infrastructure for AI systems, benchmarks, and agents. |' PAPERS.md
+
+# TOOLS.md
+sed -i '/### <div id="tools-2025">2025<\/div>/ a\
+| [buildmax](https://github.com/gougoujiang/buildmax) | — | Tool | Go | Build Everything with AI |
+| [borch](https://github.com/playidea-lab/borch) | — | Tool | Python | PyTorch-shaped machine learning that runs in a browser tab — hand-written WGSL on WebGPU, a numpy core, and a Python ... |
+| [nodus](https://github.com/Drakonis96/nodus) | — | Tool | TypeScript | Open-source research workspace for connecting sources, evidence, notes and ideas. Built for academic research with Zo... |
+| [agent-infrastructure-landscape](https://github.com/MrPeppersDev/agent-infrastructure-landscape) | — | Tool | HTML | AI agent memory & infrastructure landscape — comparative catalog of 912 systems × 68 columns covering memory layers, ... |
+| [kuna](https://github.com/Noelo-Lab/kuna) | — | Tool | Rust | An agent-first decompiler designed to be refined by other agents. Kuna is written in Rust and was originally ported f... |
+| [statcite](https://github.com/asokore/statcite) | — | Tool | TypeScript | Official economic statistics for AI agents — every number with a full citation, plus verify_stat to check claimed fig... |
+| [churn-triad-insights](https://github.com/pravin6688/churn-triad-insights) | — | Tool | HTML | LLM-Powered Churn Risk Analyzer for Scalable 2026 Decision Support |
+| [skill-of-skills](https://github.com/the911fund/skill-of-skills) | — | Tool | Python | The autonomous discovery engine for AI coding tools. Indexes skills, plugins, MCP servers, agents, and integrations a... |
+| [claude-mem-lite](https://github.com/sdsrss/claude-mem-lite) | — | Tool | JavaScript | Persistent long-term memory for Claude Code via MCP — captures coding decisions, bugfixes, and context across session... |
+| [nomad-agent-job-scrapers](https://github.com/Exdenta/nomad-agent-job-scrapers) | — | Tool | Python | Open schemas, integration recipes, and agent skills for Nomad Agent job-search Actors. |
+| [tempera-sdk](https://github.com/tempera-dev/tempera-sdk) | — | Tool | Python | Aggregated Tempera SDKs for auth, temp.js, tempOS, remi, cradle, and Arrha across TypeScript, Python, and Rust |
+| [jay-skill-pack](https://github.com/joecastelino/jay-skill-pack) | — | Tool | TeX | Skill pack for Jay, the Tekion DMS specialist agent at American Motors Group. Hermes Agent skills, sorted by usage, s... |
+| [Luna](https://github.com/ASLM-Labs/Luna) | — | Tool | Python |  |
+| [complexity-framework](https://github.com/Complexity-ML/complexity-framework) | — | Tool | Python |  |
+| [aiwg](https://github.com/jmagly/aiwg) | — | Tool | TypeScript | Cognitive architecture for AI-augmented software development. Specialized agents, structured workflows, and multi-pla... |
+| [agent-constitution](https://github.com/su6i/agent-constitution) | — | Tool | Shell | A validated Context Architecture and strict Governance Protocol for AI Agents (Claude, AntiGravity, Cursor, Windsurf,... |
+| [lora-docker-aliyun-pipeline](https://github.com/nrodriguez1997/lora-docker-aliyun-pipeline) | — | Tool | HTML | Automated LoRA Training Docker Builds for Alibaba Cloud 2026 |
+| [coding_agent_session_search](https://github.com/Dicklesworthstone/coding_agent_session_search) | — | Tool | Rust | Unified TUI and CLI to index and search your local coding agent session history across 11+ providers (Codex, Claude, ... |
+| [trace-mcp](https://github.com/nikolai-vysotskyi/trace-mcp) | — | Tool | TypeScript | Framework-aware code intelligence MCP server for Claude Code and Codex — 90.6% fewer input tokens to review a pull re... |
+| [VeriFile-X](https://github.com/abinaze/VeriFile-X) | — | Tool | Python | Privacy-preserving AI-powered digital forensics platform for file authenticity verification |
+| [stella](https://github.com/macanderson/stella) | — | Tool | Rust | A coding agent that builds it's own tools and mines it's own skills and always ships with receipts. |
+| [StaticCodeAnalyser](https://github.com/nrodear/StaticCodeAnalyser) | — | Tool | Pascal | Static code analysis for Delphi 12 & 13 / RAD Studio. IDE plugin (32- and 64-bit IDE) + standalone GUI + CLI (same en... |
+| [ember](https://github.com/wordingone/ember) | — | Tool | Python | A local substrate that improves only by verified experience - receipts-gated accumulation loop (harness, state ledger... |
+| [DevTeam6](https://github.com/SpiralCloudOmega/DevTeam6) | — | Tool | C++ | AI Dev Studio |
+| [skills](https://github.com/open-edge-platform/skills) | — | Tool | Python | Repository for Open Edge Platform Agent Skills |
+| [ollama-harness](https://github.com/upskilled-consulting/ollama-harness) | — | Tool | Python |  |
+| [adam](https://github.com/adamvangrover/adam) | — | Tool | HTML | An institutional-grade, neuro-symbolic multi-agent AI framework designed for autonomous credit risk control, financia... |
+| [stdlib](https://github.com/stdlib-js/stdlib) | — | Tool | JavaScript | ✨ The fundamental numerical library for JavaScript and TypeScript. ✨                    ⭐️ Star to support our work! |
+| [Cadence-Labs](https://github.com/CadencePerformingArts/Cadence-Labs) | — | Tool | PLpgSQL |  |
+| [aira](https://github.com/battlesnake/aira) | — | Tool | Go | Local-only tools to make highly concurrent agentic development more efficient |
+| [AI-Email-Orchestrator-Suite](https://github.com/gurudharshanv194-dev/AI-Email-Orchestrator-Suite) | — | Tool | HTML | AI Email Assistant 2026 🤖 | Smart Inbox Automation & LLM Replies |
+| [sql-forge-generator](https://github.com/zhan266/sql-forge-generator) | — | Tool | HTML | PyDAO SQL Builder 2026: GUI, API, CSV-to-Database Code Generator |
+| [QuantSmith](https://github.com/thatquantguy44/QuantSmith) | — | Tool | Python | A spec-driven, agentic SDK for quant research and model development — specialist agents, quality gates, and persisten... |
+| [Builderforce.ai](https://github.com/SeanHogg/Builderforce.ai) | — | Tool | TypeScript | Agentic AI Coding Platform that enables everyone to train, design and embed custom LLMs into a custom agent. Deploy y... |
+| [opencrabs](https://github.com/adolfousier/opencrabs) | — | Tool | Rust | The all-in-one AI agent living in your terminal. Build landing, mobile apps, backends, manages files, deep research, ... |
+| [multicollab-modality-time-masking](https://github.com/mp6510/multicollab-modality-time-masking) | — | Tool | Python | supplementary material for ACII 2026 submission |
+| [genomeOS](https://github.com/bschilder/genomeOS) | — | Tool | Python | Explore genomes across the world   🧬🌍🧬 |
+| [destroylist](https://github.com/phishdestroy/destroylist) | — | Tool | HTML | Real-time phishing & scam domain blocklist - 208k+ curated threats, 1M+ community, free API, multiple formats |
+| [skylog](https://github.com/AtharvaVSawant/skylog) | — | Tool | Python | Live weather data pipeline — Python + SQLite + Power BI, refreshed hourly via GitHub Actions |
+| [fountainjs](https://github.com/eddolo/fountainjs) | — | Tool | TypeScript | Universal, framework-independent, modular rich-text editor for building any document experience. |
+| [Alchemi](https://github.com/SaadxSalman/Alchemi) | — | Tool | TypeScript | Alchemi is a full-stack AI agents for de-novo molecule design, retrosynthetic pathway planning, and molecular simulat... |
+| [ClearGlassIncorporated-Desmond](https://github.com/ClearGlassInc/ClearGlassIncorporated-Desmond) | — | Tool | HTML | Ontario's premier B2B cybersecurity and AI risk intelligence firm. See Through Everything. |' TOOLS.md
+

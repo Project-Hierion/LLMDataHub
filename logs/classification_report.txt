@@ -1,0 +1,744 @@
+=== CLASSIFICATION REPORT ===
+
+
+## DATASET (3)
+- ClickHouse/ClickBench (1098★)
+  Score: 0.50
+  URL: https://github.com/ClickHouse/ClickBench
+  Description: ClickBench: a Benchmark For Analytical Databases
+
+- Wider-Community/quranic-universal-audio (26★)
+  Score: 0.70
+  URL: https://github.com/Wider-Community/quranic-universal-audio
+  Description: Unified audio and timing for Qur'an apps, developers, and researchers. A timestamps visualizer, editing tool and community-verified recitations dataset with word and letter timestamps
+
+- Dicklesworthstone/franken_networkx (23★)
+  Score: 0.50
+  URL: https://github.com/Dicklesworthstone/franken_networkx
+  Description: Memory-safe clean-room Rust reimplementation of NetworkX with deterministic graph semantics, differential conformance, and RaptorQ-backed durability.
+
+
+## MODEL (27)
+- mrothroc/mixlab (4★)
+  Score: 0.30
+  URL: https://github.com/mrothroc/mixlab
+  Description: GPU ML architecture exploration tool
+
+- aipoch/open-science (3620★)
+  Score: 0.30
+  URL: https://github.com/aipoch/open-science
+  Description: Open Science by AIPOCH is an open-source, local-first, model-agnostic AI research workbench for macOS, Windows, and Linux, with scientific agents, Python/R notebooks, data connectors, and reproducible
+
+- youngbryan97/aura (76★)
+  Score: 0.90
+  URL: https://github.com/youngbryan97/aura
+  Description: A cognitive architecture that runs on your own machine. Internal state reaches generation through the model's activations, not the system prompt — and every consequential action leaves a receipt you c
+
+- ContextLab/llmXive (4★)
+  Score: 0.30
+  URL: https://github.com/ContextLab/llmXive
+  Description: llmXive is an LLM-driven system for automating scientific discovery
+
+- PostTrainLLM/posttrainllm (3★)
+  Score: 1.20
+  URL: https://github.com/PostTrainLLM/posttrainllm
+  Description: A Mac-local specialist-model factory for data, post-training, evaluation, packaging, and evidence-backed decisions.
+
+- existential-birds/daydream (20★)
+  Score: 0.60
+  URL: https://github.com/existential-birds/daydream
+  Description: Agentic code-review CLI that records each review/fix/test run trajectory, building a corpus for fine-tuning open-weight models.
+
+- igal-abachi-dev/AI-LLM-Transformers-Edu-Model (1★)
+  Score: 0.60
+  URL: https://github.com/igal-abachi-dev/AI-LLM-Transformers-Edu-Model
+  Description: AI LLM implementation for learning about transformers and ai models
+
+- GiuseppeBellamacina/neuro_symbolic_t2g (1★)
+  Score: 0.60
+  URL: https://github.com/GiuseppeBellamacina/neuro_symbolic_t2g
+  Description: Grammar-aided Constrained Decondig for self-aligned LLM with SFT and GRPO
+
+- johnmn3/mmllm (9★)
+  Score: 0.30
+  URL: https://github.com/johnmn3/mmllm
+  Description: hey-china-hold-my-beer-llm
+
+- caiotheodoro/habeas (6★)
+  Score: 0.30
+  URL: https://github.com/caiotheodoro/habeas
+  Description: Fine-tune Qwen3.8-27B to validate Form I-9 compliance (M-274/8 CFR 274a.2), citing violations. Synthetic-only data.
+
+- kamara-lab/xwm (2★)
+  Score: 0.30
+  URL: https://github.com/kamara-lab/xwm
+  Description: Action-conditioned world models for robotics.
+
+- hongsw/clawfit (5★)
+  Score: 0.30
+  URL: https://github.com/hongsw/clawfit
+  Description: Agent + LLM + Hardware recommendation engine and evidence hub
+
+- ariannamethod/notorch (24★)
+  Score: 0.60
+  URL: https://github.com/ariannamethod/notorch
+  Description: neural networks in pure C
+
+- JustInCache/awesome-ai-interviews (9★)
+  Score: 0.30
+  URL: https://github.com/JustInCache/awesome-ai-interviews
+  Description: The ultimate collection of AI/ML interview questions, answers & resources — for all roles (MLE, MLOps, Data Scientist, LLM Engineer) and all levels (fresher → staff). Used by 10,000+ engineers. ⭐ Star
+
+- i-am-mushfiq/FirstAidQA-gemma2b-QLoRA (3★)
+  Score: 0.30
+  URL: https://github.com/i-am-mushfiq/FirstAidQA-gemma2b-QLoRA
+
+- unslothai/unsloth (75679★)
+  Score: 1.20
+  URL: https://github.com/unslothai/unsloth
+  Description: Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4, MiniMax-H3, Gemma 4, FLUX and more.
+
+- Instituto-IA-LNCC/manaca-1b-instruct (2★)
+  Score: 0.60
+  URL: https://github.com/Instituto-IA-LNCC/manaca-1b-instruct
+  Description: LLM aberto e reprodutível para o Português do Brasil An Open, Reproducible Brazilian-Portuguese Language Model
+
+- atulyaai/Tantra-LLM (1★)
+  Score: 0.30
+  URL: https://github.com/atulyaai/Tantra-LLM
+
+- oumi-ai/oumi (9382★)
+  Score: 1.20
+  URL: https://github.com/oumi-ai/oumi
+  Description: Easily fine-tune, evaluate and deploy Qwen, Gemma, or any open weight LLM!
+
+- sanmquin/LLM-Metrics (1★)
+  Score: 0.30
+  URL: https://github.com/sanmquin/LLM-Metrics
+  Description: Evaluating language metrics with applications for education.
+
+- OpenMLRL/LLM_Collab_Travel (1★)
+  Score: 0.30
+  URL: https://github.com/OpenMLRL/LLM_Collab_Travel
+
+- K-Dense-AI/k-dense-byok (1153★)
+  Score: 0.30
+  URL: https://github.com/K-Dense-AI/k-dense-byok
+  Description: An AI co-scientist running on your desktop. Claude Science but better.
+
+- AncientMystic/TheBrain (1★)
+  Score: 0.30
+  URL: https://github.com/AncientMystic/TheBrain
+  Description: Local-first document intelligence and knowledge extraction engine with hyperbolic embeddings, verification-first reasoning, graph-based retrieval, and gated LLM extraction.
+
+- nickyblackburn/CYNX-AI (1★)
+  Score: 0.30
+  URL: https://github.com/nickyblackburn/CYNX-AI
+  Description: An ai model based on cyns perinsallity from murder drones
+
+- ttoss/soat (3★)
+  Score: 0.30
+  URL: https://github.com/ttoss/soat
+  Description: SOAT — open-source infrastructure for production-ready AI agents.
+
+- diegopacheco/ai-playground (21★)
+  Score: 0.60
+  URL: https://github.com/diegopacheco/ai-playground
+  Description: AI POCS: ML, NLP, LLM, Vision, Classification, clustering, GenAI, Transformers, PyTorch, Keras, All things AI POCS.
+
+- VMAFx/vmafx (5★)
+  Score: 0.60
+  URL: https://github.com/VMAFx/vmafx
+  Description: VMAFX — perceptual video quality assessment. Modernized fork-evolved with SYCL/CUDA/HIP/Metal backends, tiny-AI models, MCP server, cloud-native (k8s/Helm) deployment. BSD-2-Clause-Patent.
+
+
+## PAPER (22)
+- cmzmasek/archaeopteryx-js (43★)
+  Score: 0.30
+  URL: https://github.com/cmzmasek/archaeopteryx-js
+  Description: Archaeopteryx.js is a software tool for the visualization and analysis of highly annotated phylogenetic trees.
+
+- chessvault-app/chessvault (1★)
+  Score: 0.30
+  URL: https://github.com/chessvault-app/chessvault
+  Description: Your chess, in plain files — a self-hosted chess workbench: engine analysis, studies, notes, games, and book-fed puzzles
+
+- CheickDiakite-yikes/neurodecodekit (2★)
+  Score: 0.60
+  URL: https://github.com/CheickDiakite-yikes/neurodecodekit
+  Description: Open-source, local-first EEG/MEG language-decoding research toolkit with bounded data access, honest baselines, reproducible caches, and explicit proof boundaries.
+
+- greasebig/daily-video-papers (1★)
+  Score: 0.90
+  URL: https://github.com/greasebig/daily-video-papers
+  Description: Daily automated updates for video-related research papers from arXiv.
+
+- Zhaojp-Frank/AwesomePaper-for-AI (22★)
+  Score: 0.30
+  URL: https://github.com/Zhaojp-Frank/AwesomePaper-for-AI
+  Description: Awesome system papers for AI
+
+- caiotheodoro/specula (5★)
+  Score: 0.30
+  URL: https://github.com/caiotheodoro/specula
+  Description: Fine-tune a VL Qwen on FDA food-label compliance: image in, cited PASS|FLAG out. Seeded synthetic labels + CFR verifier-as-oracle + SFT/GRPO.
+
+- caiotheodoro/plumb (5★)
+  Score: 0.90
+  URL: https://github.com/caiotheodoro/plumb
+  Description: AIA G702/G703 pay-app review. Path A curriculum audit: oracle-gated, contamination-controlled, 1.7B text policy.
+
+- pinnacletechnologysolutionsltd/SPU (1★)
+  Score: 0.30
+  URL: https://github.com/pinnacletechnologysolutionsltd/SPU
+  Description: Synergetic Processing Unit
+
+- bradleylab/ml-containers (1★)
+  Score: 0.30
+  URL: https://github.com/bradleylab/ml-containers
+  Description: Custom ML Docker images for bradleylab research compute
+
+- ZhuYingJessica/cv-daily (47★)
+  Score: 0.60
+  URL: https://github.com/ZhuYingJessica/cv-daily
+  Description: This is an Arxiv paper collection
+
+- Ytang520/prompt_injection_research_daily_arxiv (1★)
+  Score: 0.60
+  URL: https://github.com/Ytang520/prompt_injection_research_daily_arxiv
+  Description: prompt injection research -- daily arxiv
+
+- Dicklesworthstone/beads_viewer (1675★)
+  Score: 0.30
+  URL: https://github.com/Dicklesworthstone/beads_viewer
+  Description: Graph-aware TUI for the Beads issue tracker: PageRank, critical path, kanban, dependency DAG visualization, and robot-mode JSON API
+
+- cold-young/robotics_paper_daily (7★)
+  Score: 0.60
+  URL: https://github.com/cold-young/robotics_paper_daily
+  Description: Dexterous Manipulation (Customized version of "jiangranlv/robotics_arXiv_daily")
+
+- lemonforest/mlehaptics (7★)
+  Score: 0.30
+  URL: https://github.com/lemonforest/mlehaptics
+  Description: Open-source bilateral stimulation technology for mental wellness and therapeutic applications. Professional-grade dual ESP32-C6 hardware with wireless Bluetooth Low Energy pairing and app-based contro
+
+- rshirale/rl-seminal-papers (3★)
+  Score: 0.60
+  URL: https://github.com/rshirale/rl-seminal-papers
+  Description: Source code for 'Reinforcement Learning – The Seminal Papers'. From foundations to RLHF and reasoning models, bridging the gap between academic research and engineering mastery.
+
+- lilyzhng/2026_NeurIPS_Education (1★)
+  Score: 0.30
+  URL: https://github.com/lilyzhng/2026_NeurIPS_Education
+
+- linny006/agent-eval-harness (7★)
+  Score: 0.90
+  URL: https://github.com/linny006/agent-eval-harness
+  Description: Live, open-source benchmark for comparing AI coding agents on real GitHub issues
+
+- mengxu98/scop (300★)
+  Score: 0.30
+  URL: https://github.com/mengxu98/scop
+  Description: An R package for single-cell and spatial omics analysis, integration, interpretation, and visualization.
+
+- imteekay/machine-learning-research (455★)
+  Score: 0.30
+  URL: https://github.com/imteekay/machine-learning-research
+  Description: ✨ AI/ML Research
+
+- jobk84092/polymarket-research (1★)
+  Score: 0.30
+  URL: https://github.com/jobk84092/polymarket-research
+
+- mikepsinn/optimitron (4★)
+  Score: 0.30
+  URL: https://github.com/mikepsinn/optimitron
+  Description: The Earth Optimization Machine!
+
+- Dicklesworthstone/asimposium.org (14★)
+  Score: 0.30
+  URL: https://github.com/Dicklesworthstone/asimposium.org
+  Description: A symposium for frontier AI agents: a public scientific ledger where human-sponsored agents propose, refute, and review work in mathematics and physics.
+
+
+## TOOL (34)
+- JHammerZ/jhammerz.github.io (1★)
+  Score: 0.30
+  URL: https://github.com/JHammerZ/jhammerz.github.io
+  Description: JHammerZ | Joshua Hamilton Professional Musician. Master Architect. Creator of HFID, HEO, Ag-FI. Repository Sovereign.  Music: Professional musician. Studio precision, live integrity. Arrangement is a
+
+- DataIntegrationGroup/OcotilloAPI (2★)
+  Score: 0.30
+  URL: https://github.com/DataIntegrationGroup/OcotilloAPI
+
+- battlesnake/aira (1★)
+  Score: 0.30
+  URL: https://github.com/battlesnake/aira
+  Description: Local-only tools to make highly concurrent agentic development more efficient
+
+- ForceInjection/AI-fundamentals (2540★)
+  Score: 0.30
+  URL: https://github.com/ForceInjection/AI-fundamentals
+  Description: AI 基础知识 - GPU 架构、CUDA 编程、大模型基础及AI Agent 相关知识。
+
+- sxwxs/ghc-api (7★)
+  Score: 0.30
+  URL: https://github.com/sxwxs/ghc-api
+
+- clay-good/agent-replay (13★)
+  Score: 0.90
+  URL: https://github.com/clay-good/agent-replay
+  Description: agent-replay is a 100% local, SQLite-powered CLI tool for time-travel debugging AI agents that lets you replay execution traces, diff behavioral changes, fork runs to test fixes, and run AI-powered ev
+
+- chipi/podcast_scraper (7★)
+  Score: 0.60
+  URL: https://github.com/chipi/podcast_scraper
+  Description: Simple CLI to download episode transcripts from a podcast RSS feed.
+
+- atomantic/PortOS (35★)
+  Score: 0.90
+  URL: https://github.com/atomantic/PortOS
+  Description: Self-hosted Federated Everything App — dev management, agent orchestration, persistent mind, digital twin, second brain, and creative pipeline from a single dashboard over Tailscale
+
+- joecastelino/jay-skill-pack (2★)
+  Score: 0.60
+  URL: https://github.com/joecastelino/jay-skill-pack
+  Description: Skill pack for Jay, the Tekion DMS specialist agent at American Motors Group. Hermes Agent skills, sorted by usage, secrets redacted, auto-synced.
+
+- decimal-labs/decimalai-python (1★)
+  Score: 1.50
+  URL: https://github.com/decimal-labs/decimalai-python
+  Description: 📐 Python SDK for agent evals and skill routing — measure a skill's real lift before you trust it
+
+- tempera-dev/tempera-sdk (1★)
+  Score: 0.30
+  URL: https://github.com/tempera-dev/tempera-sdk
+  Description: Aggregated Tempera SDKs for auth, temp.js, tempOS, remi, cradle, and Arrha across TypeScript, Python, and Rust
+
+- Polyphase-Labs/Polyphase-Engine (63★)
+  Score: 0.30
+  URL: https://github.com/Polyphase-Labs/Polyphase-Engine
+  Description: Polyphase Engine - Build Homebrew games for Wii, Gamecube , 3DS and other retro 3D consoles
+
+- sdsrss/claude-mem-lite (57★)
+  Score: 0.90
+  URL: https://github.com/sdsrss/claude-mem-lite
+  Description: Persistent long-term memory for Claude Code via MCP — captures coding decisions, bugfixes, and context across sessions. Hybrid FTS5 + TF-IDF search with episode batching. Single SQLite DB, no external
+
+- SpiralCloudOmega/DevTeam6 (1★)
+  Score: 0.30
+  URL: https://github.com/SpiralCloudOmega/DevTeam6
+  Description: AI Dev Studio
+
+- macanderson/stella (11★)
+  Score: 0.60
+  URL: https://github.com/macanderson/stella
+  Description: A coding agent that builds it's own tools and mines it's own skills and always ships with receipts.
+
+- attevon-llc/OpenTranscribe (93★)
+  Score: 0.90
+  URL: https://github.com/attevon-llc/OpenTranscribe
+  Description: Self-hosted AI-powered transcription platform with speaker diarization, search, and collaboration features. Built with Svelte, FastAPI, and Docker for easy deployment.
+
+- Dicklesworthstone/coding_agent_session_search (1112★)
+  Score: 0.60
+  URL: https://github.com/Dicklesworthstone/coding_agent_session_search
+  Description: Unified TUI and CLI to index and search your local coding agent session history across 11+ providers (Codex, Claude, Gemini, Cursor, Aider, etc.)
+
+- HarperZ9/flywheel (1★)
+  Score: 1.20
+  URL: https://github.com/HarperZ9/flywheel
+  Description: The one platform: engine + native desktop client for accountable AI infrastructure. Verified-inference loop, receipt-wrapped agent tool calls, lane composition (gather, crucible, index, forum, learn, 
+
+- playidea-lab/borch (1★)
+  Score: 0.30
+  URL: https://github.com/playidea-lab/borch
+  Description: PyTorch-shaped machine learning that runs in a browser tab — hand-written WGSL on WebGPU, a numpy core, and a Python binding, all held to the same values frozen from real PyTorch.
+
+- upskilled-consulting/ollama-harness (1★)
+  Score: 0.30
+  URL: https://github.com/upskilled-consulting/ollama-harness
+
+- ampfit2-lab/ampfit2-lab--makazhanalpamys--soup (1★)
+  Score: 0.30
+  URL: https://github.com/ampfit2-lab/ampfit2-lab--makazhanalpamys--soup
+
+- jmagly/aiwg (209★)
+  Score: 1.20
+  URL: https://github.com/jmagly/aiwg
+  Description: Cognitive architecture for AI-augmented software development. Specialized agents, structured workflows, and multi-platform deployment. Claude Code · Codex · Copilot · Cursor · Factory · Warp · Windsur
+
+- adamvangrover/adam (4★)
+  Score: 0.90
+  URL: https://github.com/adamvangrover/adam
+  Description: An institutional-grade, neuro-symbolic multi-agent AI framework designed for autonomous credit risk control, financial modeling, and deterministic workflow orchestration.
+
+- SeanHogg/Builderforce.ai (5★)
+  Score: 0.90
+  URL: https://github.com/SeanHogg/Builderforce.ai
+  Description: Agentic AI Coding Platform that enables everyone to train, design and embed custom LLMs into a custom agent. Deploy your agent into the builderforce (a workforce and hiring platform). Explore skills, 
+
+- icoretech/codex-pooler (181★)
+  Score: 1.50
+  URL: https://github.com/icoretech/codex-pooler
+  Description: The full featured self-hosted Codex gateway, for teams, agents and you
+
+- jeremydegardeyn/finchat (1★)
+  Score: 0.90
+  URL: https://github.com/jeremydegardeyn/finchat
+  Description: Enterprise banking Data & AI platform on Google Cloud — near-zero-cost reference implementation (medallion BigQuery, event-driven ingestion, DaaS APIs, agentic AI, IaC).
+
+- maximustylus/nexus (1★)
+  Score: 0.30
+  URL: https://github.com/maximustylus/nexus
+  Description: Smart and Interactive Dashboard for Healthcare Professionals
+
+- genkit-ai/genkit (6407★)
+  Score: 0.60
+  URL: https://github.com/genkit-ai/genkit
+  Description: Open-source framework for building agentic apps in JavaScript, Go, Dart, and Python, built and used in production by Google
+
+- maelrx/Zugzwang (6★)
+  Score: 0.90
+  URL: https://github.com/maelrx/Zugzwang
+  Description: Pushing general-purpose LLMs to their chess limits — no fine-tuning, no specialized models. Pure prompt engineering, RAG, chain-of-thought, and multi-agent orchestration. A scientific framework for me
+
+- objectstack-ai/objectstack (50★)
+  Score: 0.60
+  URL: https://github.com/objectstack-ai/objectstack
+  Description: Apps small enough for AI to hold whole. ObjectStack turns the whole app — data model, UI, workflows, permissions — into typed metadata: a complete CRM in under 150k tokens, one context window. Agents 
+
+- Opselon/NexusTradingForexBot (11★)
+  Score: 0.60
+  URL: https://github.com/Opselon/NexusTradingForexBot
+  Description: 👑 Enterprise-grade, high-frequency quantitative scalp trading engine for XAUUSD (Gold). Driven by PyTorch (TCN + Self-Attention), Smart Money Concepts (SMC/ICT) , Win32 C++ MT5 IPC bindings, and a rea
+
+- rfxn/glasswell (1★)
+  Score: 0.60
+  URL: https://github.com/rfxn/glasswell
+  Description: Glass-box upstream analytics on public regulator data: four-state Map and Explore (ND, TX, NM, MT) with per-jurisdiction status truth; ND production, cumulatives, completion and neighbour context; a l
+
+- PerryLink/dsh-background-agents (10★)
+  Score: 1.50
+  URL: https://github.com/PerryLink/dsh-background-agents
+  Description: Interactive long-session background agents for DeepSeek Harness: start a durable continuable child agent, watch its progress in the Web UI sidebar, message it any time, and interrupt it - all through 
+
+- hyparam/hypaware (6★)
+  Score: 0.30
+  URL: https://github.com/hyparam/hypaware
+  Description: Records sessions, logs, and telemetry from your AI agents into one queryable history
+
+
+## CORPORATE (0)
+
+## NOISE (66)
+- wangjiawen2013/charton (386★)
+  Score: 0.00
+  URL: https://github.com/wangjiawen2013/charton
+  Description: Grammar of Graphics in Rust
+
+- wenchiehlee-investment/Python-Actions.GoodInfo (3★)
+  Score: 0.00
+  URL: https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo
+  Description: Working space for Python-Actions.GoodInfo
+
+- asilvainnovations/BIRD-2026-2035 (1★)
+  Score: 0.00
+  URL: https://github.com/asilvainnovations/BIRD-2026-2035
+
+- Saher427/Renewable-Energy-Output-Prediction (1★)
+  Score: 0.00
+  URL: https://github.com/Saher427/Renewable-Energy-Output-Prediction
+
+- mthcht/awesome-lists (1906★)
+  Score: 0.00
+  URL: https://github.com/mthcht/awesome-lists
+  Description: Awesome Security lists for SOC/CERT/CTI
+
+- CostaPaiiva/CineLake-AI (1★)
+  Score: 0.00
+  URL: https://github.com/CostaPaiiva/CineLake-AI
+
+- karalang/kara (44★)
+  Score: 0.00
+  URL: https://github.com/karalang/kara
+  Description: The Kāra programming language — compiled via  LLVM, with automatic parallelization and   WebAssembly support.
+
+- hemjay07/clinicalguard (3★)
+  Score: 0.00
+  URL: https://github.com/hemjay07/clinicalguard
+  Description: Open-source clinical AI evaluation framework with a pluggable adapter pattern for any treatment guideline. First adapter implements the Nigerian Standard Treatment Guidelines (NSTG 2022, 251 condition
+
+- ck-ahmad/ck-ahmad (2★)
+  Score: 0.00
+  URL: https://github.com/ck-ahmad/ck-ahmad
+
+- YunhaoDou/Awesome-List-github-stars-ranking (1★)
+  Score: 0.00
+  URL: https://github.com/YunhaoDou/Awesome-List-github-stars-ranking
+
+- AI4Finance-Foundation/Awesome_AI4Finance (299★)
+  Score: 0.00
+  URL: https://github.com/AI4Finance-Foundation/Awesome_AI4Finance
+  Description: Resources
+
+- tattwamasi/starry-eye (2★)
+  Score: 0.00
+  URL: https://github.com/tattwamasi/starry-eye
+
+- KeeganCarey/Post-Thinking-AIIDE (1★)
+  Score: 0.00
+  URL: https://github.com/KeeganCarey/Post-Thinking-AIIDE
+
+- digoal/blog (8570★)
+  Score: 0.00
+  URL: https://github.com/digoal/blog
+  Description: AI,Opensource,Database,Business,Finance,Minds. git clone --depth 1 https://github.com/digoal/blog
+
+- the-xiaohuichen/math550_2026fall_class (3★)
+  Score: 0.00
+  URL: https://github.com/the-xiaohuichen/math550_2026fall_class
+  Description: MATH 550 + 590 class
+
+- QingGo/qwen35-ple (1★)
+  Score: 0.00
+  URL: https://github.com/QingGo/qwen35-ple
+
+- cipherwebllc/openpay (3★)
+  Score: 0.00
+  URL: https://github.com/cipherwebllc/openpay
+  Description: OpenPay は、JPYC / USDC のウォレット送金を、店舗・イベント向けの QR 決済 / モバイルオーダー体験に変えるノンカストディ型 OSS 決済ツールです。  OpenPay does not hold merchant funds. Customer payments are sent directly to the merchant wallet; OpenPay servic
+
+- juliangrtz/PartnersInTime-Decomp (1★)
+  Score: 0.00
+  URL: https://github.com/juliangrtz/PartnersInTime-Decomp
+  Description: Matching decompilation of Mario & Luigi: Partners in Time (NDS).
+
+- clay-good/alleleforge (1★)
+  Score: 0.00
+  URL: https://github.com/clay-good/alleleforge
+  Description: A variant-first, multi-modality CRISPR design framework that unifies SpCas9 nuclease, base-editor, and prime-editor chemistries under a single typed interface to deliver ranked candidate edits complet
+
+- yjqkrtk-ux/aicamera (1★)
+  Score: 0.00
+  URL: https://github.com/yjqkrtk-ux/aicamera
+
+- ccat3z/stars (22★)
+  Score: 0.00
+  URL: https://github.com/ccat3z/stars
+  Description: A simple tool for creating your own awesome list
+
+- gomugomucode/python-all (5★)
+  Score: 0.00
+  URL: https://github.com/gomugomucode/python-all
+
+- Dicklesworthstone/frankenredis (26★)
+  Score: 0.00
+  URL: https://github.com/Dicklesworthstone/frankenredis
+  Description: Memory-safe clean-room Redis reimplementation in Rust with strict/hardened compatibility modes, deterministic replication semantics, differential conformance harnesses, and profile-guided optimization
+
+- kokizzu/hatrie_cache (3★)
+  Score: 0.00
+  URL: https://github.com/kokizzu/hatrie_cache
+  Description: Distributed memcache using HAT-Trie
+
+- cakhiltej9001-source/medical-guideline-assistant (3★)
+  Score: 0.00
+  URL: https://github.com/cakhiltej9001-source/medical-guideline-assistant
+  Description: Safety-first RAG assistant grounded in official MOHFW and NCVBDC medical guidelines
+
+- tsirysndr/my-awesome-stars (8★)
+  Score: 0.00
+  URL: https://github.com/tsirysndr/my-awesome-stars
+  Description: A curated list of my Github stars! ✨
+
+- SystemSecurityStorm/Awesome-Binary-Similarity (615★)
+  Score: 0.00
+  URL: https://github.com/SystemSecurityStorm/Awesome-Binary-Similarity
+  Description: An awesome & curated list of binary code similarity papers
+
+- utensil/awesome-stars (34★)
+  Score: 0.00
+  URL: https://github.com/utensil/awesome-stars
+  Description: A curated list of my GitHub stars!
+
+- mblakemore/quantum (2★)
+  Score: 0.00
+  URL: https://github.com/mblakemore/quantum
+  Description: Autonomous Characterization of the IBM Heron-r2 Quantum Processor
+
+- Xatta-Trone/awesome-tdl (2★)
+  Score: 0.00
+  URL: https://github.com/Xatta-Trone/awesome-tdl
+  Description: A curated collection of TDL (Tabular Deep Learning) resources—libraries, projects, tutorials, papers, and more—for researchers and developers in the field.
+
+- JacobFV/JacobFV (1★)
+  Score: 0.00
+  URL: https://github.com/JacobFV/JacobFV
+  Description: JacobFV profile repository
+
+- itsbrex/my-awesome-stars (18★)
+  Score: 0.00
+  URL: https://github.com/itsbrex/my-awesome-stars
+  Description: A curated list of my GitHub stars!
+
+- svg153/awesome-stars (12★)
+  Score: 0.00
+  URL: https://github.com/svg153/awesome-stars
+
+- bramses/awesome-stars (4★)
+  Score: 0.00
+  URL: https://github.com/bramses/awesome-stars
+
+- badele/all-stars (1★)
+  Score: 0.00
+  URL: https://github.com/badele/all-stars
+
+- jensbodal/awesome-stars (1★)
+  Score: 0.00
+  URL: https://github.com/jensbodal/awesome-stars
+  Description: My awesome stars
+
+- vincent8910/wtf-is (8★)
+  Score: 0.00
+  URL: https://github.com/vincent8910/wtf-is
+  Description: 又有人在講天書了？這裡翻譯給你聽。 每個詞都有白話解釋、生活化比喻、實際造句。點進去就懂，不用 Google 半天。
+
+- andrew/ultimate-awesome (217★)
+  Score: 0.00
+  URL: https://github.com/andrew/ultimate-awesome
+  Description: Every awesome list on every topic, including awesome lists of awesome lists, updated daily.
+
+- raamonp/rl-gym-orchestrator (55★)
+  Score: 0.00
+  URL: https://github.com/raamonp/rl-gym-orchestrator
+  Description: Ultimate LLM Gym Trainer Guide 2026: Reinforcement Learning Fine-Tuning Framework
+
+- tbhb/vale-ai-tells (83★)
+  Score: 0.00
+  URL: https://github.com/tbhb/vale-ai-tells
+  Description: In today's rapidly evolving landscape, vale-ai-tells is a comprehensive, cutting-edge Vale style package that empowers writers to seamlessly delve into the rich tapestry of AI tells. It's not just a r
+
+- pabloretamales/rank-radar (1★)
+  Score: 0.00
+  URL: https://github.com/pabloretamales/rank-radar
+  Description: IA Tools & Opensource Rank Radar
+
+- aben1188/my-star-repos (31★)
+  Score: 0.00
+  URL: https://github.com/aben1188/my-star-repos
+
+- guoriyue/VRL (88★)
+  Score: 0.00
+  URL: https://github.com/guoriyue/VRL
+
+- he-yufeng/he-yufeng (3★)
+  Score: 0.00
+  URL: https://github.com/he-yufeng/he-yufeng
+  Description: Profile README
+
+- unslothai/unsloth-zoo (324★)
+  Score: 0.00
+  URL: https://github.com/unslothai/unsloth-zoo
+  Description: Utils for Unsloth https://github.com/unslothai/unsloth
+
+- zombiegirlcz/kali_core_emulator (1★)
+  Score: 0.00
+  URL: https://github.com/zombiegirlcz/kali_core_emulator
+
+- BenKassan/campus-codex (1★)
+  Score: 0.00
+  URL: https://github.com/BenKassan/campus-codex
+  Description: Turn Canvas and other school portals into a personal dashboard with Codex. Guided onboarding, source-backed deadlines, and a local dashboard.
+
+- common-voice/common-voice (3486★)
+  Score: 0.00
+  URL: https://github.com/common-voice/common-voice
+  Description: Common Voice is part of Mozilla's initiative to help teach machines how real people speak.
+
+- yanxi-H/github-radar (1★)
+  Score: 0.00
+  URL: https://github.com/yanxi-H/github-radar
+  Description: 通用 GitHub 开源项目自动发现工具 — 可配置搜索关键词、语言、领域关键词，AI 生成结构化总结，推送到微信/Bark
+
+- RitikkumarAI/ritikkumarAI (2★)
+  Score: 0.00
+  URL: https://github.com/RitikkumarAI/ritikkumarAI
+
+- Dicklesworthstone/frankensim (49★)
+  Score: 0.00
+  URL: https://github.com/Dicklesworthstone/frankensim
+  Description: Plan-first Rust continuum for certified geometry, physics simulation, optimization, and rendering.
+
+- jounlai/langmap (8★)
+  Score: 0.00
+  URL: https://github.com/jounlai/langmap
+
+- Correia-jpv/fucking-awesome (53★)
+  Score: 0.00
+  URL: https://github.com/Correia-jpv/fucking-awesome
+  Description: 😎 Awesome lists about all kinds of interesting topics. With repository stars⭐ and forks🍴
+
+- julianfbeck/github-stars (5★)
+  Score: 0.00
+  URL: https://github.com/julianfbeck/github-stars
+  Description: A curated list of my GitHub stars by stargazed
+
+- fboaventura/awesome-starts (5★)
+  Score: 0.00
+  URL: https://github.com/fboaventura/awesome-starts
+  Description: My starred repositories
+
+- Dominic789654/awesome-deepseek-harness (221★)
+  Score: 0.00
+  URL: https://github.com/Dominic789654/awesome-deepseek-harness
+  Description: A curated list of plugins, skills, MCP servers, patch/profile layers, orchestrators & UIs for DeepSeek Harness (DSH). Visualization · PPT · Coding · Agents · Loops (auto-research) and more. #dsh
+
+- CausalityHQ/borsuk (1★)
+  Score: 0.00
+  URL: https://github.com/CausalityHQ/borsuk
+  Description: Blob-Oriented Retrieval with Segmental Unified KNN
+
+- Correia-jpv/fucking-awesome-ios (31★)
+  Score: 0.00
+  URL: https://github.com/Correia-jpv/fucking-awesome-ios
+  Description: A curated list of awesome iOS ecosystem, including Objective-C and Swift Projects. With repository stars⭐ and forks🍴
+
+- seifreed/r2morph (52★)
+  Score: 0.00
+  URL: https://github.com/seifreed/r2morph
+  Description: A metamorphic binary transformation engine based on r2pipe and radare2.
+
+- eltonaguiar/findtorontoevents_antigravity.ca (3★)
+  Score: 0.00
+  URL: https://github.com/eltonaguiar/findtorontoevents_antigravity.ca
+
+- weilicao/SPScanner (14★)
+  Score: 0.10
+  URL: https://github.com/weilicao/SPScanner
+  Description: [COLM '25] Single-Pass Document Scanning for Question Answering
+
+- biocore/unifrac-binaries (2★)
+  Score: 0.00
+  URL: https://github.com/biocore/unifrac-binaries
+
+- clay-good/roughlogic.com (3★)
+  Score: 0.00
+  URL: https://github.com/clay-good/roughlogic.com
+  Description: Always free field math and reference for the trades.
+
+- asdfghj1237890/mini-macau (631★)
+  Score: 0.00
+  URL: https://github.com/asdfghj1237890/mini-macau
+  Description: Trilingual 3D visualization of Macau's public transit and aviation — LRT, buses, ferries, and MFM airport flights with schedule-driven simulation
+
+- Dicklesworthstone/frankenscipy (13★)
+  Score: 0.00
+  URL: https://github.com/Dicklesworthstone/frankenscipy
+  Description: Clean-room Rust reimplementation of SciPy with Condition-Aware Solver Portfolio (CASP) — runtime algorithm selection driven by conditioning diagnostics, stability certificates, and decision-theoretic 
+
+- Deltasthicc/PRISM (2★)
+  Score: 0.00
+  URL: https://github.com/Deltasthicc/PRISM
+

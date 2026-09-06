@@ -37,7 +37,7 @@
 
 | Model name | Used by | Type | Language | Size | Description | Link |
 |---|---|---|---|---|---|---|
-| *No open-source models currently listed.* | | | | | | |
+| [manaca-1b-instruct](https://github.com/Instituto-IA-LNCC/manaca-1b-instruct) | — | LLM | Portuguese | 1B | An open, reproducible Brazilian-Portuguese language model. | [GitHub](https://github.com/Instituto-IA-LNCC/manaca-1b-instruct) |
 
 ### <div id="models-2024">2024</div>
 
