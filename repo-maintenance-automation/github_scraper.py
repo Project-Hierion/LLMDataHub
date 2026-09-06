@@ -2,7 +2,7 @@
 """
 File: github_scraper.py
 Tool: LLMDataHub Harvester — GitHub API Scraper
-Version: 1.0.2
+Version: 1.0.3
 System: Project Hierion / repo-maintenance-automation
 Status: ACTIVE
 License: AGPLv3 with Commons Clause
@@ -55,6 +55,7 @@ def is_corporate(repo: Dict) -> bool:
     return False
 
 SEARCH_KEYWORDS = [
+    # Existing
     "dataset",
     "llm dataset",
     "sft dataset",
@@ -69,6 +70,15 @@ SEARCH_KEYWORDS = [
     "code dataset",
     "math dataset",
     "reasoning dataset",
+    # New additions for awesome lists and curation
+    "awesome list",
+    "curated list",
+    "post-training",
+    "fine-tuning",
+    "preference",
+    "alignment",
+    "llm course",
+    "llm resources",
 ]
 
 PERMISSIVE_LICENSES = [
