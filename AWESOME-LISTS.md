@@ -175,3 +175,22 @@ Following Nvidia's acquisition of HuggingFace (September 2026), this archive no 
 
   **Added:** 2026-09-06
 </details>
+
+<details>
+  <summary><strong>mlabonne/llm-course</strong> — 82.3k ★</summary>
+
+  **Description:** Course to get into Large Language Models (LLMs) with roadmaps and Colab notebooks.
+
+  **Link:** [https://github.com/mlabonne/llm-course](https://github.com/mlabonne/llm-course)
+
+  **License:** MIT (permissive)
+
+  **What's Inside:**
+  - LLM Fundamentals (Math, Python, Neural Networks, NLP)
+  - LLM Scientist (Architecture, Pre-training, Post-training, SFT, Preference Alignment, Evaluation, Quantization, New Trends)
+  - Resources and references
+
+  **Why This Matters:** With over 82,000 stars, this is one of the most popular LLM learning resources on GitHub. It's a complete roadmap from fundamentals to advanced topics.
+
+  **Added:** 2026-09-06
+</details>

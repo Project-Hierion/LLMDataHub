@@ -127,3 +127,15 @@
 
 **📌 Note on HuggingFace links:**  
 Following Nvidia's acquisition of HuggingFace (September 2026), this archive no longer links directly to HF-hosted models. We believe in open infrastructure, not corporate consolidation. Models hosted exclusively on HF are marked `🤑` and quarantined in the HuggingFace-Hosted Models section at the bottom of this page — no links, no traffic. We encourage users to seek out mirrors, GitHub repos, or paper sources. If you find a non-HF link for a model, please contribute it. Let's keep open-source, open. Together.
+
+<details>
+  <summary>📁 mlabonne Fine-tunes & Merges</summary>
+
+| Model name | Type | Description | Link |
+|---|---|---|---|
+| [NeuralDaredevil-8B](https://huggingface.co/mlabonne/NeuralDaredevil-8B) | Merge | Popular merged model. | [HF](https://huggingface.co/mlabonne/NeuralDaredevil-8B) |
+| [AlphaMonarch-7B](https://huggingface.co/mlabonne/AlphaMonarch-7B) | Merge | Popular merged model. | [HF](https://huggingface.co/mlabonne/AlphaMonarch-7B) |
+| [NeuralHermes](https://huggingface.co/mlabonne/NeuralHermes-2.5-Mistral-7B) | DPO | First successful open-source DPO model. | [HF](https://huggingface.co/mlabonne/NeuralHermes-2.5-Mistral-7B) |
+| [Phixtral](https://huggingface.co/mlabonne/Phixtral-4x2_8) | MoE | First Phi-based Mixture of Experts. | [HF](https://huggingface.co/mlabonne/Phixtral-4x2_8) |
+
+</details>

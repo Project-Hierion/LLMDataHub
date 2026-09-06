@@ -123,3 +123,15 @@
 
 **📌 Note on HuggingFace links:**  
 Following Nvidia's acquisition of HuggingFace (September 2026), this archive no longer links directly to HF-hosted tools. We believe in open infrastructure, not corporate consolidation. Tools hosted exclusively on HF are marked `🤑` and quarantined in the HuggingFace-Hosted Tools section at the bottom of this page — no links, no traffic. We encourage users to seek out mirrors, GitHub repos, or paper sources. If you find a non-HF link for a tool, please contribute it. Let's keep open-source, open. Together.
+
+<details>
+  <summary>📁 llm-tools — mlabonne's Colab Notebooks</summary>
+
+| Tool name | Description | Link |
+|---|---|---|
+| [LLM AutoEval](https://github.com/mlabonne/llm-tools) | Automatically evaluate your LLMs using RunPod. | [GitHub](https://github.com/mlabonne/llm-tools) |
+| [LazyMergekit](https://github.com/mlabonne/llm-tools) | Easily merge models using MergeKit in one click. | [GitHub](https://github.com/mlabonne/llm-tools) |
+| [LazyAxolotl](https://github.com/mlabonne/llm-tools) | Fine-tune models in the cloud using Axolotl in one click. | [GitHub](https://github.com/mlabonne/llm-tools) |
+| [AutoQuant](https://github.com/mlabonne/llm-tools) | Quantize your models. | [GitHub](https://github.com/mlabonne/llm-tools) |
+
+</details>
