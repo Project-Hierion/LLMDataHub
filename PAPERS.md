@@ -16,6 +16,8 @@
 
 **🤑 = HuggingFace-hosted (link omitted).** Following Nvidia's acquisition of HF (Sept 2026), we no longer link to their platform. Seek mirrors or GitHub sources. See full note at the bottom of this page. Let's keep open-source, open. Together.
 
+**💡 Click the arrow (▶) next to each section to expand and view the entries.**
+
 ## Table of Contents
 - [General Research Papers](#general_papers)
   - [2026](#papers-2026)
