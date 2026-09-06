@@ -68,21 +68,41 @@
 </details>
 
 <details>
-  <summary><strong>mlabonne/llm-tools</strong> — 4.8k ★</summary>
+  <summary><strong>EleutherAI/llm-evaluation-harness</strong> — 5k+ ★</summary>
 
-  **Description:** Curated list of tools and utilities for post-training LLMs.
+  **Description:** A unified framework to test generative language models on a large number of different evaluation tasks.
 
-  **Link:** [https://github.com/mlabonne/llm-tools](https://github.com/mlabonne/llm-tools)
+  **Link:** [https://github.com/EleutherAI/lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness)
 
   **License:** MIT (permissive)
 
   **What's Inside:**
-  - LLM AutoEval — automatically evaluate LLMs
-  - LazyMergekit — easily merge models
-  - LazyAxolotl — fine-tune models in the cloud
-  - AutoQuant — quantize models
+  - 200+ tasks and benchmarks
+  - Support for Hugging Face, vLLM, OpenAI, Anthropic, and more
+  - Used for the Open LLM Leaderboard
+  - Extensible and modular design
 
-  **Why This Matters:** A curated collection of practical tools for working with LLMs.
+  **Why This Matters:** This is the gold standard for evaluating LLMs. It's what powers the Open LLM Leaderboard and is used by researchers worldwide.
+
+  **Added:** 2026-09-06
+</details>
+
+<details>
+  <summary><strong>lm-sys/FastChat</strong> — 30k+ ★</summary>
+
+  **Description:** An open platform for training, serving, and evaluating large language model-based chatbots.
+
+  **Link:** [https://github.com/lm-sys/FastChat](https://github.com/lm-sys/FastChat)
+
+  **License:** Apache-2.0 (permissive)
+
+  **What's Inside:**
+  - Chatbot Arena data and code
+  - Vicuna model weights and training code
+  - Serving framework for LLMs
+  - Evaluation tools
+
+  **Why This Matters:** FastChat powers the Chatbot Arena, one of the most important evaluation platforms in the LLM community. The arena data is a goldmine for preference learning.
 
   **Added:** 2026-09-06
 </details>
@@ -135,62 +155,3 @@
 
 **📌 Note on HuggingFace links:**  
 Following Nvidia's acquisition of HuggingFace (September 2026), this archive no longer links directly to HF-hosted resources. We believe in open infrastructure, not corporate consolidation. Resources hosted exclusively on HF are marked `🤑` and quarantined in the HuggingFace-Hosted section at the bottom of this page — no links, no traffic. We encourage users to seek out mirrors, GitHub repos, or paper sources. If you find a non-HF link for a resource, please contribute it. Let's keep open-source, open. Together.
-
-<details>
-  <summary><strong>EleutherAI/llm-evaluation-harness</strong> — 5k+ ★</summary>
-
-  **Description:** A unified framework to test generative language models on a large number of different evaluation tasks.
-
-  **Link:** [https://github.com/EleutherAI/lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness)
-
-  **License:** MIT (permissive)
-
-  **What's Inside:**
-  - 200+ tasks and benchmarks
-  - Support for Hugging Face, vLLM, OpenAI, Anthropic, and more
-  - Used for the Open LLM Leaderboard
-  - Extensible and modular design
-
-  **Why This Matters:** This is the gold standard for evaluating LLMs. It's what powers the Open LLM Leaderboard and is used by researchers worldwide.
-
-  **Added:** 2026-09-06
-</details>
-
-<details>
-  <summary><strong>lm-sys/FastChat</strong> — 30k+ ★</summary>
-
-  **Description:** An open platform for training, serving, and evaluating large language model-based chatbots.
-
-  **Link:** [https://github.com/lm-sys/FastChat](https://github.com/lm-sys/FastChat)
-
-  **License:** Apache-2.0 (permissive)
-
-  **What's Inside:**
-  - Chatbot Arena data and code
-  - Vicuna model weights and training code
-  - Serving framework for LLMs
-  - Evaluation tools
-
-  **Why This Matters:** FastChat powers the Chatbot Arena, one of the most important evaluation platforms in the LLM community. The arena data is a goldmine for preference learning.
-
-  **Added:** 2026-09-06
-</details>
-
-<details>
-  <summary><strong>mlabonne/llm-course</strong> — 82.3k ★</summary>
-
-  **Description:** Course to get into Large Language Models (LLMs) with roadmaps and Colab notebooks.
-
-  **Link:** [https://github.com/mlabonne/llm-course](https://github.com/mlabonne/llm-course)
-
-  **License:** MIT (permissive)
-
-  **What's Inside:**
-  - LLM Fundamentals (Math, Python, Neural Networks, NLP)
-  - LLM Scientist (Architecture, Pre-training, Post-training, SFT, Preference Alignment, Evaluation, Quantization, New Trends)
-  - Resources and references
-
-  **Why This Matters:** With over 82,000 stars, this is one of the most popular LLM learning resources on GitHub. It's a complete roadmap from fundamentals to advanced topics.
-
-  **Added:** 2026-09-06
-</details>
