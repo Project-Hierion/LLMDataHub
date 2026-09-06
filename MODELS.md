@@ -39,6 +39,10 @@
 </details>
 
 ### <div id="models-2025">2025</div>
+| [NeuralDaredevil-8B](https://huggingface.co/mlabonne/NeuralDaredevil-8B) (HF-hosted 🤑) | — | LLM | English | 8B | Popular merged model. Fine-tuned for general-purpose chat and reasoning. |
+| [AlphaMonarch-7B](https://huggingface.co/mlabonne/AlphaMonarch-7B) (HF-hosted 🤑) | — | LLM | English | 7B | Popular merged model. Strong performance on reasoning and instruction following. |
+| [NeuralHermes-2.5-Mistral-7B](https://huggingface.co/mlabonne/NeuralHermes-2.5-Mistral-7B) (HF-hosted 🤑) | — | LLM | English | 7B | First successful open-source DPO model. Combines Hermes and Neural Chat. |
+| [Phixtral-4x2_8](https://huggingface.co/mlabonne/Phixtral-4x2_8) (HF-hosted 🤑) | — | MoE | English | 4x2.8B | First Phi-based Mixture of Experts. Merges multiple Phi-2 models. |
 | [TemporalStore](https://github.com/matrixarkai/TemporalStore) | — | LLM | Python | 161★ | Open-source Rust TemporalStore for LLM context management, temporal features, and risk control |
 | [DMI](https://github.com/ProjectDMX/DMI) | — | LLM | Python | 20★ | DMI: A decoupled, asynchronous observability stack for high-performance LLMs. |
 | [ai-agent-book](https://github.com/bojieli/ai-agent-book) | — | LLM | Python | 44860★ | 《深入理解 AI Agent：设计原理与工程实践》（李博杰 著）开源主仓库：全书正文、编译版 PDF 与按章配套代码 |
