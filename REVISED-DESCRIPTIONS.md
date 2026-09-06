@@ -520,3 +520,7 @@ To inquire about this maintained fork, or Project Hierion: [project-hierion@prot
 ---
 
 *With gratitude and much respect to the community, for providing such useful resources, [Project-Hierion](https://github.com/Project-Hierion) will attempt to maintain and keep this forked branch of the original [LLMDataHub](https://github.com/Zjh-819/LLMDataHub) by Junhao Zhao, up to date and current. 🙏*
+
+**RIF-Layoff-Dataset**
+*Original description:* Schema and records for RIF Tracking.
+*Revised description:* *(pending)*
