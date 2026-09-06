@@ -64,6 +64,8 @@
 | [KoHRM-Text](https://github.com/sapientinc/HRM-Text) | — | PT | Korean | 1.4B tokens | Korean pretraining dataset with legal, Wikipedia, terminal conversations, and reasoning data. |
 
 ### Datasets Released in 2025
+| [venezuela-digital-observatory](https://github.com/ggangix/venezuela-digital-observatory) | — | Dataset | TypeScript | 54★ | Public dataset of Venezuelan government domains (.gob.ve) with registration dates, expiration, and infrastructure dat... |
+
 | [RIF-Layoff-Dataset](https://github.com/davidfue/RIF-Layoff-Dataset) | — | Dataset | — | 3★ | Schema and records for RIF Tracking. |
 
 | Dataset name | Used by | Type | Language | Size | Description |
