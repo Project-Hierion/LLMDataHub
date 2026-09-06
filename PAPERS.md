@@ -34,12 +34,16 @@
 | *No papers currently listed.* | | | | | |
 
 ### <div id="papers-2025">2025</div>
+| [cv-daily](https://github.com/ZhuYingJessica/cv-daily) | ZhuYingJessica | — | [Code](https://github.com/ZhuYingJessica/cv-daily) | — | Daily arXiv paper collection focused on computer vision. |
+| [daily-video-papers](https://github.com/greasebig/daily-video-papers) | greasebig | — | [Code](https://github.com/greasebig/daily-video-papers) | — | Daily automated updates for video-related research papers from arXiv. |
+| [RL Seminal Papers](https://github.com/rshirale/rl-seminal-papers) | rshirale | — | [Code](https://github.com/rshirale/rl-seminal-papers) | — | Source code for "Reinforcement Learning – The Seminal Papers". From foundations to RLHF and reasoning models. |
 
 | Paper title | Authors | Venue | Code Link | Dataset Link | Description |
 |---|---|---|---|---|---|
 | *No papers currently listed.* | | | | | |
 
 ### <div id="papers-2024">2024</div>
+| [Marigold](https://github.com/prs-eth/Marigold) | prs-eth | CVPR 2024 | [Code](https://github.com/prs-eth/Marigold) | — | Repurposing Diffusion-Based Image Generators for Monocular Depth Estimation. Best Paper Award Candidate. |
 
 | Paper title | Authors | Venue | Code Link | Dataset Link | Description |
 |---|---|---|---|---|---|
