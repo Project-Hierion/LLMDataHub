@@ -64,6 +64,15 @@
 | [KoHRM-Text](https://github.com/sapientinc/HRM-Text) | — | PT | Korean | 1.4B tokens | Korean pretraining dataset with legal, Wikipedia, terminal conversations, and reasoning data. |
 
 ### Datasets Released in 2025
+| [SYNTHETIC-2-SFT-verified](HF-hosted (no link) 🤑) | — | SFT | English | 4M | Large-scale reasoning dataset with verified traces from DeepSeek-R1-0528, spanning math, coding, puzzles, and instruction following. |
+| [Dolci-Instruct-SFT](HF-hosted (no link) 🤑) | — | SFT | Multilingual | 2.15M | Large-scale instruction following mixture combining public datasets with synthetic samples. Covers math, science, coding, safety, and 70+ languages. |
+| [MathX-5M](HF-hosted (no link) 🤑) | — | SFT | English | 5.05M | High-quality, synthetically curated and meticulously filtered dataset for advanced mathematical reasoning. |
+| [OpenThoughts3-1.2M](HF-hosted (no link) 🤑) | — | SFT | English | 1.2M | Mixture with 850k math, 250k code, 100k science samples, annotated with QwQ-32B. |
+| [CodeX-7M-Non-Thinking](HF-hosted (no link) 🤑) | — | SFT | English | 7.36M | Large-scale curated coding dataset with direct solutions. Covers Python, Java, C++, JavaScript, and more across algorithms, data structures, ML, and competitive programming. |
+| [Ling-Coder-SFT](HF-hosted (no link) 🤑) | — | SFT | English/Chinese | 4.48M | Large-scale coding dataset in English and Chinese with 20 programming languages. Direct-answer responses without reasoning traces. |
+| [MegaScience](HF-hosted (no link) 🤑) | — | SFT | English | 1.25M | High-quality scientific dataset with diverse domains and ablation studies. |
+| [AgentTrove](HF-hosted (no link) 🤑) | — | SFT | English | 1.7M | Samples drawn from 219 source datasets spanning code repair, shell scripting, mathematical problem-solving, competitive programming, and general computer-use tasks. |
+| [ToolMind](HF-hosted (no link) 🤑) | — | SFT | English | 369K | Large-scale reasoning-enhanced tool-use dataset with 20K+ tools, using a multi-agent framework simulating user-assistant-tool interactions with fine-grained quality filtering. |
 | [venezuela-digital-observatory](https://github.com/ggangix/venezuela-digital-observatory) | — | Dataset | TypeScript | 54★ | Public dataset of Venezuelan government domains (.gob.ve) with registration dates, expiration, and infrastructure dat... |
 
 | [RIF-Layoff-Dataset](https://github.com/davidfue/RIF-Layoff-Dataset) | — | Dataset | — | 3★ | Schema and records for RIF Tracking. |
