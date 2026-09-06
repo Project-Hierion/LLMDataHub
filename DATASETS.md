@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Project-Hierion/LLMDataHub"> <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/Project-Hierion/LLMDataHub">
+<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Project-Hierion/LLMDataHub"> <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/Project-Hierion/LLMDataHub"> <img alt="Repo Automation Status" src="https://github.com/Project-Hierion/LLMDataHub/actions/workflows/vault-check.yml/badge.svg">
 </p>
 
 # Dataset Collections By Most Recent And In Alphabetical Order
