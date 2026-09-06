@@ -2,7 +2,7 @@
 """
 File: github_scraper.py
 Tool: LLMDataHub Harvester — GitHub API Scraper
-Version: 1.0.3
+Version: 1.0.4
 System: Project Hierion / repo-maintenance-automation
 Status: ACTIVE
 License: AGPLv3 with Commons Clause
@@ -11,12 +11,31 @@ License: AGPLv3 with Commons Clause
 import os
 import re
 import time
+import random
 import requests
 from datetime import datetime, timedelta
 from typing import List, Dict, Optional
+from functools import wraps
 
 GITHUB_API = "https://api.github.com"
 GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN")
+
+# === RATE LIMITING ===
+def rate_limit(calls_per_minute=10):
+    """Decorator to rate limit API calls."""
+    last_call = 0
+    def decorator(func):
+        @wraps(func)
+        def wrapper(*args, **kwargs):
+            nonlocal last_call
+            elapsed = time.time() - last_call
+            min_interval = 60.0 / calls_per_minute
+            if elapsed < min_interval:
+                time.sleep(min_interval - elapsed)
+            last_call = time.time()
+            return func(*args, **kwargs)
+        return wrapper
+    return decorator
 
 # === CORPORATE BLOCKLIST ===
 CORPORATE_BLOCKLIST = [
@@ -55,7 +74,6 @@ def is_corporate(repo: Dict) -> bool:
     return False
 
 SEARCH_KEYWORDS = [
-    # Existing
     "dataset",
     "llm dataset",
     "sft dataset",
@@ -70,7 +88,6 @@ SEARCH_KEYWORDS = [
     "code dataset",
     "math dataset",
     "reasoning dataset",
-    # New additions for awesome lists and curation
     "awesome list",
     "curated list",
     "post-training",
@@ -93,7 +110,20 @@ PERMISSIVE_LICENSES = [
     "unlicense",
 ]
 
+def validate_repo_name(name: str) -> bool:
+    """Only allow valid GitHub repo names."""
+    if not name or not isinstance(name, str):
+        return False
+    if not re.match(r'^[a-zA-Z0-9-]+/[a-zA-Z0-9-_.]+$', name):
+        return False
+    for blocked in CORPORATE_BLOCKLIST:
+        if blocked in name.lower():
+            return False
+    return True
+
+@rate_limit(calls_per_minute=10)
 def search_github(query: str, max_results: int = 100) -> List[Dict]:
+    """Search GitHub for repos matching a query."""
     headers = {"Accept": "application/vnd.github.v3+json"}
     if GITHUB_TOKEN:
         headers["Authorization"] = f"token {GITHUB_TOKEN}"
@@ -140,6 +170,9 @@ def search_github(query: str, max_results: int = 100) -> List[Dict]:
                 break
             
             for repo in items:
+                if not validate_repo_name(repo.get("full_name", "")):
+                    continue
+                    
                 license_info = repo.get("license")
                 license_name = license_info.get("key", "") if license_info else ""
                 repo_data = {
@@ -221,7 +254,6 @@ def scrape_github(
                 continue
             seen_repos.add(repo_key)
             
-            # Skip corporate
             if is_corporate(repo):
                 continue
             

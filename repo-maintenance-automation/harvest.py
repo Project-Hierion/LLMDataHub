@@ -9,6 +9,7 @@ License: AGPLv3 with Commons Clause
 """
 
 import sys
+from old_itch import standard_maintenance
 import time
 import json
 import os
@@ -20,6 +21,8 @@ from classifier import classify_candidates, filter_candidates, load_existing_dat
 from formatter import format_candidates, generate_insertion_commands, apply_insertions
 
 def print_banner(text: str, char: str = "=", width: int = 60):
+    # Run standard maintenance
+    standard_maintenance()
     print(f"\n{char * width}")
     print(f"  {text}")
     print(f"{char * width}\n")
@@ -31,6 +34,8 @@ def human_review(classified: Dict[str, List[Dict]]) -> bool:
     total = sum(len(repos) for repos in classified.values())
     
     print_banner("🌱 HARVEST COMPLETE", "=")
+    # Run standard maintenance
+    standard_maintenance()
     
     print(f"  📊 Summary:")
     for category, repos in classified.items():
@@ -113,6 +118,8 @@ def generate_pr_body(classified: Dict[str, List[Dict]]) -> str:
 
 def main():
     print_banner("🌱 LLMDataHub Harvester", "=")
+    # Run standard maintenance
+    standard_maintenance()
     
     # Step 1: Scrape
     print("  📡 Scraping GitHub for candidates...")
@@ -200,6 +207,8 @@ def main():
     print("  Run: ./logs/insert.sh to apply changes")
     
     print_banner("✅ Harvest complete. Ready for review.", "=")
+    # Run standard maintenance
+    standard_maintenance()
 
 if __name__ == "__main__":
     main()
