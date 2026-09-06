@@ -35,6 +35,11 @@
 | *No tools currently listed.* | | | | | |
 
 ### <div id="tools-2025">2025</div>
+| [NeMo-Curator](https://github.com/NVIDIA/NeMo-Curator) | — | Data Curation | Python | GPU-accelerated toolkit for large-scale data curation, with exact/fuzzy/semantic deduplication, 30+ heuristic filters, and quality/safety classifiers. |
+| [DataTrove](https://github.com/huggingface/datatrove) | — | Data Processing | Python | Library for large-scale text processing with platform-agnostic pipeline blocks (filters, dedup, readers/writers) that run locally or on Slurm. |
+| [Distilabel](https://github.com/argilla-io/distilabel) | — | Data Generation | Python | Framework to generate and augment data (SFT, DPO) with techniques like UltraFeedback and DEITA. |
+| [Argilla](https://github.com/argilla-io/argilla) | — | Data Annotation | Python | Platform that allows you to manually filter and annotate datasets in a collaborative way. |
+| [SemHash](https://github.com/minishlab/semhash) | — | Deduplication | Python | Fuzzy deduplication based on fast embedding generation with a distilled model. |
 | [HostlistsRegistry](https://github.com/AdguardTeam/HostlistsRegistry) | — | Tool | JavaScript | Known hosts blocklists that are made available to the users of AdGuard products |
 | [vibe-ic](https://github.com/vibeic/vibe-ic) | — | Tool | Python | AI-native IC design plugin with MCP-EDA — from natural-language intent to verified silicon. |
 | [bernstein](https://github.com/sipyourdrink-ltd/bernstein) | — | Tool | Python | The open‑source AI Agents Governance & Orchestration framework: write the rules declaratively, Bernstein enforces the... |
@@ -47,7 +52,6 @@
 | [espectre](https://github.com/francescopace/espectre) | — | Tool | Python | Wi-Fi CSI motion sensing for ESP32. C++ SDK, ESPHome, Native, and Matter frontends, browser tools, and a CLI for the ... |
 | [stac-extensions.github.io](https://github.com/stac-extensions/stac-extensions.github.io) | — | Tool | Python | Overview of STAC Extensions, with advice on creating new extensions |
 | [vscode-omni-viewer](https://github.com/battlecook/vscode-omni-viewer) | — | Tool | TypeScript | A comprehensive audio, image, video, CSV, and JSONL viewer extension for VSCode and Cursor. |
-
 | [open-science](https://github.com/aipoch/open-science) | — | Research Workbench | Python | Open-source, local-first, model-agnostic AI research workbench with scientific agents, Python/R notebooks, data connectors, and reproducible research. Apache-2.0. |
 | [TemporalStore](https://github.com/matrixarkai/TemporalStore) | — | Memory Engine | Rust | Open-source Rust-based temporal memory engine for LLM context management, temporal features, and risk control. Apache-2.0. |
 | [FastVideo](https://github.com/hao-ai-lab/FastVideo) | — | Video | Python | Unified inference and post-training framework for accelerated video generation. |
