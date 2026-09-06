@@ -2,7 +2,7 @@
 """
 File: formatter.py
 Tool: LLMDataHub Harvester — Markdown Formatter
-Version: 1.0.4
+Version: 1.0.5
 System: Project Hierion / repo-maintenance-automation
 Status: ACTIVE
 License: AGPLv3 with Commons Clause
@@ -97,17 +97,39 @@ def insert_rows_into_file(filename: str, section_pattern: str, rows: List[str]) 
         print(f"  ❌ Section not found in {filename}: {section_pattern}")
         return False
     
+    # Check if any of the rows already exist (dedupe)
+    existing_entries = []
+    for row in rows:
+        # Extract the name from the row
+        name_match = re.search(r'\[([^\]]+)\]', row)
+        if name_match:
+            name = name_match.group(1)
+            # Check if this name already appears in the section
+            section_content = content[section_match.end():]
+            next_section = re.search(r'\n### ', section_content)
+            if next_section:
+                section_content = section_content[:next_section.start()]
+            if name in section_content:
+                print(f"  ⏭️  Skipping duplicate: {name}")
+                continue
+        existing_entries.append(row)
+    
+    if not existing_entries:
+        print(f"  ℹ️  No new entries to add to {filename}")
+        return True
+    
     # Insert rows after the section header
     insert_pos = section_match.end()
-    rows_text = "\n" + "\n".join(rows) + "\n"
+    rows_text = "\n" + "\n".join(existing_entries) + "\n"
     new_content = content[:insert_pos] + rows_text + content[insert_pos:]
     
     with open(filepath, "w") as f:
         f.write(new_content)
     
+    print(f"  ✅ Added {len(existing_entries)} entries to {filename}")
     return True
 
-def generate_insertion_commands(formatted: Dict[str, List[str]]) -> Dict[str, List[str]]:
+def generate_insertion_commands(formatted: Dict[str, List[str]]) -> Dict[str, Dict]:
     """Generate insertion data for each file."""
     result = {}
     
