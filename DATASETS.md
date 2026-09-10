@@ -69,6 +69,9 @@
 | [KoHRM-Text](https://github.com/sapientinc/HRM-Text) | — | PT | Korean | 1.4B tokens | Korean pretraining dataset with legal, Wikipedia, terminal conversations, and reasoning data. |
 
 ### Datasets Released in 2025
+| [reasoning-core](https://github.com/sileod/reasoning-core) | — | Dataset | Python | 50★ | Procedural data generators for verifiable reasoning, synthetic pretraining, post-training, evaluation, and RL. |
+| [quranic-universal-audio](https://github.com/Wider-Community/quranic-universal-audio) | — | Dataset | Python | 26★ | Unified audio and timing for Qur'an apps, developers, and researchers. A timestamps visualizer, editing tool and comm... |
+
 | Dataset name | Used by | Type | Language | Size | Description |
 |---|---|---|---|---|---|
 | [SYNTHETIC-2-SFT-verified](HF-hosted (no link) 🤑) | — | SFT | English | 4M | Large-scale reasoning dataset with verified traces from DeepSeek-R1-0528, spanning math, coding, puzzles, and instruction following. |

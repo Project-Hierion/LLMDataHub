@@ -37,6 +37,30 @@
 | *No tools currently listed.* | | | | | |
 
 ### <div id="tools-2025">2025</div>
+| [skills-tracker](https://github.com/linny006/skills-tracker) | — | Tool | Python | Real-time tracking of every new GitHub 'skills' repo to capture the AI agent skill ecosystem trend |
+| [rl](https://github.com/pytorch/rl) | — | Tool | Python | A modular, primitive-first, python-first PyTorch library for Reinforcement Learning. |
+| [AstrAI](https://github.com/ViperEkura/AstrAI) | — | Tool | Python | A lightweight Transformer training & inference framework |
+| [public-apis](https://github.com/marcelscruz/public-apis) | — | Tool | JavaScript | A collaborative list of public APIs for developers |
+| [hivemind](https://github.com/activeloopai/hivemind) | — | Tool | TypeScript | Hivemind turns your traces into reusable skills across agents |
+| [OpenRLHF](https://github.com/OpenRLHF/OpenRLHF) | — | Tool | Python | An Easy-to-use, Scalable and High-performance Agentic RL Framework based on Ray (PPO & DAPO & REINFORCE++ &  VLM & TI... |
+| [aiwg](https://github.com/jmagly/aiwg) | — | Tool | TypeScript | Cognitive architecture for AI-augmented software development. Specialized agents, structured workflows, and multi-pla... |
+| [edge-ai-libraries](https://github.com/open-edge-platform/edge-ai-libraries) | — | Tool | Python | Libraries, microservices, tools, and other reference software, supporting development of performance-optimized Edge A... |
+| [ClawBio](https://github.com/ClawBio/ClawBio) | — | Tool | Python | 🦖 ClawBio - The first bioinformatics-native AI agent skill library. Local-first. Reproducible. Open. Free. |
+| [qvac](https://github.com/tetherto/qvac) | — | Tool | TypeScript | Open-source local AI SDK - run AI on-device with no cloud, no API keys. Supports GGUF, RAG, image, music, and video g... |
+| [free-proxy-list](https://github.com/ProxyScrape/free-proxy-list) | — | Tool | Python | Free HTTP, HTTPS, SOCKS4 & SOCKS5 proxy list. ~22k proxies across 90+ countries, refreshed every 5 minutes from the P... |
+| [objectstack](https://github.com/objectstack-ai/objectstack) | — | Tool | TypeScript | Apps small enough for AI to hold whole. ObjectStack turns the whole app — data model, UI, workflows, permissions — in... |
+| [yserver](https://github.com/joske/yserver) | — | Tool | Rust | A modern X11 server written from scratch in Rust. |
+| [DSH-Plugins-Marketplace](https://github.com/bradeGithub/DSH-Plugins-Marketplace) | — | Tool | JavaScript | DSH插件市场 / DSH Plugin Marketplace: 在 DeepSeek Harness Web GUI 中一键浏览、安装与更新 GitHub topic:dsh-plugin 的全部插件 | browse, inst... |
+| [mulmoterminal](https://github.com/receptron/mulmoterminal) | — | Tool | TypeScript | Run multiple Claude Code and Codex sessions in parallel — a browser terminal grid that shows which agent needs you. L... |
+| [decision-os-v13-loopkit](https://github.com/shin4141/decision-os-v13-loopkit) | — | Tool | Python | V12→V13 LoopKit: turns completion records into governed next-loop decisions using GO / HOLD / CAP / BLOCK. |
+| [openlit](https://github.com/openlit/openlit) | — | Tool | TypeScript | Open-source observability & evaluation platform for AI agents and coding agents. Trace LLMs, tools, prompts, costs & ... |
+| [fount](https://github.com/steve02081504/fount) | — | Tool | JavaScript | ✨ 灵犀一点，应念而生 💫 |
+| [margince](https://github.com/margince/margince) | — | Tool | Go | A CRM your AI agents can actually work in. And it's yours: you get the source. |
+| [homeii-music-flow](https://github.com/r11a/homeii-music-flow) | — | Tool | JavaScript | Premium Home Assistant Dashboard card for Music Assistant with Studio Control Room, FLOW wizard, Sendspin browser pla... |
+| [mastra](https://github.com/mastra-ai/mastra) | — | Tool | TypeScript | Mastra is the modern TypeScript framework for AI-powered applications and agents. |
+| [local-shell-mcp](https://github.com/fwerkor/local-shell-mcp) | — | Tool | Python | Enables LLM to use a cli environment. |
+| [osu-framework](https://github.com/ppy/osu-framework) | — | Tool | C# | A game framework written with osu! in mind. |
+
 | [NeMo-Curator](https://github.com/NVIDIA/NeMo-Curator) | — | Data Curation | Python | GPU-accelerated toolkit for large-scale data curation, with exact/fuzzy/semantic deduplication, 30+ heuristic filters, and quality/safety classifiers. |
 | [DataTrove](https://github.com/huggingface/datatrove) | — | Data Processing | Python | Library for large-scale text processing with platform-agnostic pipeline blocks (filters, dedup, readers/writers) that run locally or on Slurm. |
 | [Distilabel](https://github.com/argilla-io/distilabel) | — | Data Generation | Python | Framework to generate and augment data (SFT, DPO) with techniques like UltraFeedback and DEITA. |

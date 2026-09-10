@@ -41,6 +41,12 @@
 </details>
 
 ### <div id="papers-2025">2025</div>
+| [Short-Term-Reversal-Strategy](https://github.com/randomwalkhan/Short-Term-Reversal-Strategy) | — | — | [Code](https://github.com/randomwalkhan/Short-Term-Reversal-Strategy) | — | Python-based quant trading research project for short-term reversal option setups, universe selection, staged-entry b... |
+| [TweetFeed](https://github.com/0xDanielLopez/TweetFeed) | — | — | [Code](https://github.com/0xDanielLopez/TweetFeed) | — | TweetFeed collects Indicators of Compromise (IOCs) shared by the infosec community at Twitter. Here you will find mal... |
+| [Awesome-Offensive-AI-Agentic-Landscape](https://github.com/Yeti-791/Awesome-Offensive-AI-Agentic-Landscape) | — | — | [Code](https://github.com/Yeti-791/Awesome-Offensive-AI-Agentic-Landscape) | — | This document curates open-source projects, academic papers, capability benchmarks, and commercial solutions (interna... |
+| [rill](https://github.com/rilldata/rill) | — | — | [Code](https://github.com/rilldata/rill) | — | The fastest business intelligence tool for humans and agents. |
+| [mktero](https://github.com/tenglvjun/mktero) | — | — | [Code](https://github.com/tenglvjun/mktero) | — | Turn Zotero PDFs into structured, source-linked Markdown with MinerU. |
+
 | [gdpval-realworks](https://github.com/hyeonsangjeon/gdpval-realworks) | — | — | [Code](https://github.com/hyeonsangjeon/gdpval-realworks) | — | Open-source benchmark for evaluating LLMs on 220 real professional tasks across 9 sectors and 44 occupations. Reprodu... |
 | [AlphaAD](https://github.com/alaliqing/AlphaAD) | — | — | [Code](https://github.com/alaliqing/AlphaAD) | — | 🚗 Automatically curated collection of the latest autonomous driving research papers from arXiv. Updated daily with   ... |
 | [local-deep-research](https://github.com/LearningCircuit/local-deep-research) | — | — | [Code](https://github.com/LearningCircuit/local-deep-research) | — | ~95% on SimpleQA (e.g. Qwen3.6-27B on a 3090). Supports all local and cloud LLMs (llama.cpp, Ollama, Google, ...). 10... |
