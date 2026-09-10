@@ -41,6 +41,20 @@
 </details>
 
 ### <div id="models-2025">2025</div>
+| [surogate](https://github.com/invergent-ai/surogate) | — | LLM | C++ | 813★ | Train and serve LLMs at extreme speed and massive throughput. |
+| [torchtitan](https://github.com/pytorch/torchtitan) | — | LLM | Python | 5719★ | A PyTorch native platform for training generative AI models |
+| [MiniCPM](https://github.com/OpenBMB/MiniCPM) | — | LLM | Jupyter Notebook | 10750★ | MiniCPM5: SOTA on-device LLMs, small yet powerful. |
+| [litData](https://github.com/Lightning-AI/litData) | — | LLM | Python | 613★ | Speed up model training by fixing data loading. |
+| [dreamer_v4](https://github.com/vijayabhaskar-ev/dreamer_v4) | — | LLM | Python | 38★ | PyTorch reproduction of DreamerV4 (Hafner et al., 2025): masked-autoencoder tokenizer, block-causal flow-matching dyn... |
+| [deepinv](https://github.com/deepinv/deepinv) | — | LLM | Python | 803★ | DeepInverse: a PyTorch library for solving imaging inverse problems using deep learning |
+| [Soup](https://github.com/MakazhanAlpamys/Soup) | — | LLM | Python | 5964★ | Fine-tune LLMs from one YAML. Layer streaming trains an 8B model on a 4 GB laptop GPU. |
+| [AReaL](https://github.com/areal-project/AReaL) | — | LLM | Python | 5748★ | The RL Bridge for LLM-based Agent Applications. Made Simple & Flexible. |
+| [AgileRL](https://github.com/AgileRL/AgileRL) | — | LLM | Python | 951★ | Streamlining reinforcement learning with RLOps. State-of-the-art RL algorithms and tools, with 10x faster training th... |
+| [Github-Ranking-AI](https://github.com/yuxiaopeng/Github-Ranking-AI) | — | LLM | Python | 520★ | A list of the most popular AI Topic repositories on GitHub based on the number of stars they have received.| AI相关主题Gi... |
+| [espllm](https://github.com/ahmedbarakat207/espllm) | — | LLM | C++ | 33★ | a Transformer Based Model for ESP32 (520KB Memory) |
+| [langfuse](https://github.com/langfuse/langfuse) | — | LLM | TypeScript | 34429★ | 🪢 Open source AI engineering platform: LLM evals, observability, metrics, prompt management, playground, datasets. In... |
+| [rf-detr](https://github.com/roboflow/rf-detr) | — | LLM | Python | 9420★ | RF-DETR is a real-time object detection and segmentation model architecture developed by Roboflow, SOTA on COCO, desi... |
+
 | [NeuralDaredevil-8B](https://huggingface.co/mlabonne/NeuralDaredevil-8B) (HF-hosted 🤑) | — | LLM | English | 8B | Popular merged model. Fine-tuned for general-purpose chat and reasoning. |
 | [AlphaMonarch-7B](https://huggingface.co/mlabonne/AlphaMonarch-7B) (HF-hosted 🤑) | — | LLM | English | 7B | Popular merged model. Strong performance on reasoning and instruction following. |
 | [NeuralHermes-2.5-Mistral-7B](https://huggingface.co/mlabonne/NeuralHermes-2.5-Mistral-7B) (HF-hosted 🤑) | — | LLM | English | 7B | First successful open-source DPO model. Combines Hermes and Neural Chat. |
