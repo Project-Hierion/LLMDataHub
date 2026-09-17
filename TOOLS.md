@@ -37,6 +37,28 @@
 | *No tools currently listed.* | | | | | |
 
 ### <div id="tools-2025">2025</div>
+| [OnCo](https://github.com/judegomila/OnCo) | — | Tool | TypeScript | OnCo: total information dominance on cancer. A public, cited knowledge graph of oncology with a website, JSON API, MC... |
+| [cluster-forge](https://github.com/silogen/cluster-forge) | — | Tool | Go Template | Kubernetes operator which sets up all platform tools to have a cluster ready for applications to run. |
+| [verl](https://github.com/verl-project/verl) | — | Tool | Python | verl/HybridFlow: A Flexible and Efficient RL Post-Training Framework |
+| [uni-agent](https://github.com/verl-project/uni-agent) | — | Tool | Python | Uni-Agent is a framework for training long-horizon agents. |
+| [fintalk.v](https://github.com/boris-dotv/fintalk.v) | — | Tool | Python | Neobanker FinTalk-AI: A Grounded Orchestration Framework for Multi-Agent Collaboration on Financial Tasks Leveraging ... |
+| [h2o-llmstudio](https://github.com/h2oai/h2o-llmstudio) | — | Tool | Python | H2O LLM Studio - a framework and no-code GUI for fine-tuning LLMs. Documentation: https://docs.h2o.ai/h2o-llmstudio/ |
+| [questdb](https://github.com/questdb/questdb) | — | Tool | Java | QuestDB is a high performance, open-source, time-series database |
+| [skills-tracker](https://github.com/linny006/skills-tracker) | — | Tool | Python | Real-time tracking of every new GitHub 'skills' repo to capture the AI agent skill ecosystem trend |
+| [awesome-agent-skills](https://github.com/linny006/awesome-agent-skills) | — | Tool | Python | Curated, auto-updated awesome-list of vetted AI agent skills with quality ratings for Claude, GPT, a |
+| [trending-claude-skills](https://github.com/linny006/trending-claude-skills) | — | Tool | Python | Auto-updated leaderboard of trending claude-skills and AI agent repos, refreshed every 15 minutes |
+| [clownfish](https://github.com/openclaw/clownfish) | — | Tool | JavaScript | Clownfish is a maintainer codex harness for resolving clusters of issues identified in bulk at scale. 🐠 |
+| [orangu](https://github.com/mnemosyne-systems/orangu) | — | Tool | Rust | Advanced code editor using local AI |
+| [homm3-army-commander](https://github.com/thetidyturtle/homm3-army-commander) | — | Tool | HTML | Heroes of Might and Magic 3 Trainer 2026 – Smart Cheats & Commander Tools |
+| [bentopdf](https://github.com/alam00000/bentopdf) | — | Tool | JavaScript | The Privacy First PDF Toolkit |
+| [polar](https://github.com/polarsource/polar) | — | Tool | Python | Polar — A billing platform for the intelligence era |
+| [ip-lib](https://github.com/mlocati/ip-lib) | — | Tool | PHP | PHP library to handle IPv4, IPv6 and IP ranges |
+| [opencorvus](https://github.com/yangheng95/opencorvus) | — | Tool | TypeScript | Open-source harness for long-horizon agent work, with inspectable results and feedback-driven expert squads. |
+| [kornia](https://github.com/kornia/kornia) | — | Tool | Python | 🐍 Geometric Computer Vision Library for Spatial AI |
+| [mastra](https://github.com/mastra-ai/mastra) | — | Tool | TypeScript | Mastra is the modern TypeScript framework for AI-powered applications and agents. |
+| [deepagents](https://github.com/langchain-ai/deepagents) | — | Tool | Python | The batteries-included agent harness. |
+| [flowwink](https://github.com/magnusfroste/flowwink) | — | Tool | TypeScript | Flowwink is the next gen open source Business Operating System with 500+ skills where Hermes agents, Claude, OpenClaw... |
+
 | [NeMo-Curator](https://github.com/NVIDIA/NeMo-Curator) | — | Data Curation | Python | GPU-accelerated toolkit for large-scale data curation, with exact/fuzzy/semantic deduplication, 30+ heuristic filters, and quality/safety classifiers. |
 | [DataTrove](https://github.com/huggingface/datatrove) | — | Data Processing | Python | Library for large-scale text processing with platform-agnostic pipeline blocks (filters, dedup, readers/writers) that run locally or on Slurm. |
 | [Distilabel](https://github.com/argilla-io/distilabel) | — | Data Generation | Python | Framework to generate and augment data (SFT, DPO) with techniques like UltraFeedback and DEITA. |

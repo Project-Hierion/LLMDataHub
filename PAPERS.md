@@ -41,6 +41,12 @@
 </details>
 
 ### <div id="papers-2025">2025</div>
+| [chess-blunder-autopsy](https://github.com/serabanboy1/chess-blunder-autopsy) | — | — | [Code](https://github.com/serabanboy1/chess-blunder-autopsy) | — | Train Like a Grandmaster: AI-Powered Chess Blunder Analysis for 2026 |
+| [pii-shield](https://github.com/pii-shield/pii-shield) | — | — | [Code](https://github.com/pii-shield/pii-shield) | — | Zero-code K8s sidecar for log sanitization. Detects secrets via Entropy Analysis, preserves JSON integrity, and redac... |
+| [vietquill](https://github.com/ngwgsang/vietquill) | — | — | [Code](https://github.com/ngwgsang/vietquill) | — | VietQuill is a unified framework for Vietnamese paraphrase generation, evaluation, and quality control, supporting bo... |
+| [MeshInspector](https://github.com/MeshInspector/MeshInspector) | — | — | [Code](https://github.com/MeshInspector/MeshInspector) | — | Mesh processing application |
+| [awesome-mutation-testing](https://github.com/theofidry/awesome-mutation-testing) | — | — | [Code](https://github.com/theofidry/awesome-mutation-testing) | — | Mutation testing resources: how to make better code by introducing bugs |
+
 | [gdpval-realworks](https://github.com/hyeonsangjeon/gdpval-realworks) | — | — | [Code](https://github.com/hyeonsangjeon/gdpval-realworks) | — | Open-source benchmark for evaluating LLMs on 220 real professional tasks across 9 sectors and 44 occupations. Reprodu... |
 | [AlphaAD](https://github.com/alaliqing/AlphaAD) | — | — | [Code](https://github.com/alaliqing/AlphaAD) | — | 🚗 Automatically curated collection of the latest autonomous driving research papers from arXiv. Updated daily with   ... |
 | [local-deep-research](https://github.com/LearningCircuit/local-deep-research) | — | — | [Code](https://github.com/LearningCircuit/local-deep-research) | — | ~95% on SimpleQA (e.g. Qwen3.6-27B on a 3090). Supports all local and cloud LLMs (llama.cpp, Ollama, Google, ...). 10... |

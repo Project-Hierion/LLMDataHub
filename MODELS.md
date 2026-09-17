@@ -41,6 +41,22 @@
 </details>
 
 ### <div id="models-2025">2025</div>
+| [starVLA](https://github.com/starVLA/starVLA) | — | LLM | Python | 3677★ | StarVLA: A Lego-like Codebase for Vision-Language-Action Model Developing |
+| [mlx-node](https://github.com/mlx-node/mlx-node) | — | LLM | Rust | 157★ |  |
+| [daydream](https://github.com/existential-birds/daydream) | — | LLM | Python | 21★ | Agentic code-review CLI that records each review/fix/test run trajectory, building a corpus for fine-tuning open-weig... |
+| [pyedmine](https://github.com/ZhijieXiong/pyedmine) | — | LLM | Python | 81★ | A library of algorithms for reproducing knowledge tracing, cognitive diagnosis, exercise recommendation and learning ... |
+| [TabPFN](https://github.com/PriorLabs/TabPFN) | — | LLM | Python | 7969★ | ⚡ TabPFN: Foundation Model for Tabular Data ⚡ |
+| [ms-swift](https://github.com/modelscope/ms-swift) | — | LLM | Python | 15655★ | Use PEFT or Full-parameter to CPT/SFT/DPO/GRPO 600+ LLMs (Qwen3.6, DeepSeek-V4, GLM-5.1, InternLM3, Llama4, ...) and ... |
+| [AgileRL](https://github.com/AgileRL/AgileRL) | — | LLM | Python | 950★ | Streamlining reinforcement learning with RLOps. State-of-the-art RL algorithms and tools, with 10x faster training th... |
+| [Github-Ranking-AI](https://github.com/yuxiaopeng/Github-Ranking-AI) | — | LLM | Python | 532★ | A list of the most popular AI Topic repositories on GitHub based on the number of stars they have received.| AI相关主题Gi... |
+| [lance](https://github.com/lance-format/lance) | — | LLM | Rust | 7088★ | Open Lakehouse Format for Multimodal AI. Convert from Parquet in 2 lines of code for 100x faster random access, vecto... |
+| [modelbased](https://github.com/easystats/modelbased) | — | LLM | R | 263★ | :chart_with_upwards_trend: Estimate effects, contrasts and means based on statistical models |
+| [ccLoad](https://github.com/caidaoli/ccLoad) | — | LLM | Go | 415★ | AI API gateway that ends manual channel switching with smart routing, auto failover, exponential cooldown, multi-URL ... |
+| [uni-api](https://github.com/yym68686/uni-api) | — | LLM | Rust | 1259★ | This is a project that unifies the management of LLM APIs. It can call multiple backend services through a unified AP... |
+| [KiroCrew](https://github.com/kirodotdev/KiroCrew) | — | LLM | Python | 3966★ | A persistent workspace for development work that self-improves and continues beyond one session. |
+| [control-layer](https://github.com/doublewordai/control-layer) | — | LLM | Rust | 94★ | The world’s fastest AI model gateway (450x less overhead than LiteLLM). Unified access to LLMs across endpoints (open... |
+| [langfuse](https://github.com/langfuse/langfuse) | — | LLM | TypeScript | 34714★ | 🪢 Open source agent evals & observability: Trace, evaluate, and improve LLM applications with one open platform. |
+
 | [NeuralDaredevil-8B](https://huggingface.co/mlabonne/NeuralDaredevil-8B) (HF-hosted 🤑) | — | LLM | English | 8B | Popular merged model. Fine-tuned for general-purpose chat and reasoning. |
 | [AlphaMonarch-7B](https://huggingface.co/mlabonne/AlphaMonarch-7B) (HF-hosted 🤑) | — | LLM | English | 7B | Popular merged model. Strong performance on reasoning and instruction following. |
 | [NeuralHermes-2.5-Mistral-7B](https://huggingface.co/mlabonne/NeuralHermes-2.5-Mistral-7B) (HF-hosted 🤑) | — | LLM | English | 7B | First successful open-source DPO model. Combines Hermes and Neural Chat. |
