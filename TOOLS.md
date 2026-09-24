@@ -37,6 +37,32 @@
 | *No tools currently listed.* | | | | | |
 
 ### <div id="tools-2025">2025</div>
+| [omadia](https://github.com/byte5ai/omadia) | — | Tool | TypeScript | Self-hostable agentic OS. Build, run & audit multi-agent AI teams from signed plugins. Bring your own LLM key, own al... |
+| [moyo](https://github.com/spglib/moyo) | — | Tool | Rust | Library for Crystal Symmetry in Rust |
+| [eGEOagents](https://github.com/mverab/eGEOagents) | — | Tool | Python | Open-source Generative Engine Optimization (GEO) & Answer Engine Optimization (AEO) toolkit — optimize content to ran... |
+| [apify-mcp-server](https://github.com/apify/apify-mcp-server) | — | Tool | TypeScript | The Apify MCP server enables your AI agents to extract data from social media, search engines, maps, e-commerce sites... |
+| [agent-skills](https://github.com/magnus919/agent-skills) | — | Tool | Python | Curated collection of AI agent skills for Hermes and other agent frameworks |
+| [ColossalAI](https://github.com/hpcaitech/ColossalAI) | — | Tool | Python | Making large AI models cheaper, faster and more accessible |
+| [openral](https://github.com/OpenRAL/openral) | — | Tool | Python | Open-source Robot Agentic Layer |
+| [zernio-node](https://github.com/zernio-dev/zernio-node) | — | Tool | TypeScript | Zernio's Official Node.js SDK |
+| [skill-of-skills](https://github.com/the911fund/skill-of-skills) | — | Tool | Python | The autonomous discovery engine for AI coding tools. Indexes skills, plugins, MCP servers, agents, and integrations a... |
+| [turboquant-pro](https://github.com/ahb-sjsu/turboquant-pro) | — | Tool | Python | Consumer-aware compression for embedding indexes and LLM KV caches — compress by the metric the downstream consumer a... |
+| [destroylist](https://github.com/phishdestroy/destroylist) | — | Tool | HTML | Real-time phishing & scam domain blocklist - 205k+ curated threats, 1M+ community, free API, multiple formats |
+| [free-proxy-list](https://github.com/ProxyScrape/free-proxy-list) | — | Tool | Python | Free HTTP, HTTPS, SOCKS4 & SOCKS5 proxy list. ~22k proxies across 90+ countries, refreshed every 5 minutes from the P... |
+| [RLinf](https://github.com/RLinf/RLinf) | — | Tool | Python | RLinf: Reinforcement Learning Infrastructure for Embodied and Agentic AI |
+| [rspack](https://github.com/web-infra-dev/rspack) | — | Tool | Rust | Fast Rust-based bundler for the web with a modernized webpack API 🦀 |
+| [kubernetes-client](https://github.com/fabric8io/kubernetes-client) | — | Tool | Java | Java client for Kubernetes & OpenShift |
+| [entity-command](https://github.com/wp-cli/entity-command) | — | Tool | PHP | Manage WordPress comments, menus, options, posts, sites, terms, and users. |
+| [scallopbot](https://github.com/tashfeenahmed/scallopbot) | — | Tool | TypeScript | Self-hosted personal AI assistant with MCP-native, bio-inspired memory. OpenClaw-compatible skills. LoCoMo F1 0.48 vs... |
+| [claude-plugins](https://github.com/laurigates/claude-plugins) | — | Tool | Shell | Claude Code plugins for development workflows |
+| [dart-pdf](https://github.com/ben-milanko/dart-pdf) | — | Tool | Dart | Pure-Dart PDF renderer, viewer & editor for Flutter. View, annotate, OCR, fill forms, sign, redact & compare PDFs on ... |
+| [orca](https://github.com/VirtusLab/orca) | — | Tool | Scala | Deterministic, AI-driven development flows. |
+| [sockudo-ws](https://github.com/sockudo/sockudo-ws) | — | Tool | Rust | Ultra-low latency WebSocket library for HFT applications |
+| [SmartHopper](https://github.com/architects-toolkit/SmartHopper) | — | Tool | C# | SmartHopper is an open-source project that implements third-party AI APIs to provide advanced features for Grasshoppe... |
+| [vlmkit](https://github.com/mizchi/vlmkit) | — | Tool | TypeScript | VRT + Semantic Verification Harness — Visual regression testing with a11y semantic verification, AI reasoning, and mu... |
+| [awesome-ml-internships-2027](https://github.com/zapplyjobs/awesome-ml-internships-2027) | — | Tool |  | Live AI and machine learning internships for students, refreshed through the Zapply job pipeline. |
+| [RLark](https://github.com/RLinf/RLark) | — | Tool | Go | Cross-Cluster Embodied Intelligence Cloud-Native Platform. Manage cross-cluster embodied AI workloads with Kubernetes... |
+
 | [NeMo-Curator](https://github.com/NVIDIA/NeMo-Curator) | — | Data Curation | Python | GPU-accelerated toolkit for large-scale data curation, with exact/fuzzy/semantic deduplication, 30+ heuristic filters, and quality/safety classifiers. |
 | [DataTrove](https://github.com/huggingface/datatrove) | — | Data Processing | Python | Library for large-scale text processing with platform-agnostic pipeline blocks (filters, dedup, readers/writers) that run locally or on Slurm. |
 | [Distilabel](https://github.com/argilla-io/distilabel) | — | Data Generation | Python | Framework to generate and augment data (SFT, DPO) with techniques like UltraFeedback and DEITA. |

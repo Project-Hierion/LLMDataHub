@@ -69,6 +69,8 @@
 | [KoHRM-Text](https://github.com/sapientinc/HRM-Text) | — | PT | Korean | 1.4B tokens | Korean pretraining dataset with legal, Wikipedia, terminal conversations, and reasoning data. |
 
 ### Datasets Released in 2025
+| [tasksource](https://github.com/sileod/tasksource) | — | Dataset | Python | 197★ | Datasets collection and preprocessings framework for NLP extreme multitask learning |
+
 | Dataset name | Used by | Type | Language | Size | Description |
 |---|---|---|---|---|---|
 | [SYNTHETIC-2-SFT-verified](HF-hosted (no link) 🤑) | — | SFT | English | 4M | Large-scale reasoning dataset with verified traces from DeepSeek-R1-0528, spanning math, coding, puzzles, and instruction following. |

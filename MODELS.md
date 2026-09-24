@@ -41,6 +41,25 @@
 </details>
 
 ### <div id="models-2025">2025</div>
+| [surogate](https://github.com/invergent-ai/surogate) | — | LLM | C++ | 813★ | Train and serve LLMs at extreme speed and massive throughput. |
+| [llm-foundry](https://github.com/Polygl0t/llm-foundry) | — | LLM | Python | 26★ | 🏭 Production-ready codebase for  training and evaluating large language models. |
+| [Flow-Factory](https://github.com/X-GenGroup/Flow-Factory) | — | LLM | Python | 709★ | A unified framework for easy fine-tuning in Flow-Matching models |
+| [daydream](https://github.com/existential-birds/daydream) | — | LLM | Python | 21★ | Agentic code-review CLI that records each review/fix/test run trajectory, building a corpus for fine-tuning open-weig... |
+| [axolotl](https://github.com/axolotl-ai-cloud/axolotl) | — | LLM | Python | 12499★ | Go ahead and axolotl questions |
+| [MemHop](https://github.com/qyiun666/MemHop) | — | LLM | Go | 23★ | Embedded long-term memory database for AI agents & LLM apps. Six-layer cognitive architecture, knowledge graph, hybri... |
+| [deepeval](https://github.com/confident-ai/deepeval) | — | LLM | Python | 18421★ | The LLM Evaluation Framework |
+| [OpenWAM](https://github.com/OpenWAM-Official/OpenWAM) | — | LLM | Python | 872★ | Official repository for "OpenWAM: An Open, Modular Exploration Towards Systematic World–Action Model Pretraining". |
+| [xtuner](https://github.com/InternLM/xtuner) | — | LLM | Python | 5203★ | A Next-Generation Training Engine Built for Ultra-Large MoE Models |
+| [awesome-jev-gallery](https://github.com/OmniJev/awesome-jev-gallery) | — | LLM | JavaScript | 285★ | 🔥🔥 Papers, open reproductions and independent evaluations behind System One models and Jev. |
+| [llm-course](https://github.com/andysingal/llm-course) | — | LLM | Jupyter Notebook | 887★ |  |
+| [Soup](https://github.com/MakazhanAlpamys/Soup) | — | LLM | Python | 7089★ | Fine-tune LLMs from one YAML. Layer streaming trains an 8B model on a 4 GB laptop GPU. |
+| [pts](https://github.com/codelion/pts) | — | LLM | Python | 158★ | Pivotal Token Search |
+| [Awesome-Multimodal-Modeling](https://github.com/OpenEnvision/Awesome-Multimodal-Modeling) | — | LLM | JavaScript | 545★ | Awesome Multimodal Modeling [Covers MLLM, UMM, and NMM] |
+| [rizzo-flow](https://github.com/Rizzo-AI-Academy/rizzo-flow) | — | LLM | Python | 397★ | The open, local take on Jev: typed decisions from an LLM, without generating a single token |
+| [kapso](https://github.com/Leeroo-AI/kapso) | — | LLM | Python | 114★ | Kapso by Leeroo: Long-running agents that optimize AI and Data systems, and learn from every experience. #1 open-sour... |
+| [rf-detr](https://github.com/roboflow/rf-detr) | — | LLM | Python | 9584★ | RF-DETR is a real-time object detection and segmentation model architecture developed by Roboflow, SOTA on COCO, desi... |
+| [langfuse](https://github.com/langfuse/langfuse) | — | LLM | TypeScript | 34995★ | 🪢 Open source agent evals & observability: Trace, evaluate, and improve LLM applications with one open platform. |
+
 | [NeuralDaredevil-8B](https://huggingface.co/mlabonne/NeuralDaredevil-8B) (HF-hosted 🤑) | — | LLM | English | 8B | Popular merged model. Fine-tuned for general-purpose chat and reasoning. |
 | [AlphaMonarch-7B](https://huggingface.co/mlabonne/AlphaMonarch-7B) (HF-hosted 🤑) | — | LLM | English | 7B | Popular merged model. Strong performance on reasoning and instruction following. |
 | [NeuralHermes-2.5-Mistral-7B](https://huggingface.co/mlabonne/NeuralHermes-2.5-Mistral-7B) (HF-hosted 🤑) | — | LLM | English | 7B | First successful open-source DPO model. Combines Hermes and Neural Chat. |

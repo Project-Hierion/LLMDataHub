@@ -41,6 +41,11 @@
 </details>
 
 ### <div id="papers-2025">2025</div>
+| [trufflehog](https://github.com/trufflesecurity/trufflehog) | — | — | [Code](https://github.com/trufflesecurity/trufflehog) | — | Find, verify, and analyze leaked credentials |
+| [visdom](https://github.com/fossasia/visdom) | — | — | [Code](https://github.com/fossasia/visdom) | — | Tool for real-time visualization, monitoring and collaborative analysis of AI/ML experiments and live data. Supports ... |
+| [openmapstack-skills](https://github.com/jaakla/openmapstack-skills) | — | — | [Code](https://github.com/jaakla/openmapstack-skills) | — | AI-agent skill for reproducible, validated GIS analysis — from authoritative data discovery to interactive maps, on a... |
+| [stackrox](https://github.com/stackrox/stackrox) | — | — | [Code](https://github.com/stackrox/stackrox) | — | The StackRox Kubernetes Security Platform performs a risk analysis of the container environment, delivers visibility ... |
+
 | [gdpval-realworks](https://github.com/hyeonsangjeon/gdpval-realworks) | — | — | [Code](https://github.com/hyeonsangjeon/gdpval-realworks) | — | Open-source benchmark for evaluating LLMs on 220 real professional tasks across 9 sectors and 44 occupations. Reprodu... |
 | [AlphaAD](https://github.com/alaliqing/AlphaAD) | — | — | [Code](https://github.com/alaliqing/AlphaAD) | — | 🚗 Automatically curated collection of the latest autonomous driving research papers from arXiv. Updated daily with   ... |
 | [local-deep-research](https://github.com/LearningCircuit/local-deep-research) | — | — | [Code](https://github.com/LearningCircuit/local-deep-research) | — | ~95% on SimpleQA (e.g. Qwen3.6-27B on a 3090). Supports all local and cloud LLMs (llama.cpp, Ollama, Google, ...). 10... |
