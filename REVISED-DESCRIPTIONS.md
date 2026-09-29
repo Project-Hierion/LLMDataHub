@@ -572,3 +572,11 @@ To inquire about this maintained fork, or Project Hierion: [project-hierion@prot
 **RIF-Layoff-Dataset**
 *Original description:* Schema and records for RIF Tracking.
 *Revised description:* *(pending)*
+
+**reasoning-core**
+*Original description:* Procedural data generators for verifiable reasoning, synthetic pretraining, post-training, evaluation, and RL.
+*Revised description:* A Python library for generating synthetic reasoning data with verifiable solutions. Unlike static datasets, it creates unlimited training examples on demand across math, logic, code, and multi-step reasoning. Every generated problem includes a ground-truth answer, making it ideal for SFT, RLHF, and evaluation without the risk of contamination. Published by Sileod (Hugging Face researcher).
+
+**tasksource**
+*Original description:* Datasets collection and preprocessings framework for NLP extreme multitask learning.
+*Revised description:* A framework that unifies 475+ NLP datasets under a single, consistent format for multitask learning. It automatically preprocesses and standardizes task formats so models can train on thousands of tasks without per-dataset engineering. Includes the tasksource-instruct-v0 dataset (30k examples per task) and powers research in extreme multitask generalization. Maintained by Sileod.
