@@ -467,3 +467,13 @@ To inquire about this maintained fork, or Project Hierion: [project-hierion@prot
 
 **📌 Note on HuggingFace links:**  
 Following Nvidia's acquisition of HuggingFace (September 2026), this archive no longer links directly to HF-hosted datasets. We believe in open infrastructure, not corporate consolidation. Datasets hosted exclusively on HF are marked `🤑` and quarantined in the HuggingFace-Hosted Datasets section at the bottom of this page — no links, no traffic. We encourage users to seek out mirrors, GitHub repos, or paper sources. If you find a non-HF link for a dataset, please contribute it. Let's keep open-source, open. Together.
+
+<details>
+  <summary>📁 Harvested Datasets (Harvest 7-9)</summary>
+
+| Dataset name | Description | Link |
+|---|---|---|
+| [reasoning-core](https://github.com/sileod/reasoning-core) | Procedural data generators for verifiable reasoning. | [GitHub](https://github.com/sileod/reasoning-core) |
+| [tasksource](https://github.com/sileod/tasksource) | Datasets collection for NLP extreme multitask learning. | [GitHub](https://github.com/sileod/tasksource) |
+
+</details>

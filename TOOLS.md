@@ -141,3 +141,36 @@ Following Nvidia's acquisition of HuggingFace (September 2026), this archive no 
 | [AutoQuant](https://github.com/mlabonne/llm-tools) | Quantize your models. | [GitHub](https://github.com/mlabonne/llm-tools) |
 
 </details>
+
+<details>
+  <summary>📁 Harvested Tools (Harvest 7-9)</summary>
+
+| Tool name | Description | Link |
+|---|---|---|
+| [unsloth](https://github.com/unslothai/unsloth) | Local UI to run and train LLMs and diffusion models. | [GitHub](https://github.com/unslothai/unsloth) |
+| [langfuse](https://github.com/langfuse/langfuse) | Open source LLM observability and evals platform. | [GitHub](https://github.com/langfuse/langfuse) |
+| [mastra](https://github.com/mastra-ai/mastra) | TypeScript framework for AI-powered applications and agents. | [GitHub](https://github.com/mastra-ai/mastra) |
+| [OpenRLHF](https://github.com/OpenRLHF/OpenRLHF) | Agentic RL framework based on Ray (PPO, DAPO, REINFORCE++). | [GitHub](https://github.com/OpenRLHF/OpenRLHF) |
+| [openlit](https://github.com/openlit/openlit) | Open-source observability and evaluation platform for AI agents. | [GitHub](https://github.com/openlit/openlit) |
+| [hivemind](https://github.com/activeloopai/hivemind) | Turns traces into reusable skills across agents. | [GitHub](https://github.com/activeloopai/hivemind) |
+| [ClawBio](https://github.com/ClawBio/ClawBio) | Bioinformatics-native AI agent skill library. | [GitHub](https://github.com/ClawBio/ClawBio) |
+| [qvac](https://github.com/tetherto/qvac) | Open-source local AI SDK for on-device AI. | [GitHub](https://github.com/tetherto/qvac) |
+| [ms-swift](https://github.com/modelscope/ms-swift) | Fine-tune 600+ LLMs with PEFT or full-parameter (CPT/SFT/DPO/GRPO). | [GitHub](https://github.com/modelscope/ms-swift) |
+| [verl](https://github.com/verl-project/verl) | Flexible and efficient RL post-training framework. | [GitHub](https://github.com/verl-project/verl) |
+| [uni-agent](https://github.com/verl-project/uni-agent) | Framework for training long-horizon agents. | [GitHub](https://github.com/verl-project/uni-agent) |
+| [lance](https://github.com/lance-format/lance) | Open lakehouse format for multimodal AI. | [GitHub](https://github.com/lance-format/lance) |
+| [deepagents](https://github.com/langchain-ai/deepagents) | Batteries-included agent harness. | [GitHub](https://github.com/langchain-ai/deepagents) |
+| [h2o-llmstudio](https://github.com/h2oai/h2o-llmstudio) | No-code GUI for fine-tuning LLMs. | [GitHub](https://github.com/h2oai/h2o-llmstudio) |
+| [kornia](https://github.com/kornia/kornia) | Geometric computer vision library for spatial AI. | [GitHub](https://github.com/kornia/kornia) |
+| [roboflow-inference](https://github.com/roboflow/inference) | Turn any device into a computer vision command center. | [GitHub](https://github.com/roboflow/inference) |
+| [axolotl](https://github.com/axolotl-ai-cloud/axolotl) | Fine-tuning framework for LLMs. | [GitHub](https://github.com/axolotl-ai-cloud/axolotl) |
+| [deepeval](https://github.com/confident-ai/deepeval) | The LLM Evaluation Framework. | [GitHub](https://github.com/confident-ai/deepeval) |
+| [xtuner](https://github.com/InternLM/xtuner) | Next-generation training engine for ultra-large MoE models. | [GitHub](https://github.com/InternLM/xtuner) |
+| [ColossalAI](https://github.com/hpcaitech/ColossalAI) | Making large AI models cheaper, faster and more accessible. | [GitHub](https://github.com/hpcaitech/ColossalAI) |
+| [pytorch-ao](https://github.com/pytorch/ao) | PyTorch native quantization for training and inference. | [GitHub](https://github.com/pytorch/ao) |
+| [RLinf](https://github.com/RLinf/RLinf) | RL infrastructure for embodied and agentic AI. | [GitHub](https://github.com/RLinf/RLinf) |
+| [apify-mcp-server](https://github.com/apify/apify-mcp-server) | MCP server for extracting data from websites. | [GitHub](https://github.com/apify/apify-mcp-server) |
+| [bernstein](https://github.com/sipyourdrink-ltd/bernstein) | AI agent governance and orchestration framework. | [GitHub](https://github.com/sipyourdrink-ltd/bernstein) |
+| [pytorch-rl](https://github.com/pytorch/rl) | PyTorch library for reinforcement learning. | [GitHub](https://github.com/pytorch/rl) |
+
+</details>

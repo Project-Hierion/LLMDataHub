@@ -145,3 +145,20 @@ Following Nvidia's acquisition of HuggingFace (September 2026), this archive no 
 | [Phixtral](https://huggingface.co/mlabonne/Phixtral-4x2_8) | MoE | First Phi-based Mixture of Experts. | [HF](https://huggingface.co/mlabonne/Phixtral-4x2_8) |
 
 </details>
+
+<details>
+  <summary>📁 Harvested Models (Harvest 7-9)</summary>
+
+| Model name | Type | Description | Link |
+|---|---|---|---|
+| [MiniCPM](https://github.com/OpenBMB/MiniCPM) | On-device LLM | SOTA on-device LLMs, small yet powerful. | [GitHub](https://github.com/OpenBMB/MiniCPM) |
+| [torchtitan](https://github.com/pytorch/torchtitan) | Training platform | PyTorch native platform for training generative AI models. | [GitHub](https://github.com/pytorch/torchtitan) |
+| [rf-detr](https://github.com/roboflow/rf-detr) | Vision model | Real-time object detection and segmentation. ICLR 2026. | [GitHub](https://github.com/roboflow/rf-detr) |
+| [Soup](https://github.com/MakazhanAlpamys/Soup) | Fine-tuning | Fine-tune LLMs from one YAML. 8B model on 4GB GPU. | [GitHub](https://github.com/MakazhanAlpamys/Soup) |
+| [AReaL](https://github.com/areal-project/AReaL) | RL framework | RL bridge for LLM-based agent applications. | [GitHub](https://github.com/areal-project/AReaL) |
+| [AgileRL](https://github.com/AgileRL/AgileRL) | RL framework | Streamlining RL with RLOps. 10x faster training. | [GitHub](https://github.com/AgileRL/AgileRL) |
+| [litData](https://github.com/Lightning-AI/litData) | Data loading | Speed up model training by fixing data loading. | [GitHub](https://github.com/Lightning-AI/litData) |
+| [starVLA](https://github.com/starVLA/starVLA) | VLA model | Lego-like codebase for Vision-Language-Action models. | [GitHub](https://github.com/starVLA/starVLA) |
+| [TabPFN](https://github.com/PriorLabs/TabPFN) | Tabular model | Foundation model for tabular data. | [GitHub](https://github.com/PriorLabs/TabPFN) |
+
+</details>
