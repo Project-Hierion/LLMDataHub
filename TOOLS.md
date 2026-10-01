@@ -37,6 +37,39 @@
 | *No tools currently listed.* | | | | | |
 
 ### <div id="tools-2025">2025</div>
+| [PortOS](https://github.com/atomantic/PortOS) | — | Tool | JavaScript | Self-hosted, Self-Improving, Federated Everything App — dev management, agent orchestration, persistent mind, digital... |
+| [skills-tracker](https://github.com/linny006/skills-tracker) | — | Tool | Python | Real-time tracking of every new GitHub 'skills' repo to capture the AI agent skill ecosystem trend |
+| [inflexa](https://github.com/inflexa-ai/inflexa) | — | Tool | TypeScript | Local-first CLI for reproducible biological analysis, with provenance tracked on every step. |
+| [aginxbrowser](https://github.com/yinnho/aginxbrowser) | — | Tool | Rust | The browser built for AI agents — fetch live pages as markdown, render JS/SPAs with built-in V8, take screenshots wit... |
+| [AstrAI](https://github.com/ViperEkura/AstrAI) | — | Tool | Python | A lightweight Transformer training & inference framework |
+| [ACE-Step-Studio](https://github.com/timoncool/ACE-Step-Studio) | — | Tool | TypeScript | Portable AI music generator — full songs with vocals, covers, music videos. One-click install, 100% offline, NVIDIA GPU. |
+| [supercli](https://github.com/yashdev9274/supercli) | — | Tool | TypeScript | The open source harness agent |
+| [agentmemory](https://github.com/rohitg00/agentmemory) | — | Tool | TypeScript | #1 Persistent memory for AI coding agents based on real-world benchmarks |
+| [toolathlon_gym](https://github.com/eigent-ai/toolathlon_gym) | — | Tool | Python | Toolathlon-Gym for testing AI agents real-world tool-use capabilities across diverse MCP servers. |
+| [arc-kit](https://github.com/tractorjuice/arc-kit) | — | Tool | JavaScript | The Enterprise Architecture Governance Harness — strategy, architecture, delivery, and assurance using AI coding assi... |
+| [ignite](https://github.com/pytorch/ignite) | — | Tool | Python | High-level library to help with training and evaluating neural networks in PyTorch flexibly and transparently. |
+| [cs249r_book](https://github.com/harvard-edge/cs249r_book) | — | Tool | Python | Machine Learning Systems: Foundations, Scaling, Agentic AI, and Physical AI (Vols I–IV) • Harvard CS249r | https://ml... |
+| [lamindb](https://github.com/laminlabs/lamindb) | — | Tool | Python | Open-source data management for multimodal AI. Query, trace, and govern with a lineage-native, format-agnostic lakeho... |
+| [Wazuh-MCP-Server](https://github.com/INFOKOM-KI/Wazuh-MCP-Server) | — | Tool | Python | Wazuh MCP Server: AI-Driven SOC Automation |
+| [skillcheck](https://github.com/sx4im/skillcheck) | — | Tool | TypeScript | Blind A/B testing for AI agent skills, .cursorrules, CLAUDE.md, and system prompts. Detects placebo and harmful instr... |
+| [keep-the-why](https://github.com/oliver-zehentleitner/keep-the-why) | — | Tool | Python | The why layer of repo-native project memory: the reasoning behind a codebase as Markdown in the repo, versioned by Gi... |
+| [IHUI-AI](https://github.com/IHUI-INF-AI/IHUI-AI) | — | Tool | TypeScript | Eight-platform full-stack AI operating system - unifies 176 LLMs via LangGraph + MCP + A2A. Multi-tenant RLS over 340... |
+| [claude-elixir-phoenix](https://github.com/oliver-kriska/claude-elixir-phoenix) | — | Tool | Python | Claude Code plugin for Elixir/Phoenix/LiveView — 26 specialist agents, Iron Laws enforcement, and Tidewave MCP integr... |
+| [awesome-agent-skills](https://github.com/linny006/awesome-agent-skills) | — | Tool | Python | Curated, auto-updated awesome-list of vetted AI agent skills with quality ratings for Claude, GPT, a |
+| [AutoSDK](https://github.com/tryAGI/AutoSDK) | — | Tool | C# | Automated .NET SDKs for your APIs |
+| [phlox](https://github.com/bloodworks-io/phlox) | — | Tool | JavaScript | Open source, local first AI medical agent for desktop and web. |
+| [destroylist](https://github.com/phishdestroy/destroylist) | — | Tool | HTML | Real-time phishing & scam domain blocklist - 205k+ curated threats, 1M+ community, free API, multiple formats |
+| [claude-fuer-deutsches-recht](https://github.com/Klotzkette/claude-fuer-deutsches-recht) | — | Tool | Python | ⚠️ Experimentelle Skill-Sammlung für deutsches Recht (Arbeits-, Gesellschafts-, Insolvenz-, Datenschutz-, Prozessrech... |
+| [rauthy](https://github.com/sebadob/rauthy) | — | Tool | Rust | Single Sign-On Identity & Access Management via OpenID Connect, OAuth 2, PAM |
+| [AgnesBot](https://github.com/Nomaryth/AgnesBot) | — | Tool |  | Your ever-watchful lab assistant and companion. The first and the last best umamusume discord bot you well see in all... |
+| [effetune](https://github.com/Frieve-A/effetune) | — | Tool | JavaScript | Free real-time audio effects for music listening: EQ, tube amp, AM radio, visualizer, and 100+ more. Web/PWA, desktop... |
+| [htmlspecs.com](https://github.com/JinDX/htmlspecs.com) | — | Tool | HTML | HTML 及相关 API，CSS 标准系列，HTTP 标准系列 🌐📡 |
+| [jp.htmlspecs.com](https://github.com/JinDX/jp.htmlspecs.com) | — | Tool | HTML | HTML および関連 API、CSS 仕様シリーズ、HTTP 仕様シリーズ 🌐📡 |
+| [spatiumddi](https://github.com/spatiumnorth/spatiumddi) | — | Tool | Python | Open-source DDI platform — unified DNS, DHCP, and IP Address Management. Runs its own BIND9 / PowerDNS / Kea service ... |
+| [miniforge](https://github.com/miniforge-ai/miniforge) | — | Tool | Clojure | miniforge is an autonomous software development system designed to behave like a factory, not a chatbot |
+| [coder](https://github.com/coder/coder) | — | Tool | Go | Secure environments for developers and their agents |
+| [weaviate](https://github.com/weaviate/weaviate) | — | Tool | Go | Weaviate is an open-source vector database that stores both objects and vectors, allowing for the combination of vect... |
+
 | [NeMo-Curator](https://github.com/NVIDIA/NeMo-Curator) | — | Data Curation | Python | GPU-accelerated toolkit for large-scale data curation, with exact/fuzzy/semantic deduplication, 30+ heuristic filters, and quality/safety classifiers. |
 | [DataTrove](https://github.com/huggingface/datatrove) | — | Data Processing | Python | Library for large-scale text processing with platform-agnostic pipeline blocks (filters, dedup, readers/writers) that run locally or on Slurm. |
 | [Distilabel](https://github.com/argilla-io/distilabel) | — | Data Generation | Python | Framework to generate and augment data (SFT, DPO) with techniques like UltraFeedback and DEITA. |

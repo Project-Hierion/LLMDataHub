@@ -1,209 +1,402 @@
 === CLASSIFICATION REPORT ===
 
 
-## DATASET (1)
-- ggangix/venezuela-digital-observatory (54★)
+## DATASET (3)
+- ashvardanian/RetriEval (35★)
+  Score: 1.00
+  URL: https://github.com/ashvardanian/RetriEval
+  Description: Benchmark suite that compares vector search engines against each other on billion-scale datasets, from in-memory HNSW libraries like USearch, FAISS, & cuVS to managed databases like Qdrant, Weaviate, 
+
+- leadita/tech-stack-datasets (79★)
+  Score: 0.80
+  URL: https://github.com/leadita/tech-stack-datasets
+  Description: Open datasets of companies & websites grouped by technologies they use (CSV & JSON). Discover who uses Shopify, Stripe, Woocommerce, HubSpot, and more.
+
+- Nanboy-Ronan/RVCBench (57★)
   Score: 0.50
-  URL: https://github.com/ggangix/venezuela-digital-observatory
-  Description: Public dataset of Venezuelan government domains (.gob.ve) with registration dates, expiration, and infrastructure data. Updated periodically.
+  URL: https://github.com/Nanboy-Ronan/RVCBench
+  Description: Benchmark for voice cloning robustness, speaker privacy, and audio protection across 26 TTS and VC models.
 
 
-## MODEL (11)
-- matrixarkai/TemporalStore (161★)
+## MODEL (10)
+- gaia-research/gaia-skill-tree (22★)
   Score: 0.30
-  URL: https://github.com/matrixarkai/TemporalStore
-  Description: Open-source Rust TemporalStore for LLM context management, temporal features, and risk control
+  URL: https://github.com/gaia-research/gaia-skill-tree
+  Description: Gaia is a living, open registry of every AI agent skill — structured as a leveling skill graph. Live site: https://gaiaskilltree.com/
 
-- ProjectDMX/DMI (20★)
-  Score: 0.30
-  URL: https://github.com/ProjectDMX/DMI
-  Description: DMI: A decoupled, asynchronous observability stack for high-performance LLMs.
-
-- bojieli/ai-agent-book (44860★)
-  Score: 0.60
-  URL: https://github.com/bojieli/ai-agent-book
-  Description: 《深入理解 AI Agent：设计原理与工程实践》（李博杰 著）开源主仓库：全书正文、编译版 PDF 与按章配套代码
-
-- CambrianTech/continuum (29★)
-  Score: 0.90
-  URL: https://github.com/CambrianTech/continuum
-  Description: Local-first AI citizens on your own hardware. Teams of continuously-learning personas (Rust core, llama.cpp fork, LoRA genomes) that collaborate, remember, dream, and improve on public benchmarks — on
-
-- git-disl/awesome_LLM-harmful-fine-tuning-papers (245★)
-  Score: 0.90
-  URL: https://github.com/git-disl/awesome_LLM-harmful-fine-tuning-papers
-  Description: A survey on harmful fine-tuning attack for large language model (ACM CSUR)
-
-- youngbryan97/aura (76★)
-  Score: 0.90
-  URL: https://github.com/youngbryan97/aura
-  Description: A cognitive architecture that runs on your own machine. Internal state reaches generation through the model's activations, not the system prompt — and every consequential action leaves a receipt you c
-
-- ariannamethod/notorch (24★)
-  Score: 0.60
-  URL: https://github.com/ariannamethod/notorch
-  Description: neural networks in pure C
-
-- unslothai/unsloth (75680★)
+- unslothai/unsloth (77106★)
   Score: 1.20
   URL: https://github.com/unslothai/unsloth
   Description: Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4, MiniMax-H3, Gemma 4, FLUX and more.
 
-- HKUDS/LightRAG (39426★)
+- Shanghua-Gao/RSI-Jev (42★)
+  Score: 0.90
+  URL: https://github.com/Shanghua-Gao/RSI-Jev
+  Description: Typed-decision models (noul / choice / score) trained by a self-improving loop of AI agents — checkpoints, the code that produced them, and every version that failed.
+
+- wh000wh000/awesome-jev-live (95★)
   Score: 0.60
-  URL: https://github.com/HKUDS/LightRAG
-  Description: [EMNLP2025] LightRAG: Simple and Fast Retrieval-Augmented Generation
+  URL: https://github.com/wh000wh000/awesome-jev-live
+  Description: Awesome Jev — evidence-graded index of TypeSafe System One: SDKs, MCP tools, agents, apps and open models. 20 languages, rebuilt every 2 hours.
 
-- njgymb/diffusers-sculptor (56★)
+- youngbryan97/aura (84★)
   Score: 0.90
-  URL: https://github.com/njgymb/diffusers-sculptor
-  Description: Efficient Stable Diffusion Fine-Tuning Framework 2026: Lightweight Config-Driven Pipeline
+  URL: https://github.com/youngbryan97/aura
+  Description: A cognitive architecture that runs on your own machine. Internal state reaches generation through the model's activations, not the system prompt — and every consequential action leaves a receipt you c
 
-- Aleph-Alpha-Research/eval-framework (41★)
-  Score: 0.90
-  URL: https://github.com/Aleph-Alpha-Research/eval-framework
-  Description: Comprehensive LLM evaluation at scale: A production-ready framework for evaluating large language models across multiple benchmarks.
+- Goekdeniz-Guelmez/mlx-lm-lora (419★)
+  Score: 1.50
+  URL: https://github.com/Goekdeniz-Guelmez/mlx-lm-lora
+  Description: Train Large Language Models on MLX.
+
+- yuxiaopeng/Github-Ranking-AI (550★)
+  Score: 0.30
+  URL: https://github.com/yuxiaopeng/Github-Ranking-AI
+  Description: A list of the most popular AI Topic repositories on GitHub based on the number of stars they have received.| AI相关主题Github仓库排名，每日自动更新。
+
+- logicrw/awesome-jev-projects (636★)
+  Score: 0.30
+  URL: https://github.com/logicrw/awesome-jev-projects
+  Description: Awesome Jev: source-backed open-source ecosystem radar, plain-language project discovery, and automatic GitHub sync
+
+- zhengxuyu/litjev (45★)
+  Score: 0.30
+  URL: https://github.com/zhengxuyu/litjev
+  Description: Turn any off-the-shelf LLM into a Jev -like decision layer
+
+- yogeshhk/TeachingDataScience (303★)
+  Score: 0.30
+  URL: https://github.com/yogeshhk/TeachingDataScience
+  Description: Open-sourced course notes for Artificial Intelligence and Data Science related topics, prepared in LaTeX
 
 
-## PAPER (6)
-- hyeonsangjeon/gdpval-realworks (25★)
+## PAPER (5)
+- 0xDanielLopez/TweetFeed (685★)
+  Score: 0.30
+  URL: https://github.com/0xDanielLopez/TweetFeed
+  Description: TweetFeed collects Indicators of Compromise (IOCs) shared by the infosec community at Twitter. Here you will find malicious URLs, domains, IPs, and SHA256/MD5 hashes.
+
+- randomwalkhan/Short-Term-Reversal-Strategy (259★)
   Score: 0.60
-  URL: https://github.com/hyeonsangjeon/gdpval-realworks
-  Description: Open-source benchmark for evaluating LLMs on 220 real professional tasks across 9 sectors and 44 occupations. Reproducible experiments, artifact validation, grading, and a live evidence dashboard.
+  URL: https://github.com/randomwalkhan/Short-Term-Reversal-Strategy
+  Description: Python-based quant trading research project for short-term reversal option setups, universe selection, staged-entry backtesting, and live paper trading.
 
-- alaliqing/AlphaAD (31★)
-  Score: 0.90
-  URL: https://github.com/alaliqing/AlphaAD
-  Description: 🚗 Automatically curated collection of the latest autonomous driving research papers from arXiv. Updated daily with   categorized papers on perception, planning, control, and more.
-
-- LearningCircuit/local-deep-research (9044★)
+- zhixin612/awesome-papers-LMsys (82★)
   Score: 0.60
-  URL: https://github.com/LearningCircuit/local-deep-research
-  Description:  ~95% on SimpleQA (e.g. Qwen3.6-27B on a 3090). Supports all local and cloud LLMs (llama.cpp, Ollama, Google, ...). 10+ search engines - arXiv, PubMed, your private documents. Everything Local & Encry
+  URL: https://github.com/zhixin612/awesome-papers-LMsys
+  Description: Daily Arxiv Papers on LLM Systems
 
-- iszhanjiawei/flow_matching_arxiv_daily (106★)
+- TauCetiProject/TauCeti (206★)
   Score: 0.30
-  URL: https://github.com/iszhanjiawei/flow_matching_arxiv_daily
+  URL: https://github.com/TauCetiProject/TauCeti
+  Description: An AIs-welcome Lean library downstream of Mathlib: AI handle the implementation and review, humans write the roadmaps and review rubrics
 
-- Zhaojp-Frank/AwesomePaper-for-AI (22★)
+- sashiko-dev/sashiko (1260★)
   Score: 0.30
-  URL: https://github.com/Zhaojp-Frank/AwesomePaper-for-AI
-  Description: Awesome system papers for AI
-
-- geolens-io/geolens (232★)
-  Score: 0.30
-  URL: https://github.com/geolens-io/geolens
-  Description: Self-hosted geospatial data catalog with semantic search (pgvector), OGC/STAC APIs, and map builder. Built on FastAPI, PostGIS, React, and MapLibre.
+  URL: https://github.com/sashiko-dev/sashiko
+  Description: Agentic review of Linux Kernel code changes
 
 
-## TOOL (12)
-- AdguardTeam/HostlistsRegistry (394★)
-  Score: 0.30
-  URL: https://github.com/AdguardTeam/HostlistsRegistry
-  Description: Known hosts blocklists that are made available to the users of AdGuard products
+## TOOL (36)
+- atomantic/PortOS (42★)
+  Score: 0.90
+  URL: https://github.com/atomantic/PortOS
+  Description: Self-hosted, Self-Improving, Federated Everything App — dev management, agent orchestration, persistent mind, digital twin, second brain, and creative pipeline from a single dashboard over Tailscale t
 
-- vibeic/vibe-ic (22★)
+- linny006/skills-tracker (23★)
+  Score: 0.90
+  URL: https://github.com/linny006/skills-tracker
+  Description: Real-time tracking of every new GitHub 'skills' repo to capture the AI agent skill ecosystem trend
+
+- inflexa-ai/inflexa (33★)
   Score: 0.60
-  URL: https://github.com/vibeic/vibe-ic
-  Description: AI-native IC design plugin with MCP-EDA — from natural-language intent to verified silicon.
+  URL: https://github.com/inflexa-ai/inflexa
+  Description: Local-first CLI for reproducible biological analysis, with provenance tracked on every step.
 
-- sipyourdrink-ltd/bernstein (1107★)
-  Score: 0.90
-  URL: https://github.com/sipyourdrink-ltd/bernstein
-  Description: The open‑source AI Agents Governance & Orchestration framework: write the rules declaratively, Bernstein enforces them and produces the verifiable, replayable record. Free, Apache-2.0. https://bernste
+- yinnho/aginxbrowser (34★)
+  Score: 1.20
+  URL: https://github.com/yinnho/aginxbrowser
+  Description: The browser built for AI agents — fetch live pages as markdown, render JS/SPAs with built-in V8, take screenshots without Chromium, meta-search 20 engines, and drive interactive login sessions. One Ru
 
-- ChaoYue0307/awesome-loop-engineering (57★)
-  Score: 0.90
-  URL: https://github.com/ChaoYue0307/awesome-loop-engineering
-  Description: 🔁 Build reliable recurring AI-agent systems: 1001 resources, 22 operational patterns, 22 loop contracts, 8 runtime starters, an interactive atlas, and a structured dataset.
-
-- Polyphase-Labs/Polyphase-Engine (63★)
-  Score: 0.30
-  URL: https://github.com/Polyphase-Labs/Polyphase-Engine
-  Description: Polyphase Engine - Build Homebrew games for Wii, Gamecube , 3DS and other retro 3D consoles
-
-- stefan-jansen/machine-learning-for-trading (20792★)
+- ViperEkura/AstrAI (112★)
   Score: 0.60
-  URL: https://github.com/stefan-jansen/machine-learning-for-trading
-  Description: Code for Machine Learning for Trading, 3rd edition — from data sourcing to live execution.
+  URL: https://github.com/ViperEkura/AstrAI
+  Description: A lightweight Transformer training & inference framework
 
-- attevon-llc/OpenTranscribe (93★)
+- timoncool/ACE-Step-Studio (368★)
+  Score: 0.60
+  URL: https://github.com/timoncool/ACE-Step-Studio
+  Description: Portable AI music generator — full songs with vocals, covers, music videos. One-click install, 100% offline, NVIDIA GPU.
+
+- yashdev9274/supercli (228★)
   Score: 0.90
-  URL: https://github.com/attevon-llc/OpenTranscribe
-  Description: Self-hosted AI-powered transcription platform with speaker diarization, search, and collaboration features. Built with Svelte, FastAPI, and Docker for easy deployment.
+  URL: https://github.com/yashdev9274/supercli
+  Description: The open source harness agent
+
+- rohitg00/agentmemory (29071★)
+  Score: 0.60
+  URL: https://github.com/rohitg00/agentmemory
+  Description: #1 Persistent memory for AI coding agents based on real-world benchmarks
+
+- eigent-ai/toolathlon_gym (151★)
+  Score: 0.60
+  URL: https://github.com/eigent-ai/toolathlon_gym
+  Description: Toolathlon-Gym for testing AI agents real-world tool-use capabilities across diverse MCP servers.
 
 - leeex1/Quillan-Ronin (27★)
   Score: 0.60
   URL: https://github.com/leeex1/Quillan-Ronin
-  Description: Quillan-Ronin - a sovereign mini Software 3.0 runtime on Universal BitNet 1.58-bit logic and a 9B EGGROLL Swarm. v5.3.1 Samurai Quantum features a 33-Expert HNMoE Council, Sovereign Flash Diffusion, a
+  Description: Quillan-Ronin - a sovereign mini Software 3.0 runtime on Universal BitNet 1.58-bit logic and a 9B EGGROLL Swarm. v5.4.0-oni features a 34-expert council (C1–C34) with dense pull-weighted consensus, So
 
-- RWKV-APP/RWKV_APP (123★)
-  Score: 0.60
-  URL: https://github.com/RWKV-APP/RWKV_APP
-  Description: Cross-platform, local-first RWKV chat built with Flutter for Android, iOS, Windows, macOS, and Linux.
+- tractorjuice/arc-kit (2252★)
+  Score: 0.90
+  URL: https://github.com/tractorjuice/arc-kit
+  Description: The Enterprise Architecture Governance Harness — strategy, architecture, delivery, and assurance using AI coding assistants
 
-- francescopace/espectre (9322★)
-  Score: 0.60
-  URL: https://github.com/francescopace/espectre
-  Description: Wi-Fi CSI motion sensing for ESP32. C++ SDK, ESPHome, Native, and Matter frontends, browser tools, and a CLI for the full device lifecycle. GPLv3 and commercial licensing.
-
-- stac-extensions/stac-extensions.github.io (26★)
+- pytorch/ignite (4789★)
   Score: 0.30
-  URL: https://github.com/stac-extensions/stac-extensions.github.io
-  Description: Overview of STAC Extensions, with advice on creating new extensions
+  URL: https://github.com/pytorch/ignite
+  Description: High-level library to help with training and evaluating neural networks in PyTorch flexibly and transparently.
 
-- battlecook/vscode-omni-viewer (40★)
+- harvard-edge/cs249r_book (28768★)
   Score: 0.30
-  URL: https://github.com/battlecook/vscode-omni-viewer
-  Description: A comprehensive audio, image, video, CSV, and JSONL viewer extension for VSCode and Cursor.
+  URL: https://github.com/harvard-edge/cs249r_book
+  Description: Machine Learning Systems: Foundations, Scaling, Agentic AI, and Physical AI (Vols I–IV) • Harvard CS249r | https://mlsysbook.ai
+
+- laminlabs/lamindb (466★)
+  Score: 0.60
+  URL: https://github.com/laminlabs/lamindb
+  Description: Open-source data management for multimodal AI. Query, trace, and govern with a lineage-native, format-agnostic lakehouse for agents and teams. Supports biological formats and registries - by the creat
+
+- AdguardTeam/HostlistsRegistry (403★)
+  Score: 0.30
+  URL: https://github.com/AdguardTeam/HostlistsRegistry
+  Description: Known hosts blocklists that are made available to the users of AdGuard products
+
+- INFOKOM-KI/Wazuh-MCP-Server (61★)
+  Score: 0.60
+  URL: https://github.com/INFOKOM-KI/Wazuh-MCP-Server
+  Description: Wazuh MCP Server: AI-Driven SOC Automation
+
+- sx4im/skillcheck (28★)
+  Score: 0.90
+  URL: https://github.com/sx4im/skillcheck
+  Description: Blind A/B testing for AI agent skills, .cursorrules, CLAUDE.md, and system prompts. Detects placebo and harmful instructions.
+
+- vadimdemedes/ink (39994★)
+  Score: 0.30
+  URL: https://github.com/vadimdemedes/ink
+  Description: 🌈 React for interactive command-line apps
+
+- oliver-zehentleitner/keep-the-why (166★)
+  Score: 0.60
+  URL: https://github.com/oliver-zehentleitner/keep-the-why
+  Description: The why layer of repo-native project memory: the reasoning behind a codebase as Markdown in the repo, versioned by Git, for coding agents and humans, so nothing rejected is proposed twice. No database
+
+- IHUI-INF-AI/IHUI-AI (28★)
+  Score: 1.50
+  URL: https://github.com/IHUI-INF-AI/IHUI-AI
+  Description: Eight-platform full-stack AI operating system - unifies 176 LLMs via LangGraph + MCP + A2A. Multi-tenant RLS over 340 tables, RAG knowledge base, agent marketplace. Web/API/CLI/Desktop/Extension/Mobil
+
+- oliver-kriska/claude-elixir-phoenix (559★)
+  Score: 1.20
+  URL: https://github.com/oliver-kriska/claude-elixir-phoenix
+  Description: Claude Code plugin for Elixir/Phoenix/LiveView — 26 specialist agents, Iron Laws enforcement, and Tidewave MCP integration. Plan features with parallel research agents, execute with automatic verifica
+
+- linny006/awesome-agent-skills (39★)
+  Score: 0.90
+  URL: https://github.com/linny006/awesome-agent-skills
+  Description: Curated, auto-updated awesome-list of vetted AI agent skills with quality ratings for Claude, GPT, a
+
+- tryAGI/AutoSDK (92★)
+  Score: 0.60
+  URL: https://github.com/tryAGI/AutoSDK
+  Description: Automated .NET SDKs for your APIs
+
+- bloodworks-io/phlox (107★)
+  Score: 0.30
+  URL: https://github.com/bloodworks-io/phlox
+  Description: Open source, local first AI medical agent for desktop and web.
+
+- phishdestroy/destroylist (1902★)
+  Score: 0.30
+  URL: https://github.com/phishdestroy/destroylist
+  Description: Real-time phishing & scam domain blocklist - 205k+ curated threats, 1M+ community, free API, multiple formats
+
+- Klotzkette/claude-fuer-deutsches-recht (1641★)
+  Score: 0.30
+  URL: https://github.com/Klotzkette/claude-fuer-deutsches-recht
+  Description: ⚠️ Experimentelle Skill-Sammlung für deutsches Recht (Arbeits-, Gesellschafts-, Insolvenz-, Datenschutz-, Prozessrecht u.a.) – inzwischen verbessert und im Alltag getestet, aber weiterhin Experiment. 
+
+- sebadob/rauthy (1351★)
+  Score: 0.30
+  URL: https://github.com/sebadob/rauthy
+  Description: Single Sign-On Identity & Access Management via OpenID Connect, OAuth 2, PAM
+
+- Nomaryth/AgnesBot (24★)
+  Score: 0.60
+  URL: https://github.com/Nomaryth/AgnesBot
+  Description: Your ever-watchful lab assistant and companion. The first and the last best umamusume discord bot you well see in all world!
+
+- Frieve-A/effetune (134★)
+  Score: 0.30
+  URL: https://github.com/Frieve-A/effetune
+  Description: Free real-time audio effects for music listening: EQ, tube amp, AM radio, visualizer, and 100+ more. Web/PWA, desktop, Chrome/Edge extension, VST3.
+
+- JinDX/htmlspecs.com (33★)
+  Score: 0.30
+  URL: https://github.com/JinDX/htmlspecs.com
+  Description: HTML 及相关 API，CSS 标准系列，HTTP 标准系列 🌐📡
+
+- JinDX/jp.htmlspecs.com (23★)
+  Score: 0.30
+  URL: https://github.com/JinDX/jp.htmlspecs.com
+  Description: HTML および関連 API、CSS 仕様シリーズ、HTTP 仕様シリーズ 🌐📡
+
+- spatiumnorth/spatiumddi (64★)
+  Score: 1.20
+  URL: https://github.com/spatiumnorth/spatiumddi
+  Description: Open-source DDI platform — unified DNS, DHCP, and IP Address Management. Runs its own BIND9 / PowerDNS / Kea service containers, with a FastAPI control plane and React UI.
+
+- miniforge-ai/miniforge (45★)
+  Score: 0.90
+  URL: https://github.com/miniforge-ai/miniforge
+  Description: miniforge is an autonomous software development system designed to behave like a factory, not a chatbot
+
+- mark3labs/kit (139★)
+  Score: 0.90
+  URL: https://github.com/mark3labs/kit
+  Description: KIT (Knowledge Inference Tool) — A lightweight AI agent for coding
+
+- coder/coder (16787★)
+  Score: 0.30
+  URL: https://github.com/coder/coder
+  Description: Secure environments for developers and their agents
+
+- weaviate/weaviate (16859★)
+  Score: 0.30
+  URL: https://github.com/weaviate/weaviate
+  Description: Weaviate is an open-source vector database that stores both objects and vectors, allowing for the combination of vector search with structured filtering with the fault tolerance and scalability of a c
 
 
-## NOISE (10)
-- gambiarras/legal-iptv (86★)
+## NOISE (24)
+- machdyne/zeitlos (55★)
   Score: 0.00
-  URL: https://github.com/gambiarras/legal-iptv
+  URL: https://github.com/machdyne/zeitlos
+  Description: Zeitlos SOC/OS
 
-- hoilc/scoop-lemon (267★)
+- rjwalters/kicad-tools (63★)
   Score: 0.00
-  URL: https://github.com/hoilc/scoop-lemon
-  Description: 🍋Yet Another Personal Bucket for Scoop
+  URL: https://github.com/rjwalters/kicad-tools
+  Description: Standalone Python tools for parsing and manipulating KiCad schematic and PCB files
 
-- EvolvingLMMs-Lab/LLaVA-OneVision-2 (1197★)
+- unslothai/unsloth-zoo (337★)
   Score: 0.00
-  URL: https://github.com/EvolvingLMMs-Lab/LLaVA-OneVision-2
-  Description: Fully Open Framework for Democratized Multimodal Training
+  URL: https://github.com/unslothai/unsloth-zoo
+  Description: Utils for Unsloth https://github.com/unslothai/unsloth
 
-- guoriyue/VRL (88★)
+- MihrabHQ/Mihrab (39★)
   Score: 0.00
-  URL: https://github.com/guoriyue/VRL
+  URL: https://github.com/MihrabHQ/Mihrab
+  Description: Mihrab, the Muslim companion — prayer times, the Qur'an, duas and dhikr in one calm, private, open-source app. Android, iOS, iPadOS and Mac.
 
-- AI-in-Transportation-Lab/awesome-mechanistic-interpretability (153★)
+- walkinglabs/hands-on-modern-rl (4482★)
   Score: 0.00
-  URL: https://github.com/AI-in-Transportation-Lab/awesome-mechanistic-interpretability
-  Description: A carefully curated collection of high-quality libraries, projects, tutorials, research papers, and other essential resources focused on Mechanistic Interpretability, a growing subfield in machine lea
+  URL: https://github.com/walkinglabs/hands-on-modern-rl
+  Description: 🚀 An open-source, hands-on curriculum bridging the gap from basic RL concepts to LLM alignment, RLVR, and advanced Agentic systems. 
 
-- andrew/ultimate-awesome (217★)
+- truckli/infosec-abbrv (24★)
   Score: 0.00
-  URL: https://github.com/andrew/ultimate-awesome
-  Description: Every awesome list on every topic, including awesome lists of awesome lists, updated daily.
+  URL: https://github.com/truckli/infosec-abbrv
+  Description: 网络安全缩略语词表速查手册
 
-- raamonp/rl-gym-orchestrator (55★)
+- ai-boost/awesome-prompts (8975★)
   Score: 0.00
-  URL: https://github.com/raamonp/rl-gym-orchestrator
-  Description: Ultimate LLM Gym Trainer Guide 2026: Reinforcement Learning Fine-Tuning Framework
+  URL: https://github.com/ai-boost/awesome-prompts
+  Description: Curated list of chatgpt prompts from the top-rated GPTs in the GPTs Store. Prompt Engineering, prompt attack & prompt protect. Advanced Prompt Engineering papers.
 
-- mk-runner/Awesome-Radiology-Report-Generation (480★)
+- gmh5225/awesome-ai-security (54★)
   Score: 0.00
-  URL: https://github.com/mk-runner/Awesome-Radiology-Report-Generation
-  Description: paper list, dataset, and tools for radiology report generation
+  URL: https://github.com/gmh5225/awesome-ai-security
+  Description: A curated list of AI Security materials and resources for Pentesters, Bug Hunters, and Security Researchers.
 
-- dboudreau00/Conformiti (119★)
+- OSSDrop/OSSDrop (104★)
   Score: 0.00
-  URL: https://github.com/dboudreau00/Conformiti
-  Description: A GRC Compliance tool for SaaS products to manage the entire lifecycle of security audits.
+  URL: https://github.com/OSSDrop/OSSDrop
+  Description: Discover and launch open-source software. OSSDrop is a community-curated Product Hunt alternative where developers share projects, find tools, vote, and discuss.
 
-- hashgraph-online/awesome-codex-plugins (934★)
+- team-telnyx/telnyx-code-examples (158★)
   Score: 0.00
-  URL: https://github.com/hashgraph-online/awesome-codex-plugins
-  Description: A curated list of awesome OpenAI Codex / ChatGPT plugins, skills, and resources. The #1 Codex Marketplace.  See live plugins at: https://hol.org/plugins/best-codex-plugins
+  URL: https://github.com/team-telnyx/telnyx-code-examples
+  Description: Production-ready code examples for Telnyx AI Communications Infrastructure — Voice AI, SMS, SIP, and IoT APIs
+
+- benkuper/Chataigne (1679★)
+  Score: 0.00
+  URL: https://github.com/benkuper/Chataigne
+  Description: Artist-friendly Modular Machine for Art and Technology
+
+- Aurtechmx/openlidarviewer (23★)
+  Score: 0.00
+  URL: https://github.com/Aurtechmx/openlidarviewer
+  Description: Browser-based LiDAR and point-cloud viewer - measure, classify, profile, and export, entirely client-side on WebGPU with a WebGL2 fallback. Runs locally, no upload.
+
+- alitrack/duckdb_fdw (412★)
+  Score: 0.00
+  URL: https://github.com/alitrack/duckdb_fdw
+  Description: DuckDB Foreign Data Wrapper for PostgreSQL
+
+- mthcht/awesome-lists (1931★)
+  Score: 0.00
+  URL: https://github.com/mthcht/awesome-lists
+  Description: Awesome Security lists for SOC/CERT/CTI
+
+- boxabirds/awesome-local-ai (46★)
+  Score: 0.00
+  URL: https://github.com/boxabirds/awesome-local-ai
+  Description: Various configurations for optimal Local AI usage. 
+
+- pg-sharding/spqr (1479★)
+  Score: 0.00
+  URL: https://github.com/pg-sharding/spqr
+  Description: Stateless Postgres Query Router.
+
+- jl94x4/StreamPilot (47★)
+  Score: 0.00
+  URL: https://github.com/jl94x4/StreamPilot
+  Description: Self-hosted management and analytics for Plex, Jellyfin, and Emby.
+
+- oisee/vibing-steampunk (494★)
+  Score: 0.00
+  URL: https://github.com/oisee/vibing-steampunk
+  Description: vs-punk: ADT to MCP bridge - Vibe code in ABAP / AMDP
+
+- Patrowl/PatrowlHearsData (146★)
+  Score: 0.00
+  URL: https://github.com/Patrowl/PatrowlHearsData
+  Description: Open-Source Vulnerability Intelligence Center - Unified source of vulnerability, exploit and threat Intelligence feeds
+
+- usenotra/notra (227★)
+  Score: 0.00
+  URL: https://github.com/usenotra/notra
+  Description: Notra is a modern GEO tool that asks ChatGPT, Claude and Gemini the questions your buyers ask. See if you show up, who shows up instead and how to fix it.
+
+- hmascs/KSuRoot (178★)
+  Score: 0.00
+  URL: https://github.com/hmascs/KSuRoot
+  Description: KSuRoot 4.0.0 — 基于 CVE-2026-43499(GhostLock) 的一键 KernelSU 提权工具。多内核支持：6.1 / 6.6 / 6.12 三族各有专属基线，另有 50 档上游内核适配；多机型动态库内置：122 条厂商载荷（vivo/iQOO、小米、三星、Pixel 等）离线可用、按机型+内核+commit 三级匹配；新增「载荷构建」用本机 boot.img 解析偏
+
+- storybookjs/storybook (91187★)
+  Score: 0.00
+  URL: https://github.com/storybookjs/storybook
+  Description: Storybook is the industry standard workshop for building, documenting, and testing UI components in isolation
+
+- best-of-ai/ai-directories (882★)
+  Score: 0.00
+  URL: https://github.com/best-of-ai/ai-directories
+  Description: An awesome list of best top AI directories to submit your ai tools
+
+- kozistr/pytorch_optimizer (431★)
+  Score: 0.10
+  URL: https://github.com/kozistr/pytorch_optimizer
+  Description: optimizer & lr scheduler & loss function collections in PyTorch
 

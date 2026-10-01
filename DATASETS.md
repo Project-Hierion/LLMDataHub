@@ -69,6 +69,10 @@
 | [KoHRM-Text](https://github.com/sapientinc/HRM-Text) | — | PT | Korean | 1.4B tokens | Korean pretraining dataset with legal, Wikipedia, terminal conversations, and reasoning data. |
 
 ### Datasets Released in 2025
+| [RetriEval](https://github.com/ashvardanian/RetriEval) | — | Dataset | Rust | 35★ | Benchmark suite that compares vector search engines against each other on billion-scale datasets, from in-memory HNSW... |
+| [tech-stack-datasets](https://github.com/leadita/tech-stack-datasets) | — | Dataset |  | 79★ | Open datasets of companies & websites grouped by technologies they use (CSV & JSON). Discover who uses Shopify, Strip... |
+| [RVCBench](https://github.com/Nanboy-Ronan/RVCBench) | — | Dataset | Python | 57★ | Benchmark for voice cloning robustness, speaker privacy, and audio protection across 26 TTS and VC models. |
+
 | Dataset name | Used by | Type | Language | Size | Description |
 |---|---|---|---|---|---|
 | [SYNTHETIC-2-SFT-verified](HF-hosted (no link) 🤑) | — | SFT | English | 4M | Large-scale reasoning dataset with verified traces from DeepSeek-R1-0528, spanning math, coding, puzzles, and instruction following. |
