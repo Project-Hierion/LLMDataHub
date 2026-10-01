@@ -41,6 +41,12 @@
 </details>
 
 ### <div id="papers-2025">2025</div>
+| [TweetFeed](https://github.com/0xDanielLopez/TweetFeed) | — | — | [Code](https://github.com/0xDanielLopez/TweetFeed) | — | TweetFeed collects Indicators of Compromise (IOCs) shared by the infosec community at Twitter. Here you will find mal... |
+| [Short-Term-Reversal-Strategy](https://github.com/randomwalkhan/Short-Term-Reversal-Strategy) | — | — | [Code](https://github.com/randomwalkhan/Short-Term-Reversal-Strategy) | — | Python-based quant trading research project for short-term reversal option setups, universe selection, staged-entry b... |
+| [awesome-papers-LMsys](https://github.com/zhixin612/awesome-papers-LMsys) | — | — | [Code](https://github.com/zhixin612/awesome-papers-LMsys) | — | Daily Arxiv Papers on LLM Systems |
+| [TauCeti](https://github.com/TauCetiProject/TauCeti) | — | — | [Code](https://github.com/TauCetiProject/TauCeti) | — | An AIs-welcome Lean library downstream of Mathlib: AI handle the implementation and review, humans write the roadmaps... |
+| [sashiko](https://github.com/sashiko-dev/sashiko) | — | — | [Code](https://github.com/sashiko-dev/sashiko) | — | Agentic review of Linux Kernel code changes |
+
 | [gdpval-realworks](https://github.com/hyeonsangjeon/gdpval-realworks) | — | — | [Code](https://github.com/hyeonsangjeon/gdpval-realworks) | — | Open-source benchmark for evaluating LLMs on 220 real professional tasks across 9 sectors and 44 occupations. Reprodu... |
 | [AlphaAD](https://github.com/alaliqing/AlphaAD) | — | — | [Code](https://github.com/alaliqing/AlphaAD) | — | 🚗 Automatically curated collection of the latest autonomous driving research papers from arXiv. Updated daily with   ... |
 | [local-deep-research](https://github.com/LearningCircuit/local-deep-research) | — | — | [Code](https://github.com/LearningCircuit/local-deep-research) | — | ~95% on SimpleQA (e.g. Qwen3.6-27B on a 3090). Supports all local and cloud LLMs (llama.cpp, Ollama, Google, ...). 10... |

@@ -41,6 +41,15 @@
 </details>
 
 ### <div id="models-2025">2025</div>
+| [gaia-skill-tree](https://github.com/gaia-research/gaia-skill-tree) | — | LLM | Python | 22★ | Gaia is a living, open registry of every AI agent skill — structured as a leveling skill graph. Live site: https://ga... |
+| [RSI-Jev](https://github.com/Shanghua-Gao/RSI-Jev) | — | LLM | HTML | 42★ | Typed-decision models (noul / choice / score) trained by a self-improving loop of AI agents — checkpoints, the code t... |
+| [awesome-jev-live](https://github.com/wh000wh000/awesome-jev-live) | — | LLM | Python | 95★ | Awesome Jev — evidence-graded index of TypeSafe System One: SDKs, MCP tools, agents, apps and open models. 20 languag... |
+| [mlx-lm-lora](https://github.com/Goekdeniz-Guelmez/mlx-lm-lora) | — | LLM | Python | 419★ | Train Large Language Models on MLX. |
+| [Github-Ranking-AI](https://github.com/yuxiaopeng/Github-Ranking-AI) | — | LLM | Python | 550★ | A list of the most popular AI Topic repositories on GitHub based on the number of stars they have received.| AI相关主题Gi... |
+| [awesome-jev-projects](https://github.com/logicrw/awesome-jev-projects) | — | LLM | JavaScript | 636★ | Awesome Jev: source-backed open-source ecosystem radar, plain-language project discovery, and automatic GitHub sync |
+| [litjev](https://github.com/zhengxuyu/litjev) | — | LLM | Python | 45★ | Turn any off-the-shelf LLM into a Jev -like decision layer |
+| [TeachingDataScience](https://github.com/yogeshhk/TeachingDataScience) | — | LLM | Jupyter Notebook | 303★ | Open-sourced course notes for Artificial Intelligence and Data Science related topics, prepared in LaTeX |
+
 | [NeuralDaredevil-8B](https://huggingface.co/mlabonne/NeuralDaredevil-8B) (HF-hosted 🤑) | — | LLM | English | 8B | Popular merged model. Fine-tuned for general-purpose chat and reasoning. |
 | [AlphaMonarch-7B](https://huggingface.co/mlabonne/AlphaMonarch-7B) (HF-hosted 🤑) | — | LLM | English | 7B | Popular merged model. Strong performance on reasoning and instruction following. |
 | [NeuralHermes-2.5-Mistral-7B](https://huggingface.co/mlabonne/NeuralHermes-2.5-Mistral-7B) (HF-hosted 🤑) | — | LLM | English | 7B | First successful open-source DPO model. Combines Hermes and Neural Chat. |
