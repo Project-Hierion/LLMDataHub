@@ -41,6 +41,15 @@
 </details>
 
 ### <div id="papers-2025">2025</div>
+| [Short-Term-Reversal-Strategy](https://github.com/randomwalkhan/Short-Term-Reversal-Strategy) | — | — | [Code](https://github.com/randomwalkhan/Short-Term-Reversal-Strategy) | — | Python-based quant trading research project for short-term reversal option setups, universe selection, staged-entry b... |
+| [ml-systems-papers](https://github.com/byungsoo-oh/ml-systems-papers) | — | — | [Code](https://github.com/byungsoo-oh/ml-systems-papers) | — | Curated collection of papers in machine learning systems |
+| [awesome-papers-LMsys](https://github.com/zhixin612/awesome-papers-LMsys) | — | — | [Code](https://github.com/zhixin612/awesome-papers-LMsys) | — | Daily Arxiv Papers on LLM Systems |
+| [feynman](https://github.com/Companion-Inc/feynman) | — | — | [Code](https://github.com/Companion-Inc/feynman) | — | The open source AI research agent. |
+| [machine-learning-research](https://github.com/imteekay/machine-learning-research) | — | — | [Code](https://github.com/imteekay/machine-learning-research) | — | ✨ AI/ML Research |
+| [nautilus-compass](https://github.com/chunxiaoxx/nautilus-compass) | — | — | [Code](https://github.com/chunxiaoxx/nautilus-compass) | — | Open memory & reliability layer for AI agents + independent judging/verification (NACRE judge, caliber-bench meta-ben... |
+| [PhysInOne](https://github.com/vLAR-group/PhysInOne) | — | — | [Code](https://github.com/vLAR-group/PhysInOne) | — | 🔥PhysInOne in Python (CVPR 2026) |
+| [matchms](https://github.com/matchms/matchms) | — | — | [Code](https://github.com/matchms/matchms) | — | Python library for processing (tandem) mass spectrometry data and for computing spectral similarities. |
+
 | [gdpval-realworks](https://github.com/hyeonsangjeon/gdpval-realworks) | — | — | [Code](https://github.com/hyeonsangjeon/gdpval-realworks) | — | Open-source benchmark for evaluating LLMs on 220 real professional tasks across 9 sectors and 44 occupations. Reprodu... |
 | [AlphaAD](https://github.com/alaliqing/AlphaAD) | — | — | [Code](https://github.com/alaliqing/AlphaAD) | — | 🚗 Automatically curated collection of the latest autonomous driving research papers from arXiv. Updated daily with   ... |
 | [local-deep-research](https://github.com/LearningCircuit/local-deep-research) | — | — | [Code](https://github.com/LearningCircuit/local-deep-research) | — | ~95% on SimpleQA (e.g. Qwen3.6-27B on a 3090). Supports all local and cloud LLMs (llama.cpp, Ollama, Google, ...). 10... |

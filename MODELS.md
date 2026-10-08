@@ -41,6 +41,20 @@
 </details>
 
 ### <div id="models-2025">2025</div>
+| [torchtitan](https://github.com/pytorch/torchtitan) | — | LLM | Python | 5788★ | A PyTorch native platform for training generative AI models |
+| [taosmd](https://github.com/jaylfc/taosmd) | — | LLM | Python | 79★ | Local-first AI memory — runs offline on any machine with 8 GB+ RAM (SBC, mini PC, laptop, workstation). Zero-loss ver... |
+| [Awesome-Awesome-LLMs](https://github.com/adongwanai/Awesome-Awesome-LLMs) | — | LLM |  | 39★ | 🌟 The ultimate meta-collection of 200+ awesome LLM repositories |
+| [Soup](https://github.com/MakazhanAlpamys/Soup) | — | LLM | Python | 8345★ | Fine-tune LLMs from one YAML. Layer streaming trains an 8B model on a 4 GB laptop GPU. |
+| [xtuner](https://github.com/InternLM/xtuner) | — | LLM | Python | 5206★ | A Next-Generation Training Engine Built for Ultra-Large MoE Models |
+| [Awesome-LRM-Safety](https://github.com/wonderNefelibata/Awesome-LRM-Safety) | — | LLM | Python | 84★ | Awesome Large Reasoning Model(LRM) Safety.This repository is used to collect security-related research on large reaso... |
+| [notebooks](https://github.com/unslothai/notebooks) | — | LLM | Jupyter Notebook | 5719★ | 250+ Fine-tuning & RL Notebooks for text, vision, audio, embedding, TTS models. |
+| [Awesome-LLM-Circuit-Agent](https://github.com/qhy991/Awesome-LLM-Circuit-Agent) | — | LLM | Mermaid | 41★ | A repository for academic works on RTL generation and Analog circuit generation based on LLM |
+| [surogate](https://github.com/invergent-ai/surogate) | — | LLM | C++ | 853★ | Train and serve LLMs at extreme speed and massive throughput. |
+| [Github-Ranking-AI](https://github.com/yuxiaopeng/Github-Ranking-AI) | — | LLM | Python | 559★ | A list of the most popular AI Topic repositories on GitHub based on the number of stars they have received.| AI相关主题Gi... |
+| [nanocodex](https://github.com/gakonst/nanocodex) | — | LLM | Rust | 558★ | Building blocks for frontier OpenAI agents in Rust. Nanocodex empowers you with Codex-level performance anywhere. |
+| [somora_agent](https://github.com/thenaxon/somora_agent) | — | LLM | TypeScript | 29★ | Your personal AI team that gets things done. Shared memory. Any model. Local or cloud. Run. Rest. Dream. 🐨 |
+| [agent-teams-ai](https://github.com/777genius/agent-teams-ai) | — | LLM | TypeScript | 2237★ | You're the boss, agents are your team. They handle tasks on their own, message each other, and review each other's wo... |
+
 | [NeuralDaredevil-8B](https://huggingface.co/mlabonne/NeuralDaredevil-8B) (HF-hosted 🤑) | — | LLM | English | 8B | Popular merged model. Fine-tuned for general-purpose chat and reasoning. |
 | [AlphaMonarch-7B](https://huggingface.co/mlabonne/AlphaMonarch-7B) (HF-hosted 🤑) | — | LLM | English | 7B | Popular merged model. Strong performance on reasoning and instruction following. |
 | [NeuralHermes-2.5-Mistral-7B](https://huggingface.co/mlabonne/NeuralHermes-2.5-Mistral-7B) (HF-hosted 🤑) | — | LLM | English | 7B | First successful open-source DPO model. Combines Hermes and Neural Chat. |

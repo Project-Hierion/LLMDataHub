@@ -37,6 +37,36 @@
 | *No tools currently listed.* | | | | | |
 
 ### <div id="tools-2025">2025</div>
+| [uteke](https://github.com/codecoradev/uteke) | — | Tool | Rust | 🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic e... |
+| [LichtFeld-Studio](https://github.com/MrNeRF/LichtFeld-Studio) | — | Tool | C++ | Train, inspect, edit, automate, and export 3D Gaussian Splatting scenes from a single native application. |
+| [opik](https://github.com/comet-ml/opik) | — | Tool | Python | Debug, evaluate, and monitor your LLM applications, RAG systems, and agentic workflows with comprehensive tracing, au... |
+| [verl](https://github.com/verl-project/verl) | — | Tool | Python | verl/HybridFlow: A Flexible and Efficient RL Post-Training Framework |
+| [AstrAI](https://github.com/ViperEkura/AstrAI) | — | Tool | Python | A lightweight Transformer training & inference framework |
+| [Relax](https://github.com/redai-studio/Relax) | — | Tool | Python | An Asynchronous Reinforcement Learning Engine for Omni-Modal Post-Training at Scale |
+| [IsaacLab-Arena](https://github.com/isaac-sim/IsaacLab-Arena) | — | Tool | Python | Isaac Lab - Arena is a robotics simulation framework that enhances NVIDIA Isaac Lab by providing a composable, scalab... |
+| [arc-kit](https://github.com/tractorjuice/arc-kit) | — | Tool | JavaScript | The Enterprise Architecture Governance Harness — strategy, architecture, delivery, and assurance using AI coding assi... |
+| [AReno](https://github.com/inclusionAI/AReno) | — | Tool | Python | An easy-to-use, fast toolkit to scale up RL post-training on a single node. |
+| [agentic-awesome-skills](https://github.com/sickn33/agentic-awesome-skills) | — | Tool | Python | AAS Core is the local, agent-first control plane for complete catalog discovery, agent-owned selection, stack validat... |
+| [insight](https://github.com/constructorfabric/insight) | — | Tool | Rust | Constructor Insight defines roles and activities, connects to your systems through ready-to-use connectors (including... |
+| [lightly-studio](https://github.com/lightly-ai/lightly-studio) | — | Tool | Python | LightlyStudio - The Unified Data Platform for Multimodal ML |
+| [qvac](https://github.com/tetherto/qvac) | — | Tool | TypeScript | Open-source local AI SDK - run AI on-device with no cloud, no API keys. Supports GGUF, RAG, image, music, and video g... |
+| [incus-spawn](https://github.com/Sanne/incus-spawn) | — | Tool | Java | Give your AI coding agents their own machines — not your credentials. Isolated Linux workstations with full autonomy,... |
+| [TrenTorch](https://github.com/TrenTorch/TrenTorch) | — | Tool | Python | Don't memorize ML. Understand it from first principles including Inference, Cuda, Deep Learning, Data Science and Rei... |
+| [awesome-remote-mcp-servers](https://github.com/punkpeye/awesome-remote-mcp-servers) | — | Tool |  | A collection of remote MCP servers. |
+| [cheat-sheets](https://github.com/Ulrich-Tonmoy/cheat-sheets) | — | Tool | CSS | Cheat Sheets heaven for all kind of programming language and frameworks + Game and Web dev + AI. |
+| [Avernet](https://github.com/inclusionAI/Avernet) | — | Tool | Python | Distributed agent coordination platform where agents live, connect, coordinate, execute, and evolve together — like a... |
+| [argo-cd](https://github.com/argoproj/argo-cd) | — | Tool | Go | Declarative Continuous Deployment for Kubernetes |
+| [binance](https://github.com/sieblyio/binance) | — | Tool | TypeScript | Node.js & JavaScript SDK for Binance REST APIs & WebSockets, with TypeScript & browser support, integration tests, be... |
+| [skilld](https://github.com/skilld-dev/skilld) | — | Tool | Rust | Open-source, privacy friendly skills.sh alternative for humans and agents. |
+| [free-v2ray-public-list](https://github.com/ebrasha/free-v2ray-public-list) | — | Tool |  | A simple and always-updated list of free, working V2Ray servers. including SS, SSR, Trojan, VLESS, VMess, TUIC, and H... |
+| [SystemManager](https://github.com/laurentiu021/SystemManager) | — | Tool | C# | Free, open-source Windows system toolkit & CCleaner alternative — disk cleanup, debloat, privacy toggles, network mon... |
+| [trackinizer](https://github.com/rekursiv-ai/trackinizer) | — | Tool | Python | Epistemological database for agent and human efforts, beliefs, and findings. |
+| [AgentGarten](https://github.com/MirroS-Lab/AgentGarten) | — | Tool | Python | AgentGarten: Code Worlds for Evolving Agents |
+| [WorkSphere](https://github.com/SatyamPandey-07/WorkSphere) | — | Tool | TypeScript |  |
+| [mastra](https://github.com/mastra-ai/mastra) | — | Tool | TypeScript | Mastra is the modern TypeScript framework for AI-powered applications and agents. |
+| [LazyMind](https://github.com/LazyAGI/LazyMind) | — | Tool | Go | An AI Skill Runtime for knowledge-intensive work which makes everything under your control. |
+| [dbx](https://github.com/t8y2/dbx) | — | Tool | Rust | 25 MB lightweight cross-platform database client for 100+ databases, including MySQL, PostgreSQL, SQLite, Redis, Mong... |
+
 | [NeMo-Curator](https://github.com/NVIDIA/NeMo-Curator) | — | Data Curation | Python | GPU-accelerated toolkit for large-scale data curation, with exact/fuzzy/semantic deduplication, 30+ heuristic filters, and quality/safety classifiers. |
 | [DataTrove](https://github.com/huggingface/datatrove) | — | Data Processing | Python | Library for large-scale text processing with platform-agnostic pipeline blocks (filters, dedup, readers/writers) that run locally or on Slurm. |
 | [Distilabel](https://github.com/argilla-io/distilabel) | — | Data Generation | Python | Framework to generate and augment data (SFT, DPO) with techniques like UltraFeedback and DEITA. |
