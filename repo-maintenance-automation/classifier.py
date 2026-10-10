@@ -197,7 +197,7 @@ def classify_repo(repo: Dict) -> Tuple[str, float]:
     best_score = scores[best_category]
 
     # Minimum threshold
-    if best_score < 0.3:
+    if best_score < 0.75:
         return "noise", best_score
 
     return best_category, best_score
