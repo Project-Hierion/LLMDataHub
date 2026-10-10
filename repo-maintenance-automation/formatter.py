@@ -2,7 +2,7 @@
 """
 File: formatter.py
 Tool: LLMDataHub Harvester — Markdown Formatter
-Version: 1.1.0
+Version: 1.1.1
 System: Project Hierion / repo-maintenance-automation
 Status: ACTIVE
 License: AGPLv3 with Commons Clause
@@ -14,11 +14,17 @@ Version History:
                        the whole file (name + URL), not just the section.
                        main() uses classifier v1.1.0 (skip-list + full-
                        archive dedup) and reports rejected count.
+  1.1.1 — 2026-10-09 — insertion_data.txt now writes to the automation
+                       logs dir (repo-maintenance-automation/logs/)
+                       instead of Path.cwd()/logs.
 """
 
 import re
 from pathlib import Path
 from typing import Dict, List
+
+SCRIPT_DIR = Path(__file__).resolve().parent
+LOGS_DIR = SCRIPT_DIR / "logs"
 
 def safe_string(value) -> str:
     if value is None:
@@ -110,12 +116,10 @@ def format_candidates(classified: Dict[str, List[Dict]]) -> Dict[str, List[str]]
 def _row_identifiers(row: str) -> List[str]:
     """Extract every identifier we can use for dedup from a formatted row."""
     identifiers = []
-    # Markdown link display text
     for m in re.finditer(r'\[([^\]]+)\]', row):
         text = m.group(1).strip()
         if text and text.lower() not in ("code", "github"):
             identifiers.append(text.lower())
-    # GitHub URLs — capture owner/repo
     for m in re.finditer(r'https://github\.com/([^\)\s]+)', row):
         owner_repo = m.group(1).strip().rstrip("/").lower()
         if owner_repo:
@@ -132,13 +136,11 @@ def insert_rows_into_file(filename: str, section_pattern: str, rows: List[str]) 
     with open(filepath, "r") as f:
         content = f.read()
 
-    # Find the section header
     section_match = re.search(section_pattern, content, re.MULTILINE)
     if not section_match:
         print(f"  ❌ Section not found in {filename}: {section_pattern}")
         return False
 
-    # Whole-file lowercase haystack for dedup
     haystack = content.lower()
 
     existing_entries = []
@@ -154,7 +156,6 @@ def insert_rows_into_file(filename: str, section_pattern: str, rows: List[str]) 
         print(f"  ℹ️  No new entries to add to {filename}")
         return True
 
-    # Insert rows after the section header
     insert_pos = section_match.end()
     rows_text = "\n" + "\n".join(existing_entries) + "\n"
     new_content = content[:insert_pos] + rows_text + content[insert_pos:]
@@ -240,7 +241,7 @@ def main():
     )
     from github_scraper import scrape_github
 
-    print("  🔄 Running formatter (v1.1.0)...")
+    print("  🔄 Running formatter (v1.1.1)...")
 
     candidates = scrape_github(min_stars=20, max_results=50, recent_years=3, require_license=False)
     existing = load_all_existing_entries()
@@ -267,9 +268,8 @@ def main():
     for filename, data in insertions.items():
         print(f"    {filename}: {len(data['rows'])} rows")
 
-    # Save insertion data for later use
-    commands_path = Path.cwd() / "logs" / "insertion_data.txt"
-    commands_path.parent.mkdir(exist_ok=True)
+    LOGS_DIR.mkdir(parents=True, exist_ok=True)
+    commands_path = LOGS_DIR / "insertion_data.txt"
     with open(commands_path, "w") as f:
         for filename, data in insertions.items():
             f.write(f"# {filename}\n")

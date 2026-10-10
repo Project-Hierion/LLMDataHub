@@ -2,7 +2,7 @@
 """
 File: harvest.py
 Tool: LLMDataHub Harvester — Main Orchestrator
-Version: 1.1.0
+Version: 1.1.1
 System: Project Hierion / repo-maintenance-automation
 Status: ACTIVE
 License: AGPLv3 with Commons Clause
@@ -10,8 +10,11 @@ License: AGPLv3 with Commons Clause
 Version History:
   1.0.4 — initial orchestrator
   1.1.0 — 2026-10-09 — wired in persistent skip-list and full-archive
-                       dedup via classifier v1.1.0. Reports rejected
-                       count during Step 2.
+                       dedup via classifier v1.1.0
+  1.1.1 — 2026-10-09 — all log/report/script paths now write to the
+                       automation logs dir (repo-maintenance-automation/logs/)
+                       instead of Path.cwd()/logs. Merged duplicate log
+                       locations into one.
 """
 
 import sys
@@ -31,6 +34,9 @@ from classifier import (
     load_rejected_candidates,
 )
 from formatter import format_candidates, generate_insertion_commands, apply_insertions
+
+SCRIPT_DIR = Path(__file__).resolve().parent
+LOGS_DIR = SCRIPT_DIR / "logs"
 
 def print_banner(text: str, char: str = "=", width: int = 60):
     # Run standard maintenance
@@ -55,7 +61,7 @@ def human_review(classified: Dict[str, List[Dict]]) -> bool:
             print(f"     {category}: {len(repos)}")
     print(f"     TOTAL: {total}")
 
-    print(f"\n  📄 Full report: logs/classification_report.txt")
+    print(f"\n  📄 Full report: repo-maintenance-automation/logs/classification_report.txt")
 
     print(f"\n  🔍 Top Candidates:")
     for category, repos in classified.items():
@@ -104,7 +110,7 @@ def generate_pr_body(classified: Dict[str, List[Dict]]) -> str:
             lines.append(f"- **{category.capitalize()}:** {len(repos)}")
 
     lines.append("\n### Review Instructions")
-    lines.append("1. Check the report in `logs/classification_report.txt`")
+    lines.append("1. Check the report in `repo-maintenance-automation/logs/classification_report.txt`")
     lines.append("2. Review the proposed additions")
     lines.append("3. **Merge** to approve everything")
     lines.append("4. **Close** to reject everything")
@@ -133,6 +139,8 @@ def main():
     # Run standard maintenance
     standard_maintenance()
 
+    LOGS_DIR.mkdir(parents=True, exist_ok=True)
+
     # Step 1: Scrape
     print("  📡 Scraping GitHub for candidates...")
     candidates = scrape_github(min_stars=20, max_results=100, recent_years=3, require_license=False)
@@ -151,8 +159,7 @@ def main():
     classified = classify_candidates(new_candidates)
 
     # Step 4: Save report
-    report_path = Path.cwd() / "logs" / "classification_report.txt"
-    report_path.parent.mkdir(exist_ok=True)
+    report_path = LOGS_DIR / "classification_report.txt"
     with open(report_path, "w") as f:
         f.write("=== CLASSIFICATION REPORT ===\n\n")
         for category, repos in classified.items():
@@ -172,8 +179,7 @@ def main():
     # Step 5: Human review
     if not human_review(classified):
         print("  ❌ Rejected by user. Logging and exiting.")
-        log_path = Path.cwd() / "logs" / "harvest_rejected.txt"
-        log_path.parent.mkdir(exist_ok=True)
+        log_path = LOGS_DIR / "harvest_rejected.txt"
         with open(log_path, "w") as f:
             f.write(f"Harvest rejected at {time.strftime('%Y-%m-%d %H:%M:%S')}\n")
             for category, repos in classified.items():
@@ -192,8 +198,7 @@ def main():
     if is_pr_mode():
         print("  🤖 PR mode — applying changes and generating PR body...")
         pr_body = generate_pr_body(classified)
-        pr_path = Path.cwd() / "logs" / "pr_body.md"
-        pr_path.parent.mkdir(exist_ok=True)
+        pr_path = LOGS_DIR / "pr_body.md"
         with open(pr_path, "w") as f:
             f.write(pr_body)
         print(f"  📄 PR body saved to: {pr_path}")
@@ -207,19 +212,18 @@ def main():
         sys.exit(0)
 
     # Step 7: Interactive mode — generate insertion script
-    script_path = Path.cwd() / "logs" / "insert.sh"
+    script_path = LOGS_DIR / "insert.sh"
     with open(script_path, "w") as f:
         f.write("#!/bin/bash\n\n")
         for filename, data in insertions.items():
             f.write(f"echo 'Inserting into {filename}...'\n")
-            # Generate sed command for each row
             for row in data["rows"]:
                 f.write(f"sed -i '/{data['pattern']}/ a\\\n{row}' {filename}\n")
         f.write("\necho '✅ Insertion complete.'\n")
     script_path.chmod(0o755)
 
     print(f"  📄 Insertion script saved to: {script_path}")
-    print("  Run: ./logs/insert.sh to apply changes")
+    print(f"  Run: ./repo-maintenance-automation/logs/insert.sh to apply changes")
 
     print_banner("✅ Harvest complete. Ready for review.", "=")
     # Run standard maintenance

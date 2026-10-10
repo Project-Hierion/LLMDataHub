@@ -2,7 +2,7 @@
 """
 File: classifier.py
 Tool: LLMDataHub Harvester — Resource Classifier
-Version: 1.1.1
+Version: 1.1.2
 System: Project Hierion / repo-maintenance-automation
 Status: ACTIVE
 License: AGPLv3 with Commons Clause
@@ -19,14 +19,20 @@ Version History:
                        regardless of cwd. Previously returned 0 existing
                        entries and 0 rejected when run from inside
                        repo-maintenance-automation/.
+  1.1.2 — 2026-10-09 — report output now writes to the automation logs
+                       dir (repo-maintenance-automation/logs/) instead
+                       of the repo-root logs/ dir. Merged duplicate
+                       log locations.
 """
 
 import re
 from pathlib import Path
 from typing import List, Dict, Tuple, Set
 
-# Repo root = parent of this file's directory (repo-maintenance-automation/)
-REPO_ROOT = Path(__file__).resolve().parent.parent
+# Script dir = repo-maintenance-automation/
+SCRIPT_DIR = Path(__file__).resolve().parent
+# Repo root = parent of script dir
+REPO_ROOT = SCRIPT_DIR.parent
 
 # === CORPORATE BLOCKLIST ===
 CORPORATE_BLOCKLIST = [
@@ -123,7 +129,8 @@ ARCHIVE_PAGES = [
     "AWESOME-LISTS.md",
 ]
 
-REJECTED_LOG = "repo-maintenance-automation/logs/rejected_candidates.txt"
+# Path is relative to SCRIPT_DIR (repo-maintenance-automation/)
+REJECTED_LOG = "logs/rejected_candidates.txt"
 
 def classify_repo(repo: Dict) -> Tuple[str, float]:
     name = repo.get("name", "") or ""
@@ -223,7 +230,7 @@ def load_rejected_candidates(log_path: Path = None) -> Set[str]:
     Returns a set of lowercase `owner/repo` strings.
     """
     if log_path is None:
-        log_path = REPO_ROOT / REJECTED_LOG
+        log_path = SCRIPT_DIR / REJECTED_LOG
     rejected: Set[str] = set()
     if not log_path.exists():
         return rejected
@@ -311,7 +318,7 @@ def filter_candidates(
 def main():
     from github_scraper import scrape_github
 
-    print("  🔄 Running classifier (v1.1.1 — skip-list + full-archive dedup)...")
+    print("  🔄 Running classifier (v1.1.2 — skip-list + full-archive dedup)...")
     candidates = scrape_github(min_stars=1, max_results=50, recent_years=3, require_license=False)
 
     existing = load_all_existing_entries()
@@ -332,7 +339,7 @@ def main():
     report = generate_classification_report(classified)
     print(report)
 
-    report_path = REPO_ROOT / "logs" / "classification_report.txt"
+    report_path = SCRIPT_DIR / "logs" / "classification_report.txt"
     report_path.parent.mkdir(exist_ok=True)
     with open(report_path, "w") as f:
         f.write("=== CLASSIFICATION REPORT ===\n\n")
