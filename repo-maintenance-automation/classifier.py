@@ -2,7 +2,7 @@
 """
 File: classifier.py
 Tool: LLMDataHub Harvester — Resource Classifier
-Version: 1.1.2
+Version: 1.1.3
 System: Project Hierion / repo-maintenance-automation
 Status: ACTIVE
 License: AGPLv3 with Commons Clause
@@ -16,13 +16,14 @@ Version History:
   1.1.0 — 2026-10-09 — added persistent rejected_candidates.txt skip-list,
                        expanded dedup to scan all archive pages
   1.1.1 — 2026-10-09 — anchored file paths to repo root so loads work
-                       regardless of cwd. Previously returned 0 existing
-                       entries and 0 rejected when run from inside
-                       repo-maintenance-automation/.
+                       regardless of cwd
   1.1.2 — 2026-10-09 — report output now writes to the automation logs
-                       dir (repo-maintenance-automation/logs/) instead
-                       of the repo-root logs/ dir. Merged duplicate
-                       log locations.
+                       dir (repo-maintenance-automation/logs/)
+  1.1.3 — 2026-10-09 — noise and corporate buckets no longer listed in
+                       the report. They're counted but not shown. Drops
+                       ~130 lines of clutter per harvest. The skip-list
+                       is still the way to remember things that score
+                       high but should never be added.
 """
 
 import re
@@ -132,6 +133,10 @@ ARCHIVE_PAGES = [
 # Path is relative to SCRIPT_DIR (repo-maintenance-automation/)
 REJECTED_LOG = "logs/rejected_candidates.txt"
 
+# Buckets that get listed in the report. Everything else is counted
+# but hidden — see generate_classification_report().
+REPORTABLE_BUCKETS = ["dataset", "model", "paper", "tool"]
+
 def classify_repo(repo: Dict) -> Tuple[str, float]:
     name = repo.get("name", "") or ""
     full_name = repo.get("full_name", "") or ""
@@ -211,6 +216,10 @@ def generate_classification_report(classified: Dict[str, List[Dict]]) -> str:
     for category, repos in classified.items():
         if not repos:
             continue
+        # Count everything, but only list reportable buckets
+        if category not in REPORTABLE_BUCKETS:
+            lines.append(f"\n## {category.upper()} ({len(repos)}) — skipped")
+            continue
         lines.append(f"\n## {category.upper()} ({len(repos)})")
         for repo in repos[:10]:
             stars = repo.get("stars", 0)
@@ -223,12 +232,7 @@ def generate_classification_report(classified: Dict[str, List[Dict]]) -> str:
     return "\n".join(lines)
 
 def load_rejected_candidates(log_path: Path = None) -> Set[str]:
-    """Load the persistent rejected-candidates skip-list.
-
-    File format: one `owner/repo` per line, optional `# reason` after.
-    Blank lines and comment-only lines are ignored.
-    Returns a set of lowercase `owner/repo` strings.
-    """
+    """Load the persistent rejected-candidates skip-list."""
     if log_path is None:
         log_path = SCRIPT_DIR / REJECTED_LOG
     rejected: Set[str] = set()
@@ -239,18 +243,13 @@ def load_rejected_candidates(log_path: Path = None) -> Set[str]:
             line = line.strip()
             if not line or line.startswith("#"):
                 continue
-            # strip trailing comment
             repo = line.split("#", 1)[0].strip()
             if repo:
                 rejected.add(repo.lower())
     return rejected
 
 def load_all_existing_entries(pages: List[str] = None) -> Set[str]:
-    """Scan every archive page for existing entries.
-
-    Returns a set of names and `owner/repo` strings that already appear.
-    Used to avoid re-adding anything already listed.
-    """
+    """Scan every archive page for existing entries."""
     if pages is None:
         pages = ARCHIVE_PAGES
     existing: Set[str] = set()
@@ -260,7 +259,6 @@ def load_all_existing_entries(pages: List[str] = None) -> Set[str]:
             continue
         with open(path, "r") as f:
             content = f.read()
-        # GitHub links — capture both the display name and the owner/repo
         for match in re.finditer(r'\[([^\]]+)\]\(https://github\.com/([^\)/]+/[^\)/]+)\)', content):
             display = match.group(1).strip()
             owner_repo = match.group(2).strip().rstrip("/")
@@ -268,7 +266,6 @@ def load_all_existing_entries(pages: List[str] = None) -> Set[str]:
                 existing.add(display.lower())
             if owner_repo:
                 existing.add(owner_repo.lower())
-        # Bare bolded names (REVISED-DESCRIPTIONS.md style)
         for match in re.finditer(r'^\*\*([^\*]+)\*\*', content, re.MULTILINE):
             name = match.group(1).strip()
             if name:
@@ -304,11 +301,9 @@ def filter_candidates(
         full_name = (repo.get("full_name", "") or "").lower()
         name = (repo.get("name", "") or "").lower()
 
-        # Skip if already in the archive
         if full_name in existing or name in existing:
             continue
 
-        # Skip if on the persistent reject list
         if full_name in rejected or name in rejected:
             continue
 
@@ -318,7 +313,7 @@ def filter_candidates(
 def main():
     from github_scraper import scrape_github
 
-    print("  🔄 Running classifier (v1.1.2 — skip-list + full-archive dedup)...")
+    print("  🔄 Running classifier (v1.1.3 — skip-list + full-archive dedup)...")
     candidates = scrape_github(min_stars=1, max_results=50, recent_years=3, require_license=False)
 
     existing = load_all_existing_entries()
@@ -334,7 +329,10 @@ def main():
     print(f"\n  📊 Classification Results:")
     for category, repos in classified.items():
         if repos:
-            print(f"     {category}: {len(repos)}")
+            if category in REPORTABLE_BUCKETS:
+                print(f"     {category}: {len(repos)}")
+            else:
+                print(f"     {category}: {len(repos)} (skipped)")
 
     report = generate_classification_report(classified)
     print(report)
@@ -344,6 +342,11 @@ def main():
     with open(report_path, "w") as f:
         f.write("=== CLASSIFICATION REPORT ===\n\n")
         for category, repos in classified.items():
+            if not repos:
+                continue
+            if category not in REPORTABLE_BUCKETS:
+                f.write(f"\n## {category.upper()} ({len(repos)}) — skipped, not listed\n")
+                continue
             f.write(f"\n## {category.upper()} ({len(repos)})\n")
             for repo in repos:
                 f.write(f"- {repo['full_name']} ({repo['stars']}★)\n")
