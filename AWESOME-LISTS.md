@@ -119,7 +119,17 @@
 
 ## <div id="general">General Awesome Lists 🌟</div>
 
-*No general awesome lists currently listed. Contribute one by opening a PR.*
+<details>
+  <summary><strong>adongwanai/Awesome-Awesome-LLMs</strong> — 39 ★</summary>
+
+  **Description:** Meta-collection of 200+ awesome LLM repositories.
+
+  **Link:** [https://github.com/adongwanai/Awesome-Awesome-LLMs](https://github.com/adongwanai/Awesome-Awesome-LLMs)
+
+  **Why This Matters:** A catalog of catalogs — points to many other curated LLM lists.
+
+  **Added:** 2026-10-09
+</details>
 
 ---
 
