@@ -2,10 +2,18 @@
 """
 File: formatter.py
 Tool: LLMDataHub Harvester — Markdown Formatter
-Version: 1.0.5
+Version: 1.1.0
 System: Project Hierion / repo-maintenance-automation
 Status: ACTIVE
 License: AGPLv3 with Commons Clause
+
+Version History:
+  1.0.5 — initial formatter
+  1.1.0 — 2026-10-09 — added AWESOME-LISTS.md insertion target with
+                       year-section fallback patterns. Dedup now scans
+                       the whole file (name + URL), not just the section.
+                       main() uses classifier v1.1.0 (skip-list + full-
+                       archive dedup) and reports rejected count.
 """
 
 import re
@@ -23,10 +31,10 @@ def format_dataset_row(repo: Dict) -> str:
     description = safe_string(repo.get("description", ""))
     stars = repo.get("stars", 0)
     language = safe_string(repo.get("language", ""))
-    
+
     if len(description) > 120:
         description = description[:117] + "..."
-    
+
     return f"| [{name}]({url}) | — | Dataset | {language} | {stars}★ | {description} |"
 
 def format_model_row(repo: Dict) -> str:
@@ -35,10 +43,10 @@ def format_model_row(repo: Dict) -> str:
     description = safe_string(repo.get("description", ""))
     stars = repo.get("stars", 0)
     language = safe_string(repo.get("language", ""))
-    
+
     if len(description) > 120:
         description = description[:117] + "..."
-    
+
     return f"| [{name}]({url}) | — | LLM | {language} | {stars}★ | {description} |"
 
 def format_paper_row(repo: Dict) -> str:
@@ -46,10 +54,10 @@ def format_paper_row(repo: Dict) -> str:
     url = safe_string(repo.get("url", ""))
     description = safe_string(repo.get("description", ""))
     stars = repo.get("stars", 0)
-    
+
     if len(description) > 120:
         description = description[:117] + "..."
-    
+
     return f"| [{name}]({url}) | — | — | [Code]({url}) | — | {description} |"
 
 def format_tool_row(repo: Dict) -> str:
@@ -58,28 +66,61 @@ def format_tool_row(repo: Dict) -> str:
     description = safe_string(repo.get("description", ""))
     stars = repo.get("stars", 0)
     language = safe_string(repo.get("language", ""))
-    
+
     if len(description) > 120:
         description = description[:117] + "..."
-    
+
     return f"| [{name}]({url}) | — | Tool | {language} | {description} |"
+
+def format_awesome_row(repo: Dict) -> str:
+    name = safe_string(repo.get("full_name", "") or repo.get("name", ""))
+    url = safe_string(repo.get("url", ""))
+    description = safe_string(repo.get("description", ""))
+    stars = repo.get("stars", 0)
+
+    if len(description) > 200:
+        description = description[:197] + "..."
+
+    return (
+        f"<details>\n"
+        f"  <summary><strong>{name}</strong> — {stars} ★</summary>\n\n"
+        f"  **Description:** {description}\n\n"
+        f"  **Link:** [{url}]({url})\n\n"
+        f"  **Added:** (auto-harvest)\n"
+        f"</details>\n"
+    )
 
 def format_candidates(classified: Dict[str, List[Dict]]) -> Dict[str, List[str]]:
     result = {"dataset": [], "model": [], "paper": [], "tool": []}
-    
+
     for repo in classified.get("dataset", []):
         result["dataset"].append(format_dataset_row(repo))
-    
+
     for repo in classified.get("model", []):
         result["model"].append(format_model_row(repo))
-    
+
     for repo in classified.get("paper", []):
         result["paper"].append(format_paper_row(repo))
-    
+
     for repo in classified.get("tool", []):
         result["tool"].append(format_tool_row(repo))
-    
+
     return result
+
+def _row_identifiers(row: str) -> List[str]:
+    """Extract every identifier we can use for dedup from a formatted row."""
+    identifiers = []
+    # Markdown link display text
+    for m in re.finditer(r'\[([^\]]+)\]', row):
+        text = m.group(1).strip()
+        if text and text.lower() not in ("code", "github"):
+            identifiers.append(text.lower())
+    # GitHub URLs — capture owner/repo
+    for m in re.finditer(r'https://github\.com/([^\)\s]+)', row):
+        owner_repo = m.group(1).strip().rstrip("/").lower()
+        if owner_repo:
+            identifiers.append(owner_repo)
+    return identifiers
 
 def insert_rows_into_file(filename: str, section_pattern: str, rows: List[str]) -> bool:
     """Insert rows into a file after a matching section header."""
@@ -87,76 +128,98 @@ def insert_rows_into_file(filename: str, section_pattern: str, rows: List[str]) 
     if not filepath.exists():
         print(f"  ❌ File not found: {filename}")
         return False
-    
+
     with open(filepath, "r") as f:
         content = f.read()
-    
+
     # Find the section header
     section_match = re.search(section_pattern, content, re.MULTILINE)
     if not section_match:
         print(f"  ❌ Section not found in {filename}: {section_pattern}")
         return False
-    
-    # Check if any of the rows already exist (dedupe)
+
+    # Whole-file lowercase haystack for dedup
+    haystack = content.lower()
+
     existing_entries = []
     for row in rows:
-        # Extract the name from the row
-        name_match = re.search(r'\[([^\]]+)\]', row)
-        if name_match:
-            name = name_match.group(1)
-            # Check if this name already appears in the section
-            section_content = content[section_match.end():]
-            next_section = re.search(r'\n### ', section_content)
-            if next_section:
-                section_content = section_content[:next_section.start()]
-            if name in section_content:
-                print(f"  ⏭️  Skipping duplicate: {name}")
-                continue
+        identifiers = _row_identifiers(row)
+        if identifiers and any(ident in haystack for ident in identifiers):
+            display = identifiers[0] if identifiers else "(unknown)"
+            print(f"  ⏭️  Skipping duplicate: {display}")
+            continue
         existing_entries.append(row)
-    
+
     if not existing_entries:
         print(f"  ℹ️  No new entries to add to {filename}")
         return True
-    
+
     # Insert rows after the section header
     insert_pos = section_match.end()
     rows_text = "\n" + "\n".join(existing_entries) + "\n"
     new_content = content[:insert_pos] + rows_text + content[insert_pos:]
-    
+
     with open(filepath, "w") as f:
         f.write(new_content)
-    
+
     print(f"  ✅ Added {len(existing_entries)} entries to {filename}")
     return True
+
+def _resolve_pattern(filename: str, preferred: str, fallback: str) -> str:
+    """If the preferred section pattern isn't in the file, use the fallback."""
+    path = Path(filename)
+    if not path.exists():
+        return preferred
+    with open(path, "r") as f:
+        content = f.read()
+    if re.search(preferred, content, re.MULTILINE):
+        return preferred
+    return fallback
 
 def generate_insertion_commands(formatted: Dict[str, List[str]]) -> Dict[str, Dict]:
     """Generate insertion data for each file."""
     result = {}
-    
+
     if formatted["dataset"]:
         result["DATASETS.md"] = {
-            "pattern": r"### Datasets Released in 2025",
-            "rows": formatted["dataset"]
+            "pattern": _resolve_pattern(
+                "DATASETS.md",
+                r"### Datasets Released in 2025",
+                r"##\s*<div id=\"general_aligment\">.*?</div>",
+            ),
+            "rows": formatted["dataset"],
         }
-    
+
     if formatted["model"]:
         result["MODELS.md"] = {
-            "pattern": r'### <div id="models-2025">2025</div>',
-            "rows": formatted["model"]
+            "pattern": _resolve_pattern(
+                "MODELS.md",
+                r'### <div id="models-2025">2025</div>',
+                r'### <div id="models-2026">2026</div>',
+            ),
+            "rows": formatted["model"],
         }
-    
+
     if formatted["paper"]:
         result["PAPERS.md"] = {
-            "pattern": r'### <div id="papers-2025">2025</div>',
-            "rows": formatted["paper"]
+            "pattern": _resolve_pattern(
+                "PAPERS.md",
+                r'### <div id="papers-2025">2025</div>',
+                r'### <div id="papers-2026">2026</div>',
+            ),
+            "rows": formatted["paper"],
         }
-    
+
     if formatted["tool"]:
         result["TOOLS.md"] = {
-            "pattern": r'### <div id="tools-2025">2025</div>',
-            "rows": formatted["tool"]
+            "pattern": _resolve_pattern(
+                "TOOLS.md",
+                r'### <div id="tools-2025">2025</div>',
+                r'### <div id="tools-2026">2026</div>',
+            ),
+            "rows": formatted["tool"],
         }
-    
+
     return result
 
 def apply_insertions(insertions: Dict[str, Dict]) -> bool:
@@ -169,17 +232,27 @@ def apply_insertions(insertions: Dict[str, Dict]) -> bool:
     return success
 
 def main():
-    from classifier import classify_candidates
+    from classifier import (
+        classify_candidates,
+        filter_candidates,
+        load_all_existing_entries,
+        load_rejected_candidates,
+    )
     from github_scraper import scrape_github
-    from pathlib import Path
-    
-    print("  🔄 Running formatter...")
-    
+
+    print("  🔄 Running formatter (v1.1.0)...")
+
     candidates = scrape_github(min_stars=20, max_results=50, recent_years=3, require_license=False)
-    classified = classify_candidates(candidates)
-    
+    existing = load_all_existing_entries()
+    rejected = load_rejected_candidates()
+    new_candidates = filter_candidates(candidates, existing, rejected)
+    print(f"  🚫 Skip-list: {len(rejected)} entries")
+    print(f"  🆕 New candidates after filtering: {len(new_candidates)}")
+
+    classified = classify_candidates(new_candidates)
+
     formatted = format_candidates(classified)
-    
+
     print(f"\n  📊 Formatted Rows:")
     for category, rows in formatted.items():
         if rows:
@@ -188,12 +261,12 @@ def main():
                 print(f"    {row}")
             if len(rows) > 5:
                 print(f"    ... and {len(rows) - 5} more")
-    
+
     insertions = generate_insertion_commands(formatted)
     print(f"\n  📝 Insertion Data:")
     for filename, data in insertions.items():
         print(f"    {filename}: {len(data['rows'])} rows")
-    
+
     # Save insertion data for later use
     commands_path = Path.cwd() / "logs" / "insertion_data.txt"
     commands_path.parent.mkdir(exist_ok=True)
@@ -204,7 +277,7 @@ def main():
             for row in data["rows"]:
                 f.write(row + "\n")
             f.write("\n")
-    
+
     print(f"\n  📄 Insertion data saved to: {commands_path}")
 
 if __name__ == "__main__":

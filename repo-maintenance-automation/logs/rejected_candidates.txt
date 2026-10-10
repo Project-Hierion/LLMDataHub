@@ -1,0 +1,35 @@
+# LLMDataHub — Rejected Candidates
+# One repo per line. Format: owner/repo  # reason
+# The harvester skips anything listed here.
+# Add entries by hand anytime.
+
+# === License issues ===
+unslothai/unsloth  # Apache-2.0 core but bundles AGPL-3.0 + LGPL-3.0 components — license too messy
+ViperEkura/AstrAI  # license unverified, weak quality signal, repeatedly surfaced
+
+# === Off-theme (not LLM training / not a resource for the archive) ===
+ClickHouse/ClickBench  # analytical database benchmark, not LLM
+MrNeRF/LichtFeld-Studio  # 3D Gaussian splatting, not LLM
+MihrabHQ/Mihrab  # prayer app, noise
+Hassan-PS/Mihrab  # prayer app, noise
+Dicklesworthstone/frankenpandas  # pandas reimplementation, not LLM
+MIC-DKFZ/nnssl  # medical imaging, no description
+fli-iam/shanoir-ng  # medical imaging
+juntaoJianggavin/APRIL-MedSeg  # medical image segmentation
+0xDanielLopez/TweetFeed  # infosec IOCs
+randomwalkhan/Short-Term-Reversal-Strategy  # quant trading
+TauCetiProject/TauCeti  # Lean/Mathlib, not LLM training
+sashiko-dev/sashiko  # Linux kernel review
+atomantic/PortOS  # federated "everything" app
+linny006/skills-tracker  # meta-tracker, noise
+inflexa-ai/inflexa  # biological analysis
+gaia-research/gaia-skill-tree  # agent skill registry, niche
+Shanghua-Gao/RSI-Jev  # typed-decision models, unclear LLM relevance
+wh000wh000/awesome-jev-live  # too niche
+AdguardTeam/HostlistsRegistry  # ad-block lists
+Polyphase-Labs/Polyphase-Engine  # homebrew game engine
+
+# === Unclear / borderline — revisit later ===
+jaylfc/taosmd  # local AI memory, borderline
+youngbryan97/aura  # cognitive architecture, borderline
+yinnho/aginxbrowser  # browser for agents, borderline

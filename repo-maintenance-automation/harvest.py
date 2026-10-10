@@ -2,10 +2,16 @@
 """
 File: harvest.py
 Tool: LLMDataHub Harvester — Main Orchestrator
-Version: 1.0.4
+Version: 1.1.0
 System: Project Hierion / repo-maintenance-automation
 Status: ACTIVE
 License: AGPLv3 with Commons Clause
+
+Version History:
+  1.0.4 — initial orchestrator
+  1.1.0 — 2026-10-09 — wired in persistent skip-list and full-archive
+                       dedup via classifier v1.1.0. Reports rejected
+                       count during Step 2.
 """
 
 import sys
@@ -17,7 +23,13 @@ from pathlib import Path
 from typing import List, Dict
 
 from github_scraper import scrape_github
-from classifier import classify_candidates, filter_candidates, load_existing_datasets
+from classifier import (
+    classify_candidates,
+    filter_candidates,
+    load_existing_datasets,
+    load_all_existing_entries,
+    load_rejected_candidates,
+)
 from formatter import format_candidates, generate_insertion_commands, apply_insertions
 
 def print_banner(text: str, char: str = "=", width: int = 60):
@@ -32,19 +44,19 @@ def is_pr_mode() -> bool:
 
 def human_review(classified: Dict[str, List[Dict]]) -> bool:
     total = sum(len(repos) for repos in classified.values())
-    
+
     print_banner("🌱 HARVEST COMPLETE", "=")
     # Run standard maintenance
     standard_maintenance()
-    
+
     print(f"  📊 Summary:")
     for category, repos in classified.items():
         if repos:
             print(f"     {category}: {len(repos)}")
     print(f"     TOTAL: {total}")
-    
+
     print(f"\n  📄 Full report: logs/classification_report.txt")
-    
+
     print(f"\n  🔍 Top Candidates:")
     for category, repos in classified.items():
         if repos:
@@ -56,18 +68,18 @@ def human_review(classified: Dict[str, List[Dict]]) -> bool:
                 print(f"      - {name} ({stars}★, score: {score:.2f})")
             if len(repos) > 3:
                 print(f"      ... and {len(repos) - 3} more")
-    
+
     if is_pr_mode():
         print("\n  🤖 Running in PR mode — auto-approving for PR generation")
         return True
-    
+
     print("\n" + "-" * 60)
     print("  ❓ Add these to the archive?")
     print("     [y] Yes — format and insert everything")
     print("     [N] No — reject and log")
     print("     [exit] Abort — clean exit")
     print("-" * 60)
-    
+
     while True:
         response = input("  > ").lower().strip()
         if response in ("y", "yes"):
@@ -86,18 +98,18 @@ def generate_pr_body(classified: Dict[str, List[Dict]]) -> str:
         "Automated harvest of new open-source LLM resources.\n",
         "### What Was Found\n",
     ]
-    
+
     for category, repos in classified.items():
         if repos:
             lines.append(f"- **{category.capitalize()}:** {len(repos)}")
-    
+
     lines.append("\n### Review Instructions")
     lines.append("1. Check the report in `logs/classification_report.txt`")
     lines.append("2. Review the proposed additions")
     lines.append("3. **Merge** to approve everything")
     lines.append("4. **Close** to reject everything")
     lines.append("5. **Edit** to cherry-pick specific entries")
-    
+
     lines.append("\n### Top Candidates\n")
     for category, repos in classified.items():
         if repos:
@@ -110,31 +122,34 @@ def generate_pr_body(classified: Dict[str, List[Dict]]) -> str:
             if len(repos) > 5:
                 lines.append(f"- ... and {len(repos) - 5} more")
             lines.append("")
-    
+
     lines.append("---")
     lines.append("*Let's keep open-source, open. Together.*")
-    
+
     return "\n".join(lines)
 
 def main():
     print_banner("🌱 LLMDataHub Harvester", "=")
     # Run standard maintenance
     standard_maintenance()
-    
+
     # Step 1: Scrape
     print("  📡 Scraping GitHub for candidates...")
     candidates = scrape_github(min_stars=20, max_results=100, recent_years=3, require_license=False)
-    
-    # Step 2: Dedupe
-    datasets_path = Path.cwd() / "DATASETS.md"
-    existing = load_existing_datasets(datasets_path)
-    new_candidates = filter_candidates(candidates, existing)
-    print(f"  📚 Found {len(existing)} existing entries, {len(new_candidates)} new candidates")
-    
+
+    # Step 2: Dedupe + skip-list
+    print("  🧹 Filtering against archive and skip-list...")
+    existing = load_all_existing_entries()
+    rejected = load_rejected_candidates()
+    new_candidates = filter_candidates(candidates, existing, rejected)
+    print(f"  📚 Found {len(existing)} existing archive entries")
+    print(f"  🚫 Found {len(rejected)} rejected candidates on skip-list")
+    print(f"  🆕 {len(new_candidates)} new candidates after filtering")
+
     # Step 3: Classify
     print("  🏷️  Classifying candidates...")
     classified = classify_candidates(new_candidates)
-    
+
     # Step 4: Save report
     report_path = Path.cwd() / "logs" / "classification_report.txt"
     report_path.parent.mkdir(exist_ok=True)
@@ -151,9 +166,9 @@ def main():
                     if desc:
                         f.write(f"  Description: {desc[:200]}\n")
                     f.write("\n")
-    
+
     print(f"  📄 Report saved to: {report_path}")
-    
+
     # Step 5: Human review
     if not human_review(classified):
         print("  ❌ Rejected by user. Logging and exiting.")
@@ -168,12 +183,12 @@ def main():
                         f.write(f"  - {repo['full_name']}\n")
         print(f"  📄 Log saved to: {log_path}")
         sys.exit(0)
-    
+
     # Step 6: Format and apply changes
     print("  ✏️  Formatting entries...")
     formatted = format_candidates(classified)
     insertions = generate_insertion_commands(formatted)
-    
+
     if is_pr_mode():
         print("  🤖 PR mode — applying changes and generating PR body...")
         pr_body = generate_pr_body(classified)
@@ -182,7 +197,7 @@ def main():
         with open(pr_path, "w") as f:
             f.write(pr_body)
         print(f"  📄 PR body saved to: {pr_path}")
-        
+
         # Apply the changes
         if apply_insertions(insertions):
             print("  ✅ Changes applied successfully.")
@@ -190,7 +205,7 @@ def main():
             print("  ❌ Failed to apply changes.")
             sys.exit(1)
         sys.exit(0)
-    
+
     # Step 7: Interactive mode — generate insertion script
     script_path = Path.cwd() / "logs" / "insert.sh"
     with open(script_path, "w") as f:
@@ -202,10 +217,10 @@ def main():
                 f.write(f"sed -i '/{data['pattern']}/ a\\\n{row}' {filename}\n")
         f.write("\necho '✅ Insertion complete.'\n")
     script_path.chmod(0o755)
-    
+
     print(f"  📄 Insertion script saved to: {script_path}")
     print("  Run: ./logs/insert.sh to apply changes")
-    
+
     print_banner("✅ Harvest complete. Ready for review.", "=")
     # Run standard maintenance
     standard_maintenance()

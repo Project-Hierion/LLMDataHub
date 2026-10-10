@@ -2,17 +2,31 @@
 """
 File: classifier.py
 Tool: LLMDataHub Harvester — Resource Classifier
-Version: 1.0.2
+Version: 1.1.1
 System: Project Hierion / repo-maintenance-automation
 Status: ACTIVE
 License: AGPLv3 with Commons Clause
 
 Purpose: Classifies harvested repos as Dataset, Model, Paper, or Tool.
+         Also filters out rejected candidates and anything already
+         listed in any archive page.
+
+Version History:
+  1.0.2 — initial stricter dataset filtering
+  1.1.0 — 2026-10-09 — added persistent rejected_candidates.txt skip-list,
+                       expanded dedup to scan all archive pages
+  1.1.1 — 2026-10-09 — anchored file paths to repo root so loads work
+                       regardless of cwd. Previously returned 0 existing
+                       entries and 0 rejected when run from inside
+                       repo-maintenance-automation/.
 """
 
 import re
 from pathlib import Path
-from typing import List, Dict, Tuple
+from typing import List, Dict, Tuple, Set
+
+# Repo root = parent of this file's directory (repo-maintenance-automation/)
+REPO_ROOT = Path(__file__).resolve().parent.parent
 
 # === CORPORATE BLOCKLIST ===
 CORPORATE_BLOCKLIST = [
@@ -100,69 +114,80 @@ NOISE_KEYWORDS = [
     "profile readme", "profile page"
 ]
 
+# === ARCHIVE PAGES TO SCAN FOR EXISTING ENTRIES ===
+ARCHIVE_PAGES = [
+    "DATASETS.md",
+    "MODELS.md",
+    "PAPERS.md",
+    "TOOLS.md",
+    "AWESOME-LISTS.md",
+]
+
+REJECTED_LOG = "repo-maintenance-automation/logs/rejected_candidates.txt"
+
 def classify_repo(repo: Dict) -> Tuple[str, float]:
     name = repo.get("name", "") or ""
     full_name = repo.get("full_name", "") or ""
     description = repo.get("description") or ""
     topics = [t.lower() for t in repo.get("topics", [])]
-    
+
     combined = f"{name} {full_name} {description} {' '.join(topics)}".lower()
-    
+
     # Corporate block first
     if is_corporate(repo):
         return "corporate", 0.0
-    
+
     # Strong noise check
     for noise in NOISE_KEYWORDS:
         if noise in combined:
             return "noise", 0.0
-    
+
     # === Calculate scores ===
     scores = {"dataset": 0, "model": 0, "paper": 0, "tool": 0}
-    
+
     # Strong dataset indicators
     for kw in STRONG_DATASET:
         if kw in combined:
             scores["dataset"] += 0.5
-    
+
     # Weak dataset indicators (need multiple)
     weak_count = 0
     for kw in WEAK_DATASET:
         if kw in combined:
             weak_count += 1
     scores["dataset"] += min(weak_count * 0.1, 0.3)
-    
+
     # Model indicators
     for kw in MODEL_KEYWORDS:
         if kw in combined:
             scores["model"] += 0.3
-    
+
     # Paper indicators
     for kw in PAPER_KEYWORDS:
         if kw in combined:
             scores["paper"] += 0.3
-    
+
     # Tool indicators
     for kw in TOOL_KEYWORDS:
         if kw in combined:
             scores["tool"] += 0.3
-    
+
     # Bonus for "dataset" in repo name
     if "dataset" in name.lower():
         scores["dataset"] += 0.3
-    
+
     # Bonus for "dataset" in topics
     if "dataset" in topics:
         scores["dataset"] += 0.2
-    
+
     # Find best category
     best_category = max(scores, key=scores.get)
     best_score = scores[best_category]
-    
+
     # Minimum threshold
     if best_score < 0.3:
         return "noise", best_score
-    
+
     return best_category, best_score
 
 def classify_candidates(candidates: List[Dict]) -> Dict[str, List[Dict]]:
@@ -190,55 +215,124 @@ def generate_classification_report(classified: Dict[str, List[Dict]]) -> str:
             lines.append(f"  ... and {len(repos) - 10} more")
     return "\n".join(lines)
 
-def load_existing_datasets(datasets_path: Path) -> set:
+def load_rejected_candidates(log_path: Path = None) -> Set[str]:
+    """Load the persistent rejected-candidates skip-list.
+
+    File format: one `owner/repo` per line, optional `# reason` after.
+    Blank lines and comment-only lines are ignored.
+    Returns a set of lowercase `owner/repo` strings.
+    """
+    if log_path is None:
+        log_path = REPO_ROOT / REJECTED_LOG
+    rejected: Set[str] = set()
+    if not log_path.exists():
+        return rejected
+    with open(log_path, "r") as f:
+        for line in f:
+            line = line.strip()
+            if not line or line.startswith("#"):
+                continue
+            # strip trailing comment
+            repo = line.split("#", 1)[0].strip()
+            if repo:
+                rejected.add(repo.lower())
+    return rejected
+
+def load_all_existing_entries(pages: List[str] = None) -> Set[str]:
+    """Scan every archive page for existing entries.
+
+    Returns a set of names and `owner/repo` strings that already appear.
+    Used to avoid re-adding anything already listed.
+    """
+    if pages is None:
+        pages = ARCHIVE_PAGES
+    existing: Set[str] = set()
+    for page in pages:
+        path = REPO_ROOT / page
+        if not path.exists():
+            continue
+        with open(path, "r") as f:
+            content = f.read()
+        # GitHub links — capture both the display name and the owner/repo
+        for match in re.finditer(r'\[([^\]]+)\]\(https://github\.com/([^\)/]+/[^\)/]+)\)', content):
+            display = match.group(1).strip()
+            owner_repo = match.group(2).strip().rstrip("/")
+            if display:
+                existing.add(display.lower())
+            if owner_repo:
+                existing.add(owner_repo.lower())
+        # Bare bolded names (REVISED-DESCRIPTIONS.md style)
+        for match in re.finditer(r'^\*\*([^\*]+)\*\*', content, re.MULTILINE):
+            name = match.group(1).strip()
+            if name:
+                existing.add(name.lower())
+    return existing
+
+def load_existing_datasets(datasets_path: Path) -> Set[str]:
+    """Kept for backwards compatibility. Prefer load_all_existing_entries()."""
     if not datasets_path.exists():
         return set()
     with open(datasets_path, "r") as f:
         content = f.read()
     existing = set()
     github_links = re.findall(r'\[([^\]]+)\]\(https://github\.com/[^\)]+\)', content)
-    existing.update(github_links)
+    existing.update(name.lower() for name in github_links)
     table_rows = re.findall(r'^\|\s*\[?([^\|\]]+)\]?.*?\|', content, re.MULTILINE)
     for row in table_rows:
-        name = row.strip()
-        if name and name not in ["Dataset name", "---"]:
+        name = row.strip().lower()
+        if name and name not in ["dataset name", "---"]:
             existing.add(name)
     return existing
 
-def filter_candidates(candidates: List[Dict], existing: set) -> List[Dict]:
+def filter_candidates(
+    candidates: List[Dict],
+    existing: Set[str],
+    rejected: Set[str] = None,
+) -> List[Dict]:
+    """Drop candidates that are already listed or previously rejected."""
+    if rejected is None:
+        rejected = set()
     filtered = []
     for repo in candidates:
-        full_name = repo.get("full_name", "")
-        name = repo.get("name", "")
+        full_name = (repo.get("full_name", "") or "").lower()
+        name = (repo.get("name", "") or "").lower()
+
+        # Skip if already in the archive
         if full_name in existing or name in existing:
             continue
+
+        # Skip if on the persistent reject list
+        if full_name in rejected or name in rejected:
+            continue
+
         filtered.append(repo)
     return filtered
 
 def main():
     from github_scraper import scrape_github
-    
-    print("  🔄 Running classifier (v1.0.2 - stricter dataset filtering)...")
+
+    print("  🔄 Running classifier (v1.1.1 — skip-list + full-archive dedup)...")
     candidates = scrape_github(min_stars=1, max_results=50, recent_years=3, require_license=False)
-    
-    datasets_path = Path.cwd() / "DATASETS.md"
-    existing = load_existing_datasets(datasets_path)
-    new_candidates = filter_candidates(candidates, existing)
-    
-    print(f"  📚 Found {len(existing)} existing entries")
-    print(f"  🆕 Found {len(new_candidates)} new candidates")
-    
+
+    existing = load_all_existing_entries()
+    rejected = load_rejected_candidates()
+    new_candidates = filter_candidates(candidates, existing, rejected)
+
+    print(f"  📚 Found {len(existing)} existing archive entries")
+    print(f"  🚫 Found {len(rejected)} rejected candidates on skip-list")
+    print(f"  🆕 Found {len(new_candidates)} new candidates after filtering")
+
     classified = classify_candidates(new_candidates)
-    
+
     print(f"\n  📊 Classification Results:")
     for category, repos in classified.items():
         if repos:
             print(f"     {category}: {len(repos)}")
-    
+
     report = generate_classification_report(classified)
     print(report)
-    
-    report_path = Path.cwd() / "logs" / "classification_report.txt"
+
+    report_path = REPO_ROOT / "logs" / "classification_report.txt"
     report_path.parent.mkdir(exist_ok=True)
     with open(report_path, "w") as f:
         f.write("=== CLASSIFICATION REPORT ===\n\n")
@@ -252,7 +346,7 @@ def main():
                 if desc:
                     f.write(f"  Description: {desc[:200]}\n")
                 f.write("\n")
-    
+
     print(f"\n  📄 Full report saved to: {report_path}")
 
 if __name__ == "__main__":
