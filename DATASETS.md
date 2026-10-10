@@ -477,3 +477,13 @@ Following Nvidia's acquisition of HuggingFace (September 2026), this archive no 
 | [tasksource](https://github.com/sileod/tasksource) | Datasets collection for NLP extreme multitask learning. | [GitHub](https://github.com/sileod/tasksource) |
 
 </details>
+
+<details>
+  <summary>📁 Harvested Datasets (Harvest 10-11)</summary>
+
+| Dataset name | Description | Link |
+|---|---|---|
+| [RVCBench](https://github.com/Nanboy-Ronan/RVCBench) | Benchmark for voice cloning robustness and speaker privacy. | [GitHub](https://github.com/Nanboy-Ronan/RVCBench) |
+| [RetriEval](https://github.com/ashvardanian/RetriEval) | Benchmark suite comparing vector search engines. ⚠️ License unverified. | [GitHub](https://github.com/ashvardanian/RetriEval) |
+
+</details>
