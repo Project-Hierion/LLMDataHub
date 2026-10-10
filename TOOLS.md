@@ -174,3 +174,13 @@ Following Nvidia's acquisition of HuggingFace (September 2026), this archive no 
 | [pytorch-rl](https://github.com/pytorch/rl) | PyTorch library for reinforcement learning. | [GitHub](https://github.com/pytorch/rl) |
 
 </details>
+
+<details>
+  <summary>📁 Harvested Tools (Harvest 10-11)</summary>
+
+| Tool name | Description | Link |
+|---|---|---|
+| [opik](https://github.com/comet-ml/opik) | Debug, evaluate, and monitor LLM applications, RAG systems, and agents. | [GitHub](https://github.com/comet-ml/opik) |
+| [feynman](https://github.com/Companion-Inc/feynman) | Open-source AI research agent. | [GitHub](https://github.com/Companion-Inc/feynman) |
+
+</details>
