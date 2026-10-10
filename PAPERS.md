@@ -47,6 +47,9 @@
 | [flow_matching_arxiv_daily](https://github.com/iszhanjiawei/flow_matching_arxiv_daily) | — | — | [Code](https://github.com/iszhanjiawei/flow_matching_arxiv_daily) | — |  |
 | [AwesomePaper-for-AI](https://github.com/Zhaojp-Frank/AwesomePaper-for-AI) | — | — | [Code](https://github.com/Zhaojp-Frank/AwesomePaper-for-AI) | — | Awesome system papers for AI |
 | [geolens](https://github.com/geolens-io/geolens) | — | — | [Code](https://github.com/geolens-io/geolens) | — | Self-hosted geospatial data catalog with semantic search (pgvector), OGC/STAC APIs, and map builder. Built on FastAPI... |
+| [ml-systems-papers](https://github.com/byungsoo-oh/ml-systems-papers) | byungsoo-oh | — | [Code](https://github.com/byungsoo-oh/ml-systems-papers) | — | Curated collection of papers in machine learning systems. |
+| [awesome-papers-LMsys](https://github.com/zhixin612/awesome-papers-LMsys) | zhixin612 | — | [Code](https://github.com/zhixin612/awesome-papers-LMsys) | — | Daily arXiv papers on LLM systems. |
+| [machine-learning-research](https://github.com/imteekay/machine-learning-research) | imteekay | — | [Code](https://github.com/imteekay/machine-learning-research) | — | AI/ML research collection. |
 
 
 <details>
