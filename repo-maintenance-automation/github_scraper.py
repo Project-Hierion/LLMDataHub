@@ -2,10 +2,16 @@
 """
 File: github_scraper.py
 Tool: LLMDataHub Harvester — GitHub API Scraper
-Version: 1.0.4
+Version: 1.1.0
 System: Project Hierion / repo-maintenance-automation
 Status: ACTIVE
 License: AGPLv3 with Commons Clause
+
+Version History:
+  1.0.4 — initial scraper
+  1.1.0 — 2026-10-17 — structured logger + retry-with-backoff for
+                       429/5xx/transient network errors. No more
+                       silent excepts — failures are loud and retried.
 """
 
 import os
@@ -16,6 +22,11 @@ import requests
 from datetime import datetime, timedelta
 from typing import List, Dict, Optional
 from functools import wraps
+
+from logger import get_logger
+from retry import with_retry
+
+log = get_logger("scraper")
 
 GITHUB_API = "https://api.github.com"
 GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN")
@@ -121,19 +132,24 @@ def validate_repo_name(name: str) -> bool:
             return False
     return True
 
+@with_retry(max_attempts=4, logger=log)
+def _search_request(headers: Dict, params: Dict) -> requests.Response:
+    """Single GitHub search API call, retried on transient failure."""
+    return requests.get(f"{GITHUB_API}/search/repositories",
+                        headers=headers, params=params, timeout=30)
+
 @rate_limit(calls_per_minute=10)
 def search_github(query: str, max_results: int = 100) -> List[Dict]:
     """Search GitHub for repos matching a query."""
     headers = {"Accept": "application/vnd.github.v3+json"}
     if GITHUB_TOKEN:
         headers["Authorization"] = f"token {GITHUB_TOKEN}"
-    
+
     all_results = []
     page = 1
     per_page = 30
-    
+
     while len(all_results) < max_results:
-        url = f"{GITHUB_API}/search/repositories"
         params = {
             "q": query,
             "sort": "updated",
@@ -141,38 +157,38 @@ def search_github(query: str, max_results: int = 100) -> List[Dict]:
             "per_page": per_page,
             "page": page,
         }
-        
+
         try:
-            response = requests.get(url, headers=headers, params=params)
-            
+            response = _search_request(headers, params)
+
             if response.status_code == 403:
                 reset_time = int(response.headers.get("X-RateLimit-Reset", 0))
                 if reset_time:
                     wait_time = max(0, reset_time - int(time.time())) + 5
-                    print(f"  ⏳ Rate limited. Waiting {wait_time} seconds...")
+                    log.warning(f"Rate limited. Waiting {wait_time} seconds...")
                     time.sleep(wait_time)
                     continue
                 else:
-                    print(f"  ❌ Rate limited. No reset time provided.")
+                    log.error("Rate limited with no reset time provided. Aborting this query.")
                     break
-            
+
             if response.status_code == 422:
-                print(f"  ⚠️ 422 error on query: {query[:60]}...")
+                log.warning(f"422 error on query: {query[:60]}... — skipping")
                 break
-            
+
             if response.status_code != 200:
-                print(f"  ❌ GitHub API error: {response.status_code}")
+                log.error(f"GitHub API error: {response.status_code}")
                 break
-            
+
             data = response.json()
             items = data.get("items", [])
             if not items:
                 break
-            
+
             for repo in items:
                 if not validate_repo_name(repo.get("full_name", "")):
                     continue
-                    
+
                 license_info = repo.get("license")
                 license_name = license_info.get("key", "") if license_info else ""
                 repo_data = {
@@ -190,17 +206,17 @@ def search_github(query: str, max_results: int = 100) -> List[Dict]:
                     "topics": repo.get("topics", []),
                 }
                 all_results.append(repo_data)
-            
+
             if len(items) < per_page:
                 break
-            
+
             page += 1
             time.sleep(0.5)
-            
+
         except requests.exceptions.RequestException as e:
-            print(f"  ❌ Request error: {e}")
+            log.error(f"Request error after retries: {e}")
             break
-    
+
     return all_results[:max_results]
 
 def is_recently_updated(repo: Dict, years: int = 3) -> bool:
@@ -211,7 +227,8 @@ def is_recently_updated(repo: Dict, years: int = 3) -> bool:
         updated_date = datetime.fromisoformat(updated_at.replace("Z", "+00:00"))
         cutoff_date = datetime.now().replace(tzinfo=updated_date.tzinfo) - timedelta(days=years*365)
         return updated_date > cutoff_date
-    except:
+    except (ValueError, TypeError):
+        log.debug(f"Could not parse updated_at for {repo.get('full_name', '?')}")
         return False
 
 def has_permissive_license(repo: Dict) -> bool:
@@ -230,45 +247,45 @@ def scrape_github(
 ) -> List[Dict]:
     if keywords is None:
         keywords = SEARCH_KEYWORDS
-    
+
     all_candidates = []
     seen_repos = set()
-    
+
     cutoff_date = (datetime.now() - timedelta(days=recent_years*365)).strftime("%Y-%m-%d")
-    
-    print(f"  🔍 Scanning GitHub for dataset repos...")
-    print(f"     Keywords: {', '.join(keywords[:5])}{'...' if len(keywords) > 5 else ''}")
-    print(f"     Min stars: {min_stars}, Recent: {recent_years} years (since {cutoff_date})")
-    
+
+    log.info("Scanning GitHub for dataset repos...")
+    log.info(f"Keywords: {', '.join(keywords[:5])}{'...' if len(keywords) > 5 else ''}")
+    log.info(f"Min stars: {min_stars}, Recent: {recent_years} years (since {cutoff_date})")
+
     for keyword in keywords:
         query = f'{keyword} in:description,readme pushed:>{cutoff_date}'
         if require_license:
             query += ' license:mit license:apache-2.0 license:bsd-3-clause'
-        
-        print(f"     Query: {query[:80]}...")
+
+        log.info(f"Query: {query[:80]}...")
         results = search_github(query, max_results=50)
-        
+
         for repo in results:
             repo_key = repo["full_name"]
             if repo_key in seen_repos:
                 continue
             seen_repos.add(repo_key)
-            
+
             if is_corporate(repo):
                 continue
-            
+
             if repo["stars"] < min_stars:
                 continue
             if not is_recently_updated(repo, recent_years):
                 continue
             if require_license and not has_permissive_license(repo):
                 continue
-            
+
             all_candidates.append(repo)
-        
+
         time.sleep(1)
-    
-    print(f"  ✅ Found {len(all_candidates)} candidates after filtering")
+
+    log.info(f"Found {len(all_candidates)} candidates after filtering")
     return all_candidates
 
 if __name__ == "__main__":
