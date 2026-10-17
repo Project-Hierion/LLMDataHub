@@ -12,40 +12,41 @@ permissions:
 jobs:
   harvest:
     runs-on: ubuntu-latest
-    
+
     steps:
     - uses: actions/checkout@v4
       with:
         fetch-depth: 0
-    
+
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
         python-version: '3.11'
-    
+
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         pip install pyyaml requests
-    
+
     - name: Run harvest
       run: |
         python repo-maintenance-automation/harvest.py --pr
-    
+
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v6
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         title: "🌱 Weekly Harvest: Automated Resource Discovery"
-        body-path: logs/pr_body.md
+        body-path: repo-maintenance-automation/logs/pr_body.md
         branch: auto/harvest-${{ github.run_number }}
         delete-branch: true
         labels: harvest, automated-pr
         commit-message: "Auto-harvest: new resources"
-    
+
     - name: Upload report
       if: always()
       uses: actions/upload-artifact@v4
       with:
-        name: harvest-report
-        path: logs/
+        name: harvest-report-${{ github.run_id }}
+        path: repo-maintenance-automation/logs/
+        if-no-files-found: warn
