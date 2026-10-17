@@ -37,14 +37,6 @@
 | *No tools currently listed.* | | | | | |
 
 ### <div id="tools-2025">2025</div>
-| [dify](https://github.com/langgenius/dify) | — | Tool | Python | Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on... |
-| [platform-skills](https://github.com/nitinjain999/platform-skills) | — | Tool | Shell | A platform engineering handbook covering Kubernetes, OpenShift, Argo CD, Flux CD, AWS, Azure, Terraform, and GitHub A... |
-| [trending-claude-skills](https://github.com/linny006/trending-claude-skills) | — | Tool | Python | Auto-updated leaderboard of trending claude-skills and AI agent repos, refreshed every 15 minutes |
-| [aidevops](https://github.com/marcusquinn/aidevops) | — | Tool | Shell | Vibe-Coding is easy. DevOps is hard. OpenCode & Git token-efficient AI agent automation for your app, business, and p... |
-| [tabularis](https://github.com/TabularisDB/tabularis) | — | Tool | TypeScript | Open-source desktop SQL workspace with 3 built-in database drivers and 24 shipped driver plugins, including SQL Serve... |
-| [awesome-agent-skills](https://github.com/linny006/awesome-agent-skills) | — | Tool | Python | Curated, auto-updated awesome-list of vetted AI agent skills with quality ratings for Claude, GPT, a |
-| [ODS](https://github.com/Osmantic/ODS) | — | Tool | Python | ODS V3 Pre-Release: Public testing and refinement ahead of the official V3 launch. Turn your PC, Mac, or Linux box in... |
-| [OpenLore](https://github.com/clay-good/OpenLore) | — | Tool | TypeScript | Deterministic, local-first memory and guardrails for AI coding agents with no LLM in the hot path. |
 
 | [NeMo-Curator](https://github.com/NVIDIA/NeMo-Curator) | — | Data Curation | Python | GPU-accelerated toolkit for large-scale data curation, with exact/fuzzy/semantic deduplication, 30+ heuristic filters, and quality/safety classifiers. |
 | [DataTrove](https://github.com/huggingface/datatrove) | — | Data Processing | Python | Library for large-scale text processing with platform-agnostic pipeline blocks (filters, dedup, readers/writers) that run locally or on Slurm. |
