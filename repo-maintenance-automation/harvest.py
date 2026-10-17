@@ -2,34 +2,34 @@
 """
 File: harvest.py
 Tool: LLMDataHub Harvester — Main Orchestrator
-Version: 1.1.1
+Version: 1.2.0
 System: Project Hierion / repo-maintenance-automation
 Status: ACTIVE
 License: AGPLv3 with Commons Clause
 
 Version History:
   1.0.4 — initial orchestrator
-  1.1.0 — 2026-10-09 — wired in persistent skip-list and full-archive
-                       dedup via classifier v1.1.0
-  1.1.1 — 2026-10-09 — all log/report/script paths now write to the
-                       automation logs dir (repo-maintenance-automation/logs/)
-                       instead of Path.cwd()/logs. Merged duplicate log
-                       locations into one.
+  1.1.0 — 2026-10-09 — persistent skip-list and full-archive dedup
+  1.1.1 — 2026-10-09 — all log/script paths consolidated to
+                       repo-maintenance-automation/logs/
+  1.2.0 — 2026-10-17 — structured logging with run-ID correlation;
+                       PR body written BEFORE any risky operations so
+                       it always exists for create-pull-request and
+                       artifact upload even if insertion fails.
 """
 
 import sys
-from old_itch import standard_maintenance
 import time
-import json
 import os
 from pathlib import Path
 from typing import List, Dict
+
+from logger import get_logger
 
 from github_scraper import scrape_github
 from classifier import (
     classify_candidates,
     filter_candidates,
-    load_existing_datasets,
     load_all_existing_entries,
     load_rejected_candidates,
 )
@@ -38,9 +38,9 @@ from formatter import format_candidates, generate_insertion_commands, apply_inse
 SCRIPT_DIR = Path(__file__).resolve().parent
 LOGS_DIR = SCRIPT_DIR / "logs"
 
+log = get_logger("harvest")
+
 def print_banner(text: str, char: str = "=", width: int = 60):
-    # Run standard maintenance
-    standard_maintenance()
     print(f"\n{char * width}")
     print(f"  {text}")
     print(f"{char * width}\n")
@@ -52,8 +52,6 @@ def human_review(classified: Dict[str, List[Dict]]) -> bool:
     total = sum(len(repos) for repos in classified.values())
 
     print_banner("🌱 HARVEST COMPLETE", "=")
-    # Run standard maintenance
-    standard_maintenance()
 
     print(f"  📊 Summary:")
     for category, repos in classified.items():
@@ -76,7 +74,7 @@ def human_review(classified: Dict[str, List[Dict]]) -> bool:
                 print(f"      ... and {len(repos) - 3} more")
 
     if is_pr_mode():
-        print("\n  🤖 Running in PR mode — auto-approving for PR generation")
+        log.info("Running in PR mode — auto-approving for PR generation")
         return True
 
     print("\n" + "-" * 60)
@@ -135,27 +133,25 @@ def generate_pr_body(classified: Dict[str, List[Dict]]) -> str:
     return "\n".join(lines)
 
 def main():
-    print_banner("🌱 LLMDataHub Harvester", "=")
-    # Run standard maintenance
-    standard_maintenance()
-
+    log.info("LLMDataHub Harvester starting")
     LOGS_DIR.mkdir(parents=True, exist_ok=True)
 
     # Step 1: Scrape
-    print("  📡 Scraping GitHub for candidates...")
+    log.info("Scraping GitHub for candidates...")
     candidates = scrape_github(min_stars=20, max_results=100, recent_years=3, require_license=False)
+    log.info(f"Scrape complete: {len(candidates)} candidates")
 
     # Step 2: Dedupe + skip-list
-    print("  🧹 Filtering against archive and skip-list...")
+    log.info("Filtering against archive and skip-list...")
     existing = load_all_existing_entries()
     rejected = load_rejected_candidates()
     new_candidates = filter_candidates(candidates, existing, rejected)
-    print(f"  📚 Found {len(existing)} existing archive entries")
-    print(f"  🚫 Found {len(rejected)} rejected candidates on skip-list")
-    print(f"  🆕 {len(new_candidates)} new candidates after filtering")
+    log.info(f"Existing archive entries: {len(existing)}")
+    log.info(f"Rejected candidates on skip-list: {len(rejected)}")
+    log.info(f"New candidates after filtering: {len(new_candidates)}")
 
     # Step 3: Classify
-    print("  🏷️  Classifying candidates...")
+    log.info("Classifying candidates...")
     classified = classify_candidates(new_candidates)
 
     # Step 4: Save report
@@ -174,11 +170,11 @@ def main():
                         f.write(f"  Description: {desc[:200]}\n")
                     f.write("\n")
 
-    print(f"  📄 Report saved to: {report_path}")
+    log.info(f"Report saved to: {report_path}")
 
     # Step 5: Human review
     if not human_review(classified):
-        print("  ❌ Rejected by user. Logging and exiting.")
+        log.info("Rejected by user. Logging and exiting.")
         log_path = LOGS_DIR / "harvest_rejected.txt"
         with open(log_path, "w") as f:
             f.write(f"Harvest rejected at {time.strftime('%Y-%m-%d %H:%M:%S')}\n")
@@ -187,27 +183,28 @@ def main():
                     f.write(f"\n{category.upper()}: {len(repos)}\n")
                     for repo in repos:
                         f.write(f"  - {repo['full_name']}\n")
-        print(f"  📄 Log saved to: {log_path}")
+        log.info(f"Rejection log saved to: {log_path}")
         sys.exit(0)
 
     # Step 6: Format and apply changes
-    print("  ✏️  Formatting entries...")
+    log.info("Formatting entries...")
     formatted = format_candidates(classified)
     insertions = generate_insertion_commands(formatted)
 
     if is_pr_mode():
-        print("  🤖 PR mode — applying changes and generating PR body...")
+        # PR body FIRST — before anything that can fail after this point,
+        # so create-pull-request and artifact upload always find the file.
+        log.info("PR mode — generating PR body before applying changes")
         pr_body = generate_pr_body(classified)
         pr_path = LOGS_DIR / "pr_body.md"
         with open(pr_path, "w") as f:
             f.write(pr_body)
-        print(f"  📄 PR body saved to: {pr_path}")
+        log.info(f"PR body saved to: {pr_path}")
 
-        # Apply the changes
         if apply_insertions(insertions):
-            print("  ✅ Changes applied successfully.")
+            log.info("Changes applied successfully.")
         else:
-            print("  ❌ Failed to apply changes.")
+            log.error("Failed to apply changes. PR body preserved for review.")
             sys.exit(1)
         sys.exit(0)
 
@@ -222,12 +219,10 @@ def main():
         f.write("\necho '✅ Insertion complete.'\n")
     script_path.chmod(0o755)
 
-    print(f"  📄 Insertion script saved to: {script_path}")
-    print(f"  Run: ./repo-maintenance-automation/logs/insert.sh to apply changes")
+    log.info(f"Insertion script saved to: {script_path}")
+    log.info("Run: ./repo-maintenance-automation/logs/insert.sh to apply changes")
 
     print_banner("✅ Harvest complete. Ready for review.", "=")
-    # Run standard maintenance
-    standard_maintenance()
 
 if __name__ == "__main__":
     main()
