@@ -7,6 +7,9 @@
 unslothai/unsloth  # Apache-2.0 core but bundles AGPL-3.0 + LGPL-3.0 components — license too messy
 ViperEkura/AstrAI  # license unverified, weak quality signal, repeatedly surfaced
 
+linny006/awesome-agent-skills  # Meta-list, same family as trending-claude-skills
+Osmantic/ODS  # PC tool, not LLM resource
+clay-good/OpenLore  # Agent memory guardrails, off-theme
 # === Off-theme (not LLM training / not a resource for the archive) ===
 ClickHouse/ClickBench  # analytical database benchmark, not LLM
 MrNeRF/LichtFeld-Studio  # 3D Gaussian splatting, not LLM
