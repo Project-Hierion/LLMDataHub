@@ -41,6 +41,8 @@
 </details>
 
 ### <div id="models-2025">2025</div>
+| [openfloodhub](https://github.com/abhiramm7/openfloodhub) | — | LLM | Python | 25★ | Open-source, self-hostable flood-forecasting model — a free alternative to Google Flood Hub. Per-gauge 1D CNN with pr... |
+
 | [NeuralDaredevil-8B](https://huggingface.co/mlabonne/NeuralDaredevil-8B) (HF-hosted 🤑) | — | LLM | English | 8B | Popular merged model. Fine-tuned for general-purpose chat and reasoning. |
 | [AlphaMonarch-7B](https://huggingface.co/mlabonne/AlphaMonarch-7B) (HF-hosted 🤑) | — | LLM | English | 7B | Popular merged model. Strong performance on reasoning and instruction following. |
 | [NeuralHermes-2.5-Mistral-7B](https://huggingface.co/mlabonne/NeuralHermes-2.5-Mistral-7B) (HF-hosted 🤑) | — | LLM | English | 7B | First successful open-source DPO model. Combines Hermes and Neural Chat. |

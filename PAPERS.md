@@ -41,6 +41,9 @@
 </details>
 
 ### <div id="papers-2025">2025</div>
+| [open-unlearning](https://github.com/locuslab/open-unlearning) | — | — | [Code](https://github.com/locuslab/open-unlearning) | — | [NeurIPS D&B '25] The one-stop repository for LLM unlearning |
+| [reasoning-models](https://github.com/benjaminzwhite/reasoning-models) | — | — | [Code](https://github.com/benjaminzwhite/reasoning-models) | — | Experiments with reasoning models, training techniques, papers |
+
 | [gdpval-realworks](https://github.com/hyeonsangjeon/gdpval-realworks) | — | — | [Code](https://github.com/hyeonsangjeon/gdpval-realworks) | — | Open-source benchmark for evaluating LLMs on 220 real professional tasks across 9 sectors and 44 occupations. Reprodu... |
 | [AlphaAD](https://github.com/alaliqing/AlphaAD) | — | — | [Code](https://github.com/alaliqing/AlphaAD) | — | 🚗 Automatically curated collection of the latest autonomous driving research papers from arXiv. Updated daily with   ... |
 | [local-deep-research](https://github.com/LearningCircuit/local-deep-research) | — | — | [Code](https://github.com/LearningCircuit/local-deep-research) | — | ~95% on SimpleQA (e.g. Qwen3.6-27B on a 3090). Supports all local and cloud LLMs (llama.cpp, Ollama, Google, ...). 10... |
