@@ -1,58 +1,319 @@
 === CLASSIFICATION REPORT ===
 
 
-## PAPER (2)
-- Mindful-AI-Research/1-ai-ml-model-evaluation-benchmarking-selection-consulting (1★)
-  Score: 1.20
-  URL: https://github.com/Mindful-AI-Research/1-ai-ml-model-evaluation-benchmarking-selection-consulting
-  Description: 🎯 1- Data Science & AI/ML-Model Evaluation, Benchmarking & Selection Research & Consulting Hub for rigorous machine learning model evaluation, comparison, auditing, and selection, combining performanc
+## MODEL (1)
+- abhiramm7/openfloodhub (25★)
+  Score: 0.90
+  URL: https://github.com/abhiramm7/openfloodhub
+  Description: Open-source, self-hostable flood-forecasting model — a free alternative to Google Flood Hub. Per-gauge 1D CNN with pretrained checkpoints.
 
-- PatrickWiloak/genai-research-papers-summarized (9★)
-  Score: 1.20
-  URL: https://github.com/PatrickWiloak/genai-research-papers-summarized
-  Description: Everything AI, summarized: 144 papers and landmark essays plus 31 dated explainers on model families, benchmarks, compute, policy and open questions. Plain language, free.
+
+## PAPER (2)
+- locuslab/open-unlearning (612★)
+  Score: 0.90
+  URL: https://github.com/locuslab/open-unlearning
+  Description: [NeurIPS D&B '25] The one-stop repository for LLM unlearning
+
+- benjaminzwhite/reasoning-models (30★)
+  Score: 0.90
+  URL: https://github.com/benjaminzwhite/reasoning-models
+  Description: Experiments with reasoning models, training techniques, papers
 
 
 ## TOOL (8)
-- kagithamanoj/botropolis (1★)
-  Score: 1.20
-  URL: https://github.com/kagithamanoj/botropolis
-  Description: A company of bots: 20 specialist AI agents across 10 departments, CEO orchestration, FastAPI server, web UI, training pipeline.
-
-- the911fund/skill-of-skills (64★)
-  Score: 1.50
-  URL: https://github.com/the911fund/skill-of-skills
-  Description: The autonomous discovery engine for AI coding tools. Indexes skills, plugins, MCP servers, agents, and integrations across Claude Code, Codex, Gemini CLI, and more.
-
-- langgenius/dify (158034★)
+- langgenius/dify (158716★)
   Score: 1.80
   URL: https://github.com/langgenius/dify
   Description: Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without reb
 
-- Birfy/agentdescent (184★)
+- nitinjain999/platform-skills (70★)
   Score: 1.20
-  URL: https://github.com/Birfy/agentdescent
-  Description: Gradient descent, but the parameters are agents — a parallel, asynchronous framework for self-evolving agents (skills, prompts, harnesses). Diffs are the gradients; the aggregator is the optimizer.
+  URL: https://github.com/nitinjain999/platform-skills
+  Description: A platform engineering handbook covering Kubernetes, OpenShift, Argo CD, Flux CD, AWS, Azure, Terraform, and GitHub Actions — with an optional Claude plugin layer for interactive guidance.
 
-- hashgraph-online/hol-guard (837★)
-  Score: 1.50
-  URL: https://github.com/hashgraph-online/hol-guard
-  Description: Open-source antivirus for AI agents: block risky tools, secret access, prompt injection, malicious packages, MCP servers, plugins, and skills at runtime.
+- linny006/trending-claude-skills (127★)
+  Score: 1.20
+  URL: https://github.com/linny006/trending-claude-skills
+  Description: Auto-updated leaderboard of trending claude-skills and AI agent repos, refreshed every 15 minutes
 
-- tobocop2/lilbee (64★)
+- marcusquinn/aidevops (410★)
   Score: 1.80
-  URL: https://github.com/tobocop2/lilbee
-  Description: The whole local AI stack in one executable: it runs and manages local AI models across every GPU, and it's a search engine you can talk to, with cited answers from your files, code, and the web. MCP s
+  URL: https://github.com/marcusquinn/aidevops
+  Description: Vibe-Coding is easy. DevOps is hard. OpenCode & Git token-efficient AI agent automation for your app, business, and personal development. Opinionated tools, services, CLI & API stack for speed, securi
 
-- IHUI-INF-AI/IHUI-AI (30★)
+- TabularisDB/tabularis (5230★)
   Score: 1.50
-  URL: https://github.com/IHUI-INF-AI/IHUI-AI
-  Description: Eight-platform full-stack AI operating system - unifies 176 LLMs via LangGraph + MCP + A2A. Multi-tenant RLS over 340 tables, RAG knowledge base, agent marketplace. Web/API/CLI/Desktop/Extension/Mobil
+  URL: https://github.com/TabularisDB/tabularis
+  Description: Open-source desktop SQL workspace with 3 built-in database drivers and 24 shipped driver plugins, including SQL Server, DuckDB, ClickHouse and Redis. Built-in MCP server for Claude, Cursor and Devin, 
 
-- azmartone67/dchub-mcp-server (3★)
-  Score: 1.20
-  URL: https://github.com/azmartone67/dchub-mcp-server
-  Description: DCPI (Data Center Power Index): a daily score of where data centers can get grid power, across 300+ markets. Live power-grid, energy, queue, fiber, gas & M&A data for AI agents: 94 tools, global facil
+- linny006/awesome-agent-skills (39★)
+  Score: 0.90
+  URL: https://github.com/linny006/awesome-agent-skills
+  Description: Curated, auto-updated awesome-list of vetted AI agent skills with quality ratings for Claude, GPT, a
+
+- Osmantic/ODS (7560★)
+  Score: 0.90
+  URL: https://github.com/Osmantic/ODS
+  Description: ODS V3 Pre-Release: Public testing and refinement ahead of the official V3 launch. Turn your PC, Mac, or Linux box into a private AI server.
+
+- clay-good/OpenLore (338★)
+  Score: 0.90
+  URL: https://github.com/clay-good/OpenLore
+  Description: Deterministic, local-first memory and guardrails for AI coding agents with no LLM in the hot path.
 
 
-## NOISE (248) — skipped, not listed
+## NOISE (51)
+- mlcyclops/lucidagentide (23★)
+  Score: 0.60
+  URL: https://github.com/mlcyclops/lucidagentide
+  Description: Security-First Agentic IDE Coding Harness
+
+- saeedkolivand/ai-job-hunter-app (62★)
+  Score: 0.00
+  URL: https://github.com/saeedkolivand/ai-job-hunter-app
+  Description: Local-first AI desktop assistant that scrapes job boards, matches roles to your resume, and auto-generates resumes & cover letters. Offline with Ollama, BYO API key, or route it through an AI CLI agen
+
+- ed-donner/llm_engineering (7690★)
+  Score: 0.30
+  URL: https://github.com/ed-donner/llm_engineering
+  Description: Repo to accompany my mastering LLM engineering course
+
+- junhoyeo/tokscale (5701★)
+  Score: 0.60
+  URL: https://github.com/junhoyeo/tokscale
+  Description: 🛰️ Track token usage across AI coding agents from your terminal. 🏅 Global leaderboard with trillions of tokens tracked.
+
+- gmh5225/awesome-game-security (3607★)
+  Score: 0.00
+  URL: https://github.com/gmh5225/awesome-game-security
+  Description: awesome game security [Welcome to PR]
+
+- overmind-core/overmind (663★)
+  Score: 0.60
+  URL: https://github.com/overmind-core/overmind
+  Description: The platform for continuously improving AI agents.
+
+- JustInCache/awesome-ai-interviews (32★)
+  Score: 0.30
+  URL: https://github.com/JustInCache/awesome-ai-interviews
+  Description: The ultimate collection of AI/ML interview questions, answers & resources — for all roles (MLE, MLOps, Data Scientist, LLM Engineer) and all levels (fresher → staff). Used by 10,000+ engineers. ⭐ Star
+
+- rohitg00/ai-engineering-from-scratch (70612★)
+  Score: 0.00
+  URL: https://github.com/rohitg00/ai-engineering-from-scratch
+  Description: Learn AI Engineering! Learn it. Build it. Ship it for others.
+
+- elder-plinius/OBLITERATUS (8842★)
+  Score: 0.00
+  URL: https://github.com/elder-plinius/OBLITERATUS
+  Description: OBLITERATE THE CHAINS THAT BIND YOU
+
+- AcademiaSD/comfyui_AcademiaSD (86★)
+  Score: 0.00
+  URL: https://github.com/AcademiaSD/comfyui_AcademiaSD
+  Description: Various tools
+
+- ostris/ai-toolkit (12337★)
+  Score: 0.30
+  URL: https://github.com/ostris/ai-toolkit
+  Description: The ultimate training toolkit for finetuning diffusion models
+
+- chenin-wang/awesome_ai_paper (63★)
+  Score: 0.30
+  URL: https://github.com/chenin-wang/awesome_ai_paper
+
+- Nanboy-Ronan/awesome-medical-imaging-agents (71★)
+  Score: 0.00
+  URL: https://github.com/Nanboy-Ronan/awesome-medical-imaging-agents
+  Description: Awesome list for medical imaging agents: radiology agents, pathology agents, segmentation agents, medical VLM agents, self-evolving agents, benchmarks, datasets, tools, and papers.
+
+- Dicklesworthstone/frankengraphdb (27★)
+  Score: 0.00
+  URL: https://github.com/Dicklesworthstone/frankengraphdb
+  Description: A blank-slate, memory-safe, ultra-high-performance property-graph database in Rust — unified MVCC/time-travel/branches/replication over a fountain-coded commit stream, WCO+factorized execution, increm
+
+- katopz/katgpt-rs (139★)
+  Score: 0.00
+  URL: https://github.com/katopz/katgpt-rs
+  Description: A neuro-symbolic micro-Transformer with speculative decoding, constraint pruning, recurrent attention, and adaptive test-time scaling — built in Rust.
+
+- Dicklesworthstone/frankenredis (28★)
+  Score: 0.00
+  URL: https://github.com/Dicklesworthstone/frankenredis
+  Description: Memory-safe clean-room Redis reimplementation in Rust with strict/hardened compatibility modes, deterministic replication semantics, differential conformance harnesses, and profile-guided optimization
+
+- superiorlu/AITreasureBox (873★)
+  Score: 0.00
+  URL: https://github.com/superiorlu/AITreasureBox
+  Description: 🤖 Automatically collected AI repos, tools, websites, papers & tutorials. 实用AI百宝箱 💎
+
+- marin-community/marin (3967★)
+  Score: 0.60
+  URL: https://github.com/marin-community/marin
+  Description: Open-source framework for the research and development of foundation models.
+
+- raamonp/rl-gym-orchestrator (55★)
+  Score: 0.00
+  URL: https://github.com/raamonp/rl-gym-orchestrator
+  Description: Ultimate LLM Gym Trainer Guide 2026: Reinforcement Learning Fine-Tuning Framework
+
+- n3428093-rgb/rl-gym-forge (56★)
+  Score: 0.60
+  URL: https://github.com/n3428093-rgb/rl-gym-forge
+  Description: Open Source LLM Reinforcement Learning Framework for MLGym Environments 2026
+
+- keyuchen21/agentic-engineering-handbook (552★)
+  Score: 0.60
+  URL: https://github.com/keyuchen21/agentic-engineering-handbook
+  Description: The definitive OpenAI, Claude, MCP, Harness, Evals, and Production Agent Systems learning roadmap.
+
+- OmniJev/awesome-jev-gallery (508★)
+  Score: 0.60
+  URL: https://github.com/OmniJev/awesome-jev-gallery
+  Description: 🔥🔥 Awesome Jev:  open-source models, projects, benchmarks, and independent evaluations for Jev and System One models.
+
+- OSSDrop/OSSDrop (108★)
+  Score: 0.00
+  URL: https://github.com/OSSDrop/OSSDrop
+  Description: Discover and launch open-source software. OSSDrop is a community-curated Product Hunt alternative where developers share projects, find tools, vote, and discuss.
+
+- dengxianghua888-ops/preference-lab (55★)
+  Score: 0.60
+  URL: https://github.com/dengxianghua888-ops/preference-lab
+  Description: Policy-driven preference data for content moderation, with source-linked evidence, resumable runs, budget controls and TRL/ShareGPT exports.
+
+- JakobAIOdev/Vintrack-Vinted-Monitor (180★)
+  Score: 0.60
+  URL: https://github.com/JakobAIOdev/Vintrack-Vinted-Monitor
+  Description: Real-time Vinted monitor with instant Discord alerts, proxy rotation & a beautiful dashboard. Self-hosted with Docker. Built with Next.js 16 + Go.
+
+- asheshgoplani/agent-deck (1103★)
+  Score: 0.60
+  URL: https://github.com/asheshgoplani/agent-deck
+  Description: Terminal session manager for AI coding agents. One TUI for Claude, Gemini, OpenCode, Codex, and more.
+
+- Amal-David/awesome-jev (238★)
+  Score: 0.00
+  URL: https://github.com/Amal-David/awesome-jev
+  Description: Jev demos, projects, SDKs and skills, with source links and a curated X gallery.
+
+- UsualSuspect09/F1-Race-Strategy-Engine (30★)
+  Score: 0.00
+  URL: https://github.com/UsualSuspect09/F1-Race-Strategy-Engine
+  Description: A ML-based tyre strategy engine based on real-time F1 data 
+
+- Pantheon-Industries-Inc/argus (86★)
+  Score: 0.50
+  URL: https://github.com/Pantheon-Industries-Inc/argus
+  Description: Argus is an open source dataset-and-format-agnostic harness for the densest annotation of robot learning data.
+
+- seaweedfs/seaweedfs (35543★)
+  Score: 0.00
+  URL: https://github.com/seaweedfs/seaweedfs
+  Description: SeaweedFS is a distributed storage system for object storage (S3), file systems, and Iceberg tables, designed to handle billions of files with O(1) disk access and effortless horizontal scaling.
+
+- saulpw/visidata (9354★)
+  Score: 0.60
+  URL: https://github.com/saulpw/visidata
+  Description: A terminal spreadsheet multitool for discovering and arranging data
+
+- surakin/tesseract (47★)
+  Score: 0.30
+  URL: https://github.com/surakin/tesseract
+  Description: A full featured native desktop Matrix Client
+
+- micz/ThunderStats (47★)
+  Score: 0.30
+  URL: https://github.com/micz/ThunderStats
+  Description: This addon adds awesome statistics to your beloved Thunderbird!
+
+- adriannovegil/awesome-chaos-engineering (47★)
+  Score: 0.00
+  URL: https://github.com/adriannovegil/awesome-chaos-engineering
+  Description: Awesome chaos engineering page
+
+- jiayaoqijia/cryptoskill (76★)
+  Score: 0.30
+  URL: https://github.com/jiayaoqijia/cryptoskill
+  Description: Skills for Crypto
+
+- giantswarm/prometheus-rules (27★)
+  Score: 0.00
+  URL: https://github.com/giantswarm/prometheus-rules
+  Description: Giant Swarm Prometheus alerting and recording rules
+
+- Fiestaboard/FiestaBoard (49★)
+  Score: 0.00
+  URL: https://github.com/Fiestaboard/FiestaBoard
+  Description: Fiestaboard
+
+- Soniavasseur/Wallet-Risk-Scanner (190★)
+  Score: 0.30
+  URL: https://github.com/Soniavasseur/Wallet-Risk-Scanner
+  Description: Multi-chain crypto wallet risk scanner for AML/KYT screening. Scores addresses 0–100 using sanctions, risky contracts and fund tracing. Integrates 6 intelligence providers with failover, detects scams
+
+- bitsocialnet/5chan (133★)
+  Score: 0.00
+  URL: https://github.com/bitsocialnet/5chan
+  Description: A peer-to-peer 4chan alternative.
+
+- gtapps/hermitd (81★)
+  Score: 0.60
+  URL: https://github.com/gtapps/hermitd
+  Description: Like Claude Tag, but local.
+
+- SysAdminDoc/CallShield (52★)
+  Score: 0.30
+  URL: https://github.com/SysAdminDoc/CallShield
+  Description: Open-source spam call and text blocker for Android. GitHub-hosted spam database, no API keys, no subscriptions.
+
+- Dicklesworthstone/eidetic_engine_cli (53★)
+  Score: 0.60
+  URL: https://github.com/Dicklesworthstone/eidetic_engine_cli
+  Description: Durable, local-first, explainable memory for coding agents. A Rust CLI memory substrate built on the franken-stack (Asupersync, FrankenSQLite, Frankensearch, FrankenNetworkX).
+
+- Javis603/token-monitor (3163★)
+  Score: 0.60
+  URL: https://github.com/Javis603/token-monitor
+  Description: Local-first desktop widget for tracking token usage, costs, limits, and session activity across 46+ AI coding tools—including Claude Code, Codex, Cursor, OpenCode, OpenClaw, and more—with multi-device
+
+- ultralytics/ultralytics (62593★)
+  Score: 0.00
+  URL: https://github.com/ultralytics/ultralytics
+  Description: Ultralytics YOLO27, YOLO26, YOLO11, YOLOv8 — object detection, instance segmentation, semantic segmentation, image classification, pose estimation, object tracking
+
+- Dicklesworthstone/frankensim (70★)
+  Score: 0.00
+  URL: https://github.com/Dicklesworthstone/frankensim
+  Description: Plan-first Rust continuum for certified geometry, physics simulation, optimization, and rendering.
+
+- SciML/SciMLBenchmarksOutput (28★)
+  Score: 0.50
+  URL: https://github.com/SciML/SciMLBenchmarksOutput
+  Description: SciML-Bench Benchmarks for Scientific Machine Learning (SciML), Physics-Informed Machine Learning (PIML), and Scientific AI Performance
+
+- shreyagarwal72/petal (67★)
+  Score: 0.00
+  URL: https://github.com/shreyagarwal72/petal
+  Description: Material 3 Expressive Browser For Android 
+
+- storytold/figcraft (2399★)
+  Score: 0.60
+  URL: https://github.com/storytold/figcraft
+  Description: FigCraft: interface design and prototyping; an open-source, clean-room reimplementation of collaborative design workflows in pure Rust
+
+- infinito-nexus/core (20★)
+  Score: 0.60
+  URL: https://github.com/infinito-nexus/core
+  Description: Infinito.Nexus is a turnkey framework built on Docker, Ansible and ActivityPub for deploying a server with LDAP-based IAM and Keycloak SSO. Its unified interface lets you access infinite open-source w
+
+- DeusData/codebase-memory-mcp (46761★)
+  Score: 0.60
+  URL: https://github.com/DeusData/codebase-memory-mcp
+  Description: High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 162 languages, sub-ms queries, 99% fewer tokens. Single static binary
+
+- equinor/neqsim (156★)
+  Score: 0.30
+  URL: https://github.com/equinor/neqsim
+  Description: NeqSim is a library for calculation of fluid behavior, phase equilibrium and process simulation
+

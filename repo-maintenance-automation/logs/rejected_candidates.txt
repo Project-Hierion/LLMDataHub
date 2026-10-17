@@ -7,6 +7,11 @@
 unslothai/unsloth  # Apache-2.0 core but bundles AGPL-3.0 + LGPL-3.0 components — license too messy
 ViperEkura/AstrAI  # license unverified, weak quality signal, repeatedly surfaced
 
+langgenius/dify  # Commercial platform, not LLM resource
+TabularisDB/tabularis  # Desktop SQL workspace, not LLM
+nitinjain999/platform-skills  # DevOps handbook, not LLM
+marcusquinn/aidevops  # DevOps tooling, not LLM
+linny006/trending-claude-skills  # Meta-leaderboard, not LLM resource
 # === Off-theme (not LLM training / not a resource for the archive) ===
 ClickHouse/ClickBench  # analytical database benchmark, not LLM
 MrNeRF/LichtFeld-Studio  # 3D Gaussian splatting, not LLM
