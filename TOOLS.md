@@ -37,6 +37,19 @@
 | *No tools currently listed.* | | | | | |
 
 ### <div id="tools-2025">2025</div>
+| [AcademiaSD_LoRAlab-TrainerStudio](https://github.com/AcademiaSD/AcademiaSD_LoRAlab-TrainerStudio) | — | Tool | Python | Train LoRAs for Qwen-Image 2.1, FLUX.2 Klein 9B, FLUX.3 Image Klein, Krea 2, Z-Image, MOSS-Image, ERNIE-Image, Ideogr... |
+| [datamimic](https://github.com/rapiddweller/datamimic) | — | Tool | Python | Model-driven synthetic test data for CI/CD and analytics - deterministic, privacy-preserving, and domain-aware. Inclu... |
+| [DuDuClaw](https://github.com/zhixuli0406/DuDuClaw) | — | Tool | Rust | Turn AI coding CLIs (Claude Code, Codex, Antigravity) into AI employees on LINE, Telegram, Discord, Slack and 7 more ... |
+| [opencrabs](https://github.com/opencrabs/opencrabs) | — | Tool | Rust | The all-in-one AI agent. Build mobile apps, frontend, backend, manages files, deep research, schedule tasks and event... |
+| [cognee](https://github.com/topoteretes/cognee) | — | Tool | Python | Cognee is the open-source AI memory platform for agents. Give your AI agents persistent long-term memory with small m... |
+| [nodus](https://github.com/jorgepb96/nodus) | — | Tool | TypeScript | Open-source research workspace for connecting sources, evidence, notes and ideas. Built for academic research with Zo... |
+| [dsh-session-manager](https://github.com/hkkz9522/dsh-session-manager) | — | Tool | JavaScript | DeepSeek Harness session and workspace manager —— Workspaces: archive and visibility. Sessions: move, migrate presets... |
+| [deepchat](https://github.com/ThinkInAIXYZ/deepchat) | — | Tool | TypeScript | 🐬DeepChat - A smart assistant that connects powerful AI to your personal world |
+| [trending-claude-skills](https://github.com/linny006/trending-claude-skills) | — | Tool | Python | Auto-updated leaderboard of trending claude-skills and AI agent repos, refreshed every 15 minutes |
+| [repo-harness](https://github.com/Ancienttwo/repo-harness) | — | Tool | TypeScript | File-backed workflow harness for reliable Claude Code and Codex sessions. |
+| [oh-my-pi](https://github.com/can1357/oh-my-pi) | — | Tool | TypeScript | ⌥ Coding agent with the IDE wired in. Built by Stencil Labs. |
+| [cogneva](https://github.com/hcipengm/cogneva) | — | Tool | Rust | Distributed AI multi-agent autonomous system — digital employees for long-horizon tasks, running 24×7 — Meta-bootstra... |
+
 | [NeMo-Curator](https://github.com/NVIDIA/NeMo-Curator) | — | Data Curation | Python | GPU-accelerated toolkit for large-scale data curation, with exact/fuzzy/semantic deduplication, 30+ heuristic filters, and quality/safety classifiers. |
 | [DataTrove](https://github.com/huggingface/datatrove) | — | Data Processing | Python | Library for large-scale text processing with platform-agnostic pipeline blocks (filters, dedup, readers/writers) that run locally or on Slurm. |
 | [Distilabel](https://github.com/argilla-io/distilabel) | — | Data Generation | Python | Framework to generate and augment data (SFT, DPO) with techniques like UltraFeedback and DEITA. |

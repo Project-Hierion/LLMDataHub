@@ -1,58 +1,402 @@
 === CLASSIFICATION REPORT ===
 
 
-## PAPER (2)
-- Mindful-AI-Research/1-ai-ml-model-evaluation-benchmarking-selection-consulting (1★)
-  Score: 1.20
-  URL: https://github.com/Mindful-AI-Research/1-ai-ml-model-evaluation-benchmarking-selection-consulting
-  Description: 🎯 1- Data Science & AI/ML-Model Evaluation, Benchmarking & Selection Research & Consulting Hub for rigorous machine learning model evaluation, comparison, auditing, and selection, combining performanc
-
-- PatrickWiloak/genai-research-papers-summarized (9★)
-  Score: 1.20
-  URL: https://github.com/PatrickWiloak/genai-research-papers-summarized
-  Description: Everything AI, summarized: 144 papers and landmark essays plus 31 dated explainers on model families, benchmarks, compute, policy and open questions. Plain language, free.
-
-
-## TOOL (8)
-- kagithamanoj/botropolis (1★)
-  Score: 1.20
-  URL: https://github.com/kagithamanoj/botropolis
-  Description: A company of bots: 20 specialist AI agents across 10 departments, CEO orchestration, FastAPI server, web UI, training pipeline.
-
-- the911fund/skill-of-skills (64★)
+## MODEL (2)
+- Goekdeniz-Guelmez/mlx-lm-lora (437★)
   Score: 1.50
-  URL: https://github.com/the911fund/skill-of-skills
-  Description: The autonomous discovery engine for AI coding tools. Indexes skills, plugins, MCP servers, agents, and integrations across Claude Code, Codex, Gemini CLI, and more.
+  URL: https://github.com/Goekdeniz-Guelmez/mlx-lm-lora
+  Description: Train Large Language Models on MLX.
 
-- langgenius/dify (158034★)
+- AbrahamPaulJ/nightmare-mobile (101★)
+  Score: 0.90
+  URL: https://github.com/AbrahamPaulJ/nightmare-mobile
+  Description: On-device ComfyUI style node graph for image/video diffusion models on Android. Local SD1.5, SDXL, Flux, Z-image, Anima, Qwen Image 2.1, Krea 2, MOSS Image, Ideogram 4, inpainting, outpainting, contro
+
+
+## TOOL (13)
+- AcademiaSD/AcademiaSD_LoRAlab-TrainerStudio (106★)
+  Score: 0.90
+  URL: https://github.com/AcademiaSD/AcademiaSD_LoRAlab-TrainerStudio
+  Description: Train LoRAs for Qwen-Image 2.1, FLUX.2 Klein 9B, FLUX.3 Image Klein, Krea 2, Z-Image, MOSS-Image, ERNIE-Image, Ideogram 4, Anima, SDXL (Pony, Illustrious, NoobAI), LTX 2.3, MiniMax-H3, and more on NVI
+
+- rapiddweller/datamimic (116★)
+  Score: 0.90
+  URL: https://github.com/rapiddweller/datamimic
+  Description: Model-driven synthetic test data for CI/CD and analytics - deterministic, privacy-preserving, and domain-aware. Includes Python APIs, XML pipelines, and MCP/IDE integration to orchestrate realistic da
+
+- zhixuli0406/DuDuClaw (50★)
+  Score: 1.20
+  URL: https://github.com/zhixuli0406/DuDuClaw
+  Description: Turn AI coding CLIs (Claude Code, Codex, Antigravity) into AI employees on LINE, Telegram, Discord, Slack and 7 more chat apps. A judge reviews each result, every cost is logged, memory stays on your 
+
+- opencrabs/opencrabs (1005★)
+  Score: 1.20
+  URL: https://github.com/opencrabs/opencrabs
+  Description: The all-in-one AI agent. Build mobile apps, frontend, backend, manages files, deep research, schedule tasks and events. Self-improving, self-healing, fully autonomous. TUI, CLI and Daemon. Connect to 
+
+- topoteretes/cognee (32651★)
+  Score: 0.90
+  URL: https://github.com/topoteretes/cognee
+  Description: Cognee is the open-source AI memory platform for agents. Give your AI agents persistent long-term memory with small models for free
+
+- jorgepb96/nodus (285★)
+  Score: 0.90
+  URL: https://github.com/jorgepb96/nodus
+  Description: Open-source research workspace for connecting sources, evidence, notes and ideas. Built for academic research with Zotero integration. Available on MacOS, Windows and Linux.
+
+- hkkz9522/dsh-session-manager (65★)
+  Score: 0.90
+  URL: https://github.com/hkkz9522/dsh-session-manager
+  Description: DeepSeek Harness session and workspace manager —— Workspaces: archive and visibility. Sessions: move, migrate presets, delete, favorite, review later, prioritize, tag, and annotate. Batch operations. 
+
+- ThinkInAIXYZ/deepchat (6373★)
   Score: 1.80
-  URL: https://github.com/langgenius/dify
-  Description: Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without reb
+  URL: https://github.com/ThinkInAIXYZ/deepchat
+  Description: 🐬DeepChat - A smart assistant that connects powerful AI to your personal world
 
-- Birfy/agentdescent (184★)
+- linny006/trending-claude-skills (131★)
   Score: 1.20
-  URL: https://github.com/Birfy/agentdescent
-  Description: Gradient descent, but the parameters are agents — a parallel, asynchronous framework for self-evolving agents (skills, prompts, harnesses). Diffs are the gradients; the aggregator is the optimizer.
+  URL: https://github.com/linny006/trending-claude-skills
+  Description: Auto-updated leaderboard of trending claude-skills and AI agent repos, refreshed every 15 minutes
 
-- hashgraph-online/hol-guard (837★)
-  Score: 1.50
-  URL: https://github.com/hashgraph-online/hol-guard
-  Description: Open-source antivirus for AI agents: block risky tools, secret access, prompt injection, malicious packages, MCP servers, plugins, and skills at runtime.
+- Ancienttwo/repo-harness (435★)
+  Score: 0.90
+  URL: https://github.com/Ancienttwo/repo-harness
+  Description: File-backed workflow harness for reliable Claude Code and Codex sessions.
 
-- tobocop2/lilbee (64★)
-  Score: 1.80
-  URL: https://github.com/tobocop2/lilbee
-  Description: The whole local AI stack in one executable: it runs and manages local AI models across every GPU, and it's a search engine you can talk to, with cited answers from your files, code, and the web. MCP s
+- can1357/oh-my-pi (36210★)
+  Score: 0.90
+  URL: https://github.com/can1357/oh-my-pi
+  Description: ⌥ Coding agent with the IDE wired in. Built by Stencil Labs.
 
-- IHUI-INF-AI/IHUI-AI (30★)
-  Score: 1.50
-  URL: https://github.com/IHUI-INF-AI/IHUI-AI
-  Description: Eight-platform full-stack AI operating system - unifies 176 LLMs via LangGraph + MCP + A2A. Multi-tenant RLS over 340 tables, RAG knowledge base, agent marketplace. Web/API/CLI/Desktop/Extension/Mobil
+- mark3labs/kit (143★)
+  Score: 0.90
+  URL: https://github.com/mark3labs/kit
+  Description: KIT (Knowledge Inference Tool) — A lightweight AI agent for coding
 
-- azmartone67/dchub-mcp-server (3★)
-  Score: 1.20
-  URL: https://github.com/azmartone67/dchub-mcp-server
-  Description: DCPI (Data Center Power Index): a daily score of where data centers can get grid power, across 300+ markets. Live power-grid, energy, queue, fiber, gas & M&A data for AI agents: 94 tools, global facil
+- hcipengm/cogneva (32★)
+  Score: 0.90
+  URL: https://github.com/hcipengm/cogneva
+  Description: Distributed AI multi-agent autonomous system — digital employees for long-horizon tasks, running 24×7 — Meta-bootstrapping · Real-autonomous · Omni-evolution
 
 
-## NOISE (248) — skipped, not listed
+## NOISE (64)
+- unslothai/notebooks (5748★)
+  Score: 0.30
+  URL: https://github.com/unslothai/notebooks
+  Description: 250+ Fine-tuning & RL Notebooks for text, vision, audio, embedding, TTS models.
+
+- Tavotto/Tavotto (505★)
+  Score: 0.00
+  URL: https://github.com/Tavotto/Tavotto
+  Description: Make AI-generated scientific figures editable without losing the code behind them.
+
+- ProxyScrape/free-proxy-list (194★)
+  Score: 0.30
+  URL: https://github.com/ProxyScrape/free-proxy-list
+  Description: Free HTTP, HTTPS, SOCKS4 & SOCKS5 proxy list. ~22k proxies across 90+ countries, refreshed every 5 minutes from the ProxyScrape v4 API. TXT, JSON & CSV.
+
+- dr-mushtaq/natural-language-processing-projects-python (20★)
+  Score: 0.00
+  URL: https://github.com/dr-mushtaq/natural-language-processing-projects-python
+  Description: A complete A–Z guide to Natural Language Processing (NLP) using Python — includes real-world projects, machine learning models, and chatbot implementations. Ideal for students, researchers, and data s
+
+- squid-protocol/gitgalaxy (58★)
+  Score: 0.30
+  URL: https://github.com/squid-protocol/gitgalaxy
+  Description: Convert source code into a repository-scale structural model. Air gapped, zero dependencies, SARIF and SBOM outputs.
+
+- sib-swiss/sparql-llm (130★)
+  Score: 0.30
+  URL: https://github.com/sib-swiss/sparql-llm
+  Description: 🦜✨ Chat system, MCP server, and reusable components to improve LLMs capabilities when generating SPARQL queries
+
+- Townzc/liftcut-tracker (89★)
+  Score: 0.00
+  URL: https://github.com/Townzc/liftcut-tracker
+  Description: Beginner-friendly open-source workout, nutrition, and progress tracker with guest mode and configurable AI planning.
+
+- rohitg00/ai-engineering-from-scratch (72230★)
+  Score: 0.00
+  URL: https://github.com/rohitg00/ai-engineering-from-scratch
+  Description: Learn AI Engineering! Learn it. Build it. Ship it for others.
+
+- KuangjuX/Papers-and-Learning-Notes (28★)
+  Score: 0.30
+  URL: https://github.com/KuangjuX/Papers-and-Learning-Notes
+  Description: My Paper Reading Lists and Notes.
+
+- modelscope/DiffSynth-Studio (13288★)
+  Score: 0.30
+  URL: https://github.com/modelscope/DiffSynth-Studio
+  Description: Enjoy the magic of Diffusion models!
+
+- redai-studio/Relax (650★)
+  Score: 0.60
+  URL: https://github.com/redai-studio/Relax
+  Description: An Asynchronous Reinforcement Learning Engine for Omni-Modal Post-Training at Scale
+
+- OmniJev/OneJev (183★)
+  Score: 0.60
+  URL: https://github.com/OmniJev/OneJev
+  Description: 🚀🚀 A multimodal System One decision model that gives calibrated answers to typed questions about screens, photos, video and text in one forward pass.
+
+- walkinglabs/hands-on-modern-rl (4750★)
+  Score: 0.00
+  URL: https://github.com/walkinglabs/hands-on-modern-rl
+  Description: 🚀 An open-source, hands-on curriculum bridging the gap from basic RL concepts to LLM alignment, RLVR, and advanced Agentic systems. 
+
+- unslothai/unsloth-zoo (344★)
+  Score: 0.00
+  URL: https://github.com/unslothai/unsloth-zoo
+  Description: Utils for Unsloth https://github.com/unslothai/unsloth
+
+- ZhijieXiong/pyedmine (82★)
+  Score: 0.30
+  URL: https://github.com/ZhijieXiong/pyedmine
+  Description: A library of algorithms for reproducing knowledge tracing, cognitive diagnosis, exercise recommendation and learning path recommendation models.
+
+- karalang/kara (45★)
+  Score: 0.00
+  URL: https://github.com/karalang/kara
+  Description: The Kāra programming language — compiled via  LLVM, with automatic parallelization and   WebAssembly support.
+
+- rokbenko/quackd (269★)
+  Score: 0.60
+  URL: https://github.com/rokbenko/quackd
+  Description: One CLI for all your robots. Connect them, command them, and let them work together, each with an LLM for a brain (Claude, OpenAI, Gemini, Grok, or local via Ollama or vLLM), VLAs for arms and decisio
+
+- MontrealAI/AGI-Alpha-Agent-v0 (302★)
+  Score: 0.60
+  URL: https://github.com/MontrealAI/AGI-Alpha-Agent-v0
+  Description: ♾️ TRANSFORMATIONAL META‑AGENTIC α‑AGI 👁️✨ — Mission 🎯  End‑to‑end: Identify 🔍 → Out‑Learn 📚 → Out‑Think 🧠 → Out‑Design 🎨 → Out‑Strategise ♟️ → Out‑Execute ⚡ → Out-Evolve ♾️
+
+- InftyAI/Awesome-LLMOps (268★)
+  Score: 0.00
+  URL: https://github.com/InftyAI/Awesome-LLMOps
+  Description: 🎉 An awesome & curated list of best LLMOps tools.
+
+- ai-boost/awesome-prompts (9113★)
+  Score: 0.00
+  URL: https://github.com/ai-boost/awesome-prompts
+  Description: Curated list of chatgpt prompts from the top-rated GPTs in the GPTs Store. Prompt Engineering, prompt attack & prompt protect. Advanced Prompt Engineering papers.
+
+- moshehbenavraham/Ultimate-Agent-Directory (71★)
+  Score: 0.00
+  URL: https://github.com/moshehbenavraham/Ultimate-Agent-Directory
+  Description: 🤖 The most comprehensive directory of AI agent frameworks, platforms, tools, and resources - hundreds of curated entries covering open-source, no-code, enterprise, and autonomous solutions.  NEW Boile
+
+- anmolksachan/AI-ML-Free-Resources-for-Security-and-Prompt-Injection (814★)
+  Score: 0.30
+  URL: https://github.com/anmolksachan/AI-ML-Free-Resources-for-Security-and-Prompt-Injection
+  Description: AI/ML Pentesting Roadmap for Beginners
+
+- hzysvilla/Academic_Smart_Contract_Papers (643★)
+  Score: 0.60
+  URL: https://github.com/hzysvilla/Academic_Smart_Contract_Papers
+  Description: Academic Smart Contract Papers. Welcome developers or researchers to add more published papers to this list.
+
+- dengxianghua888-ops/preference-lab (55★)
+  Score: 0.60
+  URL: https://github.com/dengxianghua888-ops/preference-lab
+  Description: Policy-driven preference data for content moderation, with source-linked evidence, resumable runs, budget controls and TRL/ShareGPT exports.
+
+- Ikolvi/Tracelet (64★)
+  Score: 0.30
+  URL: https://github.com/Ikolvi/Tracelet
+  Description: Battery-conscious motion-detection intelligence, geofencing, SQLite persistence, HTTP sync, and headless Dart execution for iOS & Android.
+
+- eater2/ai_agents_api_library (31★)
+  Score: 0.00
+  URL: https://github.com/eater2/ai_agents_api_library
+  Description: Verified catalog of 300+ APIs and MCP servers with opinions and statistics so that AI agents can call after a one-time API key/OAuth setup. JSON, llms.txt and an MCP server for agents.
+
+- perixtar/Tech-OA-Interview-Questions (5688★)
+  Score: 0.00
+  URL: https://github.com/perixtar/Tech-OA-Interview-Questions
+  Description: Daily updated list of Tech Company OAs and Interview Problems. Save your time from finding them all over the internet.
+
+- lance-format/lance-context (84★)
+  Score: 0.30
+  URL: https://github.com/lance-format/lance-context
+  Description: Manage Multimodal Agentic Context Lifecycle with Lance
+
+- alphagov/frontend (50★)
+  Score: 0.00
+  URL: https://github.com/alphagov/frontend
+  Description: Serves most frontend pages for www.gov.uk
+
+- faker-js/faker (15524★)
+  Score: 0.00
+  URL: https://github.com/faker-js/faker
+  Description: Generate massive amounts of fake data in the browser and node.js
+
+- web-infra-dev/rspack (12950★)
+  Score: 0.30
+  URL: https://github.com/web-infra-dev/rspack
+  Description: Fast Rust-based bundler for the web with a modernized webpack API 🦀
+
+- ChromeDevTools/devtools-frontend (4083★)
+  Score: 0.00
+  URL: https://github.com/ChromeDevTools/devtools-frontend
+  Description: The Chrome DevTools UI
+
+- ovh/venom (1224★)
+  Score: 0.30
+  URL: https://github.com/ovh/venom
+  Description: 🐍 Manage and run your integration tests with efficiency - Venom run executors (script, HTTP Request, web, imap, etc... ) and assertions
+
+- WordPress/wordpress-playground (1980★)
+  Score: 0.00
+  URL: https://github.com/WordPress/wordpress-playground
+  Description: Run WordPress in the browser via WebAssembly PHP
+
+- webpack/webpack (65968★)
+  Score: 0.30
+  URL: https://github.com/webpack/webpack
+  Description: A bundler for javascript and friends. Packs many modules into a few bundled assets. Code Splitting allows for loading parts of the application on demand. Through "loaders", modules can be CommonJs, AM
+
+- freezy/VisualPinball.Engine (513★)
+  Score: 0.00
+  URL: https://github.com/freezy/VisualPinball.Engine
+  Description: :video_game: Visual Pinball Engine for Unity
+
+- milisp/mcp-linker (343★)
+  Score: 0.60
+  URL: https://github.com/milisp/mcp-linker
+  Description: MCP store. Discover, add & syncs configuration manager across clients like Claude code, Codex, Cursor💡mcphub
+
+- mjthoraval/Weavero (56★)
+  Score: 0.60
+  URL: https://github.com/mjthoraval/Weavero
+  Description: A Zotero plugin with filters, clickable links, bookmarks, tabs management and other improvements. AI-assisted development process published in .claude/
+
+- Dicklesworthstone/eidetic_engine_cli (53★)
+  Score: 0.60
+  URL: https://github.com/Dicklesworthstone/eidetic_engine_cli
+  Description: Durable, local-first, explainable memory for coding agents. A Rust CLI memory substrate built on the franken-stack (Asupersync, FrankenSQLite, Frankensearch, FrankenNetworkX).
+
+- redhat-openshift-ecosystem/community-operators-prod (141★)
+  Score: 0.00
+  URL: https://github.com/redhat-openshift-ecosystem/community-operators-prod
+  Description: community-operators metadata backing OpenShift OperatorHub
+
+- pglayers/pglayers (172★)
+  Score: 0.30
+  URL: https://github.com/pglayers/pglayers
+  Description: PostgreSQL Docker images with the extensions you actually need -- pre-built, composable, no compilation.
+
+- zapplyjobs/Internships-2027 (5240★)
+  Score: 0.00
+  URL: https://github.com/zapplyjobs/Internships-2027
+  Description: 2027 tech & software engineering internships for students — new grad US roles, summer & full-year
+
+- zapplyjobs/New-Grad-Jobs-2027 (1582★)
+  Score: 0.00
+  URL: https://github.com/zapplyjobs/New-Grad-Jobs-2027
+  Description: 2027 entry-level jobs in tech, finance, healthcare & more — new grad US roles across software, business, operations & beyond
+
+- zapplyjobs/New-Grad-Data-Science-Jobs-2027 (88★)
+  Score: 0.00
+  URL: https://github.com/zapplyjobs/New-Grad-Data-Science-Jobs-2027
+  Description: 2027 entry-level data science & ML jobs — analytics, AI, quant & machine learning US roles
+
+- zapplyjobs/awesome-ml-internships-2027 (464★)
+  Score: 0.30
+  URL: https://github.com/zapplyjobs/awesome-ml-internships-2027
+  Description: Live AI and machine learning internships for students, refreshed through the Zapply job pipeline.
+
+- zapplyjobs/New-Grad-Software-Engineering-Jobs-2027 (75★)
+  Score: 0.00
+  URL: https://github.com/zapplyjobs/New-Grad-Software-Engineering-Jobs-2027
+  Description: 2027 entry-level software engineering jobs — SWE & full-time US roles from top tech companies & startups
+
+- gmh5225/awesome-game-security (3628★)
+  Score: 0.00
+  URL: https://github.com/gmh5225/awesome-game-security
+  Description: awesome game security [Welcome to PR]
+
+- n1m21n/Infinite (288★)
+  Score: 0.00
+  URL: https://github.com/n1m21n/Infinite
+  Description: Infinite is a free, open-source node-based audiovisual workstation by Naman Soni (n1m21n): real-time GPU compositing, 3D, modular synths, VST3/AU hosting.
+
+- vlachoudis/bCNC (1750★)
+  Score: 0.00
+  URL: https://github.com/vlachoudis/bCNC
+  Description: GRBL CNC command sender, autoleveler and g-code editor
+
+- Mahmud0808/ColorBlendr (2541★)
+  Score: 0.00
+  URL: https://github.com/Mahmud0808/ColorBlendr
+  Description: An Android app for customizing Material You colors on devices with Android 12+. It lets you tweak accent colors, background saturation, and more for a personalized look.
+
+- ml-explore/mlx-lm (7434★)
+  Score: 0.60
+  URL: https://github.com/ml-explore/mlx-lm
+  Description: Run LLMs with MLX
+
+- open-nexa/nexapipe (29★)
+  Score: 0.30
+  URL: https://github.com/open-nexa/nexapipe
+
+- jularboolean/legejo (29★)
+  Score: 0.30
+  URL: https://github.com/jularboolean/legejo
+  Description: A self-hosted e-book library with OPDS, Kobo sync, KOReader sync and ActivityPub federation
+
+- BradyAJohnston/MolecularNodes (1393★)
+  Score: 0.30
+  URL: https://github.com/BradyAJohnston/MolecularNodes
+  Description: Toolbox for molecular animations in Blender, powered by Geometry Nodes.
+
+- nesquena/hermes-webui (19100★)
+  Score: 0.30
+  URL: https://github.com/nesquena/hermes-webui
+  Description: Hermes WebUI: The best way to use Hermes Agent from the web or from your phone!
+
+- mpyw/declscope (43★)
+  Score: 0.30
+  URL: https://github.com/mpyw/declscope
+  Description: Keep Go packages flat without losing their internal boundaries: file-level private and package scopes for declarations, methods and struct fields
+
+- JuliaRegistries/General (738★)
+  Score: 0.00
+  URL: https://github.com/JuliaRegistries/General
+  Description: The official registry of general Julia packages
+
+- bluedotimpact/bluedot (28★)
+  Score: 0.00
+  URL: https://github.com/bluedotimpact/bluedot
+  Description: ✨ Monorepo containing most of BlueDot Impact's custom software.
+
+- MinBZK/nl-wallet (258★)
+  Score: 0.00
+  URL: https://github.com/MinBZK/nl-wallet
+  Description: NL Wallet - A digital identity wallet provided by the government.
+
+- Correia-jpv/fucking-awesome-cli-apps (55★)
+  Score: 0.00
+  URL: https://github.com/Correia-jpv/fucking-awesome-cli-apps
+  Description: 🖥 📊 🕹 🛠 A curated list of command line apps. With up-to-date repository stars⭐ and forks🍴
+
+- hyprstream/hyprstream (132★)
+  Score: 0.30
+  URL: https://github.com/hyprstream/hyprstream
+  Description: HyprStream: agentic infrastructure for continous online-learning applications
+
+- DereC4/internships-and-newgrad (130★)
+  Score: 0.00
+  URL: https://github.com/DereC4/internships-and-newgrad
+  Description: I used this during college, to save time, so maybe it will help you too! My own aggregated, deduplicated list of 2027-2028 Tech Internships and New Grad positions. 
+
+- ConduitIO/conduit (617★)
+  Score: 0.30
+  URL: https://github.com/ConduitIO/conduit
+  Description: Conduit streams data between data stores. Kafka Connect replacement. No JVM required.
+
+- cloudflare/workerd (9049★)
+  Score: 0.00
+  URL: https://github.com/cloudflare/workerd
+  Description: The JavaScript / Wasm runtime that powers Cloudflare Workers
+
