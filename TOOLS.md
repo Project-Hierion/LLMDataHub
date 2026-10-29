@@ -36,7 +36,25 @@
 |---|---|---|---|---|---|
 | *No tools currently listed.* | | | | | |
 
-### <div id="tools-2025">2025</div>
+
+| [libredb-studio](https://github.com/libredb/libredb-studio) | — | Tool | TypeScript | 1299★ | One browser tab for PostgreSQL, MySQL, Oracle, SQL Server, MongoDB, Redis, SQLite, Couchbase, ClickHouse, Druid, Duck... | [GitHub](https://github.com/libredb/libredb-studio) |
+| [kc_ai_skills](https://github.com/KerberosClaw/kc_ai_skills) | — | Tool | Python | 79★ | AI Skills That Actually Do Things — 中文優先的 Claude Code / Codex agent skills 合集 · Reusable bilingual skills for any LLM... | [GitHub](https://github.com/KerberosClaw/kc_ai_skills) |
+| [agentic-rl-lab](https://github.com/datawhalechina/agentic-rl-lab) | — | Tool | Python | 527★ | Reproducing and studying RL algorithms for LLM agents, including GRPO, GSPO, DAPO, OPD, Search-R1, ReTool, ALFWorld a... | [GitHub](https://github.com/datawhalechina/agentic-rl-lab) |
+| [ai-workspace-archive](https://github.com/HIDORAKAI002/ai-workspace-archive) | — | Tool |  | 37★ | A massive, self-updating local archive of AI tools — 11,000+ agent skills, 240+ MCP servers, 2,200+ IDE rules (Cursor... | [GitHub](https://github.com/HIDORAKAI002/ai-workspace-archive) |
+| [agentic-awesome-skills](https://github.com/sickn33/agentic-awesome-skills) | — | Tool | Python | 48705★ | 2,877+ reusable AI agent skills for Claude Code, Codex, Cursor and Gemini CLI. AAS Core adds local catalog discovery,... | [GitHub](https://github.com/sickn33/agentic-awesome-skills) |
+| [VAGEN](https://github.com/mll-lab-nu/VAGEN) | — | Tool | Python | 518★ | World model reinforcement learning for multi-turn VLM agents. RL for vision framework (NeurIPS 2025). | [GitHub](https://github.com/mll-lab-nu/VAGEN) |
+| [awesome-prompts](https://github.com/ai-boost/awesome-prompts) | — | Tool | Python | 9144★ | Curated prompts, frameworks and papers for LLMs and agents, with an engineering bias. Prompt engineering, context eng... | [GitHub](https://github.com/ai-boost/awesome-prompts) |
+| [windmill](https://github.com/windmill-labs/windmill) | — | Tool | Rust | 18313★ | Code-first platform for workflows, apps and AI agents, on the fastest self-hostable orchestrator (benchmarked against... | [GitHub](https://github.com/windmill-labs/windmill) |
+| [haiku.rag](https://github.com/ggozad/haiku.rag) | — | Tool | Python | 642★ | Agentic RAG for local and self-hosted document search: hybrid retrieval, reranking and multimodal RAG on embedded Lan... | [GitHub](https://github.com/ggozad/haiku.rag) |
+| [aeroftp](https://github.com/axpdev-lab/aeroftp) | — | Tool | Rust | 267★ | AeroFTP is a Cross-platform desktop client for FTP, FTPS, SFTP, WebDAV, S3-compatible storage, GitHub, and Cloud prov... | [GitHub](https://github.com/axpdev-lab/aeroftp) |
+| [lightly-studio](https://github.com/lightly-ai/lightly-studio) | — | Tool | Python | 900★ | LightlyStudio - The Unified Data Platform for Multimodal ML | [GitHub](https://github.com/lightly-ai/lightly-studio) |
+| [OmniRoute](https://github.com/cheaper-inference/OmniRoute) | — | Tool | TypeScript | 82397★ | Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gem... | [GitHub](https://github.com/cheaper-inference/OmniRoute) |
+| [codex-pooler](https://github.com/icoretech/codex-pooler) | — | Tool | Elixir | 233★ | The full featured self-hosted Codex gateway, for teams, agents and you | [GitHub](https://github.com/icoretech/codex-pooler) |
+| [openagent](https://github.com/Haohao-end/openagent) | — | Tool | Python | 774★ | What if OpenAI Deep Research and Dify were one platform? OpenAgent — harness architecture for rapidly building vertic... | [GitHub](https://github.com/Haohao-end/openagent) |
+| [vocascan-hub](https://github.com/Sfmkian/vocascan-hub) | — | Tool | HTML | 53★ | Open Source Vocabulary Server Alternative 2026: Self-Hosted Language Learning API | [GitHub](https://github.com/Sfmkian/vocascan-hub) |
+| [kcap-cli](https://github.com/kurrent-io/kcap-cli) | — | Tool | C# | 31★ | Kurrent Capacitor CLI — collaboration for Agentic Coding era | [GitHub](https://github.com/kurrent-io/kcap-cli) |
+| [arifOS](https://github.com/ariffazil/arifOS) | — | Tool | Python | 54★ | Independent policy kernel for AI agents: judge before execute. F1–F13 floors, VAULT999 receipts. Not a model. Not a c... | [GitHub](https://github.com/ariffazil/arifOS) |
+| [paperclip](https://github.com/paperclipai/paperclip) | — | Tool | TypeScript | 108446★ | The open-source app everyone uses to manage agents at work | [GitHub](https://github.com/paperclipai/paperclip) |### <div id="tools-2025">2025</div>
 | [AcademiaSD_LoRAlab-TrainerStudio](https://github.com/AcademiaSD/AcademiaSD_LoRAlab-TrainerStudio) | — | Tool | Python | Train LoRAs for Qwen-Image 2.1, FLUX.2 Klein 9B, FLUX.3 Image Klein, Krea 2, Z-Image, MOSS-Image, ERNIE-Image, Ideogr... |
 
 | [NeMo-Curator](https://github.com/NVIDIA/NeMo-Curator) | — | Data Curation | Python | GPU-accelerated toolkit for large-scale data curation, with exact/fuzzy/semantic deduplication, 30+ heuristic filters, and quality/safety classifiers. |

@@ -38,7 +38,9 @@
 |---|---|---|---|---|---|---|
 | [mlx-lm-lora](https://github.com/Goekdeniz-Guelmez/mlx-lm-lora) | — | LLM | Python | 437★ | Train Large Language Models on MLX. | [GitHub](https://github.com/Goekdeniz-Guelmez/mlx-lm-lora) |
 
-</details>
+
+| [Awesome-TCM-LLM](https://github.com/tyang816/Awesome-TCM-LLM) | — | LLM | Python | 132★ | 开源中医大模型、数据、新闻、专利合集 (Open-source Traditional Chinese Medical Large Language Models, Datasets, News and Patents hub.) | [GitHub](https://github.com/tyang816/Awesome-TCM-LLM) |
+| [mlx-vlm](https://github.com/Blaizzy/mlx-vlm) | — | LLM | Python | 5692★ | MLX-VLM is a package for inference and fine-tuning of Vision Language Models (VLMs) on your Mac using MLX. | [GitHub](https://github.com/Blaizzy/mlx-vlm) |</details>
 
 ### <div id="models-2025">2025</div>
 

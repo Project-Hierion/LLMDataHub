@@ -102,7 +102,8 @@
 | [FineWeb-Edu](https://github.com/...?) | — | PT | English | — | Educational subset of FineWeb. ODC-BY. [LINK NEEDED — check repo] |
 | [Open X-Embodiment / RT-X](https://github.com/...?) | — | VLA | — | 1M+ trajectories | Robot trajectories for vision-language-action pretraining. [LINK NEEDED — check repo] |
 
-### Datasets Released in 2024
+
+| [OTel](https://github.com/farbodtavakkoli/OTel) | — | Dataset | Python | 35★ | Open Telco (OTel) AI: an open ecosystem of telecom models, datasets, benchmarks, and reproducible training and infere... | [GitHub](https://github.com/farbodtavakkoli/OTel) |### Datasets Released in 2024
 
 | Dataset name | Used by | Type | Language | Size | Description |
 |---|---|---|---|---|---|
