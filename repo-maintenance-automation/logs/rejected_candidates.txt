@@ -10,6 +10,22 @@ ViperEkura/AstrAI  # license unverified, weak quality signal, repeatedly surface
 linny006/awesome-agent-skills  # Meta-list, same family as trending-claude-skills
 Osmantic/ODS  # PC tool, not LLM resource
 clay-good/OpenLore  # Agent memory guardrails, off-theme
+langgenius/dify  # Commercial platform, not LLM resource
+TabularisDB/tabularis  # Desktop SQL workspace, not LLM
+nitinjain999/platform-skills  # DevOps handbook, not LLM
+marcusquinn/aidevops  # DevOps tooling, not LLM
+linny006/trending-claude-skills  # Meta-leaderboard, not LLM resource
+AbrahamPaulJ/nightmare-mobile  # Image diffusion, not LLM
+rapiddweller/datamimic  # Synthetic test data, not LLM
+zhixuli0406/DuDuClaw  # CLI wrapper, noise
+opencrabs/opencrabs  # All-in-one agent platform, off-theme
+topoteretes/cognee  # Agent memory platform, off-theme
+jorgepb96/nodus  # Research workspace, not LLM
+hkkz9522/dsh-session-manager  # DeepSeek session manager, too niche
+ThinkInAIXYZ/deepchat  # Generic assistant
+Ancienttwo/repo-harness  # Workflow harness, meta
+can1357/oh-my-pi  # Coding agent IDE
+hcipengm/cogneva  # Multi-agent system
 # === Off-theme (not LLM training / not a resource for the archive) ===
 ClickHouse/ClickBench  # analytical database benchmark, not LLM
 MrNeRF/LichtFeld-Studio  # 3D Gaussian splatting, not LLM
