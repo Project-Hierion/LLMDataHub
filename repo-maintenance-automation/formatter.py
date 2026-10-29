@@ -191,7 +191,7 @@ def insert_rows_into_file(filename: str, section_pattern: str, rows: List[str]) 
     for row in rows:
         identifiers = _row_identifiers(row)
         if identifiers and any(ident in haystack for ident in identifiers):
-            display = identifiers[0] if identifiers else "(unknown)")
+            display = identifiers[0] if identifiers else "(unknown)"
             print(f"  ⏭️  Skipping duplicate: {display}")
             continue
         existing_entries.append(row)
