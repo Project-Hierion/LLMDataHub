@@ -42,7 +42,6 @@
 
 ### <div id="models-2025">2025</div>
 | [mlx-lm-lora](https://github.com/Goekdeniz-Guelmez/mlx-lm-lora) | — | LLM | Python | 437★ | Train Large Language Models on MLX. |
-| [nightmare-mobile](https://github.com/AbrahamPaulJ/nightmare-mobile) | — | LLM | Kotlin | 101★ | On-device ComfyUI style node graph for image/video diffusion models on Android. Local SD1.5, SDXL, Flux, Z-image, Ani... |
 
 | [NeuralDaredevil-8B](https://huggingface.co/mlabonne/NeuralDaredevil-8B) (HF-hosted 🤑) | — | LLM | English | 8B | Popular merged model. Fine-tuned for general-purpose chat and reasoning. |
 | [AlphaMonarch-7B](https://huggingface.co/mlabonne/AlphaMonarch-7B) (HF-hosted 🤑) | — | LLM | English | 7B | Popular merged model. Strong performance on reasoning and instruction following. |
