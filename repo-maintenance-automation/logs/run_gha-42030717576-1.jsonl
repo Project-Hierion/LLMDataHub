@@ -1,0 +1,42 @@
+{"ts": "2026-11-05T12:51:54.188022+00:00", "level": "INFO", "run_id": "gha-42030717576-1", "logger": "harvest", "msg": "LLMDataHub Harvester starting"}
+{"ts": "2026-11-05T12:51:54.188122+00:00", "level": "INFO", "run_id": "gha-42030717576-1", "logger": "harvest", "msg": "Scraping GitHub for candidates..."}
+{"ts": "2026-11-05T12:51:54.188195+00:00", "level": "INFO", "run_id": "gha-42030717576-1", "logger": "scraper", "msg": "Scanning GitHub for dataset repos..."}
+{"ts": "2026-11-05T12:51:54.188242+00:00", "level": "INFO", "run_id": "gha-42030717576-1", "logger": "scraper", "msg": "Keywords: dataset, llm dataset, sft dataset, instruction tuning dataset, pretraining dataset..."}
+{"ts": "2026-11-05T12:51:54.188279+00:00", "level": "INFO", "run_id": "gha-42030717576-1", "logger": "scraper", "msg": "Min stars: 20, Recent: 3 years (since 2023-11-06)"}
+{"ts": "2026-11-05T12:51:54.188310+00:00", "level": "INFO", "run_id": "gha-42030717576-1", "logger": "scraper", "msg": "Query: dataset in:description,readme pushed:>2023-11-06..."}
+{"ts": "2026-11-05T12:51:58.105663+00:00", "level": "INFO", "run_id": "gha-42030717576-1", "logger": "scraper", "msg": "Query: llm dataset in:description,readme pushed:>2023-11-06..."}
+{"ts": "2026-11-05T12:52:04.265496+00:00", "level": "INFO", "run_id": "gha-42030717576-1", "logger": "scraper", "msg": "Query: sft dataset in:description,readme pushed:>2023-11-06..."}
+{"ts": "2026-11-05T12:52:10.209595+00:00", "level": "INFO", "run_id": "gha-42030717576-1", "logger": "scraper", "msg": "Query: instruction tuning dataset in:description,readme pushed:>2023-11-06..."}
+{"ts": "2026-11-05T12:52:16.114737+00:00", "level": "INFO", "run_id": "gha-42030717576-1", "logger": "scraper", "msg": "Query: pretraining dataset in:description,readme pushed:>2023-11-06..."}
+{"ts": "2026-11-05T12:52:22.257703+00:00", "level": "INFO", "run_id": "gha-42030717576-1", "logger": "scraper", "msg": "Query: rlhf dataset in:description,readme pushed:>2023-11-06..."}
+{"ts": "2026-11-05T12:52:27.935843+00:00", "level": "INFO", "run_id": "gha-42030717576-1", "logger": "scraper", "msg": "Query: dpo dataset in:description,readme pushed:>2023-11-06..."}
+{"ts": "2026-11-05T12:52:34.062637+00:00", "level": "INFO", "run_id": "gha-42030717576-1", "logger": "scraper", "msg": "Query: chat dataset in:description,readme pushed:>2023-11-06..."}
+{"ts": "2026-11-05T12:52:40.324195+00:00", "level": "INFO", "run_id": "gha-42030717576-1", "logger": "scraper", "msg": "Query: conversational dataset in:description,readme pushed:>2023-11-06..."}
+{"ts": "2026-11-05T12:52:46.196370+00:00", "level": "INFO", "run_id": "gha-42030717576-1", "logger": "scraper", "msg": "Query: multimodal dataset in:description,readme pushed:>2023-11-06..."}
+{"ts": "2026-11-05T12:52:52.212516+00:00", "level": "INFO", "run_id": "gha-42030717576-1", "logger": "scraper", "msg": "Query: vision dataset in:description,readme pushed:>2023-11-06..."}
+{"ts": "2026-11-05T12:52:58.278099+00:00", "level": "INFO", "run_id": "gha-42030717576-1", "logger": "scraper", "msg": "Query: code dataset in:description,readme pushed:>2023-11-06..."}
+{"ts": "2026-11-05T12:53:04.290391+00:00", "level": "INFO", "run_id": "gha-42030717576-1", "logger": "scraper", "msg": "Query: math dataset in:description,readme pushed:>2023-11-06..."}
+{"ts": "2026-11-05T12:53:07.572342+00:00", "level": "WARNING", "run_id": "gha-42030717576-1", "logger": "scraper", "msg": "Rate limited. Waiting 40 seconds..."}
+{"ts": "2026-11-05T12:53:50.009222+00:00", "level": "INFO", "run_id": "gha-42030717576-1", "logger": "scraper", "msg": "Query: reasoning dataset in:description,readme pushed:>2023-11-06..."}
+{"ts": "2026-11-05T12:53:53.848509+00:00", "level": "INFO", "run_id": "gha-42030717576-1", "logger": "scraper", "msg": "Query: awesome list in:description,readme pushed:>2023-11-06..."}
+{"ts": "2026-11-05T12:54:00.036158+00:00", "level": "INFO", "run_id": "gha-42030717576-1", "logger": "scraper", "msg": "Query: curated list in:description,readme pushed:>2023-11-06..."}
+{"ts": "2026-11-05T12:54:06.060703+00:00", "level": "INFO", "run_id": "gha-42030717576-1", "logger": "scraper", "msg": "Query: post-training in:description,readme pushed:>2023-11-06..."}
+{"ts": "2026-11-05T12:54:12.160628+00:00", "level": "INFO", "run_id": "gha-42030717576-1", "logger": "scraper", "msg": "Query: fine-tuning in:description,readme pushed:>2023-11-06..."}
+{"ts": "2026-11-05T12:54:14.124524+00:00", "level": "WARNING", "run_id": "gha-42030717576-1", "logger": "scraper", "msg": "Rate limited. Waiting 44 seconds..."}
+{"ts": "2026-11-05T12:55:02.135115+00:00", "level": "INFO", "run_id": "gha-42030717576-1", "logger": "scraper", "msg": "Query: preference in:description,readme pushed:>2023-11-06..."}
+{"ts": "2026-11-05T12:55:05.993256+00:00", "level": "INFO", "run_id": "gha-42030717576-1", "logger": "scraper", "msg": "Query: alignment in:description,readme pushed:>2023-11-06..."}
+{"ts": "2026-11-05T12:55:11.921033+00:00", "level": "INFO", "run_id": "gha-42030717576-1", "logger": "scraper", "msg": "Query: llm course in:description,readme pushed:>2023-11-06..."}
+{"ts": "2026-11-05T12:55:18.241164+00:00", "level": "INFO", "run_id": "gha-42030717576-1", "logger": "scraper", "msg": "Query: llm resources in:description,readme pushed:>2023-11-06..."}
+{"ts": "2026-11-05T12:55:24.225391+00:00", "level": "INFO", "run_id": "gha-42030717576-1", "logger": "scraper", "msg": "Found 78 candidates after filtering"}
+{"ts": "2026-11-05T12:55:24.225613+00:00", "level": "INFO", "run_id": "gha-42030717576-1", "logger": "harvest", "msg": "Scrape complete: 78 candidates"}
+{"ts": "2026-11-05T12:55:24.225657+00:00", "level": "INFO", "run_id": "gha-42030717576-1", "logger": "harvest", "msg": "Filtering against archive and skip-list..."}
+{"ts": "2026-11-05T12:55:24.227430+00:00", "level": "INFO", "run_id": "gha-42030717576-1", "logger": "harvest", "msg": "Existing archive entries: 280"}
+{"ts": "2026-11-05T12:55:24.227483+00:00", "level": "INFO", "run_id": "gha-42030717576-1", "logger": "harvest", "msg": "Rejected candidates on skip-list: 44"}
+{"ts": "2026-11-05T12:55:24.227516+00:00", "level": "INFO", "run_id": "gha-42030717576-1", "logger": "harvest", "msg": "New candidates after filtering: 67"}
+{"ts": "2026-11-05T12:55:24.227546+00:00", "level": "INFO", "run_id": "gha-42030717576-1", "logger": "harvest", "msg": "Classifying candidates..."}
+{"ts": "2026-11-05T12:55:24.229886+00:00", "level": "INFO", "run_id": "gha-42030717576-1", "logger": "harvest", "msg": "Report saved to: /home/runner/work/LLMDataHub/LLMDataHub/repo-maintenance-automation/logs/classification_report.txt"}
+{"ts": "2026-11-05T12:55:24.230017+00:00", "level": "INFO", "run_id": "gha-42030717576-1", "logger": "harvest", "msg": "Running in PR mode \u2014 auto-approving for PR generation"}
+{"ts": "2026-11-05T12:55:24.230080+00:00", "level": "INFO", "run_id": "gha-42030717576-1", "logger": "harvest", "msg": "Formatting entries..."}
+{"ts": "2026-11-05T12:55:24.230662+00:00", "level": "INFO", "run_id": "gha-42030717576-1", "logger": "harvest", "msg": "PR mode \u2014 generating PR body before applying changes"}
+{"ts": "2026-11-05T12:55:24.231015+00:00", "level": "INFO", "run_id": "gha-42030717576-1", "logger": "harvest", "msg": "PR body saved to: /home/runner/work/LLMDataHub/LLMDataHub/repo-maintenance-automation/logs/pr_body.md"}
+{"ts": "2026-11-05T12:55:24.234083+00:00", "level": "INFO", "run_id": "gha-42030717576-1", "logger": "harvest", "msg": "Changes applied successfully."}

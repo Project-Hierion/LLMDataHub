@@ -102,7 +102,8 @@
 | [FineWeb-Edu](https://github.com/...?) | — | PT | English | — | Educational subset of FineWeb. ODC-BY. [LINK NEEDED — check repo] |
 | [Open X-Embodiment / RT-X](https://github.com/...?) | — | VLA | — | 1M+ trajectories | Robot trajectories for vision-language-action pretraining. [LINK NEEDED — check repo] |
 
-### Datasets Released in 2024
+
+| [tech-stack-datasets](https://github.com/leadita/tech-stack-datasets) | — | Dataset |  | 87★ | Open datasets of companies & websites grouped by technologies they use (CSV & JSON). Discover who uses Shopify, Strip... | [GitHub](https://github.com/leadita/tech-stack-datasets) |### Datasets Released in 2024
 
 | Dataset name | Used by | Type | Language | Size | Description |
 |---|---|---|---|---|---|

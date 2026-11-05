@@ -36,7 +36,12 @@
 |---|---|---|---|---|---|
 | *No tools currently listed.* | | | | | |
 
-### <div id="tools-2025">2025</div>
+
+| [haiku.rag](https://github.com/ggozad/haiku.rag) | — | Tool | Python | 649★ | Agentic RAG for local and self-hosted document search: hybrid retrieval, reranking and multimodal RAG on embedded Lan... | [GitHub](https://github.com/ggozad/haiku.rag) |
+| [rocm-cli](https://github.com/ROCm/rocm-cli) | — | Tool | Rust | 50★ | ROCm CLI is a command-line tool for setting up and running local AI on AMD GPUs, with a full-screen TUI dashboard for... | [GitHub](https://github.com/ROCm/rocm-cli) |
+| [Cortex](https://github.com/cdeust/Cortex) | — | Tool | Python | 76★ | Cross-platform persistent memory MCP for Codex, Gemini CLI, Claude Code, and other local MCP hosts. 36 cited neurosci... | [GitHub](https://github.com/cdeust/Cortex) |
+| [OpenViking](https://github.com/volcengine/OpenViking) | — | Tool | Python | 41602★ | Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG and Skills. | [GitHub](https://github.com/volcengine/OpenViking) |
+| [kestra](https://github.com/kestra-io/kestra) | — | Tool | Java | 30149★ | Orchestrate everything, everywhere. The open-source control plane for workflows across data, infrastructure, business... | [GitHub](https://github.com/kestra-io/kestra) |### <div id="tools-2025">2025</div>
 | [AcademiaSD_LoRAlab-TrainerStudio](https://github.com/AcademiaSD/AcademiaSD_LoRAlab-TrainerStudio) | — | Tool | Python | Train LoRAs for Qwen-Image 2.1, FLUX.2 Klein 9B, FLUX.3 Image Klein, Krea 2, Z-Image, MOSS-Image, ERNIE-Image, Ideogr... |
 
 | [NeMo-Curator](https://github.com/NVIDIA/NeMo-Curator) | — | Data Curation | Python | GPU-accelerated toolkit for large-scale data curation, with exact/fuzzy/semantic deduplication, 30+ heuristic filters, and quality/safety classifiers. |
