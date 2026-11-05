@@ -38,7 +38,8 @@
 |---|---|---|---|---|---|
 | *No papers currently listed.* | | | | | |
 
-</details>
+
+| [reasoning-models](https://github.com/benjaminzwhite/reasoning-models) | — | Paper | — | — | Experiments with reasoning models, training techniques, papers | [Code](https://github.com/benjaminzwhite/reasoning-models) |</details>
 
 ### <div id="papers-2025">2025</div>
 | [gdpval-realworks](https://github.com/hyeonsangjeon/gdpval-realworks) | — | — | [Code](https://github.com/hyeonsangjeon/gdpval-realworks) | — | Open-source benchmark for evaluating LLMs on 220 real professional tasks across 9 sectors and 44 occupations. Reprodu... |

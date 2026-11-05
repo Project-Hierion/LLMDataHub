@@ -38,7 +38,8 @@
 |---|---|---|---|---|---|---|
 | [mlx-lm-lora](https://github.com/Goekdeniz-Guelmez/mlx-lm-lora) | — | LLM | Python | 437★ | Train Large Language Models on MLX. | [GitHub](https://github.com/Goekdeniz-Guelmez/mlx-lm-lora) |
 
-</details>
+
+| [sglang](https://github.com/sgl-project/sglang) | — | LLM | Python | 38499★ | SGLang is a high-performance serving framework for large language models and multimodal models. | [GitHub](https://github.com/sgl-project/sglang) |</details>
 
 ### <div id="models-2025">2025</div>
 
