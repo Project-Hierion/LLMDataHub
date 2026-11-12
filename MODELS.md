@@ -38,7 +38,9 @@
 |---|---|---|---|---|---|---|
 | [mlx-lm-lora](https://github.com/Goekdeniz-Guelmez/mlx-lm-lora) | — | LLM | Python | 437★ | Train Large Language Models on MLX. | [GitHub](https://github.com/Goekdeniz-Guelmez/mlx-lm-lora) |
 
-</details>
+
+| [ARC-Neuron-LLMBuilder](https://github.com/GareBear99/ARC-Neuron-LLMBuilder) | — | LLM | Python | 31★ | A governed local AI build-and-memory system that trains small brains, compares them, protects the better one, archive... | [GitHub](https://github.com/GareBear99/ARC-Neuron-LLMBuilder) |
+| [sglang](https://github.com/sgl-project/sglang) | — | LLM | Python | 38789★ | SGLang is a high-performance serving framework for large language models and multimodal models. | [GitHub](https://github.com/sgl-project/sglang) |</details>
 
 ### <div id="models-2025">2025</div>
 

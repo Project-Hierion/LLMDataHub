@@ -36,7 +36,13 @@
 |---|---|---|---|---|---|
 | *No tools currently listed.* | | | | | |
 
-### <div id="tools-2025">2025</div>
+
+| [agentic-awesome-skills](https://github.com/sickn33/agentic-awesome-skills) | — | Tool | Python | 49591★ | 2,955+ reusable AI agent skills for Claude Code, Codex, Cursor and Gemini CLI. AAS Core adds local catalog discovery,... | [GitHub](https://github.com/sickn33/agentic-awesome-skills) |
+| [lightly-studio](https://github.com/lightly-ai/lightly-studio) | — | Tool | Python | 909★ | LightlyStudio - The Unified Data Platform for Multimodal ML | [GitHub](https://github.com/lightly-ai/lightly-studio) |
+| [openagent](https://github.com/Haohao-end/openagent) | — | Tool | Python | 755★ | What if OpenAI Deep Research and Dify were one platform? OpenAgent — harness architecture for rapidly building vertic... | [GitHub](https://github.com/Haohao-end/openagent) |
+| [IHUI-AI](https://github.com/IHUI-INF-AI/IHUI-AI) | — | Tool | TypeScript | 32★ | Eight-platform full-stack AI operating system - unifies 176 LLMs via LangGraph + MCP + A2A. Multi-tenant RLS over 340... | [GitHub](https://github.com/IHUI-INF-AI/IHUI-AI) |
+| [cc-switch](https://github.com/farion1231/cc-switch) | — | Tool | Rust | 153883★ | A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode,DeepSeek Harness and more. Only offici... | [GitHub](https://github.com/farion1231/cc-switch) |
+| [InferenceX](https://github.com/SemiAnalysisAI/InferenceX) | — | Tool | Python | 2030★ | Open Source AI Accelerator Research Platform Standard / 开源推理研究平台 | [GitHub](https://github.com/SemiAnalysisAI/InferenceX) |### <div id="tools-2025">2025</div>
 | [AcademiaSD_LoRAlab-TrainerStudio](https://github.com/AcademiaSD/AcademiaSD_LoRAlab-TrainerStudio) | — | Tool | Python | Train LoRAs for Qwen-Image 2.1, FLUX.2 Klein 9B, FLUX.3 Image Klein, Krea 2, Z-Image, MOSS-Image, ERNIE-Image, Ideogr... |
 
 | [NeMo-Curator](https://github.com/NVIDIA/NeMo-Curator) | — | Data Curation | Python | GPU-accelerated toolkit for large-scale data curation, with exact/fuzzy/semantic deduplication, 30+ heuristic filters, and quality/safety classifiers. |
