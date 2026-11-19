@@ -36,7 +36,14 @@
 |---|---|---|---|---|---|
 | *No tools currently listed.* | | | | | |
 
-### <div id="tools-2025">2025</div>
+
+| [ae-cli](https://github.com/ThinkingAIAgenticEngine/ae-cli) | — | Tool | TypeScript | 23★ | CLI tool for ThinkingAI AgenticEngine (AE) platform. Designed for both AI Agent and human use. | [GitHub](https://github.com/ThinkingAIAgenticEngine/ae-cli) |
+| [OmniRoute](https://github.com/cheaper-inference/OmniRoute) | — | Tool | TypeScript | 88821★ | Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gem... | [GitHub](https://github.com/cheaper-inference/OmniRoute) |
+| [TwinRouterBench](https://github.com/CommonstackAI/TwinRouterBench) | — | Tool | Python | 35★ | Per-step LLM routing benchmark with 970 static labels, live SWE-bench evaluation, an open data pipeline, and a public... | [GitHub](https://github.com/CommonstackAI/TwinRouterBench) |
+| [awesome-copilot-cowork-skills](https://github.com/kesslernity/awesome-copilot-cowork-skills) | — | Tool | Python | 48★ | 37 folder-drop skills for Microsoft 365 Copilot Cowork. 21 workflow skills plus a 16-persona executive review board. ... | [GitHub](https://github.com/kesslernity/awesome-copilot-cowork-skills) |
+| [npcpy](https://github.com/NPC-Worldwide/npcpy) | — | Tool | Python | 1529★ | The python library for research and development in NLP, multimodal LLMs, Agents, ML, Knowledge Graphs, and more. | [GitHub](https://github.com/NPC-Worldwide/npcpy) |
+| [duckle](https://github.com/slothflowlabs/duckle) | — | Tool | Rust | 1560★ | Open-source ETL/ELT you deploy on your own servers or cloud. Built on DuckDB: no-code/low-code visual pipelines or SQ... | [GitHub](https://github.com/slothflowlabs/duckle) |
+| [wingbox](https://github.com/aileron-tech/wingbox) | — | Tool | Python | 23★ | Give your coding agent a map of your codebase: 2-4x cheaper, no missed files. Local code graph with blast radius, fin... | [GitHub](https://github.com/aileron-tech/wingbox) |### <div id="tools-2025">2025</div>
 | [AcademiaSD_LoRAlab-TrainerStudio](https://github.com/AcademiaSD/AcademiaSD_LoRAlab-TrainerStudio) | — | Tool | Python | Train LoRAs for Qwen-Image 2.1, FLUX.2 Klein 9B, FLUX.3 Image Klein, Krea 2, Z-Image, MOSS-Image, ERNIE-Image, Ideogr... |
 
 | [NeMo-Curator](https://github.com/NVIDIA/NeMo-Curator) | — | Data Curation | Python | GPU-accelerated toolkit for large-scale data curation, with exact/fuzzy/semantic deduplication, 30+ heuristic filters, and quality/safety classifiers. |
