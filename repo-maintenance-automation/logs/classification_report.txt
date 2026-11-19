@@ -1,402 +1,310 @@
 === CLASSIFICATION REPORT ===
 
 
-## MODEL (2)
-- Goekdeniz-Guelmez/mlx-lm-lora (437★)
-  Score: 1.50
-  URL: https://github.com/Goekdeniz-Guelmez/mlx-lm-lora
-  Description: Train Large Language Models on MLX.
+## DATASET (1)
+- leadita/tech-stack-datasets (89★)
+  Score: 0.80
+  URL: https://github.com/leadita/tech-stack-datasets
+  Description: Open datasets of companies & websites grouped by technologies they use (CSV & JSON). Discover who uses Shopify, Stripe, Woocommerce, HubSpot, and more.
 
-- AbrahamPaulJ/nightmare-mobile (101★)
+
+## MODEL (1)
+- tyang816/Awesome-TCM-LLM (142★)
   Score: 0.90
-  URL: https://github.com/AbrahamPaulJ/nightmare-mobile
-  Description: On-device ComfyUI style node graph for image/video diffusion models on Android. Local SD1.5, SDXL, Flux, Z-image, Anima, Qwen Image 2.1, Krea 2, MOSS Image, Ideogram 4, inpainting, outpainting, contro
+  URL: https://github.com/tyang816/Awesome-TCM-LLM
+  Description: 开源中医大模型、数据、新闻、专利、导师合集 (Open-source Traditional Chinese Medical Large Language Models, Datasets, News and Patents hub.)
 
 
-## TOOL (13)
-- AcademiaSD/AcademiaSD_LoRAlab-TrainerStudio (106★)
+## TOOL (7)
+- ThinkingAIAgenticEngine/ae-cli (23★)
   Score: 0.90
-  URL: https://github.com/AcademiaSD/AcademiaSD_LoRAlab-TrainerStudio
-  Description: Train LoRAs for Qwen-Image 2.1, FLUX.2 Klein 9B, FLUX.3 Image Klein, Krea 2, Z-Image, MOSS-Image, ERNIE-Image, Ideogram 4, Anima, SDXL (Pony, Illustrious, NoobAI), LTX 2.3, MiniMax-H3, and more on NVI
+  URL: https://github.com/ThinkingAIAgenticEngine/ae-cli
+  Description: CLI tool for ThinkingAI AgenticEngine (AE) platform. Designed for both AI Agent and human use.
 
-- rapiddweller/datamimic (116★)
-  Score: 0.90
-  URL: https://github.com/rapiddweller/datamimic
-  Description: Model-driven synthetic test data for CI/CD and analytics - deterministic, privacy-preserving, and domain-aware. Includes Python APIs, XML pipelines, and MCP/IDE integration to orchestrate realistic da
-
-- zhixuli0406/DuDuClaw (50★)
+- cheaper-inference/OmniRoute (88821★)
   Score: 1.20
-  URL: https://github.com/zhixuli0406/DuDuClaw
-  Description: Turn AI coding CLIs (Claude Code, Codex, Antigravity) into AI employees on LINE, Telegram, Discord, Slack and 7 more chat apps. A judge reviews each result, every cost is logged, memory stays on your 
+  URL: https://github.com/cheaper-inference/OmniRoute
+  Description: Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline
 
-- opencrabs/opencrabs (1005★)
+- CommonstackAI/TwinRouterBench (35★)
+  Score: 0.90
+  URL: https://github.com/CommonstackAI/TwinRouterBench
+  Description: Per-step LLM routing benchmark with 970 static labels, live SWE-bench evaluation, an open data pipeline, and a public leaderboard.
+
+- kesslernity/awesome-copilot-cowork-skills (48★)
+  Score: 0.90
+  URL: https://github.com/kesslernity/awesome-copilot-cowork-skills
+  Description: 37 folder-drop skills for Microsoft 365 Copilot Cowork. 21 workflow skills plus a 16-persona executive review board. Drop a folder into OneDrive, no admin, no app package. The same SKILL.md files run 
+
+- NPC-Worldwide/npcpy (1529★)
   Score: 1.20
-  URL: https://github.com/opencrabs/opencrabs
-  Description: The all-in-one AI agent. Build mobile apps, frontend, backend, manages files, deep research, schedule tasks and events. Self-improving, self-healing, fully autonomous. TUI, CLI and Daemon. Connect to 
+  URL: https://github.com/NPC-Worldwide/npcpy
+  Description: The python library for research and development in NLP, multimodal LLMs, Agents, ML, Knowledge Graphs, and more.
 
-- topoteretes/cognee (32651★)
-  Score: 0.90
-  URL: https://github.com/topoteretes/cognee
-  Description: Cognee is the open-source AI memory platform for agents. Give your AI agents persistent long-term memory with small models for free
-
-- jorgepb96/nodus (285★)
-  Score: 0.90
-  URL: https://github.com/jorgepb96/nodus
-  Description: Open-source research workspace for connecting sources, evidence, notes and ideas. Built for academic research with Zotero integration. Available on MacOS, Windows and Linux.
-
-- hkkz9522/dsh-session-manager (65★)
-  Score: 0.90
-  URL: https://github.com/hkkz9522/dsh-session-manager
-  Description: DeepSeek Harness session and workspace manager —— Workspaces: archive and visibility. Sessions: move, migrate presets, delete, favorite, review later, prioritize, tag, and annotate. Batch operations. 
-
-- ThinkInAIXYZ/deepchat (6373★)
-  Score: 1.80
-  URL: https://github.com/ThinkInAIXYZ/deepchat
-  Description: 🐬DeepChat - A smart assistant that connects powerful AI to your personal world
-
-- linny006/trending-claude-skills (131★)
+- slothflowlabs/duckle (1560★)
   Score: 1.20
-  URL: https://github.com/linny006/trending-claude-skills
-  Description: Auto-updated leaderboard of trending claude-skills and AI agent repos, refreshed every 15 minutes
+  URL: https://github.com/slothflowlabs/duckle
+  Description: Open-source ETL/ELT you deploy on your own servers or cloud. Built on DuckDB: no-code/low-code visual pipelines or SQL, 437 components, dbt, CDC, data quality, reverse ETL, lineage, MCP for AI agents.
 
-- Ancienttwo/repo-harness (435★)
-  Score: 0.90
-  URL: https://github.com/Ancienttwo/repo-harness
-  Description: File-backed workflow harness for reliable Claude Code and Codex sessions.
-
-- can1357/oh-my-pi (36210★)
-  Score: 0.90
-  URL: https://github.com/can1357/oh-my-pi
-  Description: ⌥ Coding agent with the IDE wired in. Built by Stencil Labs.
-
-- mark3labs/kit (143★)
-  Score: 0.90
-  URL: https://github.com/mark3labs/kit
-  Description: KIT (Knowledge Inference Tool) — A lightweight AI agent for coding
-
-- hcipengm/cogneva (32★)
-  Score: 0.90
-  URL: https://github.com/hcipengm/cogneva
-  Description: Distributed AI multi-agent autonomous system — digital employees for long-horizon tasks, running 24×7 — Meta-bootstrapping · Real-autonomous · Omni-evolution
+- aileron-tech/wingbox (23★)
+  Score: 1.20
+  URL: https://github.com/aileron-tech/wingbox
+  Description: Give your coding agent a map of your codebase: 2-4x cheaper, no missed files. Local code graph with blast radius, find usages and architecture layers for Claude Code, Codex, Gemini CLI, Cursor and Git
 
 
-## NOISE (64)
-- unslothai/notebooks (5748★)
-  Score: 0.30
-  URL: https://github.com/unslothai/notebooks
-  Description: 250+ Fine-tuning & RL Notebooks for text, vision, audio, embedding, TTS models.
-
-- Tavotto/Tavotto (505★)
+## NOISE (51)
+- nomi-sec/PoC-in-GitHub (8215★)
   Score: 0.00
-  URL: https://github.com/Tavotto/Tavotto
-  Description: Make AI-generated scientific figures editable without losing the code behind them.
+  URL: https://github.com/nomi-sec/PoC-in-GitHub
+  Description: 📡 PoC auto collect from GitHub. ⚠️ Be careful Malware.
 
-- ProxyScrape/free-proxy-list (194★)
-  Score: 0.30
-  URL: https://github.com/ProxyScrape/free-proxy-list
-  Description: Free HTTP, HTTPS, SOCKS4 & SOCKS5 proxy list. ~22k proxies across 90+ countries, refreshed every 5 minutes from the ProxyScrape v4 API. TXT, JSON & CSV.
-
-- dr-mushtaq/natural-language-processing-projects-python (20★)
-  Score: 0.00
-  URL: https://github.com/dr-mushtaq/natural-language-processing-projects-python
-  Description: A complete A–Z guide to Natural Language Processing (NLP) using Python — includes real-world projects, machine learning models, and chatbot implementations. Ideal for students, researchers, and data s
-
-- squid-protocol/gitgalaxy (58★)
-  Score: 0.30
-  URL: https://github.com/squid-protocol/gitgalaxy
-  Description: Convert source code into a repository-scale structural model. Air gapped, zero dependencies, SARIF and SBOM outputs.
-
-- sib-swiss/sparql-llm (130★)
-  Score: 0.30
-  URL: https://github.com/sib-swiss/sparql-llm
-  Description: 🦜✨ Chat system, MCP server, and reusable components to improve LLMs capabilities when generating SPARQL queries
-
-- Townzc/liftcut-tracker (89★)
-  Score: 0.00
-  URL: https://github.com/Townzc/liftcut-tracker
-  Description: Beginner-friendly open-source workout, nutrition, and progress tracker with guest mode and configurable AI planning.
-
-- rohitg00/ai-engineering-from-scratch (72230★)
-  Score: 0.00
-  URL: https://github.com/rohitg00/ai-engineering-from-scratch
-  Description: Learn AI Engineering! Learn it. Build it. Ship it for others.
-
-- KuangjuX/Papers-and-Learning-Notes (28★)
-  Score: 0.30
-  URL: https://github.com/KuangjuX/Papers-and-Learning-Notes
-  Description: My Paper Reading Lists and Notes.
-
-- modelscope/DiffSynth-Studio (13288★)
-  Score: 0.30
-  URL: https://github.com/modelscope/DiffSynth-Studio
-  Description: Enjoy the magic of Diffusion models!
-
-- redai-studio/Relax (650★)
+- arcprize/arc-agi-benchmarking (366★)
   Score: 0.60
-  URL: https://github.com/redai-studio/Relax
-  Description: An Asynchronous Reinforcement Learning Engine for Omni-Modal Post-Training at Scale
+  URL: https://github.com/arcprize/arc-agi-benchmarking
+  Description: Testing baseline LLMs performance across various models
 
-- OmniJev/OneJev (183★)
+- urbanmorph/geodata (43★)
   Score: 0.60
-  URL: https://github.com/OmniJev/OneJev
-  Description: 🚀🚀 A multimodal System One decision model that gives calibrated answers to typed questions about screens, photos, video and text in one forward pass.
+  URL: https://github.com/urbanmorph/geodata
+  Description: bharatlas: India's open geo data. Boundaries, wards, forests, rivers and more, viewable and downloadable (parquet, pmtiles, geojson), with an MCP server.
 
-- walkinglabs/hands-on-modern-rl (4750★)
+- anhermon/awesome-agent-observability (64★)
   Score: 0.00
-  URL: https://github.com/walkinglabs/hands-on-modern-rl
-  Description: 🚀 An open-source, hands-on curriculum bridging the gap from basic RL concepts to LLM alignment, RLVR, and advanced Agentic systems. 
+  URL: https://github.com/anhermon/awesome-agent-observability
+  Description: Curated list of LLM and AI agent observability and evaluation tools: tracing, evals, LLM-as-judge, guardrails, OpenTelemetry GenAI, MCP.
 
-- unslothai/unsloth-zoo (344★)
+- matsuolab/lecture-ai-engineering-2026 (23★)
+  Score: 0.30
+  URL: https://github.com/matsuolab/lecture-ai-engineering-2026
+  Description: AIエンジニアリング実践講座 2026
+
+- tokenbender/agent-guides (369★)
+  Score: 0.00
+  URL: https://github.com/tokenbender/agent-guides
+  Description: one page guides that i let my subscribed/customised agents consume to perform actions
+
+- shootthesound/Fizgig (779★)
+  Score: 0.00
+  URL: https://github.com/shootthesound/Fizgig
+  Description: Fizgig — LoRA & Fine-tune Studio for Klein 9B, Krea 2, MiniMax H3, Qwen Image 2.1, Anima & Z-Image Turbo and Ace-Step XL: train, fine-tune, profile, repair and extract LoRAs & LoKR for Image, Video & 
+
+- JustInCache/awesome-ai-interviews (39★)
+  Score: 0.30
+  URL: https://github.com/JustInCache/awesome-ai-interviews
+  Description: The ultimate collection of AI/ML interview questions, answers & resources — for all roles (MLE, MLOps, Data Scientist, LLM Engineer) and all levels (fresher → staff). Used by 10,000+ engineers. ⭐ Star
+
+- unslothai/unsloth-zoo (359★)
   Score: 0.00
   URL: https://github.com/unslothai/unsloth-zoo
   Description: Utils for Unsloth https://github.com/unslothai/unsloth
 
-- ZhijieXiong/pyedmine (82★)
+- OmniAI-Lab-CUHKSZ/Jev_Survey (22★)
   Score: 0.30
-  URL: https://github.com/ZhijieXiong/pyedmine
-  Description: A library of algorithms for reproducing knowledge tracing, cognitive diagnosis, exercise recommendation and learning path recommendation models.
+  URL: https://github.com/OmniAI-Lab-CUHKSZ/Jev_Survey
+  Description: Jev-Like Models and Decision Systems: A Survey
 
-- karalang/kara (45★)
+- bilawalsidhu/gods-eye-view (65879★)
   Score: 0.00
-  URL: https://github.com/karalang/kara
-  Description: The Kāra programming language — compiled via  LLVM, with automatic parallelization and   WebAssembly support.
+  URL: https://github.com/bilawalsidhu/gods-eye-view
+  Description: God's Eye View: a spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe. Official site: godseyeview.ai
 
-- rokbenko/quackd (269★)
+- mwakidenis/Social-Media-Cyberbullying-Detection (21★)
+  Score: 0.30
+  URL: https://github.com/mwakidenis/Social-Media-Cyberbullying-Detection
+  Description: ✅🖥️ The system is now accessible for free via the link below 🌐👇, However the full repository files are NOT publicly available for access 🚫💸—For full repository access, contact +254798750585 📞🤝
+
+- HKUDS/LightRAG (40775★)
   Score: 0.60
-  URL: https://github.com/rokbenko/quackd
-  Description: One CLI for all your robots. Connect them, command them, and let them work together, each with an LLM for a brain (Claude, OpenAI, Gemini, Grok, or local via Ollama or vLLM), VLAs for arms and decisio
+  URL: https://github.com/HKUDS/LightRAG
+  Description: [EMNLP2025] LightRAG: Simple and Fast Retrieval-Augmented Generation
 
-- MontrealAI/AGI-Alpha-Agent-v0 (302★)
+- DeepMReye/DeepMReye (123★)
+  Score: 0.30
+  URL: https://github.com/DeepMReye/DeepMReye
+  Description: Main model and preprocessing code
+
+- tigerneil/awesome-deep-rl (1523★)
   Score: 0.60
-  URL: https://github.com/MontrealAI/AGI-Alpha-Agent-v0
-  Description: ♾️ TRANSFORMATIONAL META‑AGENTIC α‑AGI 👁️✨ — Mission 🎯  End‑to‑end: Identify 🔍 → Out‑Learn 📚 → Out‑Think 🧠 → Out‑Design 🎨 → Out‑Strategise ♟️ → Out‑Execute ⚡ → Out-Evolve ♾️
+  URL: https://github.com/tigerneil/awesome-deep-rl
+  Description: For deep RL and the future of AI. 
 
-- InftyAI/Awesome-LLMOps (268★)
-  Score: 0.00
-  URL: https://github.com/InftyAI/Awesome-LLMOps
-  Description: 🎉 An awesome & curated list of best LLMOps tools.
-
-- ai-boost/awesome-prompts (9113★)
-  Score: 0.00
-  URL: https://github.com/ai-boost/awesome-prompts
-  Description: Curated list of chatgpt prompts from the top-rated GPTs in the GPTs Store. Prompt Engineering, prompt attack & prompt protect. Advanced Prompt Engineering papers.
-
-- moshehbenavraham/Ultimate-Agent-Directory (71★)
-  Score: 0.00
-  URL: https://github.com/moshehbenavraham/Ultimate-Agent-Directory
-  Description: 🤖 The most comprehensive directory of AI agent frameworks, platforms, tools, and resources - hundreds of curated entries covering open-source, no-code, enterprise, and autonomous solutions.  NEW Boile
-
-- anmolksachan/AI-ML-Free-Resources-for-Security-and-Prompt-Injection (814★)
-  Score: 0.30
-  URL: https://github.com/anmolksachan/AI-ML-Free-Resources-for-Security-and-Prompt-Injection
-  Description: AI/ML Pentesting Roadmap for Beginners
-
-- hzysvilla/Academic_Smart_Contract_Papers (643★)
+- marcelscruz/public-apis (9750★)
   Score: 0.60
-  URL: https://github.com/hzysvilla/Academic_Smart_Contract_Papers
-  Description: Academic Smart Contract Papers. Welcome developers or researchers to add more published papers to this list.
+  URL: https://github.com/marcelscruz/public-apis
+  Description: A collaborative list of public APIs for developers
 
-- dengxianghua888-ops/preference-lab (55★)
+- allenai/open-instruct (3940★)
+  Score: 0.00
+  URL: https://github.com/allenai/open-instruct
+  Description: AllenAI's post-training codebase
+
+- kesslernity/awesome-copilot-studio-agents (555★)
   Score: 0.60
-  URL: https://github.com/dengxianghua888-ops/preference-lab
-  Description: Policy-driven preference data for content moderation, with source-linked evidence, resumable runs, budget controls and TRL/ShareGPT exports.
+  URL: https://github.com/kesslernity/awesome-copilot-studio-agents
+  Description: 103 paste-ready declarative agents for Microsoft 365 Copilot. No coding. No Azure. Deploy in minutes.
 
-- Ikolvi/Tracelet (64★)
-  Score: 0.30
-  URL: https://github.com/Ikolvi/Tracelet
-  Description: Battery-conscious motion-detection intelligence, geofencing, SQLite persistence, HTTP sync, and headless Dart execution for iOS & Android.
-
-- eater2/ai_agents_api_library (31★)
-  Score: 0.00
-  URL: https://github.com/eater2/ai_agents_api_library
-  Description: Verified catalog of 300+ APIs and MCP servers with opinions and statistics so that AI agents can call after a one-time API key/OAuth setup. JSON, llms.txt and an MCP server for agents.
-
-- perixtar/Tech-OA-Interview-Questions (5688★)
-  Score: 0.00
-  URL: https://github.com/perixtar/Tech-OA-Interview-Questions
-  Description: Daily updated list of Tech Company OAs and Interview Problems. Save your time from finding them all over the internet.
-
-- lance-format/lance-context (84★)
-  Score: 0.30
-  URL: https://github.com/lance-format/lance-context
-  Description: Manage Multimodal Agentic Context Lifecycle with Lance
-
-- alphagov/frontend (50★)
-  Score: 0.00
-  URL: https://github.com/alphagov/frontend
-  Description: Serves most frontend pages for www.gov.uk
-
-- faker-js/faker (15524★)
-  Score: 0.00
-  URL: https://github.com/faker-js/faker
-  Description: Generate massive amounts of fake data in the browser and node.js
-
-- web-infra-dev/rspack (12950★)
-  Score: 0.30
-  URL: https://github.com/web-infra-dev/rspack
-  Description: Fast Rust-based bundler for the web with a modernized webpack API 🦀
-
-- ChromeDevTools/devtools-frontend (4083★)
-  Score: 0.00
-  URL: https://github.com/ChromeDevTools/devtools-frontend
-  Description: The Chrome DevTools UI
-
-- ovh/venom (1224★)
-  Score: 0.30
-  URL: https://github.com/ovh/venom
-  Description: 🐍 Manage and run your integration tests with efficiency - Venom run executors (script, HTTP Request, web, imap, etc... ) and assertions
-
-- WordPress/wordpress-playground (1980★)
-  Score: 0.00
-  URL: https://github.com/WordPress/wordpress-playground
-  Description: Run WordPress in the browser via WebAssembly PHP
-
-- webpack/webpack (65968★)
-  Score: 0.30
-  URL: https://github.com/webpack/webpack
-  Description: A bundler for javascript and friends. Packs many modules into a few bundled assets. Code Splitting allows for loading parts of the application on demand. Through "loaders", modules can be CommonJs, AM
-
-- freezy/VisualPinball.Engine (513★)
-  Score: 0.00
-  URL: https://github.com/freezy/VisualPinball.Engine
-  Description: :video_game: Visual Pinball Engine for Unity
-
-- milisp/mcp-linker (343★)
+- bobazooba/xllm (410★)
   Score: 0.60
-  URL: https://github.com/milisp/mcp-linker
-  Description: MCP store. Discover, add & syncs configuration manager across clients like Claude code, Codex, Cursor💡mcphub
+  URL: https://github.com/bobazooba/xllm
+  Description: 🦖 X—LLM: Cutting Edge & Easy LLM Finetuning
 
-- mjthoraval/Weavero (56★)
-  Score: 0.60
-  URL: https://github.com/mjthoraval/Weavero
-  Description: A Zotero plugin with filters, clickable links, bookmarks, tabs management and other improvements. AI-assisted development process published in .claude/
-
-- Dicklesworthstone/eidetic_engine_cli (53★)
-  Score: 0.60
-  URL: https://github.com/Dicklesworthstone/eidetic_engine_cli
-  Description: Durable, local-first, explainable memory for coding agents. A Rust CLI memory substrate built on the franken-stack (Asupersync, FrankenSQLite, Frankensearch, FrankenNetworkX).
-
-- redhat-openshift-ecosystem/community-operators-prod (141★)
-  Score: 0.00
-  URL: https://github.com/redhat-openshift-ecosystem/community-operators-prod
-  Description: community-operators metadata backing OpenShift OperatorHub
-
-- pglayers/pglayers (172★)
+- florinel-chis/GopherCRM (26★)
   Score: 0.30
-  URL: https://github.com/pglayers/pglayers
-  Description: PostgreSQL Docker images with the extensions you actually need -- pre-built, composable, no compilation.
+  URL: https://github.com/florinel-chis/GopherCRM
+  Description: Open-source, self-hosted CRM: leads, deals, tickets, tasks and lead-capture forms. Go + React, SQLite or MySQL.
 
-- zapplyjobs/Internships-2027 (5240★)
+- Kajjan7610/Gods-view-sweden (35★)
+  Score: 0.30
+  URL: https://github.com/Kajjan7610/Gods-view-sweden
+  Description: Svensk version av God's Eye View – ett digitalt jordklot med 110+ live-datakällor och 21 svenska API:er (Trafikverket, SMHI, Swedavia, SCB m.fl.)
+
+- mnemoverse/awesome-agent-memory (68★)
   Score: 0.00
-  URL: https://github.com/zapplyjobs/Internships-2027
-  Description: 2027 tech & software engineering internships for students — new grad US roles, summer & full-year
+  URL: https://github.com/mnemoverse/awesome-agent-memory
+  Description: A curated list of memory systems, frameworks, benchmarks, and research for AI agents.
 
-- zapplyjobs/New-Grad-Jobs-2027 (1582★)
+- katopz/katgpt-rs (141★)
   Score: 0.00
-  URL: https://github.com/zapplyjobs/New-Grad-Jobs-2027
-  Description: 2027 entry-level jobs in tech, finance, healthcare & more — new grad US roles across software, business, operations & beyond
+  URL: https://github.com/katopz/katgpt-rs
+  Description: A neuro-symbolic micro-Transformer with speculative decoding, constraint pruning, recurrent attention, and adaptive test-time scaling — built in Rust.
 
-- zapplyjobs/New-Grad-Data-Science-Jobs-2027 (88★)
+- rerun-io/rerun (11835★)
+  Score: 0.00
+  URL: https://github.com/rerun-io/rerun
+  Description: Visualize, query, and stream to train on multimodal robotics data.
+
+- HaxxorCialtion/SimpleTool (75★)
+  Score: 0.30
+  URL: https://github.com/HaxxorCialtion/SimpleTool
+  Description: [ICML2026]A method to use LLM function calling with real-time level speed, empowering latency-sensitive applications like robotics, game AI, and autonomous agents.
+
+- traveltime-dev/traveltime-python-sdk (25★)
+  Score: 0.30
+  URL: https://github.com/traveltime-dev/traveltime-python-sdk
+  Description: TravelTime SDK for Python programming language 
+
+- Positronic-Robotics/positronic (90★)
+  Score: 0.00
+  URL: https://github.com/Positronic-Robotics/positronic
+  Description: Python-native stack for real-life ML robotics
+
+- vilaca/awesome-k8s-tools (1072★)
+  Score: 0.30
+  URL: https://github.com/vilaca/awesome-k8s-tools
+  Description: List of container/k8s tools.
+
+- proabiral/Fresh-Resolvers (114★)
+  Score: 0.00
+  URL: https://github.com/proabiral/Fresh-Resolvers
+  Description: List of Hourly Updated Fresh DNS resolvers
+
+- zellij-org/awesome-zellij (1288★)
+  Score: 0.00
+  URL: https://github.com/zellij-org/awesome-zellij
+  Description:  A list of awesome resources for zellij
+
+- tursodatabase/turso (25299★)
+  Score: 0.00
+  URL: https://github.com/tursodatabase/turso
+  Description: A SQL database in Rust: SQLite-compatible, now also speaking Postgres (experimental). The LLVM of databases.
+
+- zapplyjobs/New-Grad-Hardware-Engineering-Jobs-2027 (70★)
+  Score: 0.00
+  URL: https://github.com/zapplyjobs/New-Grad-Hardware-Engineering-Jobs-2027
+  Description: 2027 entry-level hardware engineering jobs — EE, embedded systems & robotics US roles
+
+- zapplyjobs/New-Grad-Data-Science-Jobs-2027 (93★)
   Score: 0.00
   URL: https://github.com/zapplyjobs/New-Grad-Data-Science-Jobs-2027
   Description: 2027 entry-level data science & ML jobs — analytics, AI, quant & machine learning US roles
 
-- zapplyjobs/awesome-ml-internships-2027 (464★)
-  Score: 0.30
-  URL: https://github.com/zapplyjobs/awesome-ml-internships-2027
-  Description: Live AI and machine learning internships for students, refreshed through the Zapply job pipeline.
-
-- zapplyjobs/New-Grad-Software-Engineering-Jobs-2027 (75★)
+- zapplyjobs/New-Grad-Software-Engineering-Jobs-2027 (78★)
   Score: 0.00
   URL: https://github.com/zapplyjobs/New-Grad-Software-Engineering-Jobs-2027
   Description: 2027 entry-level software engineering jobs — SWE & full-time US roles from top tech companies & startups
 
-- gmh5225/awesome-game-security (3628★)
+- zapplyjobs/Internships-2027 (5318★)
   Score: 0.00
-  URL: https://github.com/gmh5225/awesome-game-security
-  Description: awesome game security [Welcome to PR]
+  URL: https://github.com/zapplyjobs/Internships-2027
+  Description: 2027 tech & software engineering internships for students — new grad US roles, summer & full-year
 
-- n1m21n/Infinite (288★)
+- zapplyjobs/New-Grad-Jobs-2027 (1591★)
   Score: 0.00
-  URL: https://github.com/n1m21n/Infinite
-  Description: Infinite is a free, open-source node-based audiovisual workstation by Naman Soni (n1m21n): real-time GPU compositing, 3D, modular synths, VST3/AU hosting.
+  URL: https://github.com/zapplyjobs/New-Grad-Jobs-2027
+  Description: 2027 entry-level jobs in tech, finance, healthcare & more — new grad US roles across software, business, operations & beyond
 
-- vlachoudis/bCNC (1750★)
+- zapplyjobs/awesome-ml-internships-2027 (471★)
+  Score: 0.30
+  URL: https://github.com/zapplyjobs/awesome-ml-internships-2027
+  Description: Live AI and machine learning internships for students, refreshed through the Zapply job pipeline.
+
+- 0xMarcio/pocindex (1575★)
+  Score: 0.30
+  URL: https://github.com/0xMarcio/pocindex
+  Description: Search public CVE proof-of-concept exploits from GitHub, Nuclei, ExploitDB, Metasploit and Vulhub, with CVSS, EPSS and CISA KEV context.
+
+- stormsia/proxy-list (39★)
+  Score: 0.10
+  URL: https://github.com/stormsia/proxy-list
+  Description: 🚀 A curated collection of working proxies, automatically updated every 30 minutes. Features real-time validation, anonymity levels, and detailed statistics. 
+
+- github/spec-kit (150622★)
+  Score: 0.30
+  URL: https://github.com/github/spec-kit
+  Description: 💫 Toolkit to help you get started with SDD or any other process!
+
+- jantichy/claude (52★)
   Score: 0.00
-  URL: https://github.com/vlachoudis/bCNC
-  Description: GRBL CNC command sender, autoleveler and g-code editor
+  URL: https://github.com/jantichy/claude
+  Description: Moje osobní konfigurace Claude Code – pravidla, skilly, hooky a status line, sdílená pro inspiraci.
 
-- Mahmud0808/ColorBlendr (2541★)
+- Ratty123/CDMW-Full (20★)
   Score: 0.00
-  URL: https://github.com/Mahmud0808/ColorBlendr
-  Description: An Android app for customizing Material You colors on devices with Android 12+. It lets you tweak accent colors, background saturation, and more for a personalized look.
+  URL: https://github.com/Ratty123/CDMW-Full
+  Description: Windows desktop workbench for Crimson Desert modding
 
-- ml-explore/mlx-lm (7434★)
+- njcx/blackip_list (23★)
+  Score: 0.00
+  URL: https://github.com/njcx/blackip_list
+  Description: 从FireHOL 同步的恶意IP 清单，每天都会更新
+
+- AaronCaiii/AgenticPentest (53★)
   Score: 0.60
-  URL: https://github.com/ml-explore/mlx-lm
-  Description: Run LLMs with MLX
+  URL: https://github.com/AaronCaiii/AgenticPentest
+  Description: Agent-powered red team testing workbench with asset mapping, threat modeling, multi-agent workflows, cloud assessment, reports and MCP.
 
-- open-nexa/nexapipe (29★)
+- bigbag/papyrix-reader (518★)
   Score: 0.30
-  URL: https://github.com/open-nexa/nexapipe
+  URL: https://github.com/bigbag/papyrix-reader
+  Description: Lightweight open-source firmware for Xteink  e-paper reader (Xteink X3, X4, X4 Pro, X4 v2 Classic, Seeed reTerminal Sticky, and Murphy M4)  • EPUB/FB2/MD/TXT support • Custom themes & fonts
 
-- jularboolean/legejo (29★)
-  Score: 0.30
-  URL: https://github.com/jularboolean/legejo
-  Description: A self-hosted e-book library with OPDS, Kobo sync, KOReader sync and ActivityPub federation
+- mthcht/awesome-lists (1974★)
+  Score: 0.00
+  URL: https://github.com/mthcht/awesome-lists
+  Description: Awesome Security lists for SOC/CERT/CTI
 
-- BradyAJohnston/MolecularNodes (1393★)
-  Score: 0.30
-  URL: https://github.com/BradyAJohnston/MolecularNodes
-  Description: Toolbox for molecular animations in Blender, powered by Geometry Nodes.
+- alvarolop/rhoai-gitops (22★)
+  Score: 0.00
+  URL: https://github.com/alvarolop/rhoai-gitops
+  Description: This repository is my playground to deploy, configure, and use Red Hat OpenShift AI
 
-- nesquena/hermes-webui (19100★)
-  Score: 0.30
-  URL: https://github.com/nesquena/hermes-webui
-  Description: Hermes WebUI: The best way to use Hermes Agent from the web or from your phone!
-
-- mpyw/declscope (43★)
-  Score: 0.30
-  URL: https://github.com/mpyw/declscope
-  Description: Keep Go packages flat without losing their internal boundaries: file-level private and package scopes for declarations, methods and struct fields
-
-- JuliaRegistries/General (738★)
+- JuliaRegistries/General (739★)
   Score: 0.00
   URL: https://github.com/JuliaRegistries/General
   Description: The official registry of general Julia packages
 
-- bluedotimpact/bluedot (28★)
-  Score: 0.00
-  URL: https://github.com/bluedotimpact/bluedot
-  Description: ✨ Monorepo containing most of BlueDot Impact's custom software.
-
-- MinBZK/nl-wallet (258★)
-  Score: 0.00
-  URL: https://github.com/MinBZK/nl-wallet
-  Description: NL Wallet - A digital identity wallet provided by the government.
-
-- Correia-jpv/fucking-awesome-cli-apps (55★)
-  Score: 0.00
-  URL: https://github.com/Correia-jpv/fucking-awesome-cli-apps
-  Description: 🖥 📊 🕹 🛠 A curated list of command line apps. With up-to-date repository stars⭐ and forks🍴
-
-- hyprstream/hyprstream (132★)
+- deployex/jellyfish (33★)
   Score: 0.30
-  URL: https://github.com/hyprstream/hyprstream
-  Description: HyprStream: agentic infrastructure for continous online-learning applications
+  URL: https://github.com/deployex/jellyfish
+  Description: This library facilitates the creation and management of appup files for Elixir applications, enabling hot upgrades (hot code reloading)
 
-- DereC4/internships-and-newgrad (130★)
+- FlorianBruniaux/ctxharness (29★)
+  Score: 0.60
+  URL: https://github.com/FlorianBruniaux/ctxharness
+  Description: Detect drift in AI instruction files, audit Claude Code and Codex configuration, and export portable reports.
+
+- SimplifyJobs/Summer2027-Internships (48451★)
   Score: 0.00
-  URL: https://github.com/DereC4/internships-and-newgrad
-  Description: I used this during college, to save time, so maybe it will help you too! My own aggregated, deduplicated list of 2027-2028 Tech Internships and New Grad positions. 
-
-- ConduitIO/conduit (617★)
-  Score: 0.30
-  URL: https://github.com/ConduitIO/conduit
-  Description: Conduit streams data between data stores. Kafka Connect replacement. No JVM required.
-
-- cloudflare/workerd (9049★)
-  Score: 0.00
-  URL: https://github.com/cloudflare/workerd
-  Description: The JavaScript / Wasm runtime that powers Cloudflare Workers
+  URL: https://github.com/SimplifyJobs/Summer2027-Internships
+  Description: Summer 2027 software engineering, data science, AI, quant, product management, and hardware internship postings. Updated daily by Simplify and Pitt CSC.
 

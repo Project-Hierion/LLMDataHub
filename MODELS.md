@@ -38,7 +38,8 @@
 |---|---|---|---|---|---|---|
 | [mlx-lm-lora](https://github.com/Goekdeniz-Guelmez/mlx-lm-lora) | — | LLM | Python | 437★ | Train Large Language Models on MLX. | [GitHub](https://github.com/Goekdeniz-Guelmez/mlx-lm-lora) |
 
-</details>
+
+| [Awesome-TCM-LLM](https://github.com/tyang816/Awesome-TCM-LLM) | — | LLM | Python | 142★ | 开源中医大模型、数据、新闻、专利、导师合集 (Open-source Traditional Chinese Medical Large Language Models, Datasets, News and Patents hub.) | [GitHub](https://github.com/tyang816/Awesome-TCM-LLM) |</details>
 
 ### <div id="models-2025">2025</div>
 
