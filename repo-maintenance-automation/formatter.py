@@ -2,7 +2,7 @@
 """
 File: formatter.py
 Tool: LLMDataHub Harvester — Markdown Formatter
-Version: 1.2.0
+Version: 1.2.2
 System: Project Hierion / repo-maintenance-automation
 Status: ACTIVE
 License: AGPLv3 with Commons Clause
@@ -17,6 +17,19 @@ Version History:
   1.1.1 — 2026-10-09 — insertion_data.txt now writes to the automation
                        logs dir (repo-maintenance-automation/logs/)
                        instead of Path.cwd()/logs.
+  1.2.2 — 2026-11-21 — placeholder overlap fix: body region is
+                       now disjoint from the tail, so placeholder
+                       rows cannot re-enter the rebuilt file.
+  1.2.1 — 2026-11-21 — newline-glue bug fixed: rows insert via
+                       line-based file rebuild (guaranteed newline
+                       termination), never fusing onto headings or
+                       </details> closers. Placeholder rows removed
+                       cleanly. Simpler walk, obviously correct.
+  1.2.1 — 2026-11-21 — newline-glue bug fixed: rows insert via
+                       line-based file rebuild (guaranteed newline
+                       termination), never fusing onto headings or
+                       </details> closers. Placeholder rows removed
+                       cleanly. Simpler walk, obviously correct.
   1.2.0 — 2026-10-29 — fixed the scar-tissue insertion bug: rows now
                        anchor on the table separator (|---|) found
                        INSIDE the <details> block after the year heading,
@@ -124,12 +137,15 @@ def insert_rows_into_file(filename: str, section_pattern: str, rows: List[str]) 
     """Insert rows into the first table found UNDER a matching section heading.
 
     Anchors on the table separator row (|---|) found after the section
-    heading — inside the <details> block — instead of inserting right
-    after the heading itself. This is the fix for the harvest 7-9
-    scar-tissue bug, where rows landed outside the <details> tables.
+    heading — inside the <details> block — then walks line-by-line to
+    the end of the table body. Appends new rows after the LAST existing
+    table row, each on its own line. Placeholder rows (*No ... listed.*)
+    are dropped when real entries arrive.
 
-    Also removes placeholder rows (*No ... listed.*) when real entries
-    arrive, so tables never carry both a placeholder and real data.
+    v1.2.1 — replaced the fragile offset-arithmetic walk with simple
+    line-based iteration; guarantees newline-terminated rows.
+    v1.2.2 — fixed placeholder overlap: body region is now disjoint
+    from the tail, so filtered placeholders cannot re-enter the file.
     """
     filepath = Path(filename)
     if not filepath.exists():
@@ -144,46 +160,35 @@ def insert_rows_into_file(filename: str, section_pattern: str, rows: List[str]) 
         print(f"  ❌ Section not found in {filename}: {section_pattern}")
         return False
 
-    # Find the table separator line after the section heading.
-    # Skips the <summary>, blank lines, and the header row, landing
-    # us inside the real table, inside the <details> block.
-    after_section = content[section_match.end():]
-    separator_match = re.search(r"^\|(?:[ :|-]*-+[ :|-]*)\|\s*$", after_section, re.MULTILINE)
-    if not separator_match:
+    # Work on a line basis from the section heading onward.
+    after_lines = content[section_match.end():].split("\n")
+
+    # Find the table separator row (|---|...) — inside the details block.
+    sep_idx = None
+    for i, line in enumerate(after_lines):
+        if re.match(r"^\|[ :|-]*-+[ :|-]*\|?\s*$", line):
+            sep_idx = i
+            break
+    if sep_idx is None:
         print(f"  ❌ Table separator not found under section in {filename}")
         return False
 
-    # Absolute insert position: end of the separator line.
-    insert_pos = section_match.end() + separator_match.end()
-
-    # Walk past any existing table rows (and a placeholder) so new
-    # rows append BELOW existing entries, keeping tables in order.
-    tail = content[insert_pos:]
-    consumed = 0
-    while True:
-        stripped = tail[consumed:]
-        if stripped.startswith("\n"):
-            nl = stripped.index("\n")
-            line, rest = "", stripped[nl:]
-            line_start = consumed + nl
-            line_end = line_start + 1
-            # find end of this line
-            nxt = rest.find("\n")
-            if nxt == -1:
-                break
-            consumed = line_start + 1 + nxt
-            continue
-        if stripped.startswith("|") and "\n" in stripped:
-            nl = stripped.index("\n")
-            # Skip placeholder lines entirely (do not keep them).
-            if "*no " in stripped[:nl].lower() and "listed" in stripped[:nl].lower():
-                consumed += nl + 1
-                continue
-            consumed += nl + 1
+    # Walk the table body: rows start with '|'; anything else ends it.
+    # Placeholders are consumed by the walk and dropped from the body.
+    body_idx = sep_idx + 1
+    while body_idx < len(after_lines):
+        line = after_lines[body_idx]
+        if line.strip().startswith("|"):
+            body_idx += 1
             continue
         break
 
-    insert_pos = insert_pos + consumed
+    # Body region: everything the walk consumed, minus placeholder rows.
+    body_region = after_lines[sep_idx + 1:body_idx]
+    kept_body = [
+        l for l in body_region
+        if not ("*no " in l.lower() and "listed" in l.lower())
+    ]
 
     haystack = content.lower()
 
@@ -200,14 +205,25 @@ def insert_rows_into_file(filename: str, section_pattern: str, rows: List[str]) 
         print(f"  ℹ️  No new entries to add to {filename}")
         return True
 
-    rows_text = "\n".join([""] + existing_entries)
-    new_content = content[:insert_pos] + rows_text + content[insert_pos:]
+    # Rebuild: heading prefix + separator + kept body + new rows + tail.
+    # Regions are disjoint: tail begins where the walk stopped, so no
+    # filtered line can sneak back in.
+    rebuilt = (
+        content[:section_match.end()]
+        + "\n".join(
+            after_lines[:sep_idx + 1]
+            + kept_body
+            + existing_entries
+            + after_lines[body_idx:]
+        )
+    )
 
     with open(filepath, "w") as f:
-        f.write(new_content)
+        f.write(rebuilt)
 
     print(f"  ✅ Added {len(existing_entries)} entries to {filename}")
     return True
+
 
 def _resolve_pattern(filename: str, preferred: str, fallback: str) -> str:
     """If the preferred section pattern isn't in the file, use the fallback."""
