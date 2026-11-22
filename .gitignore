@@ -1,9 +1,19 @@
-# Original
+# --- caches / envs ---
 __pycache__/
 *.pyc
 .DS_Store
-
-# From Working_version branch
-*.log
-.env
+.venv/
 venv/
+.idea/
+
+# --- secrets ---
+.env
+
+# --- runtime artifacts: harvester writes these on every run; they are
+#     OBSERVABILITY, not SOURCE. Never tracked. (session 2026-11-22, M1)
+repo-maintenance-automation/logs/
+*.log
+
+# --- keep the skip-list readable even though logs/ is ignored (it lives
+#     in logs/ but IS deliberate state) ---
+!repo-maintenance-automation/logs/rejected_candidates.txt
