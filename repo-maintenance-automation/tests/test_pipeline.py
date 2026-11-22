@@ -14,9 +14,30 @@ from datetime import datetime
 from pathlib import Path
 from unittest.mock import patch
 
-SRC = Path(__file__).resolve().parent.parent / "rma"
+def _find_module_dir():
+    """Locate the dir containing formatter.py, whichever layout we run in.
+
+    Layouts supported:
+      - cell:    lumohub/tests/test_pipeline.py + lumohub/rma/*.py
+      - repo:    repo-maintenance-automation/tests/ + repo-maintenance-automation/*.py
+    """
+    here = Path(__file__).resolve().parent
+    for cand in (here / "rma", here.parent / "rma", here.parent):
+        if (cand / "formatter.py").exists():
+            return cand
+    raise RuntimeError("formatter.py not found near test rig")
+
+SRC = _find_module_dir()
 sys.path.insert(0, str(SRC))
-FIXTURES = Path(__file__).resolve().parent.parent / "fixtures"
+
+def _find_fixtures_dir():
+    here = Path(__file__).resolve().parent
+    for cand in (here.parent / "fixtures", here.parent.parent, here.parent):
+        if (cand / "MODELS.md").exists():
+            return cand
+    return here.parent  # fixtures optional for some runs
+
+FIXTURES = _find_fixtures_dir()
 
 import formatter  # noqa: E402
 import classifier  # noqa: E402
