@@ -2,7 +2,7 @@
 """
 File: classifier.py
 Tool: LLMDataHub Harvester — Resource Classifier
-Version: 1.1.3
+Version: 1.2.0
 System: Project Hierion / repo-maintenance-automation
 Status: ACTIVE
 License: AGPLv3 with Commons Clause
@@ -19,6 +19,9 @@ Version History:
                        regardless of cwd
   1.1.2 — 2026-10-09 — report output now writes to the automation logs
                        dir (repo-maintenance-automation/logs/)
+  1.2.0 — 2026-11-22 — dead-code purge: removed standalone main()
+                       (duplicate pipeline); harvest.py is the single
+                       entry point. No classification logic changed.
   1.1.3 — 2026-10-09 — noise and corporate buckets no longer listed in
                        the report. They're counted but not shown. Drops
                        ~130 lines of clutter per harvest. The skip-list
@@ -309,55 +312,3 @@ def filter_candidates(
 
         filtered.append(repo)
     return filtered
-
-def main():
-    from github_scraper import scrape_github
-
-    print("  🔄 Running classifier (v1.1.3 — skip-list + full-archive dedup)...")
-    candidates = scrape_github(min_stars=1, max_results=50, recent_years=3, require_license=False)
-
-    existing = load_all_existing_entries()
-    rejected = load_rejected_candidates()
-    new_candidates = filter_candidates(candidates, existing, rejected)
-
-    print(f"  📚 Found {len(existing)} existing archive entries")
-    print(f"  🚫 Found {len(rejected)} rejected candidates on skip-list")
-    print(f"  🆕 Found {len(new_candidates)} new candidates after filtering")
-
-    classified = classify_candidates(new_candidates)
-
-    print(f"\n  📊 Classification Results:")
-    for category, repos in classified.items():
-        if repos:
-            if category in REPORTABLE_BUCKETS:
-                print(f"     {category}: {len(repos)}")
-            else:
-                print(f"     {category}: {len(repos)} (skipped)")
-
-    report = generate_classification_report(classified)
-    print(report)
-
-    report_path = SCRIPT_DIR / "logs" / "classification_report.txt"
-    report_path.parent.mkdir(exist_ok=True)
-    with open(report_path, "w") as f:
-        f.write("=== CLASSIFICATION REPORT ===\n\n")
-        for category, repos in classified.items():
-            if not repos:
-                continue
-            if category not in REPORTABLE_BUCKETS:
-                f.write(f"\n## {category.upper()} ({len(repos)}) — skipped, not listed\n")
-                continue
-            f.write(f"\n## {category.upper()} ({len(repos)})\n")
-            for repo in repos:
-                f.write(f"- {repo['full_name']} ({repo['stars']}★)\n")
-                f.write(f"  Score: {repo.get('_score', 0):.2f}\n")
-                f.write(f"  URL: {repo['url']}\n")
-                desc = repo.get('description', '') or ''
-                if desc:
-                    f.write(f"  Description: {desc[:200]}\n")
-                f.write("\n")
-
-    print(f"\n  📄 Full report saved to: {report_path}")
-
-if __name__ == "__main__":
-    main()

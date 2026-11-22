@@ -2,13 +2,16 @@
 """
 File: github_scraper.py
 Tool: LLMDataHub Harvester — GitHub API Scraper
-Version: 1.1.0
+Version: 1.2.0
 System: Project Hierion / repo-maintenance-automation
 Status: ACTIVE
 License: AGPLv3 with Commons Clause
 
 Version History:
   1.0.4 — initial scraper
+  1.2.0 — 2026-11-22 — removed awesome-list/curated-list search keywords:
+                       they target repos the classifier always buckets as
+                       noise, wasting API quota (audit H6).
   1.1.0 — 2026-10-17 — structured logger + retry-with-backoff for
                        429/5xx/transient network errors. No more
                        silent excepts — failures are loud and retried.
@@ -99,8 +102,6 @@ SEARCH_KEYWORDS = [
     "code dataset",
     "math dataset",
     "reasoning dataset",
-    "awesome list",
-    "curated list",
     "post-training",
     "fine-tuning",
     "preference",
