@@ -2,7 +2,7 @@
 """
 File: harvest.py
 Tool: LLMDataHub Harvester — Main Orchestrator
-Version: 1.2.0
+Version: 1.3.0
 System: Project Hierion / repo-maintenance-automation
 Status: ACTIVE
 License: AGPLv3 with Commons Clause
@@ -16,13 +16,17 @@ Version History:
                        PR body written BEFORE any risky operations so
                        it always exists for create-pull-request and
                        artifact upload even if insertion fails.
+  1.3.0 — 2026-11-22 — rejection now feeds the persistent skip-list
+                       (rejected_candidates.txt): candidates the
+                       gardener rejects stay rejected. Idempotent.
+                       Closes audit finding C2.
 """
 
 import sys
 import time
 import os
 from pathlib import Path
-from typing import List, Dict
+from typing import Dict, List, Set
 
 from logger import get_logger
 
@@ -44,6 +48,45 @@ def print_banner(text: str, char: str = "=", width: int = 60):
     print(f"\n{char * width}")
     print(f"  {text}")
     print(f"{char * width}\n")
+
+def add_to_skip_list(classified: Dict[str, List[Dict]], skip_path=None) -> int:
+    """Append rejected candidates to the persistent skip-list.
+
+    The skip-list (rejected_candidates.txt) is what
+    classifier.load_rejected_candidates() reads every run — this is
+    what makes a rejection STICK. Idempotent: entries already listed
+    (case-insensitive) are never double-written. Lines carry a date,
+    bucket, and score stamp for future auditing.
+
+    Returns the number of newly added entries.
+    """
+    if skip_path is None:
+        skip_path = SCRIPT_DIR / "logs" / "rejected_candidates.txt"
+    skip_path = Path(skip_path)
+    skip_path.parent.mkdir(parents=True, exist_ok=True)
+
+    existing: Set[str] = set()
+    if skip_path.exists():
+        with open(skip_path, "r", encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if not line or line.startswith("#"):
+                    continue
+                existing.add(line.split("#", 1)[0].strip().lower())
+
+    added = 0
+    stamp = time.strftime("%Y-%m-%d")
+    with open(skip_path, "a", encoding="utf-8") as f:
+        for category, repos in classified.items():
+            for repo in repos:
+                full_name = (repo.get("full_name") or "").strip().lower()
+                if not full_name or full_name in existing:
+                    continue
+                score = repo.get("_score", 0)
+                f.write(f"{full_name} # auto-rejected {stamp} [{category}, score {score:.2f}]\n")
+                existing.add(full_name)
+                added += 1
+    return added
 
 def is_pr_mode() -> bool:
     return "--pr" in sys.argv or os.environ.get("GITHUB_ACTIONS") == "true"
@@ -74,13 +117,13 @@ def human_review(classified: Dict[str, List[Dict]]) -> bool:
                 print(f"      ... and {len(repos) - 3} more")
 
     if is_pr_mode():
-        log.info("Running in PR mode — auto-approving for PR generation")
+        log.info("Running in PR mode — auto-approve for PR generation")
         return True
 
     print("\n" + "-" * 60)
     print("  ❓ Add these to the archive?")
     print("     [y] Yes — format and insert everything")
-    print("     [N] No — reject and log")
+    print("     [N] No — reject and log (skip-list updated)")
     print("     [exit] Abort — clean exit")
     print("-" * 60)
 
@@ -175,6 +218,8 @@ def main():
     # Step 5: Human review
     if not human_review(classified):
         log.info("Rejected by user. Logging and exiting.")
+        added = add_to_skip_list(classified)
+        log.info(f"Skip-list updated: {added} new entries — they will not return in future harvests")
         log_path = LOGS_DIR / "harvest_rejected.txt"
         with open(log_path, "w") as f:
             f.write(f"Harvest rejected at {time.strftime('%Y-%m-%d %H:%M:%S')}\n")
