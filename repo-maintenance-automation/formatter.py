@@ -2,7 +2,7 @@
 """
 File: formatter.py
 Tool: LLMDataHub Harvester — Markdown Formatter
-Version: 1.3.1
+Version: 1.3.2
 System: Project Hierion / repo-maintenance-automation
 Status: ACTIVE
 License: AGPLv3 with Commons Clause
@@ -14,6 +14,20 @@ Purpose: Builds markdown table rows from harvested repo dicts and inserts
          Year-section anchors are derived at runtime — never hardcoded.
 
 Version History:
+  1.3.2 — 2026-11-23 — schema alignment across ALL builders: tool
+                       rows dropped the stars column (TOOLS is 6-col);
+                       dataset rows now emit Size, not stars (DATASETS
+                       2026 is 6-col with Size, not a Link column);
+                       paper rows now fill the real Venue/Code/Dataset
+                       columns instead of a Type/Lang/Stars shift.
+                       All validated against live tables by the new
+                       TestTableSchemaAlignment suite. MODELS was
+                       already correct (7-col table matches).
+  1.3.2 — 2026-11-23 — schema alignment: format_tool_row no longer
+                       emits a stars column. TOOLS.md's table has 6
+                       columns; the extra cell shifted every automated
+                       tool row (caught during harvest-19 review;
+                       hand-fixed in PR, root cause fixed here).
   1.3.1 — 2026-11-22 — dead-code purge: removed standalone main()
                        (duplicate pipeline); harvest.py is the single
                        entry point.
@@ -78,12 +92,14 @@ def _clip(description: str, limit: int = 120) -> str:
 # ============================================================
 
 def format_dataset_row(repo: Dict) -> str:
+    # DATASETS.md 2026 schema (6 cols): Dataset name | Used by | Type |
+    # Language | Size | Description. Size is dataset size (unknown for
+    # scraped repos) — NOT a star count.
     name = sanitize_cell(repo.get("name", ""))
     url = sanitize_cell(repo.get("url", ""))
     description = _clip(sanitize_cell(repo.get("description", "")))
-    stars = repo.get("stars", 0)
     language = sanitize_cell(repo.get("language", ""))
-    return f"| [{name}]({url}) | — | Dataset | {language} | {stars}★ | {description} | [GitHub]({url}) |"
+    return f"| [{name}]({url}) | — | Dataset | {language} | — | {description} |"
 
 
 def format_model_row(repo: Dict) -> str:
@@ -96,19 +112,24 @@ def format_model_row(repo: Dict) -> str:
 
 
 def format_paper_row(repo: Dict) -> str:
+    # PAPERS.md 2026 schema (6 cols): Paper title | Authors | Venue |
+    # Code Link | Dataset Link | Description.
     name = sanitize_cell(repo.get("name", ""))
     url = sanitize_cell(repo.get("url", ""))
     description = _clip(sanitize_cell(repo.get("description", "")))
-    return f"| [{name}]({url}) | — | Paper | — | — | {description} | [Code]({url}) |"
+    return f"| [{name}]({url}) | — | — | {url} | — | {description} |"
 
 
 def format_tool_row(repo: Dict) -> str:
+    # TOOLS.md schema (6 cols): Tool name | Used by | Type | Language |
+    # Description | Link — no stars column. v1.3.2: previously emitted
+    # a 7th stars cell, shifting every automated tool row one column
+    # left of correct alignment (caught in harvest-19 review).
     name = sanitize_cell(repo.get("name", ""))
     url = sanitize_cell(repo.get("url", ""))
     description = _clip(sanitize_cell(repo.get("description", "")))
-    stars = repo.get("stars", 0)
     language = sanitize_cell(repo.get("language", ""))
-    return f"| [{name}]({url}) | — | Tool | {language} | {stars}★ | {description} | [GitHub]({url}) |"
+    return f"| [{name}]({url}) | — | Tool | {language} | {description} | [GitHub]({url}) |"
 
 
 def format_awesome_row(repo: Dict) -> str:

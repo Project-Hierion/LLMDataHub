@@ -84,20 +84,21 @@ class TestRowBuilders(unittest.TestCase):
         })
 
     def test_dataset_row_column_count(self):
-        # 8 columns => 9 unescaped structural pipes
-        self.assertEqual(structural_pipes(self._ds_row("plain")), 8)
+        # 6 columns (DATASETS.md schema) => 7 structural pipes
+        self.assertEqual(structural_pipes(self._ds_row("plain")), 7)
 
     def test_dataset_row_pipes_in_description_survive(self):
         row = self._ds_row(PIPE_DESC)
-        self.assertEqual(structural_pipes(row), 8)
+        self.assertEqual(structural_pipes(row), 7)
         self.assertIn("A \\| B \\| C", row)
 
-    def test_paper_row_no_lang_or_stars(self):
+    def test_paper_row_venue_code_dataset_columns(self):
         row = formatter.format_paper_row({
             "name": "p", "url": "https://github.com/o/p",
             "description": "d",
         })
-        self.assertIn("| Paper | — | — |", row)
+        # 6-col papers schema: title | authors | venue | code | dataset | desc
+        self.assertIn("| [p](https://github.com/o/p) | — | — | https://github.com/o/p | — | d |", row)
 
     def test_untrusted_description_control_chars(self):
         row = formatter.format_tool_row({
@@ -260,6 +261,62 @@ class TestClassifierSmoke(unittest.TestCase):
         }
         cat, _ = classifier.classify_repo(cand)
         self.assertEqual(cat, "corporate")
+
+
+class TestTableSchemaAlignment(unittest.TestCase):
+    """Every row builder must emit exactly as many structural pipes as
+    its target archive table's header row (columns + 1). Discovered in
+    harvest-19: tool rows had an extra stars column (7 cols into a
+    6-col table)."""
+
+    def _header_cols(self, fixture, startswith):
+        lines = (FIXTURES / fixture).read_text().splitlines()
+        for i, l in enumerate(lines):
+            if l.strip().startswith(startswith):
+                # header line is the first | line after it
+                for hl in lines[i + 1:]:
+                    if hl.strip().startswith("|"):
+                        return structural_pipes(hl) - 1  # cells
+        raise AssertionError(f"header not found in {fixture}")
+
+    def test_tool_row_matches_tools_table(self):
+        cols = self._header_cols("TOOLS.md", "| Tool name |")
+        row = formatter.format_tool_row({
+            "name": "t", "url": "https://github.com/o/t",
+            "description": "d", "stars": 1, "language": "Python",
+        })
+        self.assertEqual(structural_pipes(row) - 1, cols)
+
+    def test_model_row_matches_models_table(self):
+        cols = self._header_cols("MODELS.md", "| Model name |")
+        row = formatter.format_model_row({
+            "name": "m", "url": "https://github.com/o/m",
+            "description": "d", "stars": 1, "language": "Python",
+        })
+        self.assertEqual(structural_pipes(row) - 1, cols)
+
+    def test_dataset_row_matches_datasets_table(self):
+        cols = self._header_cols("DATASETS.md", "| Dataset name |")
+        row = formatter.format_dataset_row({
+            "name": "d", "url": "https://github.com/o/d",
+            "description": "desc", "stars": 1, "language": "Python",
+        })
+        self.assertEqual(structural_pipes(row) - 1, cols)
+
+    def test_paper_row_matches_papers_table(self):
+        cols = self._header_cols("PAPERS.md", "| Paper title |")
+        row = formatter.format_paper_row({
+            "name": "p", "url": "https://github.com/o/p",
+            "description": "d",
+        })
+        self.assertEqual(structural_pipes(row) - 1, cols)
+
+    def test_tool_row_has_no_star_marker(self):
+        row = formatter.format_tool_row({
+            "name": "t", "url": "https://github.com/o/t",
+            "description": "d", "stars": 9999, "language": "Go",
+        })
+        self.assertNotIn("★", row)
 
 
 if __name__ == "__main__":
