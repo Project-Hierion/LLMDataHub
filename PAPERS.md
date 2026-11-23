@@ -36,8 +36,8 @@
 
 | Paper title | Authors | Venue | Code Link | Dataset Link | Description |
 |---|---|---|---|---|---|
-| [Awesome-CUA](https://github.com/reacher-z/Awesome-CUA) | — | Paper | — | — | Open, source-backed catalog of computer-use agents: reviewed papers, GUI models, datasets, benchmarks, tools, and reu... | [Code](https://github.com/reacher-z/Awesome-CUA) |
-| [Awesome-REA](https://github.com/reacher-z/Awesome-REA) | — | Paper | — | — | Curated tools, case studies and papers for reverse engineering websites, games, apps, binaries, firmware and protocol... | [Code](https://github.com/reacher-z/Awesome-REA) |
+
+| *No papers currently listed.* | | | | | |
 
 </details>
 

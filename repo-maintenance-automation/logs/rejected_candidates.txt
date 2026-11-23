@@ -52,3 +52,7 @@ Polyphase-Labs/Polyphase-Engine  # homebrew game engine
 jaylfc/taosmd  # local AI memory, borderline
 youngbryan97/aura  # cognitive architecture, borderline
 yinnho/aginxbrowser  # browser for agents, borderline
+siliconjungle/shapeshift-labs-ink-studio # rejected by review: graphics/Gaussian-splat tool, not LLM-related [harvest-19]
+libredb/libredb-studio # rejected by review: database GUI, not LLM-related [harvest-19]
+reacher-z/Awesome-CUA # relocated to AWESOME-LISTS.md, not a paper [harvest-19]
+reacher-z/Awesome-REA # relocated to AWESOME-LISTS.md, not a paper [harvest-19]
