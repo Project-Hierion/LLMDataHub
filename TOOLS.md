@@ -34,7 +34,12 @@
 
 | Tool name | Used by | Type | Language | Description | Link |
 |---|---|---|---|---|---|
-| *No tools currently listed.* | | | | | |
+| [OmniRoute](https://github.com/cheaper-inference/OmniRoute) | — | Tool | TypeScript | 89632★ | Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gem... | [GitHub](https://github.com/cheaper-inference/OmniRoute) |
+| [skill-of-skills](https://github.com/the911fund/skill-of-skills) | — | Tool | Python | 88★ | The quality-ranked discovery engine for AI coding skills, plugins and MCP servers across Claude Code, Codex, Cursor,... | [GitHub](https://github.com/the911fund/skill-of-skills) |
+| [shapeshift-labs-ink-studio](https://github.com/siliconjungle/shapeshift-labs-ink-studio) | — | Tool | JavaScript | 1031★ | Sculpting, animation and simulation toolkit for pixel-art Gaussian splats | [GitHub](https://github.com/siliconjungle/shapeshift-labs-ink-studio) |
+| [libredb-studio](https://github.com/libredb/libredb-studio) | — | Tool | TypeScript | 1362★ | One browser tab for PostgreSQL, MySQL, Oracle, SQL Server, MongoDB, Redis, SQLite, Couchbase, ClickHouse, Druid, Duck... | [GitHub](https://github.com/libredb/libredb-studio) |
+| [last30days-skill](https://github.com/mvanhorn/last30days-skill) | — | Tool | Python | 72722★ | AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a... | [GitHub](https://github.com/mvanhorn/last30days-skill) |
+| [openbrowser-ai](https://github.com/billy-enrizky/openbrowser-ai) | — | Tool | Python | 279★ | OpenBrowser is a framework for intelligent browser automation. It combines direct CDP communication with a CodeAgent... | [GitHub](https://github.com/billy-enrizky/openbrowser-ai) |
 
 ### <div id="tools-2025">2025</div>
 | [AcademiaSD_LoRAlab-TrainerStudio](https://github.com/AcademiaSD/AcademiaSD_LoRAlab-TrainerStudio) | — | Tool | Python | Train LoRAs for Qwen-Image 2.1, FLUX.2 Klein 9B, FLUX.3 Image Klein, Krea 2, Z-Image, MOSS-Image, ERNIE-Image, Ideogr... |
