@@ -120,6 +120,29 @@
 ## <div id="general">General Awesome Lists 🌟</div>
 
 <details>
+  <summary><strong>reacher-z/Awesome-CUA</strong> — 1.1k+ ★</summary>
+
+  **Description:** Open, source-backed catalog of computer-use agents: reviewed papers, GUI models, datasets, benchmarks, tools, and resources.
+
+  **Link:** [https://github.com/reacher-z/Awesome-CUA](https://github.com/reacher-z/Awesome-CUA)
+
+  **Added:** (auto-harvest 19, cherry-picked)
+
+</details>
+
+<details>
+  <summary><strong>reacher-z/Awesome-REA</strong> — 3.4k+ ★</summary>
+
+  **Description:** Curated tools, case studies and papers for reverse engineering websites, games, apps, binaries, firmware and protocols.
+
+  **Link:** [https://github.com/reacher-z/Awesome-REA](https://github.com/reacher-z/Awesome-REA)
+
+  **Added:** (auto-harvest 19, cherry-picked)
+
+</details>
+
+
+<details>
   <summary><strong>adongwanai/Awesome-Awesome-LLMs</strong> — 39 ★</summary>
 
   **Description:** Meta-collection of 200+ awesome LLM repositories.

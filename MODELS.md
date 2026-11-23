@@ -37,6 +37,8 @@
 | Model name | Used by | Type | Language | Size | Description | Link |
 |---|---|---|---|---|---|---|
 | [mlx-lm-lora](https://github.com/Goekdeniz-Guelmez/mlx-lm-lora) | — | LLM | Python | 437★ | Train Large Language Models on MLX. | [GitHub](https://github.com/Goekdeniz-Guelmez/mlx-lm-lora) |
+| [mlx-vlm](https://github.com/Neywa-Labs/mlx-vlm) | — | LLM | Python | 5916★ | MLX-VLM is a package for inference and fine-tuning of Vision Language Models (VLMs) on your Mac using MLX. | [GitHub](https://github.com/Neywa-Labs/mlx-vlm) |
+| [halo](https://github.com/whitecircle/halo) | — | LLM | Python | 869★ | Halo is an open-source framework built by White Circle for training large language and multimodal models | [GitHub](https://github.com/whitecircle/halo) |
 
 </details>
 

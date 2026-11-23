@@ -34,7 +34,10 @@
 
 | Tool name | Used by | Type | Language | Description | Link |
 |---|---|---|---|---|---|
-| *No tools currently listed.* | | | | | |
+| [OmniRoute](https://github.com/cheaper-inference/OmniRoute) | — | Tool | TypeScript | | Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gem... | [GitHub](https://github.com/cheaper-inference/OmniRoute) |
+| [skill-of-skills](https://github.com/the911fund/skill-of-skills) | — | Tool | Python | | The quality-ranked discovery engine for AI coding skills, plugins and MCP servers across Claude Code, Codex, Cursor,... | [GitHub](https://github.com/the911fund/skill-of-skills) |
+| [last30days-skill](https://github.com/mvanhorn/last30days-skill) | — | Tool | Python | | AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a... | [GitHub](https://github.com/mvanhorn/last30days-skill) |
+| [openbrowser-ai](https://github.com/billy-enrizky/openbrowser-ai) | — | Tool | Python | | OpenBrowser is a framework for intelligent browser automation. It combines direct CDP communication with a CodeAgent... | [GitHub](https://github.com/billy-enrizky/openbrowser-ai) |
 
 ### <div id="tools-2025">2025</div>
 | [AcademiaSD_LoRAlab-TrainerStudio](https://github.com/AcademiaSD/AcademiaSD_LoRAlab-TrainerStudio) | — | Tool | Python | Train LoRAs for Qwen-Image 2.1, FLUX.2 Klein 9B, FLUX.3 Image Klein, Krea 2, Z-Image, MOSS-Image, ERNIE-Image, Ideogr... |
