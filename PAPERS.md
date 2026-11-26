@@ -36,6 +36,7 @@
 
 | Paper title | Authors | Venue | Code Link | Dataset Link | Description |
 |---|---|---|---|---|---|
+| [open-unlearning](https://github.com/locuslab/open-unlearning) | — | — | https://github.com/locuslab/open-unlearning | — | [NeurIPS 2025] The one-stop repository for LLM unlearning |
 
 | *No papers currently listed.* | | | | | |
 
